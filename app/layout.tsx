@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GoogleAdsense from '@/components/GoogleAdsense'
 import Script from 'next/script'
 
-const geistSans = Geist({
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-geist-sans',
 })
 
-const geistMono = Geist_Mono({
+const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   variable: '--font-geist-mono',
 })
@@ -100,7 +100,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <head>
         <Script
           id="schema-org"
