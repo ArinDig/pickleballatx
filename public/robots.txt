@@ -1,0 +1,14 @@
+# Robots.txt for Pickleball ATX
+# https://pickleballatx.org/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://pickleballatx.org/sitemap.xml
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1
+
