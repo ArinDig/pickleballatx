@@ -20,7 +20,8 @@ export default function GoogleMap({ latitude, longitude, name, address }: Google
     script.defer = true
     
     script.onload = () => {
-      if (mapRef.current && window.google) {
+      if (mapRef.current && (window as any).google) {
+        const google = (window as any).google
         const map = new google.maps.Map(mapRef.current, {
           center: { lat: latitude, lng: longitude },
           zoom: 15,
