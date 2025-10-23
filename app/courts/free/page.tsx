@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function FreeC ourtsPage() {
+export default function FreeCourtsPage() {
   const freeCourts = getFreeCourts()
 
   return (
