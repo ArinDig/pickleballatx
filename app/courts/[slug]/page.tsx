@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: CourtPageProps): Promise<Meta
     openGraph: {
       title,
       description,
-      type: 'place',
+      type: 'website',
       url: `https://pickleballatx.org/courts/${court.slug}`,
       images: [
         {
