@@ -15,9 +15,20 @@ export default function ContactForm() {
     e.preventDefault()
     setStatus('submitting')
 
-    // TODO: Implement actual form submission (e.g., to an API endpoint or email service)
-    // For now, we'll just simulate a submission
-    setTimeout(() => {
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`[Pickleball ATX Contact] ${formData.subject}`)
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Subject: ${formData.subject}\n\n` +
+        `Message:\n${formData.message}`
+      )
+      
+      // Open email client
+      window.location.href = `mailto:info@pickleballatx.org?subject=${subject}&body=${body}`
+      
+      // Show success message
       setStatus('success')
       setFormData({ name: '', email: '', subject: '', message: '' })
       
@@ -25,7 +36,10 @@ export default function ContactForm() {
       setTimeout(() => {
         setStatus('idle')
       }, 5000)
-    }, 1000)
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setStatus('error')
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
