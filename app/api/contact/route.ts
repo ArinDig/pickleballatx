@@ -1,16 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-// Try to import Resend, but don't fail if it's not installed
-let Resend: any = null
-try {
-  const resendModule = require('resend')
-  Resend = resendModule.Resend
-} catch (error) {
-  console.log('Resend package not found, using fallback email method')
-}
-
-const resend = Resend ? new Resend(process.env.RESEND_API_KEY) : null
-
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -42,45 +31,53 @@ IP Address: ${request.ip || 'Unknown'}
 User Agent: ${request.headers.get('user-agent') || 'Unknown'}
     `.trim()
 
-    // Try to send email using Resend if available
-    if (resend && process.env.RESEND_API_KEY) {
-      console.log('Using Resend to send email...')
+    // Try to send email using Resend API directly
+    if (process.env.RESEND_API_KEY) {
+      console.log('Attempting to send email via Resend API...')
       
       try {
-        const { data, error } = await resend.emails.send({
-          from: 'Pickleball ATX <onboarding@resend.dev>',
-          to: ['info@pickleballatx.org'],
-          subject: `[Pickleball ATX Contact] ${subject}`,
-          text: emailContent,
-          html: `
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-              <h2 style="color: #10B981;">New Contact Form Submission</h2>
-              <p><strong>Name:</strong> ${name}</p>
-              <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
-              <p><strong>Subject:</strong> ${subject}</p>
-              <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; margin: 15px 0;">
-                <strong>Message:</strong><br>
-                ${message.replace(/\n/g, '<br>')}
+        const response = await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            from: 'Pickleball ATX <onboarding@resend.dev>',
+            to: ['info@pickleballatx.org'],
+            subject: `[Pickleball ATX Contact] ${subject}`,
+            text: emailContent,
+            html: `
+              <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+                <h2 style="color: #10B981;">New Contact Form Submission</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+                <p><strong>Subject:</strong> ${subject}</p>
+                <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; margin: 15px 0;">
+                  <strong>Message:</strong><br>
+                  ${message.replace(/\n/g, '<br>')}
+                </div>
+                <hr style="margin: 20px 0;">
+                <p style="color: #666; font-size: 12px;">
+                  Sent from: ${request.headers.get('referer') || 'Pickleball ATX Contact Form'}<br>
+                  Time: ${new Date().toLocaleString()}<br>
+                  IP: ${request.ip || 'Unknown'}<br>
+                  <strong>Reply to:</strong> ${email}
+                </p>
               </div>
-              <hr style="margin: 20px 0;">
-              <p style="color: #666; font-size: 12px;">
-                Sent from: ${request.headers.get('referer') || 'Pickleball ATX Contact Form'}<br>
-                Time: ${new Date().toLocaleString()}<br>
-                IP: ${request.ip || 'Unknown'}<br>
-                <strong>Reply to:</strong> ${email}
-              </p>
-            </div>
-          `,
+            `,
+          }),
         })
 
-        if (error) {
-          console.error('Resend error:', error)
-          throw new Error(`Resend error: ${error.message || 'Unknown error'}`)
+        if (!response.ok) {
+          const errorData = await response.json()
+          throw new Error(`Resend API error: ${errorData.message || response.statusText}`)
         }
 
-        console.log('Email sent successfully via Resend:', data)
+        const data = await response.json()
+        console.log('Email sent successfully via Resend API:', data)
       } catch (resendError) {
-        console.error('Resend failed, falling back to mailto:', resendError)
+        console.error('Resend API failed, falling back to mailto:', resendError)
         // Fall through to mailto method
       }
     }
