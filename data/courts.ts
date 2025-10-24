@@ -55,11 +55,11 @@ export const courts: Court[] = [
     longitude: -97.6852,
     phone: '(737) 242-5898',
     website: 'https://www.austinpickleranch.com',
-    mainImage: '/images/courts/austin-pickle-ranch-braker.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/austin-pickle-ranch-braker-2.jpg',
-      '/images/courts/austin-pickle-ranch-braker-3.jpg',
-      '/images/courts/austin-pickle-ranch-braker-4.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'State-of-the-art indoor pickleball facility featuring 16 dedicated courts with climate control. Austin Pickle Ranch offers a premium playing experience with both indoor and outdoor lounge areas, making it perfect for year-round play.',
     amenities: ['Locker Rooms', 'Pro Shop', 'Food & Beverage', 'Lounge Areas', 'Climate Controlled'],
@@ -98,10 +98,10 @@ export const courts: Court[] = [
     longitude: -97.7619,
     phone: '(737) 242-5898',
     website: 'https://www.austinpickleranch.com',
-    mainImage: '/images/courts/austin-pickle-ranch-6th.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/austin-pickle-ranch-6th-2.jpg',
-      '/images/courts/austin-pickle-ranch-6th-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Downtown location featuring 8 outdoor dedicated pickleball courts with professional lighting. Perfect for evening play with a vibrant atmosphere in the heart of Austin.',
     amenities: ['Professional Lighting', 'Seating Areas', 'Water Stations', 'Shade Structures'],
@@ -139,10 +139,10 @@ export const courts: Court[] = [
     longitude: -97.6422,
     phone: '(512) 928-8119',
     website: 'https://www.austintennisandpickleballcenter.com',
-    mainImage: '/images/courts/austin-tennis-pickleball.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/austin-tennis-pickleball-2.jpg',
-      '/images/courts/austin-tennis-pickleball-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Multi-sport facility featuring 8 dedicated outdoor pickleball courts with excellent lighting for night play. Offers both membership and pay-per-play options for flexible access.',
     amenities: ['Restrooms', 'Parking', 'Lighting', 'Pro Shop', 'Lessons Available'],
@@ -180,10 +180,10 @@ export const courts: Court[] = [
     longitude: -97.7713,
     phone: '(512) 382-1849',
     website: 'https://www.bouldinacres.com',
-    mainImage: '/images/courts/bouldin-acres.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/bouldin-acres-2.jpg',
-      '/images/courts/bouldin-acres-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Unique entertainment venue featuring 2 outdoor pickleball courts alongside food trucks, bars, and family-friendly activities. A great spot to play pickleball and enjoy Austin\'s outdoor social scene.',
     amenities: ['Food Trucks', 'Bars', 'Dog Park', 'Playgrounds', 'Lawn Games', 'Live Music'],
@@ -222,10 +222,10 @@ export const courts: Court[] = [
     longitude: -97.6897,
     phone: '(512) 829-4974',
     website: 'https://www.thepitchaustin.com',
-    mainImage: '/images/courts/the-pitch.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/the-pitch-2.jpg',
-      '/images/courts/the-pitch-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Sports and entertainment complex with 3 outdoor pickleball courts. Features multiple restaurants, bars, and a coffee shop, making it a complete destination for recreation and dining.',
     amenities: ['Restaurants', 'Bars', 'Coffee Shop', 'Multiple Sports Courts', 'Outdoor Seating'],
@@ -262,9 +262,9 @@ export const courts: Court[] = [
     latitude: 30.3896,
     longitude: -97.8943,
     website: 'https://www.laketravisbiergarten.com',
-    mainImage: '/images/courts/lake-travis-biergarten.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/lake-travis-biergarten-2.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Beautiful lakeside venue offering 2 free outdoor pickleball courts with lighting. Combine your game with German-inspired food and beverages in a scenic setting near Lake Travis.',
     amenities: ['Free Access', 'Lighting', 'Restaurant', 'Beer Garden', 'Lake Views', 'Pet Friendly'],
@@ -296,9 +296,9 @@ export const courts: Court[] = [
     zipCode: '78704',
     latitude: 30.2611,
     longitude: -97.7747,
-    mainImage: '/images/courts/little-zilker.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/little-zilker-2.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'City park featuring 2 free outdoor pickleball courts with lighting. Courts are lined on existing tennis courts, providing a convenient neighborhood option for casual play.',
     amenities: ['Free Access', 'Lighting', 'Park Setting', 'Playground', 'Green Space'],
@@ -332,10 +332,10 @@ export const courts: Court[] = [
     longitude: -97.7537,
     phone: '(512) 978-2440',
     website: 'https://www.austintexas.gov/department/south-austin-recreation-center',
-    mainImage: '/images/courts/south-austin-rec.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/south-austin-rec-2.jpg',
-      '/images/courts/south-austin-rec-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'City-operated recreation center with 4 free indoor pickleball courts. Offers organized open play sessions for different skill levels and age groups throughout the week.',
     amenities: ['Free Access', 'Indoor Courts', 'Restrooms', 'Fitness Center', 'Climate Controlled'],
@@ -371,9 +371,9 @@ export const courts: Court[] = [
     longitude: -97.8042,
     phone: '(512) 974-6972',
     website: 'https://www.austintexas.gov/department/dittmar-recreation-center',
-    mainImage: '/images/courts/dittmar-rec.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/dittmar-rec-2.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Austin Parks and Recreation facility offering 4 free indoor pickleball courts. Great option for climate-controlled play with organized sessions and open play times.',
     amenities: ['Free Access', 'Indoor Courts', 'Restrooms', 'Fitness Facilities', 'Air Conditioned'],
@@ -409,10 +409,10 @@ export const courts: Court[] = [
     longitude: -97.7162,
     phone: '(512) 978-2425',
     website: 'https://www.austintexas.gov/department/pan-american-recreation-center',
-    mainImage: '/images/courts/pan-am-rec.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/pan-am-rec-2.jpg',
-      '/images/courts/pan-am-rec-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Large city recreation center with 6 free outdoor pickleball courts with lighting. One of the most popular public pickleball destinations in Austin with excellent facilities.',
     amenities: ['Free Access', 'Lighting', 'Restrooms', 'Water Fountains', 'Fitness Center'],
@@ -447,10 +447,10 @@ export const courts: Court[] = [
     longitude: -97.8934,
     phone: '(512) 638-4656',
     website: 'https://castlecourtaustin.com',
-    mainImage: '/images/courts/castle-court.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/castle-court-2.jpg',
-      '/images/courts/castle-court-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Premium private pickleball club offering top-tier facilities and amenities. Features tournament-quality courts, comfortable viewing areas, and flexible membership options for serious players.',
     amenities: ['Premium Courts', 'Viewing Areas', 'Pro Shop', 'Lounge', 'Equipment Available'],
@@ -487,10 +487,10 @@ export const courts: Court[] = [
     latitude: 30.2775,
     longitude: -97.7103,
     website: 'https://www.otherracquet.com',
-    mainImage: '/images/courts/other-racquet.jpg',
+    mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      '/images/courts/other-racquet-2.jpg',
-      '/images/courts/other-racquet-3.jpg'
+      'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center',
+      'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Exclusive members-only pickleball social club featuring 3 tournament-regulation courts. Premium amenities include full-service cabanas, clubhouse, and private dining for an elevated experience.',
     amenities: ['Tournament Courts', 'Cabanas', 'Clubhouse', 'Private Dining', 'Full Bar', 'Concierge Service'],
