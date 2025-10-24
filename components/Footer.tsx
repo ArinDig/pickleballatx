@@ -61,6 +61,11 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
+              <li>
+                <a href="https://www.atxdogparks.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">
+                  Austin Dog Parks
+                </a>
+              </li>
             </ul>
           </div>
 
