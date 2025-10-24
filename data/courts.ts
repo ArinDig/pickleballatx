@@ -544,6 +544,376 @@ export const courts: Court[] = [
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
     featured: false
+  },
+  {
+    id: '13',
+    name: 'Pan American Neighborhood Park',
+    slug: 'pan-american-park',
+    address: '2100 E 3rd Street',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78702',
+    latitude: 30.2644,
+    longitude: -97.7206,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Neighborhood park featuring 6 outdoor pickleball courts with permanent nets. Perfect for casual play and community gatherings with easy access and no fees.',
+    amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Picnic Areas'],
+    courtType: 'outdoor',
+    numberOfCourts: 6,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Permanent Nets', 'Public Access', 'Family Friendly'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '14',
+    name: 'Rosewood Neighborhood Park',
+    slug: 'rosewood-park',
+    address: '2300 Rosewood Avenue',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78702',
+    latitude: 30.2644,
+    longitude: -97.7206,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Community park with 4 outdoor pickleball courts - 2 with permanent nets and 2 requiring players to bring their own nets. Great for neighborhood play.',
+    amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Picnic Areas'],
+    courtType: 'outdoor',
+    numberOfCourts: 4,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Mixed Net Types', 'Public Access', 'Community Park'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '15',
+    name: 'Dick Nichols District Park',
+    slug: 'dick-nichols-park',
+    address: '8011 Beckett Road',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78749',
+    latitude: 30.1800,
+    longitude: -97.8200,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Large 152-acre district park featuring 4 outdoor pickleball courts. Players need to bring their own nets, but the courts are well-maintained and free to use.',
+    amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
+    courtType: 'outdoor',
+    numberOfCourts: 4,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Large Park', 'Public Access', 'Bring Own Nets'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '16',
+    name: 'Beverly S. Sheffield Northwest District Park',
+    slug: 'beverly-sheffield-park',
+    address: '7000 Ardath Street',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78757',
+    latitude: 30.3500,
+    longitude: -97.7500,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Northwest Austin district park with 4 outdoor pickleball courts on hard surface. Players need to bring their own nets, but the courts are free and well-maintained.',
+    amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
+    courtType: 'outdoor',
+    numberOfCourts: 4,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Hard Surface', 'Public Access', 'Bring Own Nets'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '17',
+    name: 'Brentwood Neighborhood Park',
+    slug: 'brentwood-park',
+    address: '6710 Arroyo Seco',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78757',
+    latitude: 30.3500,
+    longitude: -97.7500,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Neighborhood park featuring tennis and pickleball courts. Players need to bring their own nets, but the courts are free and perfect for casual play.',
+    amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Tennis Courts'],
+    courtType: 'outdoor',
+    numberOfCourts: 2,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Multi-Sport', 'Public Access', 'Bring Own Nets'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '18',
+    name: 'Austin High Tennis Center',
+    slug: 'austin-high-tennis',
+    address: '1717 W Cesar Chavez Street',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78703',
+    latitude: 30.2700,
+    longitude: -97.7600,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Public tennis center with 3 outdoor pickleball courts featuring permanent nets and lines. Available on a first-come, first-served basis with no fees.',
+    amenities: ['Restrooms', 'Parking', 'Tennis Courts', 'Lighting'],
+    courtType: 'outdoor',
+    numberOfCourts: 3,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Permanent Nets', 'Public Access', 'Lighting'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '19',
+    name: 'Gus Garcia Recreation Center',
+    slug: 'gus-garcia-rec',
+    address: '1201 E Rundberg Lane',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78753',
+    latitude: 30.3200,
+    longitude: -97.6800,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'North Austin recreation center with 4 indoor pickleball courts. Free access with Austin Parks & Recreation membership, offering programs and open play.',
+    amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Fitness Center', 'Programs Available'],
+    courtType: 'indoor',
+    numberOfCourts: 4,
+    isFree: true,
+    pricing: {
+      details: 'Free with Austin Parks & Rec membership',
+      rates: ['Membership Required', 'No additional court fees']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended for court time',
+    hours: {
+      monday: '6:00 AM - 9:00 PM',
+      tuesday: '6:00 AM - 9:00 PM',
+      wednesday: '6:00 AM - 9:00 PM',
+      thursday: '6:00 AM - 9:00 PM',
+      friday: '6:00 AM - 9:00 PM',
+      saturday: '8:00 AM - 6:00 PM',
+      sunday: '8:00 AM - 6:00 PM'
+    },
+    features: ['Indoor Courts', 'Air Conditioning', 'Programs', 'Free with Membership'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '20',
+    name: 'Northwest Recreation Center',
+    slug: 'northwest-rec',
+    address: '2913 Northland Drive',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78757',
+    latitude: 30.3500,
+    longitude: -97.7500,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Northwest Austin recreation center with 3 indoor pickleball courts. Free access with Austin Parks & Recreation membership, featuring multi-purpose court with pickleball striping.',
+    amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Fitness Center', 'Multi-Purpose Court'],
+    courtType: 'indoor',
+    numberOfCourts: 3,
+    isFree: true,
+    pricing: {
+      details: 'Free with Austin Parks & Rec membership',
+      rates: ['Membership Required', 'No additional court fees']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended for court time',
+    hours: {
+      monday: '6:00 AM - 9:00 PM',
+      tuesday: '6:00 AM - 9:00 PM',
+      wednesday: '6:00 AM - 9:00 PM',
+      thursday: '6:00 AM - 9:00 PM',
+      friday: '6:00 AM - 9:00 PM',
+      saturday: '8:00 AM - 6:00 PM',
+      sunday: '8:00 AM - 6:00 PM'
+    },
+    features: ['Indoor Courts', 'Air Conditioning', 'Multi-Purpose', 'Free with Membership'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '21',
+    name: 'Mary Moore Searight Park',
+    slug: 'mary-moore-searight',
+    address: '907 W Slaughter Lane',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78748',
+    latitude: 30.1800,
+    longitude: -97.8200,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'South Austin park featuring 3 outdoor pickleball courts. Players need to bring their own nets, but the courts are free and perfect for community play.',
+    amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
+    courtType: 'outdoor',
+    numberOfCourts: 3,
+    isFree: true,
+    pricing: {
+      details: 'Free to play',
+      rates: ['No cost']
+    },
+    reservationRequired: false,
+    reservationInfo: 'First-come, first-served basis',
+    hours: {
+      monday: '5:00 AM - 10:00 PM',
+      tuesday: '5:00 AM - 10:00 PM',
+      wednesday: '5:00 AM - 10:00 PM',
+      thursday: '5:00 AM - 10:00 PM',
+      friday: '5:00 AM - 10:00 PM',
+      saturday: '5:00 AM - 10:00 PM',
+      sunday: '5:00 AM - 10:00 PM'
+    },
+    features: ['Free Play', 'Public Access', 'Community Park', 'Bring Own Nets'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
   }
 ]
 
