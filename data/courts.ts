@@ -55,11 +55,11 @@ export const courts: Court[] = [
     longitude: -97.6852,
     phone: '(737) 242-5898',
     website: 'https://www.austinpickleranch.com',
-    mainImage: 'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934015_1280.jpg',
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934016_1280.jpg',
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934017_1280.jpg'
+      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'State-of-the-art indoor pickleball facility featuring 16 dedicated courts with climate control. Austin Pickle Ranch offers a premium playing experience with both indoor and outdoor lounge areas, making it perfect for year-round play.',
     amenities: ['Locker Rooms', 'Pro Shop', 'Food & Beverage', 'Lounge Areas', 'Climate Controlled'],
@@ -100,7 +100,7 @@ export const courts: Court[] = [
     website: 'https://www.austinpickleranch.com',
     mainImage: 'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Downtown location featuring 8 outdoor dedicated pickleball courts with professional lighting. Perfect for evening play with a vibrant atmosphere in the heart of Austin.',
@@ -142,7 +142,7 @@ export const courts: Court[] = [
     website: 'https://www.austintennisandpickleballcenter.com',
     mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Multi-sport facility featuring 8 dedicated outdoor pickleball courts with excellent lighting for night play. Offers both membership and pay-per-play options for flexible access.',
@@ -182,7 +182,7 @@ export const courts: Court[] = [
     longitude: -97.7713,
     phone: '(512) 382-1849',
     website: 'https://www.bouldinacres.com',
-    mainImage: 'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
     images: [
       'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center'
@@ -226,7 +226,7 @@ export const courts: Court[] = [
     website: 'https://www.thepitchaustin.com',
     mainImage: 'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Sports and entertainment complex with 3 outdoor pickleball courts. Features multiple restaurants, bars, and a coffee shop, making it a complete destination for recreation and dining.',
@@ -268,7 +268,7 @@ export const courts: Court[] = [
     website: 'https://www.laketravisbiergarten.com',
     mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg'
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Scenic outdoor venue with 2 pickleball courts overlooking Lake Travis. Perfect for combining pickleball with dining and drinks in a beautiful lakeside setting.',
     amenities: ['Restaurant', 'Bar', 'Lake Views', 'Outdoor Seating', 'Live Music'],
@@ -307,7 +307,7 @@ export const courts: Court[] = [
     longitude: -97.7706,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
     images: [
       'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
@@ -350,7 +350,7 @@ export const courts: Court[] = [
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
     mainImage: 'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'City recreation center featuring 6 indoor pickleball courts with air conditioning. Offers programs, leagues, and open play sessions for all skill levels.',
@@ -392,7 +392,7 @@ export const courts: Court[] = [
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
     mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg'
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Community recreation center with 4 indoor pickleball courts. Offers affordable access to pickleball with various programs and open play times.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Community Programs', 'Fitness Center'],
@@ -431,7 +431,7 @@ export const courts: Court[] = [
     longitude: -97.7206,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
     images: [
       'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center'
@@ -475,7 +475,7 @@ export const courts: Court[] = [
     website: 'https://www.castlecourtaustin.com',
     mainImage: 'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Premium indoor pickleball facility with 12 dedicated courts featuring professional-grade surfaces and lighting. Offers lessons, leagues, and tournaments.',
@@ -517,7 +517,7 @@ export const courts: Court[] = [
     website: 'https://www.otherracquet.com',
     mainImage: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop&crop=center',
     images: [
-      'https://cdn.pixabay.com/photo/2020/03/15/10/45/pickleball-4934014_1280.jpg',
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.unsplash.com/photo-1594736797933-d0f0a2b3a0b4?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'Multi-racquet sports facility featuring 6 indoor pickleball courts alongside tennis and other racquet sports. Offers comprehensive programs for all skill levels.',
