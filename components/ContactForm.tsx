@@ -16,26 +16,26 @@ export default function ContactForm() {
     setStatus('submitting')
 
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(`[Pickleball ATX Contact] ${formData.subject}`)
-      const body = encodeURIComponent(
-        `Name: ${formData.name}\n` +
-        `Email: ${formData.email}\n` +
-        `Subject: ${formData.subject}\n\n` +
-        `Message:\n${formData.message}`
-      )
-      
-      // Open email client
-      window.location.href = `mailto:info@pickleballatx.org?subject=${subject}&body=${body}`
-      
-      // Show success message
-      setStatus('success')
-      setFormData({ name: '', email: '', subject: '', message: '' })
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setStatus('idle')
-      }, 5000)
+      // Send form data to a serverless function
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setStatus('idle')
+        }, 5000)
+      } else {
+        throw new Error('Failed to send message')
+      }
     } catch (error) {
       console.error('Error submitting form:', error)
       setStatus('error')
@@ -153,4 +153,3 @@ export default function ContactForm() {
     </form>
   )
 }
-
