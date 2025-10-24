@@ -3,11 +3,11 @@
 import Script from 'next/script'
 
 export default function GoogleAdsense() {
-  // TODO: Replace with your actual AdSense publisher ID
-  const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-XXXXXXXXXXXXXXXX'
+  // AdSense publisher ID
+  const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-1749871118217579'
   
-  if (!ADSENSE_ID || ADSENSE_ID === 'ca-pub-XXXXXXXXXXXXXXXX') {
-    // Return null in development or if AdSense ID is not configured
+  if (!ADSENSE_ID) {
+    // Return null if AdSense ID is not configured
     return null
   }
 

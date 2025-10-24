@@ -1,7 +1,7 @@
 # ads.txt
 
 # Google AdSense
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
 
 # Add other ad networks as needed
 # Example:
