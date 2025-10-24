@@ -48,7 +48,7 @@ User Agent: ${request.headers.get('user-agent') || 'Unknown'}
       
       try {
         const { data, error } = await resend.emails.send({
-          from: 'Pickleball ATX <noreply@pickleballatx.org>',
+          from: 'Pickleball ATX <onboarding@resend.dev>',
           to: ['info@pickleballatx.org'],
           subject: `[Pickleball ATX Contact] ${subject}`,
           text: emailContent,
