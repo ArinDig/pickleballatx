@@ -47,14 +47,13 @@ User Agent: ${request.headers.get('user-agent') || 'Unknown'}
     const { data, error } = await resend.emails.send({
       from: 'Pickleball ATX <noreply@pickleballatx.org>',
       to: ['info@pickleballatx.org'],
-      replyTo: email,
       subject: `[Pickleball ATX Contact] ${subject}`,
       text: emailContent,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #10B981;">New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
           <p><strong>Subject:</strong> ${subject}</p>
           <div style="background: #f5f5f5; padding: 15px; border-radius: 5px; margin: 15px 0;">
             <strong>Message:</strong><br>
@@ -64,7 +63,8 @@ User Agent: ${request.headers.get('user-agent') || 'Unknown'}
           <p style="color: #666; font-size: 12px;">
             Sent from: ${request.headers.get('referer') || 'Pickleball ATX Contact Form'}<br>
             Time: ${new Date().toLocaleString()}<br>
-            IP: ${request.ip || 'Unknown'}
+            IP: ${request.ip || 'Unknown'}<br>
+            <strong>Reply to:</strong> ${email}
           </p>
         </div>
       `,
