@@ -32,6 +32,7 @@ User Agent: ${request.headers.get('user-agent') || 'Unknown'}
     `.trim()
 
     // Try to send email using Resend API directly
+    let emailId = null
     if (process.env.RESEND_API_KEY) {
       console.log('Attempting to send email via Resend API...')
       
@@ -75,6 +76,7 @@ User Agent: ${request.headers.get('user-agent') || 'Unknown'}
         }
 
         const data = await response.json()
+        emailId = data?.id
         console.log('Email sent successfully via Resend API:', data)
       } catch (resendError) {
         console.error('Resend API failed, falling back to mailto:', resendError)
@@ -99,7 +101,7 @@ User Agent: ${request.headers.get('user-agent') || 'Unknown'}
       { 
         success: true, 
         message: 'Form submitted successfully',
-        emailId: data?.id
+        emailId: emailId
       },
       { status: 200 }
     )
