@@ -18,7 +18,7 @@ export default function Hero() {
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-50">
             Discover {' '}
-            <span className="font-semibold text-white">12+ locations</span>
+            <span className="font-semibold text-white">20+ locations</span>
             {' '} across Austin with detailed info on hours, pricing, amenities & more
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -39,7 +39,7 @@ export default function Hero() {
           {/* Quick Features */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <div className="text-2xl font-bold">12+</div>
+              <div className="text-2xl font-bold">20+</div>
               <div className="text-sm text-primary-100">Locations</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
