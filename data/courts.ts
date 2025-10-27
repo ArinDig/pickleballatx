@@ -55,11 +55,11 @@ export const courts: Court[] = [
     longitude: -97.6852,
     phone: '(737) 242-5898',
     website: 'https://www.austinpickleranch.com',
-    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/pickle-ranch-braker-main.png',
     images: [
-      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/pickle-ranch-braker-1.png',
+      '/images/courts/pickle-ranch-braker-2.png',
+      '/images/courts/pickle-ranch-braker-3.png'
     ],
     description: 'State-of-the-art indoor pickleball facility featuring 16 dedicated courts with climate control. Austin Pickle Ranch offers a premium playing experience with both indoor and outdoor lounge areas, making it perfect for year-round play.',
     amenities: ['Locker Rooms', 'Pro Shop', 'Food & Beverage', 'Lounge Areas', 'Climate Controlled'],
