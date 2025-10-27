@@ -1,9 +1,18 @@
+import { Metadata } from 'next'
 import { courts, getFeaturedCourts, getFreeCourts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import Hero from '@/components/Hero'
 import SearchBar from '@/components/SearchBar'
 import Link from 'next/link'
 import { FaMapMarkerAlt, FaClock, FaDollarSign, FaPhone } from 'react-icons/fa'
+
+export const metadata: Metadata = {
+  title: 'Pickleball ATX - Complete Guide to Austin Pickleball Courts',
+  description: 'Discover the best pickleball courts in Austin, Texas. Find free and paid courts, hours, locations, amenities, and book your next game. Your complete Austin pickleball directory.',
+  alternates: {
+    canonical: 'https://pickleballatx.org',
+  },
+}
 
 export default function Home() {
   const featuredCourts = getFeaturedCourts()

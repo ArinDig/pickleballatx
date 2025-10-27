@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable static export for better crawling
+  output: 'standalone',
+  
   images: {
     remotePatterns: [
       {
