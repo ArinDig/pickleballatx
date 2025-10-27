@@ -473,10 +473,11 @@ export const courts: Court[] = [
     longitude: -97.6200,
     phone: '(512) 555-0123',
     website: 'https://pickleballkingdom.com/pflugerville-tx',
-    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/pickleball-kingdom-main.png',
     images: [
-      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/pickleball-kingdom-1.png',
+      '/images/courts/pickleball-kingdom-2.png',
+      '/images/courts/pickleball-kingdom-3.png'
     ],
     description: 'Major indoor pickleball center featuring 11 climate-controlled courts with professional surfaces. Offers membership tiers, public play, lessons, and tournaments in a welcoming community atmosphere.',
     amenities: ['Climate Control', 'Pro Shop', 'Event Space', 'Lessons', 'Tournaments', 'Equipment Rental'],
