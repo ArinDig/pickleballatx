@@ -1,8 +1,1 @@
-# ads.txt
-
-# Google AdSense
 google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
-
-# Add other ad networks as needed
-# Example:
-# example.com, 123456789, DIRECT, abc123def456
