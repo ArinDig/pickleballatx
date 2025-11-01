@@ -99,6 +99,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://pickleballatx.org',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-1749871118217579',
+  },
 }
 
 export default function RootLayout({
@@ -109,6 +112,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-1749871118217579" />
         <Script
           id="schema-org"
           type="application/ld+json"
