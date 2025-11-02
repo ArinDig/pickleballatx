@@ -7,6 +7,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://pickleballatx.org/privacy',
+  },
+  openGraph: {
+    title: 'Privacy Policy - Pickleball ATX',
+    description: 'Privacy Policy for Pickleball ATX - Learn how we collect, use, and protect your personal information.',
+    url: 'https://pickleballatx.org/privacy',
+    type: 'website',
+  },
 }
 
 export default function PrivacyPolicyPage() {

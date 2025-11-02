@@ -8,6 +8,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://pickleballatx.org/submit',
+  },
+  openGraph: {
+    title: 'Submit a Court - Pickleball ATX',
+    description: 'Submit a new pickleball court to be added to our Austin directory. Help us grow the pickleball community in ATX!',
+    url: 'https://pickleballatx.org/submit',
+    type: 'website',
+  },
 }
 
 export default function SubmitCourtPage() {

@@ -7,6 +7,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: 'https://pickleballatx.org/terms',
+  },
+  openGraph: {
+    title: 'Terms of Service - Pickleball ATX',
+    description: 'Terms of Service for Pickleball ATX - Learn about the terms and conditions for using our website.',
+    url: 'https://pickleballatx.org/terms',
+    type: 'website',
+  },
 }
 
 export default function TermsOfServicePage() {
