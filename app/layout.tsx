@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GoogleAdsense from '@/components/GoogleAdsense'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 import Script from 'next/script'
 
 const inter = Inter({
@@ -156,6 +157,7 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col antialiased">
+        <GoogleAnalytics />
         <Header />
         <main className="flex-1">
           {children}
