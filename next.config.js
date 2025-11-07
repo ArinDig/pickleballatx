@@ -9,6 +9,21 @@ const nextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
   },
+  async redirects() {
+    return [
+      // Redirect removed fictional courts to main courts page
+      {
+        source: '/courts/castle-court',
+        destination: '/courts',
+        permanent: true, // 301 redirect for SEO
+      },
+      {
+        source: '/courts/other-racquet',
+        destination: '/courts',
+        permanent: true, // 301 redirect for SEO
+      },
+    ]
+  },
   async headers() {
     return [
       {
