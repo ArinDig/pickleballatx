@@ -915,6 +915,48 @@ export const courts: Court[] = [
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
     featured: false
+  },
+  {
+    id: '22',
+    name: 'RacFit',
+    slug: 'racfit-buda',
+    address: '1390 Robert S Light Blvd S',
+    city: 'Buda',
+    state: 'TX',
+    zipCode: '78610',
+    latitude: 30.0817,
+    longitude: -97.8400,
+    website: 'https://www.goracfit.com',
+    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'New tennis, pickleball, fitness, and social club opening Fall 2025 in Buda, Texas. RacFit will feature 8 regulation pickleball courts with 4 covered by a steel shade structure, making it perfect for year-round play in the South Austin area. This premier facility will offer comprehensive programming for all ages and skill levels.',
+    amenities: ['Steel Shade Structure', 'Full Bar', 'Indoor/Outdoor Seating', 'Locker Rooms', 'Fitness Rooms', 'Digital Sports Room', 'On-site ActiveCare', 'Walking Trail', 'Community Social Spaces', '22,000 sq ft Indoor Space'],
+    courtType: 'outdoor',
+    numberOfCourts: 8,
+    isFree: false,
+    pricing: {
+      details: 'Membership required - Founders memberships available',
+      rates: ['Founders Memberships: Limited to 300 (67% sold)', 'Contact for current membership options']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Opening Fall 2025 - Join priority access list for membership information',
+    hours: {
+      monday: 'Opening Fall 2025',
+      tuesday: 'Opening Fall 2025',
+      wednesday: 'Opening Fall 2025',
+      thursday: 'Opening Fall 2025',
+      friday: 'Opening Fall 2025',
+      saturday: 'Opening Fall 2025',
+      sunday: 'Opening Fall 2025',
+      notes: 'Facility opening Fall 2025. Join the priority access list on their website for membership information and grand opening details.'
+    },
+    features: ['New Facility', 'Covered Courts', 'Full Bar', 'Fitness Center', 'Social Club', 'Programming for All Ages', 'ActiveCare On-site'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Parking available',
+    featured: true
   }
 ]
 
