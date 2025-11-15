@@ -18,18 +18,23 @@ All scripts are placed in the `<head>` section with `strategy="beforeInteractive
 
 ### Step 2: Ads.txt Setup ✅ **USING EZOIC'S AUTOMATED SERVICE**
 
-**✅ Redirect Configured**: We're using Ezoic's recommended automated ads.txt manager service via redirect.
+**✅ Route Handler Configured**: We're using Ezoic's recommended automated ads.txt manager service via a Next.js route handler.
 
-The `next.config.js` file has been configured to redirect `/ads.txt` to Ezoic's managed service:
+The `app/ads.txt/route.ts` file handles the `/ads.txt` request and redirects to Ezoic's managed service:
 ```
 https://srv.adstxtmanager.com/19390/pickleballatx.org
 ```
+
+**Why a route handler?**
+- Route handlers take precedence over static files in Next.js App Router
+- Ensures the redirect works even if a static `public/ads.txt` file exists
+- More reliable than config-based redirects for this use case
 
 **⚠️ Action Required**: Verify the account ID `19390` with Ezoic
 1. Log into your Ezoic account
 2. Go to Settings → Integration → Ads.txt
 3. Ezoic will provide the exact redirect URL format
-4. Update the redirect URL in `next.config.js` if the account ID is different
+4. Update the account ID in `app/ads.txt/route.ts` (line 5) if different from `19390`
 
 **Benefits of this approach:**
 - ✅ Ezoic automatically manages your ads.txt file
