@@ -113,6 +113,33 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <head>
+        {/* Ezoic Privacy Scripts - Must load first */}
+        <Script
+          src="https://cmp.gatekeeperconsent.com/min.js"
+          data-cfasync="false"
+          strategy="beforeInteractive"
+        />
+        <Script
+          src="https://the.gatekeeperconsent.com/cmp.min.js"
+          data-cfasync="false"
+          strategy="beforeInteractive"
+        />
+        {/* Ezoic Header Script */}
+        <Script
+          async
+          src="https://www.ezojs.com/ezoic/sa.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="ezoic-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.ezstandalone = window.ezstandalone || {};
+              ezstandalone.cmd = ezstandalone.cmd || [];
+            `
+          }}
+        />
         <meta name="google-adsense-account" content="ca-pub-1749871118217579" />
         <Script
           id="schema-org"

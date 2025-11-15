@@ -1,1 +1,3 @@
 google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
+# Ezoic entry - Add your Ezoic publisher ID here once you receive it from your Ezoic account
+# Format: ezoic.com, [your-publisher-id], DIRECT
