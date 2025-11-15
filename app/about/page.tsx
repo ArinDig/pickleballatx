@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { FaHeart, FaMapMarkedAlt, FaUsers, FaInfoCircle } from 'react-icons/fa'
+import { courts } from '@/data/courts'
 
 export const metadata: Metadata = {
   title: 'About Pickleball ATX - Your Austin Pickleball Guide',
@@ -105,6 +106,44 @@ export default function AboutPage() {
                 with a perforated plastic ball and solid paddles.
               </p>
             </div>
+
+            <h3 className="text-2xl font-bold text-gray-900 flex items-center mt-8">
+              <FaUsers className="text-primary-600 mr-3" />
+              Our Team
+            </h3>
+            
+            <p>
+              Pickleball ATX is maintained by a team of passionate pickleball players and Austin residents 
+              who understand the importance of having accurate, up-to-date information about local courts. 
+              We regularly visit facilities, verify information, and update our directory to ensure you 
+              always have the most current details.
+            </p>
+
+            <p>
+              Our commitment to the Austin pickleball community drives everything we do. We believe that 
+              access to comprehensive court information should be free and easily available to everyone, 
+              which is why we've created this resource as a public service to the community.
+            </p>
+
+            <h3 className="text-2xl font-bold text-gray-900 flex items-center mt-8">
+              <FaMapMarkedAlt className="text-primary-600 mr-3" />
+              Keeping Information Current
+            </h3>
+            
+            <p>
+              Maintaining accurate information about {courts.length}+ courts across the Austin metro area 
+              is an ongoing effort. We rely on community feedback, regular facility visits, and direct 
+              communication with court operators to keep our directory current. If you notice any 
+              discrepancies or have updated information about a court, please don't hesitate to contact 
+              us or use our court submission form.
+            </p>
+
+            <p>
+              We update our directory regularly, checking hours, pricing, amenities, and other details to 
+              ensure accuracy. However, we always recommend calling ahead or checking a facility's 
+              official website for the most current information, especially for special events, 
+              holiday hours, or temporary closures.
+            </p>
           </div>
 
           <div className="mt-12 text-center">

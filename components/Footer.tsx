@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { GiPickle } from 'react-icons/gi'
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -19,17 +18,6 @@ export default function Footer() {
               Your comprehensive guide to pickleball courts in Austin, Texas. Find free and paid courts,
               indoor and outdoor facilities, and everything you need to enjoy pickleball in ATX.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Facebook">
-                <FaFacebook className="text-xl" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Twitter">
-                <FaTwitter className="text-xl" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors" aria-label="Instagram">
-                <FaInstagram className="text-xl" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
