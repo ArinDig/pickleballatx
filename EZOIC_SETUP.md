@@ -16,29 +16,31 @@ All required Ezoic scripts have been added to `app/layout.tsx`:
 
 All scripts are placed in the `<head>` section with `strategy="beforeInteractive"` to ensure they load early.
 
-### Step 2: Ads.txt Setup ⚠️ **ACTION REQUIRED**
+### Step 2: Ads.txt Setup ✅ **USING EZOIC'S AUTOMATED SERVICE**
 
-The `public/ads.txt` file currently contains:
-```
-google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
-```
+**✅ Redirect Configured**: We're using Ezoic's recommended automated ads.txt manager service via redirect.
 
-**You need to add your Ezoic entry** once you receive your publisher ID from Ezoic. The format will be:
+The `next.config.js` file has been configured to redirect `/ads.txt` to Ezoic's managed service:
 ```
-ezoic.com, [your-publisher-id], DIRECT
+https://srv.adstxtmanager.com/19390/pickleballatx.org
 ```
 
-**How to get your Ezoic publisher ID:**
+**⚠️ Action Required**: Verify the account ID `19390` with Ezoic
 1. Log into your Ezoic account
 2. Go to Settings → Integration → Ads.txt
-3. Ezoic will provide the exact line to add to your ads.txt file
-4. Add it to `public/ads.txt` (keep the Google AdSense line)
+3. Ezoic will provide the exact redirect URL format
+4. Update the redirect URL in `next.config.js` if the account ID is different
 
-**Example of complete ads.txt:**
-```
-google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0
-ezoic.com, [your-publisher-id], DIRECT
-```
+**Benefits of this approach:**
+- ✅ Ezoic automatically manages your ads.txt file
+- ✅ Always up-to-date with all authorized ad sellers
+- ✅ No manual updates needed
+- ✅ Includes both Google AdSense and Ezoic entries automatically
+
+**To test:**
+1. Visit `https://pickleballatx.org/ads.txt` in your browser
+2. You should see a list of authorized ad sellers (redirected from Ezoic's service)
+3. If you see an error, verify the account ID in the redirect URL
 
 ### Step 3: Ad Placements ⚠️ **ACTION REQUIRED**
 
@@ -73,7 +75,8 @@ After your site is approved by Ezoic, you'll need to:
 - [x] Privacy scripts added to `<head>`
 - [x] Ezoic header script added to `<head>`
 - [x] Scripts load in correct order (privacy first, then header)
-- [ ] Ezoic entry added to ads.txt (waiting for publisher ID)
+- [x] Ads.txt redirect configured to Ezoic's automated service
+- [ ] Verify Ezoic account ID in redirect URL (if different from 19390)
 - [ ] Ad placements created in Ezoic dashboard
 - [ ] Placement codes added to site pages
 - [ ] Site loads normally without errors

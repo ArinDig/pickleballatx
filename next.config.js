@@ -22,6 +22,14 @@ const nextConfig = {
         destination: '/courts',
         permanent: true, // 301 redirect for SEO
       },
+      // Ezoic ads.txt redirect - uses their automated manager service
+      // Update the URL with your actual Ezoic account ID once you receive it
+      // Format: https://srv.adstxtmanager.com/[ACCOUNT_ID]/pickleballatx.org
+      {
+        source: '/ads.txt',
+        destination: 'https://srv.adstxtmanager.com/19390/pickleballatx.org',
+        permanent: true, // 301 redirect
+      },
     ]
   },
   async headers() {
