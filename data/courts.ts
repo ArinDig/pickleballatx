@@ -927,10 +927,10 @@ export const courts: Court[] = [
     latitude: 30.0817,
     longitude: -97.8400,
     website: 'https://www.goracfit.com',
-    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/racfit-main.png',
     images: [
-      'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/racfit-1.png',
+      '/images/courts/racfit-2.png'
     ],
     description: 'New tennis, pickleball, fitness, and social club opening Fall 2025 in Buda, Texas. RacFit will feature 8 regulation pickleball courts with 4 covered by a steel shade structure, making it perfect for year-round play in the South Austin area. This premier facility will offer comprehensive programming for all ages and skill levels.',
     amenities: ['Steel Shade Structure', 'Full Bar', 'Indoor/Outdoor Seating', 'Locker Rooms', 'Fitness Rooms', 'Digital Sports Room', 'On-site ActiveCare', 'Walking Trail', 'Community Social Spaces', '22,000 sq ft Indoor Space'],
