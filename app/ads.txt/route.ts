@@ -26,7 +26,19 @@ export async function GET() {
       })
     }
     
-    const content = await response.text()
+    let content = await response.text()
+    
+    // Ensure the site owner's Google AdSense entry is included
+    // This is required for AdSense verification
+    const adsenseEntry = 'google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0'
+    
+    // Check if the entry already exists in the content
+    if (!content.includes('pub-1749871118217579')) {
+      // Append the AdSense entry to the content
+      // Add a comment to identify it as the site owner's entry
+      content += '\n# Site owner AdSense entry\n'
+      content += adsenseEntry + '\n'
+    }
     
     // Serve the content directly with proper headers
     return new NextResponse(content, {
