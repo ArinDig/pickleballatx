@@ -40,36 +40,32 @@ const products: Product[] = [
   // Paddles
   {
     name: 'Selkirk Vanguard Hybrid Invikta Pickleball Paddle',
-    asin: 'B08XQJZQ7K',
+    asin: 'B0DTVTYF3M',
     category: 'Paddles',
-    price: '$149.99',
     rating: 4.7,
     reviewCount: '2,500+',
     description: 'Premium carbon fiber paddle with polymer core. Great for power and control. Used by professional players.',
   },
   {
     name: 'JOOLA Ben Johns Hyperion CFS 16mm Pickleball Paddle',
-    asin: 'B0BQJ8XQ7K',
+    asin: 'B09VCS7578',
     category: 'Paddles',
-    price: '$199.99',
     rating: 4.8,
     reviewCount: '1,800+',
     description: 'Signature paddle of Ben Johns. Carbon fiber surface with foam core for exceptional control and touch.',
   },
   {
     name: 'ONIX Graphite Z5 Pickleball Paddle',
-    asin: 'B00J8XQ7K',
+    asin: 'B005BSW2UW',
     category: 'Paddles',
-    price: '$79.99',
     rating: 4.6,
     reviewCount: '5,200+',
     description: 'Best-selling graphite paddle. Great balance of power and control. Perfect for intermediate players.',
   },
   {
     name: 'Paddletek Tempest Wave Pro Pickleball Paddle',
-    asin: 'B08XQJZQ7L',
+    asin: 'B0D1YMMN2P',
     category: 'Paddles',
-    price: '$129.99',
     rating: 4.7,
     reviewCount: '1,200+',
     description: 'Polymer core with fiberglass face. Excellent for players who want more control and less power.',
@@ -78,18 +74,16 @@ const products: Product[] = [
   // Balls
   {
     name: 'Onix Pure 2 Outdoor Pickleball Balls (12-Pack)',
-    asin: 'B00J8XQ7M',
+    asin: 'B07L445FC2',
     category: 'Balls',
-    price: '$24.99',
     rating: 4.6,
     reviewCount: '3,500+',
     description: 'Official tournament ball. Durable construction with consistent bounce. Perfect for outdoor play.',
   },
   {
     name: 'Franklin X-40 Performance Pickleball Balls (12-Pack)',
-    asin: 'B00J8XQ7N',
+    asin: 'B074P8MZW9',
     category: 'Balls',
-    price: '$19.99',
     rating: 4.5,
     reviewCount: '4,800+',
     description: 'Most popular pickleball ball. USAPA approved. Great for both indoor and outdoor play.',
@@ -98,18 +92,16 @@ const products: Product[] = [
   // Shoes
   {
     name: 'ASICS Gel-Rocket 10 Volleyball Shoes',
-    asin: 'B08XQJZQ7P',
+    asin: 'B08VS7473J',
     category: 'Shoes',
-    price: '$65.00',
     rating: 4.6,
     reviewCount: '2,100+',
     description: 'Lightweight court shoes with excellent grip. Popular choice for pickleball players. Great lateral support.',
   },
   {
     name: 'K-Swiss Express Light Pickleball Shoes',
-    asin: 'B08XQJZQ7Q',
+    asin: 'B07V2647ZZ',
     category: 'Shoes',
-    price: '$79.99',
     rating: 4.5,
     reviewCount: '850+',
     description: 'Designed specifically for pickleball. Non-marking sole with superior court grip and comfort.',
@@ -118,18 +110,16 @@ const products: Product[] = [
   // Bags
   {
     name: 'Selkirk Pickleball Paddle Backpack',
-    asin: 'B08XQJZQ7R',
+    asin: 'B0CGYXLSX7',
     category: 'Bags',
-    price: '$49.99',
     rating: 4.7,
     reviewCount: '650+',
     description: 'Dedicated paddle compartment, ball pockets, and shoe storage. Perfect for carrying all your gear.',
   },
   {
     name: 'Onix Pickleball Paddle Bag',
-    asin: 'B00J8XQ7S',
+    asin: 'B0778VJXRX',
     category: 'Bags',
-    price: '$29.99',
     rating: 4.4,
     reviewCount: '1,200+',
     description: 'Affordable paddle bag with multiple pockets. Holds 2-4 paddles plus balls and accessories.',
@@ -138,9 +128,8 @@ const products: Product[] = [
   // Accessories
   {
     name: 'Pickleball Paddle Grip Tape (3-Pack)',
-    asin: 'B08XQJZQ7T',
+    asin: 'B000HEKHBQ',
     category: 'Accessories',
-    price: '$12.99',
     rating: 4.5,
     reviewCount: '2,800+',
     description: 'Overgrip tape for better control and comfort. Absorbs sweat and reduces slippage.',
@@ -180,12 +169,6 @@ function ProductCard({ product }: { product: Product }) {
               <span className="text-sm text-gray-600">
                 {product.rating} {product.reviewCount && `(${product.reviewCount} reviews)`}
               </span>
-            </div>
-          )}
-          
-          {product.price && (
-            <div className="text-lg font-bold text-primary-600 mb-4">
-              {product.price}
             </div>
           )}
           
@@ -303,8 +286,8 @@ export default function GearPage() {
             
             <p className="mt-6">
               All products featured on this page are carefully selected based on customer reviews, ratings, 
-              and popularity within the pickleball community. Prices and availability are subject to change 
-              on Amazon.
+              and popularity within the pickleball community. Click through to Amazon to see current prices 
+              and availability, as they change frequently.
             </p>
           </div>
         </div>
