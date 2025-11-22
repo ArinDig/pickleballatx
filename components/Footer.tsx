@@ -45,6 +45,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/gear" className="hover:text-primary-400 transition-colors">
+                  Pickleball Gear
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:text-primary-400 transition-colors">
                   About Us
                 </Link>

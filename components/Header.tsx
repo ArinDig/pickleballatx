@@ -13,6 +13,7 @@ export default function Header() {
     { name: 'All Courts', href: '/courts' },
     { name: 'Free Courts', href: '/courts/free' },
     { name: 'Indoor Courts', href: '/courts/indoor' },
+    { name: 'Gear', href: '/gear' },
     { name: 'About', href: '/about' },
   ]
 
