@@ -224,7 +224,7 @@ export const courts: Court[] = [
     longitude: -97.6897,
     phone: '(512) 829-4974',
     website: 'https://www.thepitchaustin.com',
-    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/pitch-1.png',
     images: [
       'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
