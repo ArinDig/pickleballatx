@@ -307,7 +307,7 @@ export const courts: Court[] = [
     longitude: -97.7706,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/Little_Zilker-1.png',
     images: [
       'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
