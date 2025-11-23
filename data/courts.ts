@@ -258,17 +258,18 @@ export const courts: Court[] = [
     id: '6',
     name: 'Lake Travis Biergarten',
     slug: 'lake-travis-biergarten',
-    address: '15600 FM 2769',
+    address: '3519 B Ranch Road 620',
     city: 'Austin',
     state: 'TX',
     zipCode: '78734',
     latitude: 30.3989,
     longitude: -97.9889,
     phone: '(512) 266-8399',
-    website: 'https://www.laketravisbiergarten.com',
-    mainImage: 'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
+    website: 'https://ltbatx.com/',
+    mainImage: '/images/courts/Lake Travis Biergarten-1.png',
     images: [
-      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/Lake Travis Biergarten-2.png',
+      '/images/courts/Lake Travis Biergarten-3.png'
     ],
     description: 'Scenic outdoor venue with 2 pickleball courts overlooking Lake Travis. Perfect for combining pickleball with dining and drinks in a beautiful lakeside setting.',
     amenities: ['Restaurant', 'Bar', 'Lake Views', 'Outdoor Seating', 'Live Music'],
