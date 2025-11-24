@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaExternalLinkAlt, FaStar } from 'react-icons/fa'
 
 export const metadata: Metadata = {
@@ -45,6 +46,7 @@ const products: Product[] = [
     rating: 4.7,
     reviewCount: '2,500+',
     description: 'Premium carbon fiber paddle with polymer core. Great for power and control. Used by professional players.',
+    imageUrl: 'https://m.media-amazon.com/images/I/71Bbm+ZlV9L._AC_SX679_.jpg',
   },
   {
     name: 'JOOLA Ben Johns Hyperion CFS 16mm Pickleball Paddle',
@@ -53,6 +55,7 @@ const products: Product[] = [
     rating: 4.8,
     reviewCount: '1,800+',
     description: 'Signature paddle of Ben Johns. Carbon fiber surface with foam core for exceptional control and touch.',
+    imageUrl: 'https://m.media-amazon.com/images/I/41+oBnQbohL._AC_SX679_.jpg',
   },
   {
     name: 'ONIX Graphite Z5 Pickleball Paddle',
@@ -61,6 +64,7 @@ const products: Product[] = [
     rating: 4.6,
     reviewCount: '5,200+',
     description: 'Best-selling graphite paddle. Great balance of power and control. Perfect for intermediate players.',
+    imageUrl: 'https://m.media-amazon.com/images/I/91MGvMxCbFL._AC_SX679_.jpg',
   },
   {
     name: 'Paddletek Tempest Wave Pro Pickleball Paddle',
@@ -69,6 +73,7 @@ const products: Product[] = [
     rating: 4.7,
     reviewCount: '1,200+',
     description: 'Polymer core with fiberglass face. Excellent for players who want more control and less power.',
+    imageUrl: 'https://m.media-amazon.com/images/I/61Z-xW2GYGL._AC_SX679_.jpg',
   },
   
   // Balls
@@ -79,6 +84,7 @@ const products: Product[] = [
     rating: 4.6,
     reviewCount: '3,500+',
     description: 'Official tournament ball. Durable construction with consistent bounce. Perfect for outdoor play.',
+    imageUrl: 'https://m.media-amazon.com/images/I/51WxL8efeiS._AC_SX679_.jpg',
   },
   {
     name: 'Franklin X-40 Performance Pickleball Balls (12-Pack)',
@@ -87,6 +93,7 @@ const products: Product[] = [
     rating: 4.5,
     reviewCount: '4,800+',
     description: 'Most popular pickleball ball. USAPA approved. Great for both indoor and outdoor play.',
+    imageUrl: 'https://m.media-amazon.com/images/I/71ttt0pVlCL._AC_SX679_.jpg',
   },
   
   // Shoes
@@ -97,6 +104,7 @@ const products: Product[] = [
     rating: 4.6,
     reviewCount: '2,100+',
     description: 'Lightweight court shoes with excellent grip. Popular choice for pickleball players. Great lateral support.',
+    imageUrl: 'https://m.media-amazon.com/images/I/51On8-rbGBL._AC_SY695_.jpg',
   },
   {
     name: 'K-Swiss Express Light Pickleball Shoes',
@@ -105,6 +113,7 @@ const products: Product[] = [
     rating: 4.5,
     reviewCount: '850+',
     description: 'Designed specifically for pickleball. Non-marking sole with superior court grip and comfort.',
+    imageUrl: 'https://m.media-amazon.com/images/I/61ZAi6+CNgL._AC_SY695_.jpg',
   },
   
   // Bags
@@ -115,6 +124,7 @@ const products: Product[] = [
     rating: 4.7,
     reviewCount: '650+',
     description: 'Dedicated paddle compartment, ball pockets, and shoe storage. Perfect for carrying all your gear.',
+    imageUrl: 'https://m.media-amazon.com/images/I/815c4u3XyGL._AC_SX679_.jpg',
   },
   {
     name: 'Onix Pickleball Paddle Bag',
@@ -123,6 +133,7 @@ const products: Product[] = [
     rating: 4.4,
     reviewCount: '1,200+',
     description: 'Affordable paddle bag with multiple pockets. Holds 2-4 paddles plus balls and accessories.',
+    imageUrl: 'https://m.media-amazon.com/images/I/91+OshSKaUL._AC_SX679_.jpg',
   },
   
   // Accessories
@@ -133,6 +144,7 @@ const products: Product[] = [
     rating: 4.5,
     reviewCount: '2,800+',
     description: 'Overgrip tape for better control and comfort. Absorbs sweat and reduces slippage.',
+    imageUrl: 'https://m.media-amazon.com/images/I/714yeZ6ao9L._AC_SX679_.jpg',
   },
 ]
 
@@ -148,6 +160,17 @@ function ProductCard({ product }: { product: Product }) {
   return (
     <div className="card p-6">
       <div className="flex flex-col h-full">
+        {product.imageUrl && (
+          <div className="mb-4 relative w-full h-48 bg-gray-50 rounded-lg overflow-hidden">
+            <Image
+              src={product.imageUrl}
+              alt={product.name}
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        )}
         <div className="mb-4">
           <span className="badge badge-blue text-xs mb-2">{product.category}</span>
           <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
