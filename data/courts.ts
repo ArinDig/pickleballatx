@@ -87,48 +87,6 @@ export const courts: Court[] = [
     featured: true
   },
   {
-    id: '2',
-    name: 'Austin Pickle Ranch - West 6th',
-    slug: 'austin-pickle-ranch-6th',
-    address: '1200 West 6th Street',
-    city: 'Austin',
-    state: 'TX',
-    zipCode: '78703',
-    latitude: 30.2709,
-    longitude: -97.7619,
-    phone: '(737) 242-5898',
-    website: 'https://www.austinpickleranch.com',
-    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
-    images: [
-      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
-    ],
-    description: 'Downtown location featuring 8 outdoor dedicated pickleball courts with professional lighting. Perfect for evening play with a vibrant atmosphere in the heart of Austin.',
-    amenities: ['Professional Lighting', 'Seating Areas', 'Water Stations', 'Shade Structures'],
-    courtType: 'outdoor',
-    numberOfCourts: 8,
-    isFree: false,
-    pricing: {
-      details: 'Membership required',
-      rates: ['Monthly: $79', 'Annual: $799', 'Day Pass: $12']
-    },
-    reservationRequired: true,
-    reservationInfo: 'Reservations can be made online or by phone',
-    hours: {
-      monday: '6:00 AM - 10:00 PM',
-      tuesday: '6:00 AM - 10:00 PM',
-      wednesday: '6:00 AM - 10:00 PM',
-      thursday: '6:00 AM - 10:00 PM',
-      friday: '6:00 AM - 10:00 PM',
-      saturday: '7:00 AM - 9:00 PM',
-      sunday: '7:00 AM - 9:00 PM'
-    },
-    features: ['Professional Courts', 'Lighting', 'Shade Structures', 'Water Stations'],
-    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
-    parking: 'Street parking and paid lots nearby',
-    featured: true
-  },
-  {
     id: '3',
     name: 'Austin Tennis and Pickleball Center',
     slug: 'austin-tennis-pickleball',
