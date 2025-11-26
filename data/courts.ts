@@ -51,8 +51,8 @@ export const courts: Court[] = [
     city: 'Austin',
     state: 'TX',
     zipCode: '78753',
-    latitude: 30.3803,
-    longitude: -97.6852,
+    latitude: 30.3800,
+    longitude: -97.6850,
     phone: '(737) 242-5898',
     website: 'https://www.austinpickleranch.com',
     mainImage: '/images/courts/pickle-ranch-braker-main.png',
@@ -61,17 +61,17 @@ export const courts: Court[] = [
       '/images/courts/pickle-ranch-braker-2.png',
       '/images/courts/pickle-ranch-braker-3.png'
     ],
-    description: 'State-of-the-art indoor pickleball facility featuring 16 dedicated courts with climate control. Austin Pickle Ranch offers a premium playing experience with both indoor and outdoor lounge areas, making it perfect for year-round play.',
-    amenities: ['Locker Rooms', 'Pro Shop', 'Food & Beverage', 'Lounge Areas', 'Climate Controlled'],
-    courtType: 'indoor',
-    numberOfCourts: 16,
+    description: 'State-of-the-art pickleball facility featuring 16 indoor dedicated courts with climate control and 2 outdoor courts. Austin Pickle Ranch offers a premium playing experience with both indoor and outdoor lounge areas, making it perfect for year-round play. Open to both members and non-members with reservation or session payment options.',
+    amenities: ['Locker Rooms', 'Pro Shop', 'Food & Beverage', 'Lounge Areas', 'Climate Controlled', 'Indoor Courts', 'Outdoor Courts'],
+    courtType: 'both',
+    numberOfCourts: 18,
     isFree: false,
     pricing: {
-      details: 'Membership required',
-      rates: ['Monthly: $89', 'Annual: $899', 'Day Pass: $15']
+      details: 'Membership available, but non-members can play with reservation or session payment',
+      rates: ['Membership options available', 'Session-based play for non-members', 'Contact for current rates and availability']
     },
     reservationRequired: true,
-    reservationInfo: 'Reservations can be made online or by phone',
+    reservationInfo: 'Reservations can be made online or by phone. Non-members welcome with reservation or session payment',
     hours: {
       monday: '6:00 AM - 10:00 PM',
       tuesday: '6:00 AM - 10:00 PM',
@@ -79,9 +79,10 @@ export const courts: Court[] = [
       thursday: '6:00 AM - 10:00 PM',
       friday: '6:00 AM - 10:00 PM',
       saturday: '7:00 AM - 9:00 PM',
-      sunday: '7:00 AM - 9:00 PM'
+      sunday: '7:00 AM - 9:00 PM',
+      notes: 'Hours may vary. Contact facility for most current hours and availability.'
     },
-    features: ['Professional Courts', 'Lighting', 'Climate Control', 'Pro Shop', 'Food Service'],
+    features: ['Professional Courts', 'Lighting', 'Climate Control', 'Pro Shop', 'Food Service', 'Indoor & Outdoor Courts'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
     featured: true
@@ -916,6 +917,257 @@ export const courts: Court[] = [
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Parking available',
     featured: true
+  },
+  {
+    id: '23',
+    name: 'Eastside Paddle Club',
+    slug: 'eastside-paddle-club',
+    address: 'TBD',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78702',
+    latitude: 30.2644,
+    longitude: -97.7206,
+    website: 'https://www.eastsidepaddleclub.com',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Eastside Paddle Club offers pickleball courts in the heart of East Austin. A community-focused facility providing quality courts for players of all skill levels.',
+    amenities: ['Restrooms', 'Parking', 'Community Programs'],
+    courtType: 'outdoor',
+    numberOfCourts: 4,
+    isFree: false,
+    pricing: {
+      details: 'Contact for pricing information',
+      rates: ['Contact facility for current rates']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended',
+    hours: {
+      monday: 'Hours vary',
+      tuesday: 'Hours vary',
+      wednesday: 'Hours vary',
+      thursday: 'Hours vary',
+      friday: 'Hours vary',
+      saturday: 'Hours vary',
+      sunday: 'Hours vary',
+      notes: 'Contact facility for current hours and availability'
+    },
+    features: ['Community Focused', 'East Austin Location'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Parking available',
+    featured: false
+  },
+  {
+    id: '24',
+    name: 'Other Racquet Social Club',
+    slug: 'other-racquet-social-club',
+    address: 'TBD',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78701',
+    latitude: 30.2672,
+    longitude: -97.7431,
+    website: 'https://www.otherracquet.com',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Other Racquet Social Club offers pickleball courts as part of a multi-racquet sports facility. A social club atmosphere with quality courts for members and guests.',
+    amenities: ['Restrooms', 'Parking', 'Social Club', 'Multiple Sports'],
+    courtType: 'outdoor',
+    numberOfCourts: 3,
+    isFree: false,
+    pricing: {
+      details: 'Membership and guest options available',
+      rates: ['Contact for membership and guest rates']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations required, contact for availability',
+    hours: {
+      monday: 'Hours vary',
+      tuesday: 'Hours vary',
+      wednesday: 'Hours vary',
+      thursday: 'Hours vary',
+      friday: 'Hours vary',
+      saturday: 'Hours vary',
+      sunday: 'Hours vary',
+      notes: 'Contact facility for current hours and membership information'
+    },
+    features: ['Social Club', 'Multi-Sport Facility', 'Membership Based'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Parking available',
+    featured: false
+  },
+  {
+    id: '25',
+    name: 'Waterloo Pickleball',
+    slug: 'waterloo-pickleball',
+    address: 'TBD',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78701',
+    latitude: 30.2672,
+    longitude: -97.7431,
+    website: 'https://www.waterloopickleball.com',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Waterloo Pickleball offers dedicated pickleball courts in Austin. A facility focused on providing quality playing experiences for the local pickleball community.',
+    amenities: ['Restrooms', 'Parking', 'Dedicated Courts'],
+    courtType: 'outdoor',
+    numberOfCourts: 4,
+    isFree: false,
+    pricing: {
+      details: 'Contact for pricing information',
+      rates: ['Contact facility for current rates']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended',
+    hours: {
+      monday: 'Hours vary',
+      tuesday: 'Hours vary',
+      wednesday: 'Hours vary',
+      thursday: 'Hours vary',
+      friday: 'Hours vary',
+      saturday: 'Hours vary',
+      sunday: 'Hours vary',
+      notes: 'Contact facility for current hours and availability'
+    },
+    features: ['Dedicated Pickleball', 'Community Focused'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Parking available',
+    featured: false
+  },
+  {
+    id: '26',
+    name: 'Bouldin Acres - Second Location',
+    slug: 'bouldin-acres-second',
+    address: 'TBD',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78704',
+    latitude: 30.2408,
+    longitude: -97.7713,
+    phone: '(512) 382-1849',
+    website: 'https://www.bouldinacres.com',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Second location of Bouldin Acres featuring outdoor pickleball courts alongside food trucks, bars, and family-friendly activities. A great spot to play pickleball and enjoy Austin\'s outdoor social scene.',
+    amenities: ['Food Trucks', 'Bars', 'Dog Park', 'Playgrounds', 'Lawn Games', 'Live Music'],
+    courtType: 'outdoor',
+    numberOfCourts: 2,
+    isFree: false,
+    pricing: {
+      details: 'Court rental required',
+      rates: ['Court Rental: $20/hour', 'Group Rates Available']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended, especially on weekends',
+    hours: {
+      monday: '11:00 AM - 10:00 PM',
+      tuesday: '11:00 AM - 10:00 PM',
+      wednesday: '11:00 AM - 10:00 PM',
+      thursday: '11:00 AM - 10:00 PM',
+      friday: '11:00 AM - 11:00 PM',
+      saturday: '10:00 AM - 11:00 PM',
+      sunday: '10:00 AM - 10:00 PM'
+    },
+    features: ['Food & Drinks', 'Entertainment', 'Family Friendly', 'Dog Friendly'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '27',
+    name: 'Highway 71 Brewery',
+    slug: 'highway-71-brewery',
+    address: 'TBD',
+    city: 'Spicewood',
+    state: 'TX',
+    zipCode: '78669',
+    latitude: 30.5000,
+    longitude: -98.1000,
+    website: 'https://www.highway71brewery.com',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Highway 71 Brewery in Spicewood features a pickleball court alongside their brewery operations. Enjoy pickleball and craft beer in the Greater Austin area.',
+    amenities: ['Brewery', 'Food', 'Outdoor Seating', 'Live Music'],
+    courtType: 'outdoor',
+    numberOfCourts: 1,
+    isFree: false,
+    pricing: {
+      details: 'Court rental required',
+      rates: ['Contact brewery for current rates']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended, call ahead for availability',
+    hours: {
+      monday: 'Hours vary',
+      tuesday: 'Hours vary',
+      wednesday: 'Hours vary',
+      thursday: 'Hours vary',
+      friday: 'Hours vary',
+      saturday: 'Hours vary',
+      sunday: 'Hours vary',
+      notes: 'Contact brewery for current hours and court availability'
+    },
+    features: ['Brewery', 'Food & Drinks', 'Greater Austin Area', 'Scenic Location'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Parking available',
+    featured: false
+  },
+  {
+    id: '28',
+    name: 'Anderson Mill Recreation Center',
+    slug: 'anderson-mill-rec',
+    address: 'TBD',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78750',
+    latitude: 30.4500,
+    longitude: -97.8000,
+    phone: '(512) 974-6700',
+    website: 'https://www.austintexas.gov/department/parks-and-recreation',
+    mainImage: 'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Anderson Mill Recreation Center offers pickleball courts as part of the Austin Parks and Recreation system. Multiple locations in the Anderson Mill area provide access to pickleball courts.',
+    amenities: ['Restrooms', 'Parking', 'Recreation Center', 'Programs Available'],
+    courtType: 'indoor',
+    numberOfCourts: 4,
+    isFree: false,
+    pricing: {
+      details: 'City recreation center rates apply',
+      rates: ['Daily Pass: $3', 'Monthly Pass: $25', 'Annual Pass: $200']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations required for court time',
+    hours: {
+      monday: '6:00 AM - 9:00 PM',
+      tuesday: '6:00 AM - 9:00 PM',
+      wednesday: '6:00 AM - 9:00 PM',
+      thursday: '6:00 AM - 9:00 PM',
+      friday: '6:00 AM - 9:00 PM',
+      saturday: '8:00 AM - 6:00 PM',
+      sunday: '8:00 AM - 6:00 PM'
+    },
+    features: ['Indoor Courts', 'Air Conditioning', 'Programs', 'Multiple Locations'],
+    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
+    parking: 'Free parking available',
+    featured: false
   }
 ]
 
