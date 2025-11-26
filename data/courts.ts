@@ -354,17 +354,17 @@ export const courts: Court[] = [
     images: [
       'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
-    description: 'Community recreation center with 4 indoor pickleball courts. Offers affordable access to pickleball with various programs and open play times.',
+    description: 'Community recreation center with 4 indoor pickleball courts. Offers free open play pickleball sessions - sign a waiver on your first visit, then just sign in for subsequent visits. Various programs and open play times available.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Community Programs', 'Fitness Center'],
     courtType: 'indoor',
     numberOfCourts: 4,
-    isFree: false,
+    isFree: true,
     pricing: {
-      details: 'City recreation center rates apply',
-      rates: ['Daily Pass: $3', 'Monthly Pass: $25', 'Annual Pass: $200']
+      details: 'Free for open play - waiver required on first visit',
+      rates: ['Open Play: Free', 'Sign waiver on first visit, then sign in for subsequent visits']
     },
-    reservationRequired: true,
-    reservationInfo: 'Reservations required for court time',
+    reservationRequired: false,
+    reservationInfo: 'Open play available - sign in required. Waiver required on first visit only.',
     hours: {
       monday: '6:00 AM - 9:00 PM',
       tuesday: '6:00 AM - 9:00 PM',
@@ -372,9 +372,10 @@ export const courts: Court[] = [
       thursday: '6:00 AM - 9:00 PM',
       friday: '6:00 AM - 9:00 PM',
       saturday: '8:00 AM - 6:00 PM',
-      sunday: '8:00 AM - 6:00 PM'
+      sunday: '8:00 AM - 6:00 PM',
+      notes: 'Contact center for current open play schedule. Waiver required on first visit only.'
     },
-    features: ['Indoor Courts', 'Air Conditioning', 'Community Programs', 'Affordable'],
+    features: ['Indoor Courts', 'Air Conditioning', 'Community Programs', 'Free Open Play'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
     featured: false
@@ -1082,6 +1083,92 @@ export const courts: Court[] = [
     features: ['Multiple Courts', 'Pickleball Nets Included', 'Online Reservations', 'Membership Based'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    featured: false
+  },
+  {
+    id: '31',
+    name: 'Pickle Hub',
+    slug: 'pickle-hub-menchaca',
+    address: '10630 Menchaca Road, Building B',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78748',
+    latitude: 30.1642,
+    longitude: -97.8312,
+    phone: '(210) 850-6509',
+    website: 'https://www.picklehubatx.com',
+    mainImage: '/images/courts/Pickle_Hub-1.png',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Pickle Hub features 2 dedicated outdoor pickleball courts in South Austin. This vibrant venue combines pickleball with dining and entertainment, featuring Drifters Social Coffee & Cocktail, Pickle Pub sports bar, food trucks, live music, and a dog park. Equipment available for rent or bring your own. Family-friendly environment until 9pm on weekdays and 5pm on weekends.',
+    amenities: ['Outdoor Courts', 'Coffee & Cocktails', 'Sports Bar', 'Food Trucks', 'Live Music', 'Dog Park', 'Equipment Rental', 'Fire Pits', 'Stage'],
+    courtType: 'outdoor',
+    numberOfCourts: 2,
+    isFree: false,
+    pricing: {
+      details: 'Court rental required',
+      rates: ['Contact facility for current rates', 'Equipment rental available']
+    },
+    reservationRequired: true,
+    reservationInfo: 'Reservations recommended, contact facility for availability',
+    hours: {
+      monday: '3:00 PM - 12:00 AM',
+      tuesday: '3:00 PM - 12:00 AM',
+      wednesday: '3:00 PM - 12:00 AM',
+      thursday: '3:00 PM - 2:00 AM',
+      friday: '3:00 PM - 2:00 AM',
+      saturday: '12:00 PM - 12:00 AM',
+      sunday: 'Open 24 Hours',
+      notes: 'Family-friendly until 9pm weekdays and 5pm weekends. Live music Thursday through Sunday.'
+    },
+    features: ['Outdoor Courts', 'Food & Drinks', 'Entertainment', 'Live Music', 'Dog Friendly', 'Family Friendly', 'Equipment Rental'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Parking available',
+    featured: false
+  },
+  {
+    id: '32',
+    name: 'Bouldin Acres - Menchaca',
+    slug: 'bouldin-acres-menchaca',
+    address: 'Menchaca Road',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78704',
+    latitude: 30.2400,
+    longitude: -97.7800,
+    phone: '(512) 382-1849',
+    website: 'https://www.bouldinacres.com',
+    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
+      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'New Bouldin Acres location on Menchaca Road featuring outdoor pickleball courts. This is the second location for Bouldin Acres, combining pickleball with dining and entertainment. More information coming soon.',
+    amenities: ['Food & Drinks', 'Outdoor Courts', 'Entertainment'],
+    courtType: 'outdoor',
+    numberOfCourts: 2,
+    isFree: false,
+    pricing: {
+      details: 'More information coming soon',
+      rates: ['Contact facility for current rates']
+    },
+    reservationRequired: true,
+    reservationInfo: 'More information coming soon',
+    hours: {
+      monday: 'More information coming soon',
+      tuesday: 'More information coming soon',
+      wednesday: 'More information coming soon',
+      thursday: 'More information coming soon',
+      friday: 'More information coming soon',
+      saturday: 'More information coming soon',
+      sunday: 'More information coming soon',
+      notes: 'More information coming soon. Please contact the facility directly for current hours, pricing, and reservation requirements.'
+    },
+    features: ['New Location', 'Food & Drinks', 'Entertainment', 'Outdoor Courts'],
+    accessibility: ['Wheelchair Accessible'],
+    parking: 'Parking available',
     featured: false
   }
 ]
