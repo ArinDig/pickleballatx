@@ -11,6 +11,7 @@ export default function Header() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'All Courts', href: '/courts' },
+    { name: 'Map', href: '/map' },
     { name: 'Free Courts', href: '/courts/free' },
     { name: 'Indoor Courts', href: '/courts/indoor' },
     { name: 'Gear', href: '/gear' },
