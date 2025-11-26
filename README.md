@@ -4,7 +4,7 @@ A comprehensive, SEO-optimized directory website for pickleball courts in Austin
 
 ## Features
 
-- 🏓 **Comprehensive Directory**: 20+ pickleball court locations across Austin
+- 🏓 **Comprehensive Directory**: 25+ pickleball court locations across Austin
 - 🔍 **Advanced Search & Filters**: Find courts by type (indoor/outdoor), price (free/paid), and amenities
 - 📱 **Fully Responsive**: Beautiful, mobile-first design that works on all devices
 - 🗺️ **Google Maps Integration**: Interactive maps and directions for every court
