@@ -41,11 +41,12 @@ export async function GET() {
     }
     
     // Serve the content directly with proper headers
+    // Updated Cache-Control to ensure AdSense can verify immediately
     return new NextResponse(content, {
       status: 200,
       headers: {
         'Content-Type': 'text/plain; charset=utf-8',
-        'Cache-Control': 'public, max-age=3600, s-maxage=3600', // Cache for 1 hour
+        'Cache-Control': 'max-age=0, must-revalidate', // No cache for AdSense verification
         'X-Content-Type-Options': 'nosniff',
       },
     })
