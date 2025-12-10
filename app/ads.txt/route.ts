@@ -4,6 +4,7 @@ export async function GET() {
   // Fetch and serve content from Ezoic's automated ads.txt manager service
   // This ensures Ezoic's verification can read the content directly
   // Update the account ID (19390) with your actual Ezoic account ID if different
+  // Force deployment for AdSense verification
   const ezoicAdsTxtUrl = 'https://srv.adstxtmanager.com/19390/pickleballatx.org'
   
   try {
