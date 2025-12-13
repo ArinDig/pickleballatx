@@ -5,7 +5,7 @@ import { FaExternalLinkAlt, FaStar } from 'react-icons/fa'
 
 export const metadata: Metadata = {
   title: 'Pickleball Gear & Equipment - Best Paddles, Balls & Accessories',
-  description: 'Shop the best pickleball gear and equipment. Find top-rated paddles, balls, shoes, bags, and accessories for players of all skill levels. Amazon affiliate links.',
+  description: 'Shop the best pickleball gear and equipment. Find top-rated paddles, balls, shoes, bags, accessories, and tournament computers for players of all skill levels. Amazon affiliate links.',
   keywords: [
     'pickleball paddles',
     'pickleball equipment',
@@ -14,7 +14,9 @@ export const metadata: Metadata = {
     'pickleball shoes',
     'pickleball accessories',
     'best pickleball paddle',
-    'pickleball bag'
+    'pickleball bag',
+    'tournament computers',
+    'MacBook for tournaments'
   ],
   alternates: {
     canonical: 'https://pickleballatx.org/gear',
@@ -146,6 +148,53 @@ const products: Product[] = [
     description: 'Overgrip tape for better control and comfort. Absorbs sweat and reduces slippage.',
     imageUrl: 'https://m.media-amazon.com/images/I/714yeZ6ao9L._AC_SX679_.jpg',
   },
+  
+  // Computers for Tournaments - All M4 models
+  {
+    name: 'Apple MacBook Air 13-inch (M4 chip, 16GB RAM, 256GB SSD)',
+    asin: 'B0DZD9S5GC',
+    category: 'Computers for Tournaments',
+    rating: 4.7,
+    reviewCount: '1,200+',
+    description: 'Lightweight and portable laptop perfect for tournament management. M4 chip delivers excellent performance for running scoring software and managing brackets. Built for Apple Intelligence.',
+    imageUrl: 'https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SX679_.jpg',
+  },
+  {
+    name: 'Apple MacBook Pro 14-inch (M4 Pro chip, 18GB RAM, 512GB SSD)',
+    asin: 'B0DLHY2BJ6',
+    category: 'Computers for Tournaments',
+    rating: 4.8,
+    reviewCount: '850+',
+    description: 'Powerful laptop ideal for tournament directors. M4 Pro chip delivers exceptional performance for viewing brackets and managing multiple matches simultaneously. Excellent display and great battery life for all-day events.',
+    imageUrl: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
+  },
+  {
+    name: 'Apple iMac 24-inch (M4 chip, 8GB RAM, 256GB SSD)',
+    asin: 'B0DL75531G',
+    category: 'Computers for Tournaments',
+    rating: 4.6,
+    reviewCount: '650+',
+    description: 'All-in-one desktop perfect for tournament registration desks. M4 chip provides fast performance. Large 24-inch Retina display makes it easy to view brackets and manage player check-ins.',
+    imageUrl: 'https://m.media-amazon.com/images/I/61lYIKPieGL._AC_SX679_.jpg',
+  },
+  {
+    name: 'Apple MacBook Air 15-inch (M4 chip, 16GB RAM, 256GB SSD)',
+    asin: 'B0F5538MJX',
+    category: 'Computers for Tournaments',
+    rating: 4.7,
+    reviewCount: '450+',
+    description: 'Larger screen size provides more workspace for tournament management. M4 chip delivers excellent performance. Still lightweight and portable for moving between courts. Built for Apple Intelligence.',
+    imageUrl: 'https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SX679_.jpg',
+  },
+  {
+    name: 'Apple Mac Studio (M4 Max chip, 64GB RAM, 1TB SSD)',
+    asin: 'B0FRNJZJC3',
+    category: 'Computers for Tournaments',
+    rating: 4.9,
+    reviewCount: '320+',
+    description: 'Ultimate desktop powerhouse for power users. M4 Max chip with 64GB unified memory handles the most demanding tournament software and multiple simultaneous operations. Perfect for large tournaments with complex bracket management.',
+    imageUrl: 'https://m.media-amazon.com/images/I/61lYIKPieGL._AC_SX679_.jpg',
+  },
 ]
 
 const AMAZON_AFFILIATE_TAG = 'adiaustin-20'
@@ -215,7 +264,7 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export default function GearPage() {
-  const categories = ['All', 'Paddles', 'Balls', 'Shoes', 'Bags', 'Accessories']
+  const categories = ['All', 'Paddles', 'Balls', 'Shoes', 'Bags', 'Accessories', 'Computers for Tournaments']
   const groupedProducts = products.reduce((acc, product) => {
     if (!acc[product.category]) {
       acc[product.category] = []
