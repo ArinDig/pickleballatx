@@ -893,26 +893,32 @@ export const courts: Court[] = [
       '/images/courts/racfit-1.png',
       '/images/courts/racfit-2.png'
     ],
-    description: 'New tennis, pickleball, fitness, and social club opening Fall 2025 in Buda, Texas. RacFit will feature 8 regulation pickleball courts with 4 covered by a steel shade structure, making it perfect for year-round play in the South Austin area. This premier facility will offer comprehensive programming for all ages and skill levels.',
-    amenities: ['Steel Shade Structure', 'Full Bar', 'Indoor/Outdoor Seating', 'Locker Rooms', 'Fitness Rooms', 'Digital Sports Room', 'On-site ActiveCare', 'Walking Trail', 'Community Social Spaces', '22,000 sq ft Indoor Space'],
+    description: 'New tennis, pickleball, fitness, and social club opening December 2025 in Buda, Texas. RacFit will feature 8 regulation pickleball courts with 4 covered by a steel shade structure, making it perfect for year-round play in the South Austin area. This premier facility will offer comprehensive programming for all ages and skill levels. Founders Membership pre-sale is currently active with over 67% of 300 available memberships already sold.',
+    amenities: ['Steel Shade Structure', 'Full Bar (Courtside Cantina)', 'Indoor/Outdoor Seating', 'Locker Rooms', 'Fitness Rooms', 'Digital Sports Room', 'On-site ActiveCare', 'Walking Trail', 'Community Social Spaces', '22,000 sq ft Indoor Space'],
     courtType: 'outdoor',
     numberOfCourts: 8,
     isFree: false,
     pricing: {
-      details: 'Membership required - Founders memberships available',
-      rates: ['Founders Memberships: Limited to 300 (67% sold)', 'Contact for current membership options']
+      details: 'Membership required - Founders memberships available with special benefits',
+      rates: [
+        'All Inclusive - Couple - Baseline: $179/month (after $1 pre-sale payment, $0 initiation fee for Founders)',
+        'ActiveCare: $49/month (after $1 pre-sale payment)',
+        'Additional Family Member: $49/month (after $1 pre-sale payment)',
+        'Founders Membership Benefits: $0 initiation fee, locked-in low rates, engraved brick, swag package, 4 tokens to Courtside Cantina',
+        'Founders Memberships: Limited to 300 (over 200 sold - 67%+ sold out)'
+      ]
     },
     reservationRequired: true,
-    reservationInfo: 'Opening Fall 2025 - Join priority access list for membership information',
+    reservationInfo: 'Opening December 2025 - Founders Membership pre-sale active. Join priority access list for membership information and to reserve your spot.',
     hours: {
-      monday: 'Opening Fall 2025',
-      tuesday: 'Opening Fall 2025',
-      wednesday: 'Opening Fall 2025',
-      thursday: 'Opening Fall 2025',
-      friday: 'Opening Fall 2025',
-      saturday: 'Opening Fall 2025',
-      sunday: 'Opening Fall 2025',
-      notes: 'Facility opening Fall 2025. Join the priority access list on their website for membership information and grand opening details.'
+      monday: 'Opening December 2025',
+      tuesday: 'Opening December 2025',
+      wednesday: 'Opening December 2025',
+      thursday: 'Opening December 2025',
+      friday: 'Opening December 2025',
+      saturday: 'Opening December 2025',
+      sunday: 'Opening December 2025',
+      notes: 'Facility opening December 2025. Founders Membership pre-sale is active with over 200 of 300 memberships already sold. Join the priority access list on their website for membership information and grand opening details.'
     },
     features: ['New Facility', 'Covered Courts', 'Full Bar', 'Fitness Center', 'Social Club', 'Programming for All Ages', 'ActiveCare On-site'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
