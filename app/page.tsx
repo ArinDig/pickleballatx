@@ -191,6 +191,67 @@ export default function Home() {
               makes it easy to find your perfect court. Use our search and filter tools to find courts 
               by location, price, amenities, and more. Get out there and play!
             </p>
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Why Pickleball is Growing in Austin
+            </h3>
+            <p>
+              Pickleball's explosive growth in Austin reflects the city's active lifestyle and welcoming 
+              community spirit. The sport appeals to Austinites of all ages because it's easy to learn, 
+              social, and provides excellent exercise without the high-impact stress of many other sports. 
+              Austin's mild winters and beautiful outdoor settings make it an ideal location for both 
+              indoor and outdoor play year-round.
+            </p>
+            <p>
+              The Austin pickleball community is known for being particularly welcoming to newcomers. 
+              Many facilities offer beginner-friendly open play sessions, lessons, and social events that 
+              help new players integrate into the community. This inclusive atmosphere has contributed to 
+              the sport's rapid growth in the area.
+            </p>
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Getting Started with Pickleball in Austin
+            </h3>
+            <p>
+              New to pickleball? Austin offers numerous opportunities to get started:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Free Public Courts:</strong> Start at one of Austin's free recreation centers 
+              where you can play without any financial commitment. These facilities often have scheduled 
+              open play times perfect for beginners.</li>
+              <li><strong>Lessons and Clinics:</strong> Many facilities offer beginner lessons and clinics 
+              taught by experienced instructors. These are excellent ways to learn proper technique and 
+              meet other new players.</li>
+              <li><strong>Open Play Sessions:</strong> Most facilities have designated open play times 
+              where players of all levels can drop in and join games. These sessions are great for 
+              learning through play.</li>
+              <li><strong>Equipment:</strong> You'll need a paddle, balls, and appropriate court shoes. 
+              Check out our <Link href="/gear" className="text-primary-600 hover:underline">gear page</Link> for 
+              equipment recommendations, or visit our <Link href="/guides/beginner" className="text-primary-600 hover:underline">beginner's guide</Link> for 
+              comprehensive information about getting started.</li>
+            </ul>
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Resources for Austin Pickleball Players
+            </h3>
+            <p>
+              Pickleball ATX provides comprehensive resources to support your pickleball journey:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Complete Court Directory:</strong> Detailed information on every pickleball 
+              facility in the Austin area, including hours, pricing, amenities, and contact information.</li>
+              <li><strong>Interactive Map:</strong> Visual map showing all court locations to help you 
+              find facilities near your home or work.</li>
+              <li><strong>Equipment Guides:</strong> Recommendations for paddles, balls, shoes, and 
+              accessories to help you choose the right gear for your game.</li>
+              <li><strong>Educational Guides:</strong> Comprehensive guides covering everything from 
+              basic rules and techniques to advanced strategies and equipment selection.</li>
+              <li><strong>Filtered Searches:</strong> Find courts by type (indoor/outdoor), price (free/paid), 
+              and location to quickly identify options that meet your needs.</li>
+            </ul>
+            <p className="mt-6">
+              Our directory is regularly updated to ensure accuracy, but we always recommend calling ahead 
+              or checking a facility's official website for the most current information, especially for 
+              holiday hours, special events, or temporary closures. We also welcome community feedback 
+              to help keep our information current and comprehensive.
+            </p>
           </div>
         </div>
       </section>
