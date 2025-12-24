@@ -68,6 +68,7 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="25vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity" />
                 {index === 3 && images.length > 5 && (

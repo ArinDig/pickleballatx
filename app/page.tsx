@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Script from 'next/script'
 import { courts, getFeaturedCourts, getFreeCourts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import Hero from '@/components/Hero'
@@ -20,6 +21,59 @@ export default function Home() {
 
   return (
     <>
+      {/* FAQ Schema */}
+      <Script
+        id="faq-schema-home"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How many pickleball courts are in Austin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `Austin has ${courts.length} pickleball court locations across the metro area, including both free public courts and paid facilities.`
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Are there free pickleball courts in Austin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: `Yes, Austin has ${getFreeCourts().length} free pickleball courts operated by the Parks and Recreation Department, including South Austin Recreation Center, Pan Am Recreation Center, and Dittmar Recreation Center.`
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the best indoor pickleball courts in Austin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Austin offers several excellent indoor pickleball facilities including Austin Pickle Ranch with 16 indoor courts, The Austin Tennis and Pickleball Center, and various recreation centers with climate-controlled courts perfect for year-round play.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Do I need a membership to play pickleball in Austin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No, many Austin pickleball courts are free and open to the public. Some premium facilities require memberships or charge court fees, but there are plenty of free options available at city recreation centers.'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I find pickleball courts near me in Austin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use our comprehensive directory to find pickleball courts by location, type (indoor/outdoor), and price. Our interactive map shows all court locations across the Austin metro area.'
+                }
+              }
+            ]
+          })
+        }}
+      />
       <Hero />
       
       {/* Search Section */}

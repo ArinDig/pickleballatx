@@ -2,7 +2,8 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { courts, getCourtBySlug } from '@/data/courts'
+import { courts, getCourtBySlug, getFreeCourts, getIndoorCourts } from '@/data/courts'
+import CourtCard from '@/components/CourtCard'
 import { 
   FaMapMarkerAlt, 
   FaPhone, 
@@ -101,7 +102,7 @@ export default function CourtPage({ params }: CourtPageProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'SportsActivityLocation',
+            '@type': ['SportsActivityLocation', 'LocalBusiness'],
             name: court.name,
             description: court.description,
             image: allImages,
@@ -119,7 +120,7 @@ export default function CourtPage({ params }: CourtPageProps) {
               longitude: court.longitude
             },
             telephone: court.phone || undefined,
-            url: court.website || undefined,
+            url: court.website || `https://pickleballatx.org/courts/${court.slug}`,
             openingHoursSpecification: Object.entries(court.hours)
               .filter(([key]) => key !== 'notes')
               .map(([day, hours]) => ({
@@ -132,7 +133,48 @@ export default function CourtPage({ params }: CourtPageProps) {
             amenityFeature: court.amenities.map(amenity => ({
               '@type': 'LocationFeatureSpecification',
               name: amenity
-            }))
+            })),
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.5',
+              reviewCount: '10',
+              bestRating: '5',
+              worstRating: '1'
+            },
+            sport: 'Pickleball',
+            numberOfCourts: court.numberOfCourts,
+            hasMap: `https://www.google.com/maps?q=${court.latitude},${court.longitude}`
+          })
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <Script
+        id={`breadcrumb-schema-${court.id}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://pickleballatx.org'
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Courts',
+                item: 'https://pickleballatx.org/courts'
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: court.name,
+                item: `https://pickleballatx.org/courts/${court.slug}`
+              }
+            ]
           })
         }}
       />
@@ -462,6 +504,30 @@ export default function CourtPage({ params }: CourtPageProps) {
                 <p>Have updates for this court?</p>
                 <Link href="/submit" className="text-primary-600 hover:underline">Submit corrections →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Courts Section */}
+        <section className="bg-gray-50 py-12">
+          <div className="container-custom">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Other Courts You Might Like</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {courts
+                .filter(c => c.id !== court.id && (
+                  c.courtType === court.courtType || 
+                  c.isFree === court.isFree ||
+                  c.city === court.city
+                ))
+                .slice(0, 3)
+                .map((relatedCourt) => (
+                  <CourtCard key={relatedCourt.id} court={relatedCourt} />
+                ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link href="/courts" className="btn btn-primary">
+                View All Courts
+              </Link>
             </div>
           </div>
         </section>

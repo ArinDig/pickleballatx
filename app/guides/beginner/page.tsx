@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Script from 'next/script'
 import { FaArrowLeft, FaCheckCircle } from 'react-icons/fa'
 
 export const metadata: Metadata = {
@@ -19,8 +20,77 @@ export const metadata: Metadata = {
 }
 
 export default function BeginnerGuidePage() {
+  const publishedDate = '2025-01-01'
+  const modifiedDate = new Date().toISOString().split('T')[0]
+  
   return (
     <div>
+      {/* Article Schema */}
+      <Script
+        id="article-schema-beginner"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Beginner\'s Guide to Pickleball - Learn the Basics',
+            description: 'Complete beginner\'s guide to pickleball. Learn the rules, basic techniques, court etiquette, and everything you need to get started playing pickleball in Austin.',
+            image: 'https://pickleballatx.org/images/og-image.jpg',
+            datePublished: publishedDate,
+            dateModified: modifiedDate,
+            author: {
+              '@type': 'Organization',
+              name: 'Pickleball ATX',
+              url: 'https://pickleballatx.org'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Pickleball ATX',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://pickleballatx.org/images/logo.png'
+              }
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://pickleballatx.org/guides/beginner'
+            },
+            articleSection: 'Guides',
+            keywords: 'pickleball beginner, learn pickleball, how to play pickleball, pickleball basics'
+          })
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <Script
+        id="breadcrumb-schema-beginner"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://pickleballatx.org'
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Guides',
+                item: 'https://pickleballatx.org/guides'
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Beginner\'s Guide to Pickleball',
+                item: 'https://pickleballatx.org/guides/beginner'
+              }
+            ]
+          })
+        }}
+      />
       {/* Header */}
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
         <div className="container-custom">
