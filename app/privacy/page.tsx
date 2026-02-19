@@ -99,6 +99,14 @@ export default function PrivacyPolicyPage() {
               Google Analytics Opt-out Browser Add-on
             </a>.
           </p>
+
+          <h3 className="text-xl font-medium text-gray-800 mb-3">Ezoic</h3>
+          <p className="text-gray-700 mb-4">
+            We use Ezoic to provide and optimize advertising on our website. Ezoic may collect and use data to personalize ads and analyze traffic. For more information about how Ezoic collects and uses your data, please see Ezoic&apos;s Privacy Policy:{' '}
+            <a href="https://g.ezoic.net/privacy/pickleballatx.org" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              Ezoic Privacy Policy
+            </a>.
+          </p>
         </section>
 
         <section className="mb-8">

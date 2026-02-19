@@ -62,6 +62,9 @@ export default function RulesPage() {
             <p className="text-xl text-primary-50">
               Complete guide to understanding how pickleball is played
             </p>
+            <p className="text-primary-100/90 text-sm mt-4">
+              By Pickleball ATX · Published January 1, 2025 · Last updated January 31, 2025
+            </p>
           </div>
         </section>
 

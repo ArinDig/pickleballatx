@@ -104,6 +104,9 @@ export default function BeginnerGuidePage() {
           <p className="text-xl text-primary-50">
             Everything you need to know to get started with America's fastest-growing sport
           </p>
+          <p className="text-primary-100/90 text-sm mt-4">
+            By Pickleball ATX · Published January 1, 2025 · Last updated January 31, 2025
+          </p>
         </div>
       </section>
 
