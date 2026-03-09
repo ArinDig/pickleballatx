@@ -1,55 +1,17 @@
 import { NextResponse } from 'next/server'
 
+// Paste the exact line from Newor's onboarding "download" below (in quotes), or set NEXT_PUBLIC_NEWOR_ADS_TXT_LINE in .env
+const NEWOR_ADS_TXT_LINE = process.env.NEXT_PUBLIC_NEWOR_ADS_TXT_LINE ?? ''
+
 export async function GET() {
-  // Primary AdSense entry - always included
-  const adsenseEntry = 'google.com, pub-1749871118217579, DIRECT, f08c47fec0942fa0'
+  let content = '# Pickleball ATX - ads.txt\n'
   
-  // Ezoic's automated ads.txt manager service
-  const ezoicAdsTxtUrl = 'https://srv.adstxtmanager.com/19390/pickleballatx.org'
-  
-  // Start with AdSense entry to ensure it's always present
-  let content = `# Site owner Google AdSense entry\n${adsenseEntry}\n`
-  
-  try {
-    // Try to fetch additional entries from Ezoic's service
-    const response = await fetch(ezoicAdsTxtUrl, {
-      next: { revalidate: 3600 }, // Revalidate every hour
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; PickleballATX/1.0)',
-      },
-      // Add timeout to prevent hanging
-      signal: AbortSignal.timeout(5000), // 5 second timeout
-    })
-    
-    if (response.ok) {
-      const ezoicContent = await response.text()
-      
-      // Only append Ezoic entries if they don't duplicate AdSense
-      // Filter out any duplicate AdSense entries from Ezoic
-      const ezoicLines = ezoicContent
-        .split('\n')
-        .filter(line => {
-          const trimmed = line.trim()
-          // Skip empty lines and comments
-          if (!trimmed || trimmed.startsWith('#')) return true
-          // Skip if it's a duplicate AdSense entry
-          if (trimmed.includes('pub-1749871118217579')) return false
-          return true
-        })
-      
-      if (ezoicLines.length > 0) {
-        content += '\n# Ezoic managed entries\n'
-        content += ezoicLines.join('\n')
-      }
-    }
-  } catch (error) {
-    // If Ezoic fetch fails, we still serve AdSense entry
-    // This ensures AdSense verification always works
-    console.error('Error fetching ads.txt from Ezoic (serving AdSense only):', error)
+  if (NEWOR_ADS_TXT_LINE.trim()) {
+    content += `# Newor Media\n${NEWOR_ADS_TXT_LINE.trim()}\n`
+  } else {
+    content += '# Newor Media: paste the line from Newor onboarding "download" into NEWOR_ADS_TXT_LINE in this file or set NEXT_PUBLIC_NEWOR_ADS_TXT_LINE\n'
   }
   
-  // Always serve the content with proper headers
-  // Critical: No caching to ensure AdSense can verify immediately
   return new NextResponse(content.trim(), {
     status: 200,
     headers: {

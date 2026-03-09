@@ -3,7 +3,6 @@ import { Inter, Roboto_Mono } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import GoogleAdsense from '@/components/GoogleAdsense'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import Script from 'next/script'
 
@@ -100,9 +99,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://pickleballatx.org',
   },
-  other: {
-    'google-adsense-account': 'ca-pub-1749871118217579',
-  },
 }
 
 export default function RootLayout({
@@ -113,34 +109,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <head>
-        {/* Ezoic Privacy Scripts - Must load first */}
-        <Script
-          src="https://cmp.gatekeeperconsent.com/min.js"
-          data-cfasync="false"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://the.gatekeeperconsent.com/cmp.min.js"
-          data-cfasync="false"
-          strategy="beforeInteractive"
-        />
-        {/* Ezoic Header Script */}
-        <Script
-          async
-          src="https://www.ezojs.com/ezoic/sa.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="ezoic-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.ezstandalone = window.ezstandalone || {};
-              ezstandalone.cmd = ezstandalone.cmd || [];
-            `
-          }}
-        />
-        <meta name="google-adsense-account" content="ca-pub-1749871118217579" />
         <Script
           id="schema-org"
           type="application/ld+json"
@@ -189,7 +157,6 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <GoogleAdsense />
         <Footer />
       </body>
     </html>
