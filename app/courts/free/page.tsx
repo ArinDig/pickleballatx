@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { getFreeCourts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import FilterBar from '@/components/FilterBar'
@@ -54,6 +55,22 @@ export default function FreeCourtsPage() {
           ))}
         </div>
         
+        {/* Gear CTA */}
+        <div className="mt-10 bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-lg font-semibold text-gray-900">New to pickleball?</p>
+            <p className="text-gray-600 text-sm mt-1">
+              All you need is a paddle and some balls. We picked the best beginner gear so you don't have to guess.
+            </p>
+          </div>
+          <Link
+            href="/guides/beginner-gear"
+            className="flex-shrink-0 inline-flex items-center px-5 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap"
+          >
+            Best Gear for Beginners →
+          </Link>
+        </div>
+
         {/* Comprehensive Content */}
         <section className="container-custom py-12">
           <div className="max-w-4xl mx-auto">

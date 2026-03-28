@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { courts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import FilterBar from '@/components/FilterBar'
@@ -132,6 +133,22 @@ export default function CourtsPage() {
           {courts.map((court) => (
             <CourtCard key={court.id} court={court} />
           ))}
+        </div>
+
+        {/* Gear CTA */}
+        <div className="mt-12 bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-lg font-semibold text-gray-900">Ready to gear up?</p>
+            <p className="text-gray-600 text-sm mt-1">
+              Don't show up to your first session empty-handed. Our beginner guide covers exactly what you need — and what you can skip.
+            </p>
+          </div>
+          <Link
+            href="/guides/beginner-gear"
+            className="flex-shrink-0 inline-flex items-center px-5 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap"
+          >
+            Best Gear for Beginners →
+          </Link>
         </div>
       </section>
     </div>

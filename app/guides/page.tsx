@@ -27,6 +27,13 @@ const guides = [
     category: 'Getting Started',
   },
   {
+    title: 'Best Pickleball Gear for Beginners in Austin (2026)',
+    description: 'What to buy, what to skip, and honest reviews of the best starter paddles, balls, shoes, and bags for new Austin players.',
+    href: '/guides/beginner-gear',
+    icon: FaQuestionCircle,
+    category: 'Equipment',
+  },
+  {
     title: 'How to Choose a Pickleball Paddle',
     description: 'A comprehensive guide to selecting the perfect pickleball paddle based on your playing style, skill level, and preferences.',
     href: '/guides/choosing-paddle',
