@@ -6,6 +6,7 @@ import Hero from '@/components/Hero'
 import SearchBar from '@/components/SearchBar'
 import Link from 'next/link'
 import { FaMapMarkerAlt, FaClock, FaDollarSign, FaPhone } from 'react-icons/fa'
+import { AdsterraBanner728x90, AdsterraBanner320x50 } from '@/components/AdsterraAds'
 
 export const metadata: Metadata = {
   title: 'Pickleball ATX - Complete Guide to Austin Pickleball Courts',
@@ -202,6 +203,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Adsterra - between Why Choose and SEO Content */}
+      <div className="container-custom py-2">
+        <AdsterraBanner728x90 />
+        <AdsterraBanner320x50 />
+      </div>
 
       {/* SEO Content Section */}
       <section className="bg-gray-50 py-16">

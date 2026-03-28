@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { getFreeCourts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import FilterBar from '@/components/FilterBar'
+import { AdsterraNativeBanner, AdsterraBanner300x250, AdsterraBanner728x90, AdsterraBanner320x50 } from '@/components/AdsterraAds'
 
 export const metadata: Metadata = {
   title: 'Free Pickleball Courts in Austin, TX',
@@ -55,6 +56,12 @@ export default function FreeCourtsPage() {
           ))}
         </div>
         
+        {/* Adsterra - leaderboard (desktop) / mobile banner */}
+        <div className="my-6">
+          <AdsterraBanner728x90 />
+          <AdsterraBanner320x50 />
+        </div>
+
         {/* Gear CTA */}
         <div className="mt-10 bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
@@ -70,6 +77,9 @@ export default function FreeCourtsPage() {
             Best Gear for Beginners →
           </Link>
         </div>
+
+        {/* Adsterra Native Banner - between courts grid and content */}
+        <AdsterraNativeBanner />
 
         {/* Comprehensive Content */}
         <section className="container-custom py-12">
