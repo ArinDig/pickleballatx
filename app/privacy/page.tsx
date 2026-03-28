@@ -84,11 +84,11 @@ export default function PrivacyPolicyPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Third-Party Services</h2>
           
-          <h3 className="text-xl font-medium text-gray-800 mb-3">Google AdSense</h3>
+          <h3 className="text-xl font-medium text-gray-800 mb-3">Adsterra</h3>
           <p className="text-gray-700 mb-4">
-            We use Google AdSense to display advertisements. Google may use cookies to serve ads based on your visits to our site and other sites on the Internet. You can opt out of personalized advertising by visiting{' '}
-            <a href="https://www.google.com/settings/ads" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
-              Google Ad Settings
+            We use Adsterra to display advertisements on our website. Adsterra may use cookies and similar tracking technologies to serve ads based on your browsing activity. For more information about how Adsterra collects and uses data, please see the{' '}
+            <a href="https://adsterra.com/privacy-policy/" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              Adsterra Privacy Policy
             </a>.
           </p>
 
@@ -97,14 +97,6 @@ export default function PrivacyPolicyPage() {
             We use Google Analytics to analyze website traffic. Google Analytics uses cookies to collect information about your use of our website. You can opt out of Google Analytics by installing the{' '}
             <a href="https://tools.google.com/dlpage/gaoptout" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
               Google Analytics Opt-out Browser Add-on
-            </a>.
-          </p>
-
-          <h3 className="text-xl font-medium text-gray-800 mb-3">Ezoic</h3>
-          <p className="text-gray-700 mb-4">
-            We use Ezoic to provide and optimize advertising on our website. Ezoic may collect and use data to personalize ads and analyze traffic. For more information about how Ezoic collects and uses your data, please see Ezoic&apos;s Privacy Policy:{' '}
-            <a href="https://g.ezoic.net/privacy/pickleballatx.org" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
-              Ezoic Privacy Policy
             </a>.
           </p>
         </section>
