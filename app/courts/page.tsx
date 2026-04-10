@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { courts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import FilterBar from '@/components/FilterBar'
-import { AdsterraNativeBanner, AdsterraBanner300x250, AdsterraBanner728x90, AdsterraBanner320x50 } from '@/components/AdsterraAds'
 
 export const metadata: Metadata = {
   title: 'All Pickleball Courts in Austin, TX',
@@ -123,12 +122,6 @@ export default function CourtsPage() {
         </div>
       </section>
 
-      {/* Adsterra leaderboard between intro content and courts grid */}
-      <div className="container-custom pb-2">
-        <AdsterraBanner728x90 />
-        <AdsterraBanner320x50 />
-      </div>
-
       {/* Courts Grid */}
       <section className="container-custom py-12">
         <div className="mb-6">
@@ -141,9 +134,6 @@ export default function CourtsPage() {
             <CourtCard key={court.id} court={court} />
           ))}
         </div>
-
-        {/* Adsterra - after courts grid */}
-        <AdsterraNativeBanner />
 
         {/* Gear CTA */}
         <div className="mt-12 bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">

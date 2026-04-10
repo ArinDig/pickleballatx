@@ -1,8 +1,5 @@
 # ads.txt - pickleballatx.org
-# Updated: 2026-03-28
-
-# Adsterra
-adsterra.com, 5688537, DIRECT
+# Updated: 2026-04-09
 
 # Google AdSense
 google.com, pub-6022628118304495, DIRECT, f08c47fec0942fa0

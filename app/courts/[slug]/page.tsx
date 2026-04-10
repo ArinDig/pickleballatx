@@ -18,7 +18,6 @@ import {
 import ImageGallery from '@/components/ImageGallery'
 import GoogleMap from '@/components/GoogleMap'
 import Script from 'next/script'
-import { AdsterraBanner320x50, AdsterraBanner300x250 } from '@/components/AdsterraAds'
 
 interface CourtPageProps {
   params: {
@@ -508,12 +507,6 @@ export default function CourtPage({ params }: CourtPageProps) {
             </div>
           </div>
         </section>
-
-        {/* Adsterra - mobile banner + 300x250 desktop between court detail and related courts */}
-        <div className="container-custom py-4">
-          <AdsterraBanner320x50 />
-          <AdsterraBanner300x250 />
-        </div>
 
         {/* Related Courts Section */}
         <section className="bg-gray-50 py-12">
