@@ -6,6 +6,7 @@ import Hero from '@/components/Hero'
 import SearchBar from '@/components/SearchBar'
 import Link from 'next/link'
 import { FaMapMarkerAlt, FaClock, FaDollarSign, FaPhone } from 'react-icons/fa'
+import EmailSignup from '@/components/EmailSignup'
 
 export const metadata: Metadata = {
   title: 'Pickleball ATX - Complete Guide to Austin Pickleball Courts',
@@ -154,6 +155,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Email Signup */}
+      <div className="container-custom py-4">
+        <EmailSignup variant="inline" />
+      </div>
 
       {/* Why Choose Section */}
       <section className="container-custom py-16">

@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
 import { FaArrowLeft, FaCheckCircle } from 'react-icons/fa'
+import EmailSignup from '@/components/EmailSignup'
 
 export const metadata: Metadata = {
   title: 'Beginner\'s Guide to Pickleball - Learn the Basics',
@@ -375,6 +376,15 @@ export default function BeginnerGuidePage() {
           </div>
         </div>
       </section>
+
+      {/* Email Signup */}
+      <div className="max-w-4xl mx-auto px-4 pb-12">
+        <EmailSignup
+          variant="banner"
+          heading="Get Austin Pickleball Updates"
+          subheading="New courts, open play schedules, tournaments, and beginner tips — free to your inbox."
+        />
+      </div>
     </div>
   )
 }
