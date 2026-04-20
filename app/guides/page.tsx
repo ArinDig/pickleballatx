@@ -1,17 +1,20 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { FaBook, FaGraduationCap, FaQuestionCircle, FaRocket } from 'react-icons/fa'
+import { FaBook, FaGraduationCap, FaHandshake, FaMapMarkerAlt, FaQuestionCircle, FaRocket, FaTrophy } from 'react-icons/fa'
 
 export const metadata: Metadata = {
-  title: 'Pickleball Guides & Resources - Learn to Play Pickleball',
-  description: 'Comprehensive guides to help you learn pickleball, improve your game, and make the most of Austin\'s pickleball scene. Beginner tips, equipment guides, and more.',
+  title: 'Pickleball Guides & Resources - Learn to Play Pickleball in Austin',
+  description: 'Comprehensive guides to help you learn pickleball, improve your game, and make the most of Austin\'s pickleball scene. Beginner tips, equipment guides, etiquette, tournaments, and more.',
   keywords: [
     'pickleball guide',
     'learn pickleball',
     'pickleball beginner guide',
     'how to play pickleball',
     'pickleball tips',
-    'pickleball rules'
+    'pickleball rules',
+    'pickleball etiquette',
+    'pickleball tournaments Austin',
+    'best pickleball courts beginners Austin'
   ],
   alternates: {
     canonical: 'https://pickleballatx.org/guides',
@@ -25,6 +28,27 @@ const guides = [
     href: '/guides/beginner',
     icon: FaRocket,
     category: 'Getting Started',
+  },
+  {
+    title: 'Best Pickleball Courts for Beginners in Austin (2026)',
+    description: 'New to pickleball in Austin? These are the best courts to start — welcoming, affordable, with open play and no pressure.',
+    href: '/guides/best-courts-beginners',
+    icon: FaMapMarkerAlt,
+    category: 'Getting Started',
+  },
+  {
+    title: 'Pickleball Etiquette: Do\'s and Don\'ts on the Court',
+    description: 'The unwritten rules of pickleball — line calls, court rotation, doubles communication, and how to be a great player to play with.',
+    href: '/guides/etiquette',
+    icon: FaHandshake,
+    category: 'Court Culture',
+  },
+  {
+    title: 'Pickleball Tournaments & Events in Austin (2026)',
+    description: 'How to find competitive play in Austin, what to expect at your first tournament, skill ratings explained, and Austin\'s best tournament venues.',
+    href: '/guides/tournaments-events',
+    icon: FaTrophy,
+    category: 'Competitive Play',
   },
   {
     title: 'Best Pickleball Gear for Beginners in Austin (2026)',
