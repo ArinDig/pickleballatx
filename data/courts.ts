@@ -40,6 +40,8 @@ export interface Court {
   accessibility?: string[];
   parking?: string;
   featured?: boolean;
+  customTitle?: string;
+  customDescription?: string;
 }
 
 export const courts: Court[] = [
@@ -188,8 +190,10 @@ export const courts: Court[] = [
       'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
       '/images/courts/The-Pitch-2.png'
     ],
-    description: 'Sports and entertainment complex with 3 outdoor pickleball courts. Features multiple restaurants, bars, and a coffee shop, making it a complete destination for recreation and dining.',
+    description: 'The Pitch is Austin\'s favorite sports and entertainment complex on Burnet Road — 3 outdoor pickleball courts surrounded by multiple restaurants, bars, and a coffee shop. Whether you\'re coming for a competitive match or just want to play while friends grab drinks, The Pitch makes pickleball a full evening out.',
     amenities: ['Restaurants', 'Bars', 'Coffee Shop', 'Multiple Sports Courts', 'Outdoor Seating'],
+    customTitle: 'The Pitch Austin — Pickleball Courts, Bars & Restaurants | Pickleball ATX',
+    customDescription: 'The Pitch Austin combines 3 outdoor pickleball courts with restaurants, bars, and a coffee shop on Burnet Rd. Court rental, hours, and everything you need to plan your visit.',
     courtType: 'outdoor',
     numberOfCourts: 3,
     isFree: false,

@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: CourtPageProps): Promise<Meta
     }
   }
 
-  const title = `${court.name} - Pickleball Court in ${court.city}, TX`
-  const description = `${court.description} Located at ${court.address}. ${court.isFree ? 'Free court' : 'Paid facility'} with ${court.numberOfCourts} ${court.courtType} courts. Hours, directions, and amenities.`
+  const title = court.customTitle ?? `${court.name} - Pickleball Court in ${court.city}, TX`
+  const description = court.customDescription ?? `${court.description} Located at ${court.address}. ${court.isFree ? 'Free court' : 'Paid facility'} with ${court.numberOfCourts} ${court.courtType} courts. Hours, directions, and amenities.`
 
   return {
     title,
@@ -504,6 +504,74 @@ export default function CourtPage({ params }: CourtPageProps) {
                 <p>Have updates for this court?</p>
                 <Link href="/submit" className="text-primary-600 hover:underline">Submit corrections →</Link>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Guides Section */}
+        <section className="container-custom py-12 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Helpful Guides for Your Visit</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {court.isFree && (
+                <Link href="/guides/best-courts-beginners" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                  <span className="text-2xl mr-3">🚀</span>
+                  <div>
+                    <div className="font-semibold text-primary-700">Best Courts for Beginners</div>
+                    <div className="text-sm text-gray-600">New to pickleball? Find the most welcoming spots in Austin.</div>
+                  </div>
+                </Link>
+              )}
+              {court.courtType === 'indoor' && (
+                <Link href="/guides/indoor-vs-outdoor" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                  <span className="text-2xl mr-3">🏠</span>
+                  <div>
+                    <div className="font-semibold text-primary-700">Indoor vs. Outdoor Pickleball</div>
+                    <div className="text-sm text-gray-600">How indoor play differs — and why it matters in Austin's heat.</div>
+                  </div>
+                </Link>
+              )}
+              {court.courtType === 'outdoor' && (
+                <Link href="/guides/best-times-to-play" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                  <span className="text-2xl mr-3">☀️</span>
+                  <div>
+                    <div className="font-semibold text-primary-700">Best Times to Play in Austin</div>
+                    <div className="text-sm text-gray-600">When to go (and when to stay home) at outdoor courts.</div>
+                  </div>
+                </Link>
+              )}
+              {court.courtType === 'both' && (
+                <Link href="/guides/indoor-vs-outdoor" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                  <span className="text-2xl mr-3">🏓</span>
+                  <div>
+                    <div className="font-semibold text-primary-700">Indoor vs. Outdoor Pickleball</div>
+                    <div className="text-sm text-gray-600">This court has both — here's how to choose.</div>
+                  </div>
+                </Link>
+              )}
+              <Link href="/guides/beginner" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                <span className="text-2xl mr-3">📖</span>
+                <div>
+                  <div className="font-semibold text-primary-700">Beginner's Guide to Pickleball</div>
+                  <div className="text-sm text-gray-600">Rules, techniques, and what to expect your first time out.</div>
+                </div>
+              </Link>
+              <Link href="/guides/etiquette" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                <span className="text-2xl mr-3">🤝</span>
+                <div>
+                  <div className="font-semibold text-primary-700">Pickleball Court Etiquette</div>
+                  <div className="text-sm text-gray-600">The unwritten rules every player should know.</div>
+                </div>
+              </Link>
+              {!court.isFree && (
+                <Link href="/courts/free" className="flex items-start p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                  <span className="text-2xl mr-3">💚</span>
+                  <div>
+                    <div className="font-semibold text-green-700">Free Courts in Austin</div>
+                    <div className="text-sm text-gray-600">Looking to play without paying? See all free options.</div>
+                  </div>
+                </Link>
+              )}
             </div>
           </div>
         </section>

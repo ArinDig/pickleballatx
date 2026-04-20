@@ -367,6 +367,70 @@ export default function IndoorVsOutdoorPage() {
                 </Link>
               </div>
             </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Top Indoor Courts in Austin</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+              <Link href="/courts/austin-pickle-ranch-braker" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🏆</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Austin Pickle Ranch</div>
+                  <div className="text-sm text-gray-600">18 courts indoor + outdoor, pro shop, food & drink.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pickleland-pflugerville" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🏓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pickleland (Pflugerville)</div>
+                  <div className="text-sm text-gray-600">9 indoor courts, high ceilings, open play daily.</div>
+                </div>
+              </Link>
+              <Link href="/courts/dittmar-rec" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🆓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Dittmar Recreation Center</div>
+                  <div className="text-sm text-gray-600">Free indoor open play — best budget option in South Austin.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pickleball-kingdom-pflugerville" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">👑</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pickleball Kingdom</div>
+                  <div className="text-sm text-gray-600">11 climate-controlled courts, tournament-grade surfaces.</div>
+                </div>
+              </Link>
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-4 mb-6">Top Outdoor Courts in Austin</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/courts/the-pitch" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🍺</span>
+                <div>
+                  <div className="font-semibold text-gray-900">The Pitch</div>
+                  <div className="text-sm text-gray-600">3 outdoor courts + restaurants and bars — the ultimate social outdoor experience.</div>
+                </div>
+              </Link>
+              <Link href="/courts/austin-tennis-pickleball" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🎾</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Austin Tennis & Pickleball Center</div>
+                  <div className="text-sm text-gray-600">8 dedicated outdoor courts with pro lighting for evening play.</div>
+                </div>
+              </Link>
+              <Link href="/courts/little-zilker" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🆓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Little Zilker Park</div>
+                  <div className="text-sm text-gray-600">4 free outdoor courts near Barton Springs. First-come, first-served.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pan-american-park" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🆓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pan American Neighborhood Park</div>
+                  <div className="text-sm text-gray-600">6 free outdoor courts with permanent nets in East Austin.</div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

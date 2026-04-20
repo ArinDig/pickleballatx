@@ -368,6 +368,39 @@ export default function BestTimesToPlayPage() {
                 </Link>
               </div>
             </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Best Courts by Season</h2>
+            <p className="text-gray-700 mb-6">May through September: go indoor. October through April: outdoor is perfect.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/courts/dittmar-rec" className="flex items-start p-4 bg-blue-50 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">❄️</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Dittmar Rec Center <span className="text-xs text-blue-600 font-normal ml-1">Summer pick</span></div>
+                  <div className="text-sm text-gray-600">Free indoor, climate-controlled. South Austin&apos;s best heat refuge.</div>
+                </div>
+              </Link>
+              <Link href="/courts/austin-pickle-ranch-braker" className="flex items-start p-4 bg-blue-50 border border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">❄️</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Austin Pickle Ranch <span className="text-xs text-blue-600 font-normal ml-1">Summer pick</span></div>
+                  <div className="text-sm text-gray-600">18 courts indoor + outdoor. Always a court available.</div>
+                </div>
+              </Link>
+              <Link href="/courts/little-zilker" className="flex items-start p-4 bg-green-50 border border-green-200 rounded-lg hover:border-green-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🍂</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Little Zilker Park <span className="text-xs text-green-600 font-normal ml-1">Fall/Spring pick</span></div>
+                  <div className="text-sm text-gray-600">4 free outdoor courts near Barton Springs. Perfect October mornings.</div>
+                </div>
+              </Link>
+              <Link href="/courts/the-pitch" className="flex items-start p-4 bg-green-50 border border-green-200 rounded-lg hover:border-green-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🍂</span>
+                <div>
+                  <div className="font-semibold text-gray-900">The Pitch <span className="text-xs text-green-600 font-normal ml-1">Fall/Spring pick</span></div>
+                  <div className="text-sm text-gray-600">3 outdoor courts with bars and restaurants. Best when weather is right.</div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

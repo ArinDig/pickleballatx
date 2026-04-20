@@ -334,8 +334,42 @@ export default function BeginnerGuidePage() {
               <p className="mb-4">
                 Find the perfect court for your first game using our comprehensive directory.
               </p>
-              <Link href="/courts" className="btn btn-primary">
-                Browse Austin Courts
+              <div className="flex flex-wrap gap-3">
+                <Link href="/courts" className="btn btn-primary">Browse All Courts</Link>
+                <Link href="/courts/free" className="btn btn-secondary">Free Courts Only</Link>
+                <Link href="/guides/best-courts-beginners" className="btn btn-secondary">Best Courts for Beginners</Link>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Great Starter Courts in Austin</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/courts/dittmar-rec" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🆓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Dittmar Recreation Center</div>
+                  <div className="text-sm text-gray-600">Free indoor open play, no reservation needed. Perfect first stop.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pan-am-rec" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🆓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pan Am Recreation Center</div>
+                  <div className="text-sm text-gray-600">8 indoor courts plus free outdoor courts next door.</div>
+                </div>
+              </Link>
+              <Link href="/courts/south-austin-rec" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🏛️</span>
+                <div>
+                  <div className="font-semibold text-gray-900">South Austin Recreation Center</div>
+                  <div className="text-sm text-gray-600">6 indoor courts, daily pass option, beginner-friendly atmosphere.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pickleland-pflugerville" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🏓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pickleland (Pflugerville)</div>
+                  <div className="text-sm text-gray-600">Equipment rental available — great if you don't have a paddle yet.</div>
+                </div>
               </Link>
             </div>
           </div>

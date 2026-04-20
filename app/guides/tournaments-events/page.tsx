@@ -343,6 +343,38 @@ export default function TournamentsEventsPage() {
                 Browse Austin Courts
               </Link>
             </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Austin&apos;s Top Tournament Venues</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/courts/austin-pickle-ranch-braker" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🏆</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Austin Pickle Ranch</div>
+                  <div className="text-sm text-gray-600">18 courts, pro shop, food & drink. Austin&apos;s premier tournament host.</div>
+                </div>
+              </Link>
+              <Link href="/courts/austin-tennis-pickleball" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🎾</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Austin Tennis & Pickleball Center</div>
+                  <div className="text-sm text-gray-600">8 outdoor courts with strong lighting. Regular tournament events.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pickleball-kingdom-pflugerville" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">👑</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pickleball Kingdom</div>
+                  <div className="text-sm text-gray-600">11 climate-controlled indoor courts, tournament-grade surfaces.</div>
+                </div>
+              </Link>
+              <Link href="/courts/pickleland-pflugerville" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+                <span className="text-2xl mr-3">🏓</span>
+                <div>
+                  <div className="font-semibold text-gray-900">Pickleland</div>
+                  <div className="text-sm text-gray-600">9 indoor courts, active leagues and round-robins program.</div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
