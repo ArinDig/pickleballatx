@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { FaBook, FaGraduationCap, FaHandshake, FaMapMarkerAlt, FaQuestionCircle, FaRocket, FaTrophy } from 'react-icons/fa'
+import { FaBook, FaClock, FaGraduationCap, FaHandshake, FaMapMarkerAlt, FaQuestionCircle, FaRocket, FaSun, FaTrophy } from 'react-icons/fa'
 
 export const metadata: Metadata = {
   title: 'Pickleball Guides & Resources - Learn to Play Pickleball in Austin',
@@ -49,6 +49,20 @@ const guides = [
     href: '/guides/tournaments-events',
     icon: FaTrophy,
     category: 'Competitive Play',
+  },
+  {
+    title: 'Indoor vs. Outdoor Pickleball: Which Is Right for You?',
+    description: 'How indoor and outdoor pickleball differ in balls, surfaces, play style, and cost — and why the choice matters more in Austin than most cities.',
+    href: '/guides/indoor-vs-outdoor',
+    icon: FaSun,
+    category: 'Court Culture',
+  },
+  {
+    title: 'Best Times to Play Pickleball in Austin (Weather & Crowds)',
+    description: 'Season-by-season and hour-by-hour guide to timing your Austin pickleball game — including how to survive summer and find courts when they\'re not packed.',
+    href: '/guides/best-times-to-play',
+    icon: FaClock,
+    category: 'Austin Guide',
   },
   {
     title: 'Best Pickleball Gear for Beginners in Austin (2026)',
