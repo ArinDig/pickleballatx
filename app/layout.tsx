@@ -99,6 +99,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://pickleballatx.org',
   },
+  other: {
+    monetag: 'ed7ad663940f3b36286461f8455ee5d1',
+  },
 }
 
 export default function RootLayout({
