@@ -156,6 +156,13 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col antialiased">
         <GoogleAnalytics />
+        <Script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="233330"
+          async
+          data-cfasync="false"
+          strategy="afterInteractive"
+        />
         <Header />
         <main className="flex-1">
           {children}
