@@ -247,10 +247,12 @@ export default function Home() {
               open play sessions throughout the week.
             </p>
             <p>
-              <strong>Premium Facilities:</strong> For players seeking a more upscale experience, Austin 
-              boasts world-class facilities like Austin Pickle Ranch with 16 indoor courts, The Austin 
-              Tennis and Pickleball Center with 8 dedicated courts, and exclusive membership clubs like 
-              Castle Court Austin and Other Racquet Social Club.
+              <strong>Premium Facilities:</strong> For players seeking a more upscale experience, Austin
+              boasts world-class facilities like Austin Pickle Ranch with 16 indoor courts, The Austin
+              Tennis and Pickleball Center with 8 dedicated courts, and social venues like{' '}
+              <Link href="/courts/the-pitch" className="text-primary-600 hover:underline">The Pitch on Burnet Road</Link>
+              {' '}— 3 outdoor courts surrounded by restaurants, bars, and a coffee shop. Exclusive membership
+              clubs like Castle Court Austin and Other Racquet Social Club round out the premium options.
             </p>
             <p>
               <strong>Indoor vs Outdoor:</strong> Austin's weather makes year-round outdoor play possible, 
