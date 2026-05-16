@@ -99,9 +99,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://pickleballatx.org',
   },
-  other: {
-    monetag: 'ed7ad663940f3b36286461f8455ee5d1',
-  },
 }
 
 export default function RootLayout({
@@ -152,6 +149,12 @@ export default function RootLayout({
               }
             })
           }}
+        />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1749871118217579"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
       </head>
       <body className="flex min-h-screen flex-col antialiased">

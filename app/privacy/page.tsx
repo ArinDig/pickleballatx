@@ -92,14 +92,6 @@ export default function PrivacyPolicyPage() {
             </a>.
           </p>
 
-          <h3 className="text-xl font-medium text-gray-800 mb-3">Adsterra</h3>
-          <p className="text-gray-700 mb-4">
-            We use Adsterra to display advertisements on our website. Adsterra may use cookies and similar tracking technologies to serve ads based on your browsing activity. For more information about how Adsterra collects and uses data, please see the{' '}
-            <a href="https://adsterra.com/privacy-policy/" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
-              Adsterra Privacy Policy
-            </a>.
-          </p>
-
           <h3 className="text-xl font-medium text-gray-800 mb-3">Google Analytics</h3>
           <p className="text-gray-700 mb-4">
             We use Google Analytics to analyze website traffic. Google Analytics uses cookies to collect information about your use of our website. You can opt out of Google Analytics by installing the{' '}

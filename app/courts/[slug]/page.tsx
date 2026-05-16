@@ -18,7 +18,6 @@ import {
 import ImageGallery from '@/components/ImageGallery'
 import GoogleMap from '@/components/GoogleMap'
 import Script from 'next/script'
-import { AdsterraBanner300x250 } from '@/components/AdsterraAds'
 
 interface CourtPageProps {
   params: {
@@ -579,7 +578,6 @@ export default function CourtPage({ params }: CourtPageProps) {
 
         {/* Ad Unit */}
         <div className="container-custom flex justify-center">
-          <AdsterraBanner300x250 />
         </div>
 
         {/* Related Courts Section */}

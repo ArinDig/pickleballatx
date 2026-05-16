@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { courts } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 import FilterBar from '@/components/FilterBar'
-import { AdsterraNativeBanner } from '@/components/AdsterraAds'
 
 export const metadata: Metadata = {
   title: 'All Pickleball Courts in Austin, TX',
@@ -125,7 +124,6 @@ export default function CourtsPage() {
 
       {/* Ad Unit */}
       <div className="container-custom">
-        <AdsterraNativeBanner />
       </div>
 
       {/* Courts Grid */}

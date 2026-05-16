@@ -7,7 +7,6 @@ import SearchBar from '@/components/SearchBar'
 import Link from 'next/link'
 import { FaMapMarkerAlt, FaClock, FaDollarSign, FaPhone } from 'react-icons/fa'
 import EmailSignup from '@/components/EmailSignup'
-import { AdsterraBanner728x90, AdsterraBanner320x50, AdsterraNativeBanner } from '@/components/AdsterraAds'
 
 export const metadata: Metadata = {
   title: 'Pickleball ATX - Complete Guide to Austin Pickleball Courts',
@@ -109,11 +108,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ad Unit — between stats and featured courts */}
-      <div className="container-custom">
-        <AdsterraBanner728x90 />
-        <AdsterraBanner320x50 />
-      </div>
 
       {/* Featured Courts */}
       <section className="container-custom py-16">
@@ -163,10 +157,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ad Unit — native banner between free courts and email signup */}
-      <div className="container-custom">
-        <AdsterraNativeBanner />
-      </div>
 
       {/* Email Signup */}
       <div className="container-custom py-4">
