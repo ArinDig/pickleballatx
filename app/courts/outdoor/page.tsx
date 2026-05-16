@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import { courts } from '@/data/courts'
-import CourtCard from '@/components/CourtCard'
-import FilterBar from '@/components/FilterBar'
+import CourtsFilter from '@/components/CourtsFilter'
 
 export const metadata: Metadata = {
   title: 'Outdoor Pickleball Courts in Austin, TX',
@@ -36,28 +35,10 @@ export default function OutdoorCourtsPage() {
         </div>
       </section>
 
-      {/* Filter Bar */}
-      <section className="bg-gray-50 py-6 sticky top-16 z-40 shadow-sm">
-        <div className="container-custom">
-          <FilterBar />
-        </div>
-      </section>
+      <CourtsFilter courts={courts} defaultType="outdoor" />
 
-      {/* Courts Grid */}
+      {/* Comprehensive Content */}
       <section className="container-custom py-12">
-        <div className="mb-6">
-          <p className="text-gray-600">
-            Showing {outdoorCourts.length} outdoor courts
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {outdoorCourts.map((court) => (
-            <CourtCard key={court.id} court={court} />
-          ))}
-        </div>
-        
-        {/* Comprehensive Content */}
-        <section className="container-custom py-12">
           <div className="max-w-4xl mx-auto">
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-8 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Outdoor Pickleball Courts in Austin</h2>
@@ -164,7 +145,6 @@ export default function OutdoorCourtsPage() {
               </div>
             </div>
           </div>
-        </section>
       </section>
     </div>
   )

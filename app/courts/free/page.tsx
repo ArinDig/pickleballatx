@@ -1,8 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { getFreeCourts } from '@/data/courts'
-import CourtCard from '@/components/CourtCard'
-import FilterBar from '@/components/FilterBar'
+import { courts } from '@/data/courts'
+import CourtsFilter from '@/components/CourtsFilter'
 
 export const metadata: Metadata = {
   title: 'Free Pickleball Courts in Austin, TX',
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 export default function FreeCourtsPage() {
-  const freeCourts = getFreeCourts()
+  const freeCourts = courts.filter(c => c.isFree)
 
   return (
     <div>
@@ -35,28 +34,12 @@ export default function FreeCourtsPage() {
         </div>
       </section>
 
-      {/* Filter Bar */}
-      <section className="bg-gray-50 py-6 sticky top-16 z-40 shadow-sm">
-        <div className="container-custom">
-          <FilterBar />
-        </div>
-      </section>
+      <CourtsFilter courts={courts} defaultPrice="free" />
 
-      {/* Courts Grid */}
-      <section className="container-custom py-12">
-        <div className="mb-6">
-          <p className="text-gray-600">
-            Showing {freeCourts.length} free courts
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {freeCourts.map((court) => (
-            <CourtCard key={court.id} court={court} />
-          ))}
-        </div>
-        
+      {/* CTAs */}
+      <section className="container-custom pb-8 space-y-6">
         {/* The Pitch CTA */}
-        <div className="mt-10 bg-amber-50 border border-amber-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-lg font-semibold text-gray-900">Want courts with food, drinks & a full evening out?</p>
             <p className="text-gray-600 text-sm mt-1">
@@ -72,7 +55,7 @@ export default function FreeCourtsPage() {
         </div>
 
         {/* Gear CTA */}
-        <div className="mt-6 bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-lg font-semibold text-gray-900">New to pickleball?</p>
             <p className="text-gray-600 text-sm mt-1">
@@ -87,8 +70,10 @@ export default function FreeCourtsPage() {
           </Link>
         </div>
 
-        {/* Comprehensive Content */}
-        <section className="container-custom py-12">
+      </section>
+
+      {/* Comprehensive Content */}
+      <section className="container-custom py-12">
           <div className="max-w-4xl mx-auto">
             <div className="bg-green-50 border border-green-200 rounded-lg p-8 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">About Free Pickleball Courts in Austin</h2>
@@ -176,7 +161,6 @@ export default function FreeCourtsPage() {
               </div>
             </div>
           </div>
-        </section>
       </section>
     </div>
   )

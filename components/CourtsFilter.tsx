@@ -4,12 +4,14 @@ import { useState, useMemo } from 'react'
 import { Court } from '@/data/courts'
 import CourtCard from '@/components/CourtCard'
 
-interface CourtsFilterProps {
-  courts: Court[]
-}
-
 type TypeFilter = 'all' | 'indoor' | 'outdoor' | 'both'
 type PriceFilter = 'all' | 'free' | 'paid'
+
+interface CourtsFilterProps {
+  courts: Court[]
+  defaultType?: TypeFilter
+  defaultPrice?: PriceFilter
+}
 
 const filterButtons = [
   { label: 'All Courts', type: 'all' as TypeFilter, price: 'all' as PriceFilter },
@@ -20,10 +22,10 @@ const filterButtons = [
   { label: 'Free + Outdoor', type: 'outdoor' as TypeFilter, price: 'free' as PriceFilter },
 ]
 
-export default function CourtsFilter({ courts }: CourtsFilterProps) {
+export default function CourtsFilter({ courts, defaultType = 'all', defaultPrice = 'all' }: CourtsFilterProps) {
   const [search, setSearch] = useState('')
-  const [typeFilter, setTypeFilter] = useState<TypeFilter>('all')
-  const [priceFilter, setPriceFilter] = useState<PriceFilter>('all')
+  const [typeFilter, setTypeFilter] = useState<TypeFilter>(defaultType)
+  const [priceFilter, setPriceFilter] = useState<PriceFilter>(defaultPrice)
 
   const activeKey = `${typeFilter}-${priceFilter}`
 
