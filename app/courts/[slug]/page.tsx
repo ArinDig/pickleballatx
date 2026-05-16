@@ -365,47 +365,26 @@ export default function CourtPage({ params }: CourtPageProps) {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">About {court.name}</h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-              <p>
-                {court.description}
-              </p>
-              {court.courtType === 'indoor' ? (
-                <p>
-                  As an indoor facility, {court.name} provides climate-controlled comfort year-round, making it an ideal choice for players who want to avoid Austin's intense summer heat or occasional winter chill. The indoor environment ensures consistent playing conditions regardless of weather, with professional-grade court surfaces and excellent lighting that enhances visibility and gameplay quality.
-                </p>
-              ) : court.courtType === 'outdoor' ? (
-                <p>
-                  The outdoor courts at {court.name} offer players the opportunity to enjoy pickleball in Austin's beautiful weather. Outdoor play provides fresh air and natural lighting, creating an invigorating playing experience. While outdoor courts are subject to weather conditions, they're perfect for players who love the open-air atmosphere and the natural setting that Austin's parks and recreational facilities provide.
-                </p>
+              {court.longDescription ? (
+                court.longDescription.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))
               ) : (
-                <p>
-                  {court.name} offers both indoor and outdoor court options, providing flexibility for players regardless of weather conditions. This dual setup ensures you can always find a court that suits your preferences, whether you prefer the climate-controlled comfort of indoor play or the fresh air and natural lighting of outdoor courts.
-                </p>
-              )}
-              {court.isFree ? (
-                <p>
-                  One of the standout features of {court.name} is that it's completely free to use. As a public facility, this location makes pickleball accessible to everyone in the Austin community, regardless of budget. Free courts like this one are essential for growing the sport and ensuring that financial barriers don't prevent anyone from enjoying pickleball. Whether you're a beginner just learning the game or an experienced player looking for a convenient practice spot, this free access makes {court.name} a valuable community resource.
-                </p>
-              ) : (
-                <p>
-                  {court.name} operates as a {court.pricing?.details.toLowerCase() || 'paid facility'}, offering premium amenities and services in exchange for membership or court fees. This business model allows the facility to maintain high-quality courts, provide excellent customer service, and offer additional amenities like pro shops, food service, and organized programs. The investment in membership or court fees ensures well-maintained facilities and a professional playing environment.
-                </p>
-              )}
-              <p>
-                With {court.numberOfCourts} {court.courtType} {court.numberOfCourts === 1 ? 'court' : 'courts'} available, {court.name} {court.numberOfCourts > 4 ? 'offers ample space for multiple games simultaneously, reducing wait times and accommodating larger groups or tournaments' : 'provides a comfortable playing environment'}. The facility's location at {court.address} in {court.city} makes it {court.city === 'Austin' ? 'easily accessible to residents throughout the Austin metro area' : `convenient for players in the ${court.city} area`}.
-              </p>
-              {court.reservationRequired ? (
-                <p>
-                  Reservations are required at {court.name}, which helps ensure court availability and reduces the chance of showing up to find all courts occupied. {court.reservationInfo || 'You can make reservations online or by phone.'} This system is particularly beneficial during peak hours and weekends when demand is highest. Planning ahead with a reservation guarantees your court time and allows you to coordinate with playing partners.
-                </p>
-              ) : (
-                <p>
-                  {court.name} operates on a first-come, first-served basis, meaning no reservations are required. This approach works well for players who prefer flexibility and spontaneity in their playing schedule. However, during peak times, you may encounter wait times, so it's a good idea to arrive early or have a backup plan if courts are full. The free-play model encourages community engagement and makes the sport accessible to drop-in players.
-                </p>
-              )}
-              {court.features && court.features.length > 0 && (
-                <p>
-                  The facility features {court.features.slice(0, 2).join(' and ').toLowerCase()}{court.features.length > 2 ? `, among other amenities` : ''}, enhancing the overall playing experience. These features contribute to making {court.name} a preferred destination for pickleball enthusiasts in the Austin area.
-                </p>
+                <>
+                  <p>{court.description}</p>
+                  {court.courtType === 'indoor' ? (
+                    <p>As an indoor facility, {court.name} provides climate-controlled comfort year-round — a significant advantage during Austin's intense summers. The indoor environment ensures consistent playing conditions regardless of weather.</p>
+                  ) : court.courtType === 'outdoor' ? (
+                    <p>The outdoor courts at {court.name} offer players the chance to enjoy pickleball in Austin's open air. Outdoor play provides natural light and a relaxed park atmosphere.</p>
+                  ) : (
+                    <p>{court.name} offers both indoor and outdoor court options, giving players flexibility regardless of weather conditions.</p>
+                  )}
+                  {court.isFree ? (
+                    <p>Courts are completely free to use — no membership or reservation required. First-come, first-served. Arrive early during peak weekend hours.</p>
+                  ) : (
+                    <p>{court.name} operates as a {court.pricing?.details.toLowerCase() || 'paid facility'}. {court.reservationRequired ? `Reservations are required — ${court.reservationInfo || 'book online or by phone.'}` : 'Walk-ins are welcome.'}</p>
+                  )}
+                </>
               )}
             </div>
           </div>

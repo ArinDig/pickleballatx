@@ -42,6 +42,7 @@ export interface Court {
   featured?: boolean;
   customTitle?: string;
   customDescription?: string;
+  longDescription?: string[];
 }
 
 export const courts: Court[] = [
@@ -129,6 +130,11 @@ export const courts: Court[] = [
     features: ['Professional Courts', 'Lighting', 'Pro Shop', 'Lessons'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Austin Tennis and Pickleball Center on Berkman Drive is one of the city\'s more serious dedicated facilities, offering 8 outdoor pickleball courts with permanent nets and excellent lighting for evening play. Unlike the city\'s recreation centers, this facility operates with both membership and pay-per-play options, giving players flexible access without a long-term commitment.',
+      'The courts draw a range of skill levels, but the quality of the facility and the presence of a pro shop and lessons makes it particularly popular with intermediate and advanced players who want more than a neighborhood park offers. Clinics and private instruction are available — the in-house professionals can help you level up whether you\'re brand new or looking to sharpen specific skills.',
+      'Reservations are required, which helps ensure court availability when you arrive. Free parking is on-site. Located in the North Loop/Mueller adjacent area off Berkman, it\'s reasonably central for Austin players and accessible from I-35. If you\'ve been playing at free public courts and want to experience a step up in court surface quality and facility amenities without committing to a full indoor facility membership, ATPC is worth a visit.'
+    ],
     featured: false
   },
   {
@@ -171,6 +177,11 @@ export const courts: Court[] = [
     features: ['Food & Drinks', 'Entertainment', 'Family Friendly', 'Dog Friendly'],
     accessibility: ['Wheelchair Accessible'],
     parking: 'Free parking available',
+    longDescription: [
+      'Bouldin Acres on South Lamar is Austin\'s most social pickleball venue — 2 outdoor courts embedded in a full entertainment complex with food trucks, bars, live music, a dog park, and playgrounds. It\'s explicitly not a serious training facility, and that\'s the whole point. The atmosphere is casual, loud, and very Austin, making it ideal for groups where the non-players are just as important as the players.',
+      'Court reservations are required and book up quickly on weekends, so plan ahead if you want a specific time slot. The courts are free to reserve but operated within the Bouldin Acres venue, which means you\'re expected to eat and drink while you\'re there. Given the options — craft cocktails, local food trucks, and usually live music on weekends — that\'s not a hardship.',
+      'Dog-friendly, family-friendly, and party-friendly, Bouldin Acres draws the South Lamar social crowd rather than the competitive pickleball circuit. If you have friends who\'ve never played before, this is a great introduction — low pressure, plenty of entertainment options if they get bored, and a vibe that makes the sport feel accessible rather than intimidating.'
+    ],
     featured: false
   },
   {
@@ -257,6 +268,11 @@ export const courts: Court[] = [
     features: ['Lake Views', 'Food & Drinks', 'Scenic Location', 'Equipment Rental'],
     accessibility: ['Wheelchair Accessible'],
     parking: 'Free parking available',
+    longDescription: [
+      'Lake Travis Biergarten combines two of Austin\'s favorite pastimes — outdoor recreation and cold beer — with 2 outdoor pickleball courts overlooking Lake Travis off Ranch Road 620. It\'s not your typical pickleball destination, but that\'s exactly the point. The courts are set in a scenic Hill Country lakeside setting that makes the whole experience feel like a day trip rather than just a game.',
+      'Court rental is required, and reservations are recommended, especially on weekends when the full venue — beer garden, live music, and lake views — draws a crowd. This isn\'t the spot for serious training or competitive play. It\'s ideal for a mixed group where some people want to play and others are happy watching with a drink in hand.',
+      'Food and drinks are available on-site, the bar and restaurant make it easy to extend the outing well beyond your court time, and the lake views add a backdrop you won\'t find anywhere else in the Austin pickleball scene. Equipment rental may be available — confirm when booking. Located about 30 minutes from central Austin off 620, it\'s a worthwhile drive for a social outing.'
+    ],
     featured: false
   },
   {
@@ -298,6 +314,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Public Access', 'Family Friendly', 'Park Setting'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Little Zilker Park occupies a prime spot on Barton Springs Road at the edge of the Zilker Park complex, one of Austin\'s most beloved green spaces. The 4 outdoor pickleball courts are free and open to the public on a first-come, first-served basis, with no nets to haul in — permanent nets are in place. The combination of a great location and zero cost makes this one of the most visited free court spots on the south side.',
+      'The courts attract players from Bouldin Creek, Barton Hills, South Congress, and beyond — the central location and proximity to Barton Springs means a lot of people fold pickleball into a broader outdoor morning that might include a swim or a run on the trail. Expect the courts to be busy on weekend mornings, especially in spring and fall. Weekday afternoons are generally easier.',
+      'Restrooms and parking are available nearby within the Zilker complex. The park setting is hard to beat — massive trees, shade in the morning hours, and the general good energy of the Zilker area. A solid choice for casual play or for introducing newer players to the game in a relaxed, scenic environment.'
+    ],
     featured: false
   },
   {
@@ -340,6 +361,11 @@ export const courts: Court[] = [
     features: ['Indoor Courts', 'Air Conditioning', 'Programs', 'Leagues'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'South Austin Recreation Center on Cumberland Road is the City of Austin\'s primary indoor pickleball facility for the south side, offering 6 air-conditioned indoor courts. For South Austin residents in Zilker, Travis Heights, Bouldin, or the 78704 zip code, this is the closest option for year-round indoor play that sidesteps the weather entirely.',
+      'The center runs a variety of programs including beginner clinics, open play sessions, and organized leagues — the lineup changes seasonally, so check the Austin Parks & Recreation website for current schedules and court reservation availability. Day passes and annual memberships are both accepted; memberships provide access to all City of Austin rec centers.',
+      'The facility has full restrooms, a fitness center, and free on-site parking. The courts accommodate multiple skill levels across open play sessions. It\'s a well-run city facility that\'s grown with the pickleball boom — if you haven\'t visited recently, the programming is more robust than it was a few years ago.'
+    ],
     featured: false
   },
   {
@@ -382,6 +408,11 @@ export const courts: Court[] = [
     features: ['Indoor Courts', 'Air Conditioning', 'Community Programs', 'Free Open Play'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Dittmar Recreation Center is one of the City of Austin\'s best-kept secrets for free indoor pickleball. Located on West Dittmar Road in South Austin, the center has 4 indoor courts available during open play sessions at no cost beyond a simple waiver — sign once on your first visit, then just check in each time after that. No membership required, no day pass, no court fee.',
+      'The courts are multi-purpose gym space, which means you\'ll be playing on a smooth floor with pickleball lines marked out — functional and air-conditioned, which is what matters when it\'s 100 degrees outside. Open play schedules change seasonally, so check the Austin Parks & Rec website or call ahead to confirm current times before making the trip.',
+      'Parking is free on-site. The facility also has a fitness center and community program offerings that vary throughout the year. For South Austin players who don\'t want to pay for indoor court access, Dittmar is one of the more accessible options — the waiver-not-membership model removes the friction of signing up for a full city rec membership just to try indoor play.'
+    ],
     featured: false
   },
   {
@@ -424,6 +455,11 @@ export const courts: Court[] = [
     features: ['Indoor Courts', 'Air Conditioning', 'Competitive Leagues', 'Historic Facility'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Pan Am Recreation Center is one of Austin\'s most storied public facilities, housed in a historic building near East 3rd Street in the heart of the city. The center\'s 8 indoor pickleball courts are among the largest indoor court counts of any City of Austin facility, making it a go-to destination for serious players who want to avoid Austin\'s brutal summer heat or play year-round without weather interruptions.',
+      'The courts are set up for competitive play, and Pan Am has earned a reputation as a hub for organized leagues and structured programs. If you\'re looking to improve your game or find regular competition, the league play here draws a consistent crowd of intermediate to advanced players. Drop-in open play is also available — check the City of Austin Parks & Recreation schedule for current times.',
+      'Access requires an Austin Recreation Center membership or day pass. Parking is free on-site. The historic building has full restroom facilities and air conditioning throughout. Located at 2100 E. 3rd Street, it\'s convenient to East Austin and central neighborhoods, with easy access from I-35.'
+    ],
     featured: false
   },
   {
@@ -467,6 +503,11 @@ export const courts: Court[] = [
     features: ['Professional Courts', 'Climate Control', 'Pro Shop', 'Lessons', 'Tournaments'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Pickleball Kingdom is a national indoor pickleball franchise that brought 11 climate-controlled courts to Pflugerville, making it the largest indoor court count in the Austin metro area. The courts have professional-grade surfaces, the kind of consistent bounce and slide you\'d expect at a dedicated facility rather than a converted gym space. Climate control is real — courts stay comfortable even when Austin is in the middle of a heat wave.',
+      'The facility offers a tiered membership structure as well as public play sessions, so you don\'t have to commit to a membership to try it out. Organized leagues, tournaments, and clinics run throughout the year, giving both casual and competitive players structured ways to engage beyond just showing up and rallying. A pro shop and equipment rental round out the experience.',
+      'With 11 courts, wait times during open play are generally manageable even on busy evenings. Reservations are required for guaranteed court time. Located off Howard Lane in Pflugerville, it\'s convenient for players in the northeast Austin suburbs and accessible from both 130 and 183. If you\'re serious about the game and want a premium facility experience, Pickleball Kingdom is the metro\'s most complete offering.'
+    ],
     featured: true
   },
   {
@@ -509,6 +550,11 @@ export const courts: Court[] = [
     features: ['Open Play', 'High Ceilings', 'Excellent Lighting', 'Lessons', 'Community Events'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Pickleland has earned the distinction of being voted Best Pickleball Club in Austin — a recognition that reflects the quality of its 9 indoor courts, which feature high ceilings and excellent lighting that genuinely make a difference in playability. The facility is located in Pflugerville off Martin Lane, making it the closest premium indoor option for players in the northeast Austin and Round Rock corridor.',
+      'Unlike reservation-heavy facilities, Pickleland offers walk-in open play — no advance booking required for regular sessions. Daily open play runs throughout the week at varying times, making it accessible for players with flexible schedules. Lessons and clinics are also available for players who want structured instruction, and community events run regularly to keep the social side of the game active.',
+      'Equipment rental is available for newcomers who want to try before they buy. The atmosphere skews welcoming and community-oriented rather than competitive — it\'s a good spot for players of all levels. Pflugerville location means easy parking and no downtown traffic headaches. If you haven\'t made the drive out there yet, it\'s worth it for the court quality alone.'
+    ],
     featured: false
   },
   {
@@ -551,6 +597,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Permanent Nets', 'Public Access', 'Family Friendly'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Pan American Neighborhood Park sits on East 3rd Street in central East Austin, just a few blocks from the Pan Am Recreation Center indoor facility. The park\'s 6 outdoor pickleball courts are free to use with permanent nets — no reservation, no membership, just show up and play. With 6 courts available, wait times are typically shorter than at smaller neighborhood parks.',
+      'The outdoor courts draw a casual to intermediate crowd from East Austin neighborhoods including Govalle, Cherrywood, and the surrounding blocks. The east side pickleball community has grown significantly in recent years, and these courts have become a reliable gathering spot for morning drop-in games. Weekday mornings and late afternoons after 5pm are typically the most active.',
+      'The park has restrooms, a playground, picnic areas, and walking trails. Parking is free. The combination of 6 courts with permanent nets, central East Austin location, and zero cost makes this one of the better free outdoor options on that side of I-35. If courts are full, the Pan Am Recreation Center indoor facility is steps away as a backup.'
+    ],
     featured: false
   },
   {
@@ -592,6 +643,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Mixed Net Types', 'Public Access', 'Community Park'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Rosewood Neighborhood Park is a community staple in East Austin, located on Rosewood Avenue near the historically significant Rosewood neighborhood. The park has 4 outdoor pickleball courts — 2 with permanent nets and 2 where you\'ll need to bring your own. It\'s a good idea to call ahead or check Austin Parks & Rec schedules to confirm current net availability.',
+      'The courts draw a casual to intermediate crowd from the surrounding East Austin neighborhoods, including players from Chestnut, Govalle, and MLK areas. Because East Austin has grown dramatically in recent years, Rosewood has become a convenient option for a lot of newer residents looking for free outdoor courts without making the drive to larger facilities.',
+      'The park has restrooms, a playground, picnic areas, and walking trails. Parking is free. No reservation required — first-come, first-served. Weekday mornings tend to be the quietest, while weekend afternoons can get busy. Bring your own net for the 2 unmarked courts to guarantee you can play regardless of what\'s available.'
+    ],
     featured: false
   },
   {
@@ -633,6 +689,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Large Park', 'Public Access', 'Bring Own Nets'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Dick Nichols District Park is a 152-acre green space in Southwest Austin off Beckett Road near William Cannon, offering 4 outdoor pickleball courts on well-maintained hard surfaces. The courts don\'t have permanent nets, so you\'ll need to bring your own — portable nets are easy to find online for around $60–100 and are worth the investment if you plan to play here regularly.',
+      'The Southwest Austin location serves players from Circle C, Sendera, Shady Hollow, and other neighborhoods in the 78749 area. Given the size of the park and the relative scarcity of free outdoor courts on this side of town, Dick Nichols has become a popular gathering spot for neighborhood pickleball groups. Bring friends and your own net and you\'ll likely have the courts to yourselves on weekday mornings.',
+      'The surrounding park has restrooms, walking and biking trails, picnic areas, and sports fields. Parking is free and spacious. The park\'s Southwest Austin location means less congestion than central Austin courts, and the larger footprint gives the overall experience a more relaxed feel. Best for organized groups rather than drop-in pickup play.'
+    ],
     featured: false
   },
   {
@@ -674,6 +735,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Hard Surface', 'Public Access', 'Bring Own Nets'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Beverly S. Sheffield Northwest District Park is a large recreational complex in Northwest Austin, located on Ardath Street near the 183/Jollyville Road corridor. The park has 4 outdoor pickleball courts on hard surface — players need to bring their own nets, as permanent posts are not installed. Portable net systems are recommended if you plan to visit regularly.',
+      'Northwest Austin doesn\'t have a ton of free outdoor court options in this quadrant, which makes Sheffield a useful stop for players in the 78759 and surrounding zip codes who don\'t want to drive all the way to a rec center. The courts are well-maintained as part of the larger district park complex, which includes walking trails, sports fields, restrooms, and picnic facilities.',
+      'Parking is free. No reservation required — first-come, first-served. Because net setup is required, this location works best for organized groups rather than spontaneous drop-in play. Weekday mornings are typically the most available; weekend afternoons see heavier general park use. For players who live or work on the northwest side, Sheffield fills a gap in the free court landscape.'
+    ],
     featured: false
   },
   {
@@ -715,6 +781,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Multi-Sport', 'Public Access', 'Bring Own Nets'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Brentwood Neighborhood Park sits in one of Austin\'s most walkable central neighborhoods, just north of 45th Street off Arroyo Seco. The park has 2 courts that can be set up for pickleball on the existing hard surface — players need to bring their own nets, which is worth knowing before you make the trip.',
+      'The park draws a mix of Brentwood locals and players from surrounding Hyde Park and Allandale who prefer a low-key neighborhood setting over the busier city rec centers. Courts are free, no reservation required, first-come first-served. Because it\'s only 2 courts and nets aren\'t permanent, it\'s best suited for a group that\'s coming together rather than hoping to find a pickup game.',
+      'The surrounding park has restrooms, a playground, walking trails, and tennis courts — making it a good spot for families who want to spread out. Parking is free along Arroyo Seco. Best times are weekday mornings and early afternoons when courts are less crowded.'
+    ],
     featured: false
   },
   {
@@ -756,6 +827,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Permanent Nets', 'Public Access', 'Lighting'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Austin High Tennis Center sits along West Cesar Chavez Street on the south bank of Lady Bird Lake, giving it one of the best locations of any free court in the city. The 3 outdoor pickleball courts have permanent nets and lines, and they\'re lit for evening play — a major advantage for players who want to avoid Austin\'s midday heat in summer.',
+      'The location makes it popular with downtown and Clarksville residents, as well as anyone who pairs their pickleball session with a walk or run on the Butler Hike-and-Bike Trail nearby. Courts are free, first-come first-served, and open to anyone — no membership required. The proximity to downtown means it can get busy on weekday evenings and weekend mornings.',
+      'Parking is free in the adjacent lot off Cesar Chavez, though it can fill up on busy days given the trail access. Restrooms are available. With lights for evening play and a prime central location, Austin High is one of the better free court options in the city for players who work downtown or live in central Austin neighborhoods.'
+    ],
     featured: false
   },
   {
@@ -797,6 +873,11 @@ export const courts: Court[] = [
     features: ['Indoor Courts', 'Air Conditioning', 'Programs', 'Free with Membership'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Gus Garcia Recreation Center serves North Austin from its location on Rundberg Lane, offering 4 indoor pickleball courts in an air-conditioned facility. For anyone who lives in the North Loop, Georgian Acres, or North Lamar corridor, Garcia is the most convenient City of Austin rec center with indoor pickleball — a meaningful advantage in the summer months.',
+      'Access is free with an Austin Parks & Recreation membership, which covers all City of Austin rec centers for a single annual or monthly fee. Day passes are also available. The center offers both open play and structured programs — check the current schedule on the Austin Parks & Rec website as times shift seasonally.',
+      'The facility has a full fitness center, restrooms, and free parking. The indoor courts attract a broad skill range from beginners to competitive regulars, with open play sessions drawing a social mixed crowd. If you\'re new to pickleball and looking for a low-barrier entry point with no court fees, Garcia is a solid starting point on the north side.'
+    ],
     featured: false
   },
   {
@@ -838,6 +919,11 @@ export const courts: Court[] = [
     features: ['Indoor Courts', 'Air Conditioning', 'Multi-Purpose', 'Free with Membership'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Northwest Recreation Center is a City of Austin facility on Northland Drive, serving players in the Northwest Hills and Balcones neighborhoods with 3 indoor pickleball courts. The courts are multi-purpose — they\'re striped for pickleball on a hardwood-style gym floor — but they\'re functional and covered, which matters when Austin temperatures push past 100 degrees in July and August.',
+      'Access is free with an Austin Parks & Recreation membership or day pass. The center draws a neighborhood crowd from the surrounding 78731 area, with open play sessions that tend toward casual and social rather than competitive. Check the current schedule on the Austin Parks & Rec site since court times and program offerings shift seasonally.',
+      'Parking is free on-site. The facility also has a fitness center and restrooms. With only 3 courts, it\'s smaller than Pan Am or South Austin Rec, but that also means a more relaxed atmosphere and a consistent group of regulars. Good option for Northwest Austin players who want the convenience of a close-by indoor option without driving downtown.'
+    ],
     featured: false
   },
   {
@@ -879,6 +965,11 @@ export const courts: Court[] = [
     features: ['Free Play', 'Public Access', 'Community Park', 'Bring Own Nets'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Mary Moore Searight Metropolitan Park spans nearly 350 acres in South Austin off Slaughter Lane, making it one of the largest parks on the south side of the city. The 3 outdoor pickleball courts are free to use, though players need to bring their own nets — the courts are striped but don\'t have permanent net posts.',
+      'The park draws players from the surrounding Slaughter Lane and Manchaca Road corridor, including residents of Shady Hollow, Bauerle Ranch, and other South Austin neighborhoods. Because the park is large and the pickleball area is just one part of it, courts are generally less crowded than smaller neighborhood parks. It\'s a good option for groups who want space and a quieter environment.',
+      'Beyond pickleball, the park has extensive walking and biking trails, sports fields, restrooms, and picnic areas — making it well worth the trip for a longer outdoor morning. Parking is free and ample. Slaughter Lane can back up during rush hour, so plan accordingly if you\'re coming from I-35 or Mopac.'
+    ],
     featured: false
   },
   {
@@ -970,6 +1061,11 @@ export const courts: Court[] = [
     features: ['Brewery', 'Food & Drinks', 'Indoor Court', 'Temperature Controlled', 'Greater Austin Area', 'Scenic Location', 'Golf Simulators'],
     accessibility: ['Wheelchair Accessible'],
     parking: 'Parking available',
+    longDescription: [
+      'Highway 71 Brewing in Spicewood is about as unique as Austin-area pickleball gets — a family-owned Hill Country brewery that happens to have a temperature-controlled indoor pickleball court alongside its taproom, pizza kitchen, golf simulators, and live music setup. It\'s not for the player who wants to grind out 3 hours of drills. It\'s for the group that wants a genuinely different kind of Saturday.',
+      'The single indoor court is temperature-controlled, which makes it comfortable year-round regardless of what\'s happening outside in the Hill Country heat. Court time requires a reservation, and given the brewery context, the experience is intentionally relaxed — play a game, grab a craft beer, challenge someone to the golf simulator, repeat. The staff is welcoming and the overall vibe is casual and family-friendly.',
+      'Located on State Highway 71 about 30 minutes west of central Austin near Lake Travis, Highway 71 Brewing is a destination rather than a convenience. Best approached as a day trip or an evening out rather than a quick court session. Worth the drive for the novelty and the Hill Country setting alone — and the beer is legitimately good.'
+    ],
     featured: false
   },
   {
@@ -1011,6 +1107,11 @@ export const courts: Court[] = [
     features: ['Community Focused', 'Open Play', 'Rotating Formats', 'Membership Based'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'The Anderson Mill Neighborhood Association pickleball courts on School House Lane serve a specific and intentional community — AMNA members and Anderson Mill Limited District (AMLD) keyholders. The 4 outdoor courts are not open to the general public, which means the player pool is smaller and more consistent, and the atmosphere is deliberately neighborhood-focused rather than city-wide.',
+      'Weekly open play sessions rotate formats to mix things up — round robin, king of the court, and other structured formats keep regulars engaged and help newer players integrate into the group. The community-first approach means you\'re more likely to know the people you\'re playing with after a few visits, which is a meaningful difference from the anonymity of large city facilities.',
+      'If you live in Anderson Mill or the surrounding neighborhood and have AMLA district access, these courts are worth checking out specifically for the community aspect. Four courts with a consistent, friendly player pool is often more enjoyable than a larger facility with strangers cycling through. Contact the AMNA directly for current session schedules and membership access details.'
+    ],
     featured: false
   },
   {
@@ -1052,6 +1153,11 @@ export const courts: Court[] = [
     features: ['Lighted Courts', 'Multi-Purpose', 'Community Park', 'Family Friendly', 'Membership Based'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Anderson Mill West Park is a well-appointed community park in Cedar Park on El Salido Parkway, offering 4 lighted tennis courts with pickleball striping — playable for both sports. A large covered pavilion, playground, restrooms, basketball court, gazebo, walking trail, and picnic tables make this one of the more complete park complexes in the northwest suburbs.',
+      'Access requires a yearly district membership with the Anderson Mill Limited District, making it a members-only facility rather than a public drop-in option. The membership covers the broader park complex, not just the courts — it\'s worth it for families or regular players who will use the full park. Court reservations are required for guaranteed time.',
+      'The lighted courts make evening play viable year-round, which is particularly valuable in summer when daytime play is uncomfortable. Located off El Salido in Cedar Park, the park is convenient for players in the Anderson Mill, Four Points, and Lakeline areas. Contact the AMLD for current membership rates, reservation procedures, and pickleball-specific session availability.'
+    ],
     featured: false
   },
   {
@@ -1093,6 +1199,11 @@ export const courts: Court[] = [
     features: ['Multiple Courts', 'Pickleball Nets Included', 'Online Reservations', 'Membership Based'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
+    longDescription: [
+      'Lakeline Oaks Park in Cedar Park provides 6 pickleball courts set up on tennis court surfaces, with permanent pickleball nets included with access — a notable detail for players tired of hauling portable equipment. The park is operated by the Brushy Creek Municipal Utility District, which means access requires a yearly district membership rather than a simple drop-in fee.',
+      'For Cedar Park residents in the district, the membership pays for itself quickly given the quality of the courts and the online reservation system that lets you book specific court times. The reservation system reduces wait times and guarantees your slot, which is more than you can say for most free first-come courts in the area. Six courts also means capacity for multiple groups to play simultaneously.',
+      'Located on Old Mill Road in Cedar Park, Lakeline Oaks is convenient for players in the 78613 and surrounding zip codes who don\'t want to drive to Austin proper for quality courts. Restrooms and parking are on-site. If you\'re a Cedar Park or Leander resident, the district membership is the clearest path to consistent, well-maintained court access without the drive south.'
+    ],
     featured: false
   },
   {
@@ -1179,6 +1290,11 @@ export const courts: Court[] = [
     features: ['New Location', 'Food & Drinks', 'Entertainment', 'Outdoor Courts'],
     accessibility: ['Wheelchair Accessible'],
     parking: 'Parking available',
+    longDescription: [
+      'Bouldin Acres expanded to a second location on Menchaca Road, bringing its signature mix of outdoor pickleball, food, drinks, and Austin entertainment culture to the Slaughter Lane corridor. Like the original South Lamar location, the Menchaca spot positions pickleball as part of a broader social experience rather than a standalone athletic venue.',
+      'The 2 outdoor courts operate on a reservation basis, and the setup is designed for casual play alongside food and beverage options on-site. It\'s a good fit for groups that want to play a few games, grab some food, and hang out — not for players who want 3 hours of uninterrupted drill time. The Menchaca location gives South and Southwest Austin players an option closer to home than the original Bouldin Acres on South Lamar.',
+      'Given that this is a newer location, hours, reservation procedures, and full amenity details may evolve — check the Bouldin Acres website or social channels for the most current information before visiting. Parking is available on-site. The venue adds a second social pickleball option to an area that was previously underserved by both free and paid court facilities.'
+    ],
     featured: false
   }
 ]
