@@ -988,34 +988,38 @@ export const courts: Court[] = [
       '/images/courts/racfit-1.png',
       '/images/courts/racfit-2.png'
     ],
-    description: 'New tennis, pickleball, fitness, and social club opening December 2025 in Buda, Texas. RacFit will feature 8 regulation pickleball courts with 4 covered by a steel shade structure, making it perfect for year-round play in the South Austin area. This premier facility will offer comprehensive programming for all ages and skill levels. Founders Membership pre-sale is currently active with over 67% of 300 available memberships already sold.',
+    description: 'RacFit is a premier tennis, pickleball, fitness, and social club in Buda, Texas — now open as of May 2026. The facility features 8 regulation pickleball courts with 4 covered by a steel shade structure, a full-service bar (Courtside Cantina), 22,000 sq ft of indoor space, and on-site ActiveCare. Membership required.',
+    longDescription: [
+      'RacFit opened in May 2026 in Buda, bringing one of the most comprehensive racquet sport and fitness facilities to the South Austin area. The club features 8 regulation pickleball courts — 4 of which are covered by a steel shade structure — making it a comfortable option year-round, even during Austin\'s hottest months.',
+      'Beyond the courts, RacFit is designed as a full social and wellness destination. The Courtside Cantina serves drinks courtside, while 22,000 square feet of indoor space includes fitness rooms, locker rooms, a digital sports room, and on-site ActiveCare. A walking trail and community social spaces round out the experience for members and their families.',
+      'Membership is required to play at RacFit. Visit goracfit.com for current membership pricing, availability, and to schedule a tour. The facility serves the Buda and Kyle communities as well as the broader South Austin area.'
+    ],
     amenities: ['Steel Shade Structure', 'Full Bar (Courtside Cantina)', 'Indoor/Outdoor Seating', 'Locker Rooms', 'Fitness Rooms', 'Digital Sports Room', 'On-site ActiveCare', 'Walking Trail', 'Community Social Spaces', '22,000 sq ft Indoor Space'],
     courtType: 'outdoor',
     numberOfCourts: 8,
     isFree: false,
     pricing: {
-      details: 'Membership required - Founders memberships available with special benefits',
+      details: 'Membership required — visit goracfit.com for current rates',
       rates: [
-        'All Inclusive - Couple - Baseline: $179/month (after $1 pre-sale payment, $0 initiation fee for Founders)',
-        'ActiveCare: $49/month (after $1 pre-sale payment)',
-        'Additional Family Member: $49/month (after $1 pre-sale payment)',
-        'Founders Membership Benefits: $0 initiation fee, locked-in low rates, engraved brick, swag package, 4 tokens to Courtside Cantina',
-        'Founders Memberships: Limited to 300 (over 200 sold - 67%+ sold out)'
+        'All Inclusive - Couple - Baseline: $179/month',
+        'ActiveCare: $49/month',
+        'Additional Family Member: $49/month',
+        'Visit goracfit.com for current membership options and availability'
       ]
     },
     reservationRequired: true,
-    reservationInfo: 'Opening December 2025 - Founders Membership pre-sale active. Join priority access list for membership information and to reserve your spot.',
+    reservationInfo: 'Membership required to play. Visit goracfit.com for membership information and to get started.',
     hours: {
-      monday: 'Opening December 2025',
-      tuesday: 'Opening December 2025',
-      wednesday: 'Opening December 2025',
-      thursday: 'Opening December 2025',
-      friday: 'Opening December 2025',
-      saturday: 'Opening December 2025',
-      sunday: 'Opening December 2025',
-      notes: 'Facility opening December 2025. Founders Membership pre-sale is active with over 200 of 300 memberships already sold. Join the priority access list on their website for membership information and grand opening details.'
+      monday: 'Check website for current hours',
+      tuesday: 'Check website for current hours',
+      wednesday: 'Check website for current hours',
+      thursday: 'Check website for current hours',
+      friday: 'Check website for current hours',
+      saturday: 'Check website for current hours',
+      sunday: 'Check website for current hours',
+      notes: 'RacFit opened in May 2026. Check goracfit.com for current hours and programming schedule.'
     },
-    features: ['New Facility', 'Covered Courts', 'Full Bar', 'Fitness Center', 'Social Club', 'Programming for All Ages', 'ActiveCare On-site'],
+    features: ['Now Open', 'Covered Courts', 'Full Bar', 'Fitness Center', 'Social Club', 'Programming for All Ages', 'ActiveCare On-site'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Parking available',
     featured: true
