@@ -1,8 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { courts } from '@/data/courts'
-import CourtCard from '@/components/CourtCard'
-import FilterBar from '@/components/FilterBar'
+import CourtsFilter from '@/components/CourtsFilter'
 
 export const metadata: Metadata = {
   title: 'All Pickleball Courts in Austin, TX',
@@ -33,12 +32,6 @@ export default function CourtsPage() {
         </div>
       </section>
 
-      {/* Filter Bar */}
-      <section className="bg-gray-50 py-6 sticky top-16 z-40 shadow-sm">
-        <div className="container-custom">
-          <FilterBar />
-        </div>
-      </section>
 
       {/* Introduction Content */}
       <section className="container-custom py-12">
@@ -126,21 +119,11 @@ export default function CourtsPage() {
       <div className="container-custom">
       </div>
 
-      {/* Courts Grid */}
-      <section className="container-custom py-12">
-        <div className="mb-6">
-          <p className="text-gray-600">
-            Showing all {courts.length} courts
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {courts.map((court) => (
-            <CourtCard key={court.id} court={court} />
-          ))}
-        </div>
+      <CourtsFilter courts={courts} />
 
-        {/* Gear CTA */}
-        <div className="mt-12 bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      {/* Gear CTA */}
+      <section className="container-custom pb-12">
+        <div className="bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <p className="text-lg font-semibold text-gray-900">Ready to gear up?</p>
             <p className="text-gray-600 text-sm mt-1">
