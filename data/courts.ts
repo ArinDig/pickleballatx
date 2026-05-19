@@ -522,9 +522,9 @@ export const courts: Court[] = [
     longitude: -97.6200,
     phone: '(737) 265-7002',
     website: 'https://pickleland.com',
-    mainImage: '/images/courts/Pickleland_Courts_DSC6088.jpg',
+    mainImage: '/images/courts/Pickleland_Courts_DSC6142.jpg',
     images: [
-      '/images/courts/Pickleland_Courts_DSC6142.jpg',
+      '/images/courts/Pickleland_Courts_DSC6088.jpg',
       '/images/courts/Pickleland_DSC4911.jpg',
       '/images/courts/Pickleland_DSC4921.jpg',
       '/images/courts/Pickleland_DSC4943.jpg',
