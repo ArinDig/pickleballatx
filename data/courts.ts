@@ -520,12 +520,14 @@ export const courts: Court[] = [
     zipCode: '78660',
     latitude: 30.4500,
     longitude: -97.6200,
-    phone: '(512) 555-0124',
+    phone: '(737) 265-7002',
     website: 'https://pickleland.com',
-    mainImage: 'https://images.pexels.com/photos/29821186/pexels-photo-29821186.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/Pickleland_Courts_DSC6088.jpg',
     images: [
-      'https://images.pexels.com/photos/11513316/pexels-photo-11513316.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/29820786/pexels-photo-29820786.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/Pickleland_Courts_DSC6142.jpg',
+      '/images/courts/Pickleland_DSC4911.jpg',
+      '/images/courts/Pickleland_DSC4921.jpg',
+      '/images/courts/Pickleland_DSC4943.jpg',
     ],
     description: 'Voted Best Pickleball Club in Austin, featuring 9 indoor courts with high ceilings and excellent lighting. Offers daily open play sessions, lessons, and events for all skill levels.',
     amenities: ['High Ceilings', 'Excellent Lighting', 'Open Play', 'Lessons', 'Events', 'Equipment Rental'],
@@ -534,18 +536,18 @@ export const courts: Court[] = [
     isFree: false,
     pricing: {
       details: 'Membership and daily play options available',
-      rates: ['Daily Pass: $12', 'Monthly Membership: $75', 'Annual Membership: $750']
+      rates: ['Daily Pass: $5-20', 'Monthly Membership: $59-119', 'Annual Membership: $649-1309']
     },
     reservationRequired: false,
     reservationInfo: 'Open play available, reservations recommended for private bookings',
     hours: {
-      monday: '6:00 AM - 10:00 PM',
-      tuesday: '6:00 AM - 10:00 PM',
-      wednesday: '6:00 AM - 10:00 PM',
-      thursday: '6:00 AM - 10:00 PM',
-      friday: '6:00 AM - 10:00 PM',
-      saturday: '7:00 AM - 9:00 PM',
-      sunday: '7:00 AM - 9:00 PM'
+      monday: '8:00 AM - 10:00 PM',
+      tuesday: '8:00 AM - 10:00 PM',
+      wednesday: '8:00 AM - 10:00 PM',
+      thursday: '8:00 AM - 10:00 PM',
+      friday: '8:00 AM - 10:00 PM',
+      saturday: '8:00 AM - 8:00 PM',
+      sunday: '8:00 AM - 8:00 PM'
     },
     features: ['Open Play', 'High Ceilings', 'Excellent Lighting', 'Lessons', 'Community Events'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
