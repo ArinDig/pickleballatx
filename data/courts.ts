@@ -88,7 +88,14 @@ export const courts: Court[] = [
     features: ['Professional Courts', 'Lighting', 'Climate Control', 'Pro Shop', 'Food Service', 'Indoor & Outdoor Courts'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
-    featured: true
+    featured: true,
+    customTitle: 'Austin Pickle Ranch Braker Lane | 16 Indoor Pickleball Courts, Bar & Pro Shop',
+    customDescription: "Austin's largest indoor pickleball facility — 16 climate-controlled courts + 2 outdoor on Braker Lane. Full bar, pro shop, locker rooms. Members and non-members welcome. Book online or call (737) 242-5898.",
+    longDescription: [
+      'Austin Pickle Ranch on Braker Lane is the closest thing Austin has to a full-service pickleball destination. The facility runs 16 dedicated indoor courts with climate control — a big deal in Austin summers — plus 2 outdoor courts when the weather cooperates. All courts use professional-grade surfaces and permanent nets, and the lighting is dialed in for evening play. Whether you\'re warming up at 6am or wrapping up a match at 9pm, the facility handles it.',
+      'The full bar and food service set Braker Lane apart from every other pickleball option in Austin. You can grab a drink between matches, watch games from the lounge areas, or turn a weeknight session into a longer evening out. Locker rooms, a pro shop, and in-house instruction round out the amenities — this is a place that takes the game seriously without making it feel intimidating to newer players.',
+      'Non-members are welcome with a reservation or session payment, so you don\'t need a membership commitment to play. Reservations can be made online at austinpickleranch.com or by phone at (737) 242-5898. Located at 11000 Middle Fiskville Road (Building B) near North Lamar and Braker Lane, with free parking on-site. If you\'re willing to pay to play, this is the best indoor pickleball experience in Austin.'
+    ]
   },
   {
     id: '3',
