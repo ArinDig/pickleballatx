@@ -860,7 +860,7 @@ export const courts: Court[] = [
     longitude: -97.6800,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439346/pexels-photo-29439346.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/gus-garcia-1.png',
     images: [
       'https://images.pexels.com/photos/32975185/pexels-photo-32975185.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
