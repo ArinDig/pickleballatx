@@ -444,9 +444,9 @@ export const courts: Court[] = [
       'https://images.pexels.com/photos/32975182/pexels-photo-32975182.jpeg?w=800&h=600&fit=crop&crop=center',
       'https://images.pexels.com/photos/17299531/pexels-photo-17299531.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
-    description: 'Historic recreation center featuring 8 indoor pickleball courts with excellent facilities. Known for its community programs and competitive leagues.',
-    amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Historic Building', 'Competitive Leagues'],
-    courtType: 'indoor',
+    description: 'Historic recreation center featuring 8 outdoor pickleball courts with excellent facilities. Known for its community programs and competitive leagues.',
+    amenities: ['Restrooms', 'Parking', 'Historic Building', 'Competitive Leagues', 'Lighting'],
+    courtType: 'outdoor',
     numberOfCourts: 8,
     isFree: false,
     pricing: {
@@ -464,13 +464,13 @@ export const courts: Court[] = [
       saturday: '8:00 AM - 6:00 PM',
       sunday: '8:00 AM - 6:00 PM'
     },
-    features: ['Indoor Courts', 'Air Conditioning', 'Competitive Leagues', 'Historic Facility'],
+    features: ['Outdoor Courts', 'Competitive Leagues', 'Historic Facility', 'Lighted Courts'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
     longDescription: [
-      'Pan Am Recreation Center is one of Austin\'s most storied public facilities, housed in a historic building near East 3rd Street in the heart of the city. The center\'s 8 indoor pickleball courts are among the largest indoor court counts of any City of Austin facility, making it a go-to destination for serious players who want to avoid Austin\'s brutal summer heat or play year-round without weather interruptions.',
+      'Pan Am Recreation Center is one of Austin\'s most storied public facilities, housed in a historic building near East 3rd Street in the heart of the city. The center\'s 8 outdoor pickleball courts are among the largest court counts of any City of Austin facility, making it a hub for serious players who want structured competition and consistent open play options.',
       'The courts are set up for competitive play, and Pan Am has earned a reputation as a hub for organized leagues and structured programs. If you\'re looking to improve your game or find regular competition, the league play here draws a consistent crowd of intermediate to advanced players. Drop-in open play is also available — check the City of Austin Parks & Recreation schedule for current times.',
-      'Access requires an Austin Recreation Center membership or day pass. Parking is free on-site. The historic building has full restroom facilities and air conditioning throughout. Located at 2100 E. 3rd Street, it\'s convenient to East Austin and central neighborhoods, with easy access from I-35.'
+      'Access requires an Austin Recreation Center membership or day pass. Parking is free on-site. The historic building has full restroom facilities. Located at 2100 E. 3rd Street, it\'s convenient to East Austin and central neighborhoods, with easy access from I-35.'
     ],
     featured: false
   },
