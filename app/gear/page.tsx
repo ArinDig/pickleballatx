@@ -5,7 +5,7 @@ import { FaExternalLinkAlt, FaStar } from 'react-icons/fa'
 
 export const metadata: Metadata = {
   title: 'Pickleball Gear & Equipment - Best Paddles, Balls & Accessories',
-  description: 'Shop the best pickleball gear and equipment. Find top-rated paddles, balls, shoes, bags, accessories, and tournament computers for players of all skill levels. Amazon affiliate links.',
+  description: 'Shop the best pickleball gear and equipment. Find top-rated paddles, balls, shoes, bags, and accessories for players of all skill levels. Amazon affiliate links.',
   keywords: [
     'pickleball paddles',
     'pickleball equipment',
@@ -15,8 +15,6 @@ export const metadata: Metadata = {
     'pickleball accessories',
     'best pickleball paddle',
     'pickleball bag',
-    'tournament computers',
-    'MacBook for tournaments'
   ],
   alternates: {
     canonical: 'https://pickleballatx.org/gear',
@@ -149,52 +147,6 @@ const products: Product[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/714yeZ6ao9L._AC_SX679_.jpg',
   },
   
-  // Computers for Tournaments - All M4 models
-  {
-    name: 'Apple MacBook Air 13-inch (M4 chip, 16GB RAM, 256GB SSD)',
-    asin: 'B0DZD9S5GC',
-    category: 'Computers for Tournaments',
-    rating: 4.7,
-    reviewCount: '1,200+',
-    description: 'Lightweight and portable laptop perfect for tournament management. M4 chip delivers excellent performance for running scoring software and managing brackets. Built for Apple Intelligence.',
-    imageUrl: 'https://m.media-amazon.com/images/I/71cWZUr9SVL._AC_SX679_.jpg',
-  },
-  {
-    name: 'Apple MacBook Pro 14-inch (M4 Pro chip, 18GB RAM, 512GB SSD)',
-    asin: 'B0DLHY2BJ6',
-    category: 'Computers for Tournaments',
-    rating: 4.8,
-    reviewCount: '850+',
-    description: 'Powerful laptop ideal for tournament directors. M4 Pro chip delivers exceptional performance for viewing brackets and managing multiple matches simultaneously. Excellent display and great battery life for all-day events.',
-    imageUrl: 'https://m.media-amazon.com/images/I/61-oTP1X4rL._AC_SX679_.jpg',
-  },
-  {
-    name: 'Apple iMac 24-inch (M4 chip, 8GB RAM, 256GB SSD)',
-    asin: 'B0DL75531G',
-    category: 'Computers for Tournaments',
-    rating: 4.6,
-    reviewCount: '650+',
-    description: 'All-in-one desktop perfect for tournament registration desks. M4 chip provides fast performance. Large 24-inch Retina display makes it easy to view brackets and manage player check-ins.',
-    imageUrl: 'https://m.media-amazon.com/images/I/71RDE35cFIL._AC_SX679_.jpg',
-  },
-  {
-    name: 'Apple MacBook Air 15-inch (M4 chip, 16GB RAM, 256GB SSD)',
-    asin: 'B0F5538MJX',
-    category: 'Computers for Tournaments',
-    rating: 4.7,
-    reviewCount: '450+',
-    description: 'Larger screen size provides more workspace for tournament management. M4 chip delivers excellent performance. Still lightweight and portable for moving between courts. Built for Apple Intelligence.',
-    imageUrl: 'https://m.media-amazon.com/images/I/712vcAGT7uL._AC_SX679_.jpg',
-  },
-  {
-    name: 'Apple Mac Studio (M4 Max chip, 64GB RAM, 1TB SSD)',
-    asin: 'B0FNS1ZX5B',
-    category: 'Computers for Tournaments',
-    rating: 4.9,
-    reviewCount: '320+',
-    description: 'Ultimate desktop powerhouse for power users. M4 Max chip with 64GB unified memory handles the most demanding tournament software and multiple simultaneous operations. Perfect for large tournaments with complex bracket management.',
-    imageUrl: 'https://m.media-amazon.com/images/I/61A0JtxklsL._AC_SX679_.jpg',
-  },
 ]
 
 const AMAZON_AFFILIATE_TAG = 'adiaustin-20'
@@ -265,7 +217,7 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export default function GearPage() {
-  const categories = ['All', 'Paddles', 'Balls', 'Shoes', 'Bags', 'Accessories', 'Computers for Tournaments']
+  const categories = ['All', 'Paddles', 'Balls', 'Shoes', 'Bags', 'Accessories']
   const groupedProducts = products.reduce((acc, product) => {
     if (!acc[product.category]) {
       acc[product.category] = []
@@ -443,25 +395,6 @@ export default function GearPage() {
                   supports if you have joint concerns or are recovering from injuries.</li>
                   <li><strong>Hydration:</strong> Stay hydrated with a quality water bottle, especially 
                   important for outdoor play in Austin's heat.</li>
-                </ul>
-                
-                <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Computers for Tournament Management</h3>
-                <p>
-                  For tournament directors and organizers, reliable computers are essential for managing 
-                  brackets, scoring, and player registration. Apple computers are popular choices due to 
-                  their reliability, performance, and excellent displays. Key considerations include:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Portability:</strong> Laptops offer flexibility for moving between courts 
-                  and locations.</li>
-                  <li><strong>Performance:</strong> Tournament software can be demanding, especially 
-                  when managing multiple matches simultaneously.</li>
-                  <li><strong>Display Quality:</strong> Clear, bright displays make it easier to view 
-                  brackets and manage information.</li>
-                  <li><strong>Battery Life:</strong> Long battery life ensures uninterrupted operation 
-                  during all-day tournaments.</li>
-                  <li><strong>Reliability:</strong> Tournament computers must be dependable, as 
-                  technical issues can disrupt events.</li>
                 </ul>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Making Your Selection</h3>
