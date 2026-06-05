@@ -4,12 +4,12 @@ import { courts } from '@/data/courts'
 import CourtsFilter from '@/components/CourtsFilter'
 
 export const metadata: Metadata = {
-  title: 'All Pickleball Courts in Austin, TX',
-  description: 'Browse all pickleball courts in Austin, Texas. Find indoor, outdoor, free, and paid courts with detailed information on hours, amenities, and locations.',
-  keywords: ['austin pickleball courts', 'all pickleball courts austin', 'pickleball locations austin', 'austin pickleball directory'],
+  title: 'Pickleball Courts in Austin, TX — 29 Indoor & Outdoor Courts Near You',
+  description: 'Find pickleball courts near you in Austin, TX. Browse 29 indoor and outdoor courts with hours, pricing, amenities, and directions — free courts, rec centers, and dedicated facilities.',
+  keywords: ['pickleball courts near me', 'austin pickleball courts', 'pickleball courts austin tx', 'indoor pickleball austin', 'outdoor pickleball austin', 'free pickleball courts austin'],
   openGraph: {
-    title: 'All Pickleball Courts in Austin, TX | Pickleball ATX',
-    description: 'Browse all pickleball courts in Austin, Texas. Find indoor, outdoor, free, and paid courts with detailed information.',
+    title: 'Pickleball Courts in Austin, TX — 29 Courts Near You | Pickleball ATX',
+    description: 'Find pickleball courts near you in Austin. 29 indoor and outdoor courts with hours, pricing, and directions.',
     url: 'https://pickleballatx.org/courts',
   },
   alternates: {
