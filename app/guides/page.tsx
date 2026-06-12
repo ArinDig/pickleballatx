@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { FaBook, FaClock, FaGraduationCap, FaHandshake, FaMapMarkerAlt, FaQuestionCircle, FaRocket, FaSun, FaTrophy } from 'react-icons/fa'
+import { FaBook, FaClock, FaGraduationCap, FaHandshake, FaMapMarkerAlt, FaQuestionCircle, FaRocket, FaStar, FaSun, FaTrophy } from 'react-icons/fa'
 
 export const metadata: Metadata = {
   title: 'Pickleball Guides & Resources - Learn to Play Pickleball in Austin',
@@ -22,6 +22,13 @@ export const metadata: Metadata = {
 }
 
 const guides = [
+  {
+    title: 'Austin Pickleball: What Nobody Tells You Before Your First Game',
+    description: 'A local\'s honest take on the Austin scene — the heat, how open play really works at each venue, which courts are worth paying for, and how to find a game when you\'re new.',
+    href: '/guides/austin-pickleball-guide',
+    icon: FaStar,
+    category: 'Austin Guide',
+  },
   {
     title: 'Beginner\'s Guide to Pickleball',
     description: 'Everything you need to know to get started with pickleball, from basic rules to essential techniques and court etiquette.',
