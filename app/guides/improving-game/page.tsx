@@ -3,15 +3,17 @@ import Link from 'next/link'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Improving Your Pickleball Game - Tips & Strategies',
-  description: 'Learn advanced techniques, strategies, and tips to take your pickleball skills to the next level. Comprehensive guide for intermediate and advanced players.',
+  title: 'How to Actually Improve Your Pickleball Game in Austin, TX (2026)',
+  description: 'Practical guide to getting better at pickleball in Austin — where to take lessons, find clinics, join leagues, and use open play to sharpen your game at local courts.',
   keywords: [
-    'improve pickleball',
-    'pickleball tips',
-    'pickleball strategies',
-    'pickleball techniques',
-    'advanced pickleball',
-    'pickleball training'
+    'improve pickleball Austin',
+    'pickleball lessons Austin TX',
+    'pickleball clinics Austin',
+    'Austin pickleball leagues',
+    'pickleball tips Austin',
+    'pickleball training Austin',
+    'get better at pickleball Austin',
+    'pickleball coach Austin Texas'
   ],
   alternates: {
     canonical: 'https://pickleballatx.org/guides/improving-game',
@@ -19,6 +21,40 @@ export const metadata: Metadata = {
 }
 
 export default function ImprovingGamePage() {
+  const publishedDate = '2025-03-15'
+  const modifiedDate = '2026-06-12'
+
+  const faqItems = [
+    {
+      question: 'Where can I take pickleball lessons in Austin?',
+      answer: 'Austin Tennis & Pickleball Center (ATPC) and Pickleland are the top spots for structured lessons. ATPC offers group clinics and private coaching. Pickleland has indoor courts year-round with instructors on staff. Several independent coaches also work out of park courts across the city.'
+    },
+    {
+      question: 'Are there pickleball clinics in Austin?',
+      answer: 'Yes — ATPC runs regular clinics at different skill levels, and the Austin Pickle League periodically hosts skill-building workshops. Check the ATPC schedule directly, as clinics fill quickly.'
+    },
+    {
+      question: 'What is the fastest way to improve at pickleball?',
+      answer: 'Play up — consistently competing against players who are better than you forces faster improvement than playing within your comfort zone. In Austin, higher-level open play sessions and league play will accelerate your development more than drilling alone.'
+    },
+    {
+      question: 'How do I find a pickleball drilling partner in Austin?',
+      answer: 'The Austin Pickleball Facebook group and Meetup.com are active communities where players look for drilling partners. You can also ask at open play sessions — most regulars are happy to stay late and drill.'
+    },
+    {
+      question: 'Which Austin courts are best for competitive open play?',
+      answer: 'ATPC is the go-to for competitive open play with skill-separated sessions. Onion Creek Metro Park and Parmer Lane courts draw consistent competitive players during peak hours. Pickleland hosts indoor competitive play year-round, which is ideal during summer and bad weather.'
+    },
+    {
+      question: 'Does Austin heat affect how I should train?',
+      answer: 'Significantly. Summer outdoor play in Austin (May–September) means early morning or evening-only sessions for most people. ATPC and Pickleland indoor courts are climate-controlled and worth the fee during summer when outdoor play is brutal by 9am.'
+    },
+    {
+      question: 'What skill level should I be before joining an Austin pickleball league?',
+      answer: 'Most Austin leagues have beginner-friendly divisions starting around 2.5–3.0. The Austin Pickle League and ATPC leagues are structured with clear skill groupings — you do not need to be advanced to compete.'
+    },
+  ]
+
   return (
     <>
       {/* Article Schema */}
@@ -29,22 +65,48 @@ export default function ImprovingGamePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Improving Your Pickleball Game - Tips & Strategies',
-            description: 'Comprehensive guide to advanced pickleball techniques, strategies, and training tips.',
+            headline: 'How to Actually Improve Your Pickleball Game in Austin, TX (2026)',
+            description: 'Practical guide to getting better at pickleball in Austin — where to take lessons, find clinics, join leagues, and use open play to sharpen your game at local courts.',
+            image: 'https://pickleballatx.org/images/og-image.jpg',
+            datePublished: publishedDate,
+            dateModified: modifiedDate,
             author: {
-              '@type': 'Organization',
-              name: 'Pickleball ATX',
+              '@type': 'Person',
+              name: 'Arin Brown',
             },
             publisher: {
               '@type': 'Organization',
               name: 'Pickleball ATX',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://pickleballatx.org/images/logo.png'
+              }
             },
-            datePublished: '2025-01-01',
-            dateModified: '2025-01-31',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://pickleballatx.org/guides/improving-game',
             },
+            articleSection: 'Guides',
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <Script
+        id="faq-schema-improving"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(item => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+              },
+            })),
           }),
         }}
       />
@@ -57,13 +119,13 @@ export default function ImprovingGamePage() {
               ← Back to Guides
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Improving Your Pickleball Game
+              How to Actually Improve Your Pickleball Game in Austin
             </h1>
             <p className="text-xl text-primary-50">
-              Advanced techniques and strategies to elevate your play
+              Lessons, leagues, clinics, and open play strategy — your roadmap to getting better on Austin courts
             </p>
             <p className="text-primary-100/90 text-sm mt-4">
-              By Pickleball ATX · Published January 1, 2025 · Last updated January 31, 2025
+              By Arin Brown · Updated June 12, 2026
             </p>
           </div>
         </section>
@@ -73,223 +135,253 @@ export default function ImprovingGamePage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="lead">
-                Once you've mastered the basics of pickleball, the journey to improvement becomes about refining 
-                technique, developing strategy, and building consistency. Whether you're looking to compete in 
-                tournaments or simply want to play better in your local games, these advanced tips and strategies 
-                will help take your game to the next level.
+                Generic pickleball improvement advice is everywhere. What&apos;s harder to find is a clear picture
+                of <em>how to actually improve in Austin</em> — which courts to practice at, where to find a coach,
+                which leagues will push your game, and how to make open play sessions count instead of just
+                socially batting the ball around. This guide covers all of it.
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Mastering the Dink
+                The Austin Improvement Ecosystem: Know Your Options
               </h2>
               <p>
-                The dink is one of the most important shots in pickleball, especially in advanced play:
+                Austin has a surprisingly mature pickleball infrastructure for improvement-minded players. Before
+                deciding how to approach your development, it helps to understand what&apos;s available:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Soft Touch:</strong> Use a gentle, controlled motion. The goal is to place the ball 
-                in the non-volley zone, not to hit it hard.</li>
-                <li><strong>Low to High:</strong> Start with your paddle low and move upward through the ball 
-                for better control and spin.</li>
-                <li><strong>Target the Feet:</strong> Aim for your opponent's feet in the kitchen to force 
-                difficult returns.</li>
-                <li><strong>Cross-Court Dinks:</strong> Use cross-court dinks to create angles and open up the court.</li>
-                <li><strong>Patience:</strong> Don't rush dink rallies. Wait for the right opportunity to attack.</li>
-                <li><strong>Practice:</strong> Set up dink drills with a partner to improve consistency and placement.</li>
+                <li><strong>Austin Tennis &amp; Pickleball Center (ATPC):</strong> The city&apos;s flagship dedicated
+                facility. Offers group clinics, private lessons, and skill-separated open play. The staff coaches here
+                are legit — this should be your first call if you want structured coaching.</li>
+                <li><strong>Pickleland:</strong> Indoor facility with climate-controlled courts — critical during
+                Austin summers. Has instructors on staff and hosts regular clinics. The indoor environment also means
+                you can practice ball control without wind or heat affecting every shot.</li>
+                <li><strong>Park Courts (Onion Creek, Parmer Lane, and others):</strong> Free outdoor courts where
+                Austin&apos;s open play culture is most active. Great for game reps but less structured. The skill
+                level varies widely depending on time of day.</li>
+                <li><strong>Austin Pickle League and ATPC Leagues:</strong> Structured competitive play with skill
+                divisions. The fastest way to get real match pressure at the right level.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Third Shot Strategies
+                Where to Take Lessons in Austin
               </h2>
               <p>
-                The third shot (your team's first shot after the serve) is crucial:
+                Taking lessons — even just a few — will compress months of self-taught improvement into a much
+                shorter window. The mistake most players make is waiting too long to get coaching, then spending
+                years unlearning bad habits.
+              </p>
+              <p>
+                <strong>Austin Tennis &amp; Pickleball Center (ATPC)</strong> is the top option for structured
+                coaching. They offer private lessons and group clinics at multiple skill levels. Group clinics are
+                significantly more affordable and still effective — you&apos;ll get direct feedback on technique,
+                not just game reps. Check the ATPC schedule and book early; weekend clinics fill fast.
+              </p>
+              <p>
+                <strong>Pickleland</strong> also has coaches available for lessons on their indoor courts. Indoor
+                practice is particularly valuable for working on ball control and footwork without weather variables.
+                If you&apos;re trying to fix a specific technical issue — grip, serve mechanics, dinking
+                consistency — book an indoor session where conditions are controlled.
+              </p>
+              <p>
+                <strong>Independent coaches</strong> operate at several Austin courts. The Facebook group
+                &quot;Austin Pickleball&quot; is a good place to ask for recommendations — locals will point you to
+                who&apos;s currently active and well-regarded. Some coaches work out of Onion Creek, some out of
+                private courts in the area.
+              </p>
+
+              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
+                Using Austin Open Play to Actually Improve
+              </h2>
+              <p>
+                Open play is the most accessible form of practice in Austin, but it&apos;s easy to spend two hours
+                on a court without meaningfully improving. Here&apos;s how to make it count:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Third Shot Drop:</strong> A soft shot that lands in the opponent's non-volley zone. 
-                This allows you to move to the net and neutralize the opponent's advantage.</li>
-                <li><strong>Third Shot Drive:</strong> A hard, low shot aimed at the opponent's feet. Can catch 
-                opponents off guard but requires good control.</li>
-                <li><strong>When to Use Each:</strong> Use drops when opponents are at the net, drives when they're 
-                back or when you need to change pace.</li>
-                <li><strong>Practice Both:</strong> Develop both shots so you can mix them up and keep opponents 
-                guessing.</li>
+                <li><strong>Play up, not sideways.</strong> It&apos;s tempting to stay in games against
+                similar-level players. Seek out the higher-skill rotations. At ATPC, the skill-separated sessions
+                make this straightforward. At park courts, you can usually identify where the better players are
+                congregating and work your way into those rotations.</li>
+                <li><strong>Focus on one thing per session.</strong> Pick one technique — third shot drops, dinking
+                consistency, net positioning — and make it the priority. Trying to fix everything at once in open
+                play doesn&apos;t work.</li>
+                <li><strong>Arrive early at park courts.</strong> Early morning at Onion Creek and Parmer Lane tends
+                to draw serious players. Mid-day (especially summer) is more casual. If competitive games matter to
+                you, 7–9am before the heat hits is the window.</li>
+                <li><strong>Ask the better players.</strong> Austin&apos;s pickleball community is generally
+                welcoming. After a game, most experienced players will offer a tip or two if you ask. Don&apos;t be
+                passive about it.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Net Play and Volleying
+                Austin Leagues: The Fastest Path to Match-Level Improvement
               </h2>
               <p>
-                Controlling the net is key to winning in pickleball:
+                Drilling and open play will only take you so far. The pressure of actual league competition —
+                where the score matters, you have a partner depending on you, and you play the same opponents
+                multiple times — forces faster adaptation than casual play.
+              </p>
+              <p>
+                <strong>Austin Pickle League</strong> runs regular leagues across skill levels. If you&apos;re
+                around 3.0 or above, this is worth doing. Find the right division for your level — playing in a
+                division that&apos;s too high will be frustrating; too low and you won&apos;t improve.
+              </p>
+              <p>
+                <strong>ATPC leagues</strong> are well-organized with clear skill groupings. The indoor options are
+                particularly good during summer when outdoor evening play can still be oppressively hot. ATPC league
+                play also puts you in front of coaches regularly, which creates natural coaching opportunities.
+              </p>
+              <p>
+                <strong>Amateur tournaments:</strong> Austin periodically hosts amateur pickleball tournaments.
+                Playing a tournament — even once — is a significant experience jump. You&apos;ll encounter players
+                who&apos;ve prepped specifically to beat you, and the format forces consistency in a way casual open
+                play doesn&apos;t.
+              </p>
+
+              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
+                The Technique Fundamentals Worth Drilling
+              </h2>
+              <p>
+                With the Austin context in mind, here are the technique areas that produce the biggest improvements
+                for intermediate players. These are the things coaches at ATPC and Pickleland work on with
+                students — knowing them going in accelerates the process.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">Master the Dink Before Anything Else</h3>
+              <p>
+                The dink separates intermediate from advanced play more than any other shot. Most Austin open play
+                at 3.0–3.5 level is decided by who can sustain a dink rally without popping up a ball that gets
+                attacked.
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Get to the Net:</strong> After the third shot, move forward to the non-volley zone line.</li>
-                <li><strong>Ready Position:</strong> Keep your paddle up and in front, ready to react quickly.</li>
-                <li><strong>Soft Hands:</strong> Use a soft grip and absorb the ball's pace rather than swinging hard.</li>
-                <li><strong>Angle Volleys:</strong> Use angles to hit winners and create openings.</li>
-                <li><strong>Block Volleys:</strong> Learn to block hard shots back with control rather than trying 
-                to overpower them.</li>
-                <li><strong>Stay Out of the Kitchen:</strong> Be mindful of the non-volley zone - you can't volley 
-                from there, but you can hit after a bounce.</li>
+                <li><strong>Paddle low, contact soft:</strong> Gentle upward motion, not a swing. You&apos;re
+                placing the ball, not hitting it.</li>
+                <li><strong>Target the feet:</strong> Aim for your opponent&apos;s feet in the kitchen — not just
+                &quot;into the kitchen&quot; — to force difficult returns.</li>
+                <li><strong>Cross-court is safer:</strong> Cross-court dinks travel over the lowest part of the
+                net and give you the widest angle. Don&apos;t default to straight-ahead dinks.</li>
+                <li><strong>Patience wins:</strong> Don&apos;t try to end a dink rally by forcing an attack when
+                the opportunity isn&apos;t there. Wait for a ball that rises above net height before switching
+                to offense.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">Third Shot Drop: The Shot That Unlocks Net Play</h3>
+              <p>
+                If you&apos;re currently hitting hard drives on the third shot as your default, you&apos;re giving
+                net-position players exactly what they want. The third shot drop — landing in the kitchen — is what
+                lets your team transition from the baseline to the net.
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Think of it as a controlled arc: soft, landing deep in the kitchen with minimal pace.</li>
+                <li>Your third shot drop doesn&apos;t need to be perfect — it just needs to be un-attackable.
+                If it lands below net height at your opponents&apos; feet, you&apos;ve done your job.</li>
+                <li>After a successful drop, move forward. The whole point is to get both players to the net.</li>
+                <li>Practice this specifically with a partner: one player at the baseline hitting thirds, one player
+                at the kitchen returning. It&apos;s a simple drill with high ROI.</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">Net Position and Volley Control</h3>
+              <p>
+                Once you&apos;re at the net, the game changes. Most intermediate players get to the net but then
+                lose it — either by poaching into their partner&apos;s space, over-swinging at volleys, or getting
+                lobbed back because they&apos;re standing too far in.
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Stand about 1–2 feet behind the kitchen line, not right on it — gives you room to handle lobs
+                without retreating awkwardly.</li>
+                <li>Soft hands on volleys: absorb the ball and redirect rather than swinging. Power volleys from
+                the net usually go out or get blocked back.</li>
+                <li>In doubles, keep your paddle up and in front between shots. Reaction time at the net
+                is everything.</li>
+                <li>Call the middle ball. The most common net position breakdown in Austin open play is two players
+                hesitating on a ball down the center. Pick a convention (usually the forehand side takes it) and
+                commit.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Serving Strategies
+                Playing in Austin&apos;s Heat: Practice Smart
               </h2>
               <p>
-                A good serve sets up the point:
+                This is specific to Austin and genuinely affects how you should structure your improvement:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Deep Serves:</strong> Serve deep to push opponents back and give yourself time to get 
-                to the net.</li>
-                <li><strong>Vary Placement:</strong> Mix up serves to different areas to keep opponents guessing.</li>
-                <li><strong>Consistency First:</strong> A consistent serve is better than a risky one that goes out.</li>
-                <li><strong>Add Spin:</strong> Learn to add topspin or sidespin to make returns more difficult.</li>
-                <li><strong>Target Weaknesses:</strong> If an opponent has a weak backhand, serve to that side.</li>
+                <li><strong>May through September:</strong> Outdoor courts are playable before 9am and after 7pm.
+                Midday practice is rough — physical fatigue sets in fast and your technique will deteriorate in the
+                heat. Schedule serious drilling sessions for early morning or evening.</li>
+                <li><strong>Use indoor courts for technique work:</strong> ATPC and Pickleland indoor courts are
+                worth paying for during summer. No wind, no sun, consistent temperature. If you&apos;re working on
+                shot mechanics, indoor is better anyway.</li>
+                <li><strong>Hydration affects your game:</strong> Players consistently underestimate this.
+                Dehydration shows up as slower footwork and worse decision-making before you notice thirst. Bring
+                more water than you think you need to outdoor sessions.</li>
+                <li><strong>Ball behavior changes in heat:</strong> In extreme heat, the ball tends to play faster
+                and bounce higher. Worth knowing if you&apos;re drilling outdoors in summer and then playing an
+                indoor league match — the pacing is different.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Doubles Strategy
+                Finding a Drilling Partner in Austin
               </h2>
               <p>
-                Effective doubles play requires teamwork and positioning:
+                Structured drilling with a partner — not just open play — is what accelerates technique improvement.
+                The challenge is finding someone at a compatible skill level who&apos;s motivated enough to show up
+                and drill rather than just play.
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Communication:</strong> Talk to your partner about who's taking shots, especially 
-                middle balls.</li>
-                <li><strong>Stacking:</strong> Learn stacking (positioning adjustments) to optimize court coverage 
-                based on player strengths.</li>
-                <li><strong>Cover the Middle:</strong> The middle of the court is vulnerable - coordinate with your 
-                partner to cover it.</li>
-                <li><strong>Poaching:</strong> When your partner is serving, you can "poach" (take) shots on your 
-                side to surprise opponents.</li>
-                <li><strong>Both at Net:</strong> Try to get both players to the net together - this creates the 
-                strongest position.</li>
-                <li><strong>Lob Strategy:</strong> Use lobs strategically to move opponents back, but be careful - 
-                a bad lob is an easy put-away.</li>
+                <li><strong>Austin Pickleball Facebook group:</strong> The most active online community for Austin
+                players. Post that you&apos;re looking for a drilling partner at your skill level — you&apos;ll get
+                responses.</li>
+                <li><strong>Meetup.com:</strong> Austin pickleball Meetup groups run regular sessions and are a
+                natural place to connect with consistent practice partners.</li>
+                <li><strong>Ask at open play:</strong> After a good game with a player at a similar level, ask if
+                they&apos;d be interested in occasional drilling sessions. Most competitive players are looking for
+                the same thing.</li>
+                <li><strong>ATPC and Pickleland staff:</strong> Both facilities can help connect players looking for
+                practice partners — ask at the front desk.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Shot Selection and Placement
+                Common Mistakes Austin Players Make
               </h2>
-              <p>
-                Smart shot selection wins more points than power:
-              </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Hit to Weaknesses:</strong> Identify and target your opponent's weaker side or shots.</li>
-                <li><strong>Use Angles:</strong> Create angles to open up the court and force opponents to cover 
-                more ground.</li>
-                <li><strong>Change Pace:</strong> Mix soft shots with hard shots to disrupt opponent's rhythm.</li>
-                <li><strong>Target the Middle:</strong> In doubles, shots down the middle can create confusion about 
-                who should take the ball.</li>
-                <li><strong>Go Behind:</strong> When opponents are moving forward, hit behind them to catch them 
-                off balance.</li>
-                <li><strong>Drop Shots:</strong> Use drop shots from the baseline to bring opponents to the net 
-                on your terms.</li>
+                <li><strong>Only playing open play:</strong> Open play is game reps but limited skill transfer
+                without deliberate practice. Supplement with drilling or coaching.</li>
+                <li><strong>Avoiding the kitchen:</strong> Many intermediate Austin players drive everything from
+                the baseline. Getting to the net and dinking is where the game is actually played at 3.5+.</li>
+                <li><strong>Waiting until &quot;ready&quot; to join a league:</strong> Most players who feel
+                &quot;almost ready&quot; for league play are already ready. The league will accelerate your
+                improvement faster than waiting.</li>
+                <li><strong>Not adapting to indoor vs. outdoor:</strong> Austin has both, and they play differently.
+                If you only practice outdoors, you&apos;ll be caught off-guard by the speed of indoor play.</li>
+                <li><strong>Skipping the fundamentals:</strong> A lot of intermediate players in Austin have gaps
+                in basics (grip, ready position, split step) because they learned by watching and imitating. Clinics
+                tend to expose these gaps quickly.</li>
               </ul>
 
+              {/* FAQ Section */}
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Footwork and Court Movement
+                Frequently Asked Questions
               </h2>
-              <p>
-                Good footwork is the foundation of good play:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Stay on Your Toes:</strong> Be ready to move in any direction quickly.</li>
-                <li><strong>Split Step:</strong> Use a small hop (split step) when your opponent is about to hit 
-                to improve reaction time.</li>
-                <li><strong>Move Forward:</strong> After hitting, move forward toward the net when possible.</li>
-                <li><strong>Recovery:</strong> After hitting a shot, recover to a good position for the next shot.</li>
-                <li><strong>Balance:</strong> Maintain good balance - don't overcommit to shots that leave you 
-                out of position.</li>
-                <li><strong>Court Awareness:</strong> Know where you are on the court and where you should be.</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Mental Game
-              </h2>
-              <p>
-                The mental aspect of pickleball is just as important as physical skills:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Stay Focused:</strong> Don't dwell on mistakes - focus on the next point.</li>
-                <li><strong>Positive Attitude:</strong> Maintain a positive attitude even when things aren't going well.</li>
-                <li><strong>Patience:</strong> Don't try to force winners - wait for the right opportunity.</li>
-                <li><strong>Adapt:</strong> Adjust your strategy based on what's working and what isn't.</li>
-                <li><strong>Learn from Losses:</strong> Use losses as learning opportunities to identify areas 
-                for improvement.</li>
-                <li><strong>Visualization:</strong> Visualize successful shots and strategies before playing.</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Practice Drills
-              </h2>
-              <p>
-                Structured practice accelerates improvement:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Dink Rallies:</strong> Practice extended dink rallies with a partner to improve touch 
-                and consistency.</li>
-                <li><strong>Third Shot Practice:</strong> Set up drills specifically for third shot drops and drives.</li>
-                <li><strong>Volley Practice:</strong> Stand at the net and practice volleys with a partner.</li>
-                <li><strong>Serve Practice:</strong> Practice serving to different targets to improve accuracy.</li>
-                <li><strong>Movement Drills:</strong> Practice moving from baseline to net and back.</li>
-                <li><strong>Game Situations:</strong> Practice specific game situations (like 3-2 score) to prepare 
-                for pressure moments.</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Physical Conditioning
-              </h2>
-              <p>
-                Better fitness improves your game:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Cardio:</strong> Good cardiovascular fitness helps you maintain energy throughout games.</li>
-                <li><strong>Strength:</strong> Core and leg strength improve power and stability.</li>
-                <li><strong>Flexibility:</strong> Stretching helps prevent injuries and improves range of motion.</li>
-                <li><strong>Balance:</strong> Balance exercises improve court movement and shot stability.</li>
-                <li><strong>Recovery:</strong> Allow time for rest and recovery between intense play sessions.</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Learning from Better Players
-              </h2>
-              <p>
-                One of the best ways to improve is to play with and learn from better players:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Play Up:</strong> Seek out games with players who are better than you.</li>
-                <li><strong>Watch and Learn:</strong> Observe how advanced players position themselves and select shots.</li>
-                <li><strong>Ask Questions:</strong> Don't be afraid to ask better players for tips and advice.</li>
-                <li><strong>Take Lessons:</strong> Consider taking lessons from a certified pickleball instructor.</li>
-                <li><strong>Join Leagues:</strong> Join organized leagues to play regularly against competitive players.</li>
-                <li><strong>Watch Videos:</strong> Study instructional videos and professional matches online.</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Common Mistakes to Avoid
-              </h2>
-              <p>
-                Avoid these common pitfalls:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Overhitting:</strong> Trying to hit every shot as hard as possible - control is more important.</li>
-                <li><strong>Poor Positioning:</strong> Not getting to the net after the third shot.</li>
-                <li><strong>Kitchen Violations:</strong> Volleying from the non-volley zone - be aware of your position.</li>
-                <li><strong>Lack of Patience:</strong> Trying to end points too quickly instead of building the point.</li>
-                <li><strong>Poor Communication:</strong> In doubles, not communicating with your partner about shot selection.</li>
-                <li><strong>Predictable Play:</strong> Using the same shots repeatedly - mix it up to keep opponents guessing.</li>
-              </ul>
+              <div className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <div key={index} className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.question}</h3>
+                    <p className="text-gray-700">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
 
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Put It Into Practice</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Find Your Court</h3>
                 <p className="mb-4">
-                  The best way to improve is through regular play. Find courts near you using our{' '}
-                  <Link href="/courts" className="text-primary-600 hover:underline font-semibold">court directory</Link> and 
-                  get out there to practice these techniques.
+                  The first step to improving is putting in consistent reps. Use our{' '}
+                  <Link href="/courts" className="text-primary-600 hover:underline font-semibold">Austin court directory</Link> to
+                  find the nearest courts for open play, or explore{' '}
+                  <Link href="/guides/best-courts-beginners" className="text-primary-600 hover:underline font-semibold">beginner-friendly courts</Link> if
+                  you&apos;re just getting started.
                 </p>
                 <p>
-                  For beginners looking to build a foundation, check out our{' '}
-                  <Link href="/guides/beginner" className="text-primary-600 hover:underline font-semibold">beginner's guide</Link>.
+                  For gear recommendations before you buy, check our{' '}
+                  <Link href="/guides/beginner-gear" className="text-primary-600 hover:underline font-semibold">beginner gear guide</Link>.
                 </p>
               </div>
             </div>

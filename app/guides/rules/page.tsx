@@ -3,15 +3,17 @@ import Link from 'next/link'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Pickleball Rules & Scoring - Complete Guide',
-  description: 'Learn the official pickleball rules, scoring system, serving rules, and common situations. Complete guide to understanding how pickleball is played.',
+  title: 'Pickleball Rules Explained: What to Know Before Playing in Austin (2026)',
+  description: 'Complete guide to pickleball rules, scoring, and kitchen rules — framed for Austin open play and leagues. What you actually need to know before showing up on an Austin court.',
   keywords: [
-    'pickleball rules',
+    'pickleball rules Austin',
     'pickleball scoring',
-    'pickleball serving rules',
-    'how to play pickleball',
-    'pickleball game rules',
-    'pickleball court rules'
+    'pickleball kitchen rules',
+    'how to play pickleball Austin',
+    'pickleball rules open play',
+    'pickleball game rules Texas',
+    'pickleball rules for beginners Austin',
+    'Austin pickleball open play rules'
   ],
   alternates: {
     canonical: 'https://pickleballatx.org/guides/rules',
@@ -19,6 +21,40 @@ export const metadata: Metadata = {
 }
 
 export default function RulesPage() {
+  const publishedDate = '2025-03-20'
+  const modifiedDate = '2026-06-12'
+
+  const faqItems = [
+    {
+      question: 'What are the basic rules of pickleball for beginners?',
+      answer: 'Pickleball is played to 11 points (win by 2), using an underhand serve, with a two-bounce rule after the serve. The kitchen (non-volley zone) is the 7-foot area near the net where you cannot volley the ball. Only the serving team scores in traditional scoring. In doubles, each team gets two serves before the serve switches.'
+    },
+    {
+      question: 'What is the kitchen rule in pickleball?',
+      answer: 'You cannot volley (hit the ball in the air) while standing in or touching the non-volley zone (the kitchen). You CAN hit the ball out of the kitchen after it bounces. If your momentum carries you into the kitchen after a volley, that is also a fault — even if you had already left the zone when you hit.'
+    },
+    {
+      question: 'Do Austin courts use traditional or rally scoring?',
+      answer: 'Most Austin open play and recreational courts use traditional side-out scoring (only the server scores). Some organized clinics and leagues may use rally scoring for time management — always check with the organizer. ATPC leagues primarily use traditional scoring.'
+    },
+    {
+      question: 'What happens if the serve hits the net in pickleball?',
+      answer: 'If the serve hits the net and lands in the correct service area, it is a "let" and the serve is replayed. If it hits the net and lands outside the service area, or hits the net and does not go over, it is a fault.'
+    },
+    {
+      question: 'How does serving work in doubles pickleball?',
+      answer: 'Each team gets two serves (one per player) before the serve switches to the other team, with one exception: at the very start of the game, the first serving team only gets one serve. The server calls the score before each serve as three numbers: serving team score, receiving team score, server number (1 or 2).'
+    },
+    {
+      question: 'What is the two-bounce rule in pickleball?',
+      answer: 'After the serve, the receiving team must let the ball bounce before returning it. Then the serving team must also let that return bounce before hitting it. After those two bounces, both teams can volley or let it bounce — your choice. This prevents serve-and-volley dominance and keeps rallies going.'
+    },
+    {
+      question: 'What are common faults called in Austin open play?',
+      answer: 'Kitchen violations (volleying in the non-volley zone) and double-bouncing are the most common. Players call their own out balls in open play — if you see it clearly out, call it immediately. If you are unsure, it is in. Most Austin open play follows an honor system with good sportsmanship expected.'
+    },
+  ]
+
   return (
     <>
       {/* Article Schema */}
@@ -29,26 +65,52 @@ export default function RulesPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Pickleball Rules & Scoring - Complete Guide',
-            description: 'Comprehensive guide to official pickleball rules, scoring system, and game play.',
+            headline: 'Pickleball Rules Explained: What to Know Before Playing in Austin (2026)',
+            description: 'Complete guide to pickleball rules, scoring, and kitchen rules — framed for Austin open play and leagues.',
+            image: 'https://pickleballatx.org/images/og-image.jpg',
+            datePublished: publishedDate,
+            dateModified: modifiedDate,
             author: {
-              '@type': 'Organization',
-              name: 'Pickleball ATX',
+              '@type': 'Person',
+              name: 'Arin Brown',
             },
             publisher: {
               '@type': 'Organization',
               name: 'Pickleball ATX',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://pickleballatx.org/images/logo.png'
+              }
             },
-            datePublished: '2025-01-01',
-            dateModified: '2025-01-31',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://pickleballatx.org/guides/rules',
             },
+            articleSection: 'Guides',
           }),
         }}
       />
-      
+
+      {/* FAQPage Schema */}
+      <Script
+        id="faq-schema-rules"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(item => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+              },
+            })),
+          }),
+        }}
+      />
+
       <div>
         {/* Header */}
         <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-16">
@@ -57,13 +119,13 @@ export default function RulesPage() {
               ← Back to Guides
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Pickleball Rules & Scoring
+              Pickleball Rules: What to Know Before Playing in Austin
             </h1>
             <p className="text-xl text-primary-50">
-              Complete guide to understanding how pickleball is played
+              Official rules, scoring, kitchen rules, and how they apply in Austin open play and leagues
             </p>
             <p className="text-primary-100/90 text-sm mt-4">
-              By Pickleball ATX · Published January 1, 2025 · Last updated January 31, 2025
+              By Arin Brown · Updated June 12, 2026
             </p>
           </div>
         </section>
@@ -73,219 +135,237 @@ export default function RulesPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="lead">
-                Understanding the rules of pickleball is essential for enjoying the game and playing correctly. 
-                While pickleball combines elements of tennis, badminton, and ping-pong, it has its own unique 
-                set of rules that make it distinct. This guide covers the official rules as established by 
-                USA Pickleball, the sport's governing body in the United States.
+                Pickleball&apos;s rules are not complicated, but a few of them — particularly the kitchen and
+                the two-bounce rule — catch new players off guard in ways that disrupt open play. This guide
+                covers the official rules as established by USA Pickleball, with specific callouts for how
+                they apply in Austin open play at courts like ATPC, Onion Creek, and Parmer Lane. Know these
+                before you show up and you&apos;ll be a welcome addition to any rotation.
               </p>
+
+              <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">The Four Rules That Matter Most</h3>
+                <p>
+                  If you only learn four things before your first Austin open play session, make it these:
+                  (1) serve underhand, (2) let the ball bounce twice before volleying, (3) don&apos;t volley
+                  from the kitchen, and (4) call your own out balls honestly. Everything else you&apos;ll
+                  pick up in the first game.
+                </p>
+              </div>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
                 Court Dimensions and Setup
               </h2>
               <p>
-                A pickleball court is 20 feet wide and 44 feet long, divided into several key areas:
+                A pickleball court is 20 feet wide and 44 feet long — roughly a third the size of a tennis
+                court. Most Austin parks stripe their courts clearly. Here&apos;s what you&apos;re looking at:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Baseline:</strong> The back line of the court (22 feet from the net)</li>
-                <li><strong>Non-Volley Zone (Kitchen):</strong> The 7-foot area on both sides of the net where 
-                players cannot volley (hit the ball in the air)</li>
-                <li><strong>Service Areas:</strong> The court is divided into right and left service areas on 
-                each side</li>
-                <li><strong>Center Line:</strong> Divides the service areas on each side of the net</li>
-                <li><strong>Net Height:</strong> 36 inches at the sidelines, 34 inches at the center</li>
+                <li><strong>Baseline:</strong> The back line of the court (22 feet from the net) — where you
+                serve from</li>
+                <li><strong>Non-Volley Zone (Kitchen):</strong> The 7-foot area on both sides of the net — no
+                volleying here under any circumstances</li>
+                <li><strong>Service Areas:</strong> The court is divided into right and left service boxes on
+                each side of the net</li>
+                <li><strong>Net Height:</strong> 36 inches at the sidelines, 34 inches at the center — lower
+                in the middle, which is why cross-court shots are strategically safer</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
                 Scoring System
               </h2>
               <p>
-                Pickleball uses a unique scoring system:
+                Standard pickleball uses traditional side-out scoring. This is what you&apos;ll encounter at
+                most Austin open play sessions and ATPC leagues:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Games are played to 11 points</strong>, but you must win by 2 points</li>
-                <li><strong>Tournament games</strong> may be played to 15 or 21 points, also win by 2</li>
-                <li><strong>Only the serving team can score</strong> - if the receiving team wins the rally, 
-                they gain the serve but don't score</li>
-                <li><strong>Score is called as three numbers:</strong> Serving team's score, Receiving team's 
-                score, Server number (1 or 2)</li>
-                <li><strong>Example:</strong> "3-2-1" means serving team has 3, receiving team has 2, and 
-                it's the first server's turn</li>
+                <li><strong>Games are played to 11 points</strong>, must win by 2. Tournament games sometimes
+                go to 15 or 21.</li>
+                <li><strong>Only the serving team can score.</strong> If the receiving team wins the rally,
+                they earn the serve — not a point.</li>
+                <li><strong>Score is called as three numbers before each serve:</strong> serving team score,
+                receiving team score, server number (1 or 2 in doubles). Example: &quot;4-2-1&quot; means
+                server has 4, other team has 2, first server is up.</li>
+                <li><strong>Austin open play tip:</strong> In casual rotation play at park courts, some groups
+                skip the score call for speed. In any organized or league context, always call it — it&apos;s
+                part of the game and prevents disputes.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
                 Serving Rules
               </h2>
               <p>
-                Serving in pickleball has specific requirements:
+                The serve has more rules than most players realize. All of these apply at every Austin court:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Underhand Serve:</strong> The serve must be hit underhand with the paddle below 
-                the waist</li>
-                <li><strong>Contact Point:</strong> The paddle must contact the ball below the server's navel</li>
-                <li><strong>Foot Position:</strong> At least one foot must be behind the baseline when serving</li>
-                <li><strong>Serve Motion:</strong> The serve must be an upward arc motion</li>
-                <li><strong>Service Area:</strong> The serve must land in the diagonal service area (right 
-                court serves to right court, left to left)</li>
-                <li><strong>Two-Bounce Rule:</strong> After the serve, the ball must bounce once on each side 
-                before volleys are allowed</li>
+                <li><strong>Underhand only:</strong> The paddle must contact the ball below your waist, and
+                the motion must be upward arc (not sidearm, not overhand).</li>
+                <li><strong>Foot position:</strong> At least one foot must be behind the baseline. Stepping on
+                or over the line before contact is a foot fault.</li>
+                <li><strong>Where it must land:</strong> Diagonally across the net into the opponent&apos;s
+                service box — the serve cannot land in the kitchen or on the kitchen line.</li>
+                <li><strong>Let serve:</strong> If your serve hits the net and lands in the correct service
+                box, it&apos;s replayed. If it hits the net and falls short or lands out, it&apos;s a fault.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Double Bounce Rule
+                The Two-Bounce Rule (Double Bounce Rule)
               </h2>
               <p>
-                One of pickleball's most important rules:
+                This is the rule that most confuses newcomers. It exists to prevent serve-and-volley dominance
+                and is strictly enforced in Austin open play — violating it is the most common beginner mistake.
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>The ball must bounce once on the receiving side after the serve</li>
-                <li>The ball must then bounce once on the serving side after the return</li>
-                <li>After these two bounces, players can volley (hit the ball in the air) or let it bounce</li>
-                <li>This rule prevents serve-and-volley dominance and extends rallies</li>
+                <li>After the serve, the <strong>receiving team must let it bounce</strong> before returning.</li>
+                <li>After the return, the <strong>serving team must also let it bounce</strong> before hitting.</li>
+                <li>After those two bounces — one on each side — both teams can volley or let it bounce at
+                their discretion.</li>
+                <li>In practice: don&apos;t rush to the net before the serve is returned and that return has
+                bounced on your side. New players who sprint to the net after serving and volley the return
+                will hear &quot;two-bounce!&quot; called immediately.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Non-Volley Zone (The Kitchen)
+                Non-Volley Zone: The Kitchen Rules
               </h2>
               <p>
-                The 7-foot non-volley zone is a critical area with specific rules:
+                The kitchen is where most pickleball disputes happen in Austin open play. These rules are
+                non-negotiable and apply to every inch of the 7-foot zone, including the kitchen line itself:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>No Volleying:</strong> Players cannot hit the ball in the air (volley) while 
-                standing in the non-volley zone</li>
-                <li><strong>Can Hit After Bounce:</strong> Players can hit the ball after it bounces in the 
-                non-volley zone</li>
-                <li><strong>Momentum Rule:</strong> If a player's momentum carries them into the non-volley 
-                zone after a volley, it's a fault</li>
-                <li><strong>Foot Placement:</strong> Any part of the body touching the non-volley zone during 
-                a volley is a fault</li>
-                <li><strong>Strategy:</strong> The kitchen is where most dinking (soft shots) occurs</li>
+                <li><strong>You cannot volley from the kitchen.</strong> Volleying means hitting the ball
+                before it bounces. If any part of your body (or paddle, on the swing) is touching the kitchen
+                or kitchen line when you volley, it&apos;s a fault.</li>
+                <li><strong>You CAN hit from the kitchen after the ball bounces in it.</strong> Step in, let
+                it bounce, hit — that&apos;s perfectly legal and how dinking works.</li>
+                <li><strong>Momentum fault:</strong> If you volley near the kitchen line and your momentum
+                carries you into the zone after contact, it&apos;s a fault — even if you were legal at the
+                moment of contact. You must re-establish both feet outside the kitchen before hitting again.</li>
+                <li><strong>Austin open play tip:</strong> At competitive open play sessions (especially ATPC),
+                momentum faults are called regularly. At casual park courts they&apos;re sometimes let go —
+                but calling them is correct, and good players will call them on themselves.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Serving Sequence in Doubles
+                Doubles Serving Rotation
               </h2>
               <p>
-                Doubles play has a specific serving rotation:
+                The doubles serving rotation is the most confusing part of pickleball for new players — but
+                once it clicks, it&apos;s intuitive:
               </p>
               <ol className="list-decimal pl-6 space-y-2">
-                <li>The first server serves from the right side</li>
-                <li>If the serving team wins the point, the server moves to the left side and serves again</li>
-                <li>If the serving team loses the rally, the serve goes to the second server on the same team</li>
-                <li>When the second server loses the serve, the serve goes to the receiving team</li>
-                <li>The receiving team's first server serves from the right side, and the pattern continues</li>
-                <li>At the start of the game, only one player serves (the second server is skipped on the 
-                first service turn)</li>
+                <li>Game starts with one serve for the first team (second server is skipped to balance the
+                first-serve advantage).</li>
+                <li>Server starts from the right side when their score is even, left side when odd.</li>
+                <li>Win the rally, switch sides with your partner and serve again.</li>
+                <li>Lose the rally, your partner becomes server 2 and serves from where they stand.</li>
+                <li>Partner loses the rally, serve goes to the other team — they start with server 1.</li>
               </ol>
+              <p>
+                The easiest way to remember: you switch sides with your partner every time your team scores.
+                Your position on the court always reflects the current score — even score, right side; odd
+                score, left side.
+              </p>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Faults
+                Faults and How They&apos;re Called in Austin Open Play
               </h2>
               <p>
-                A fault results in the loss of the rally. Common faults include:
+                A fault ends the rally. In organized Austin play, players call their own out balls — honesty
+                is expected. Here are the most common:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Serve Faults:</strong> Ball doesn't land in the correct service area, foot fault 
-                (stepping on or over the baseline), hitting the ball above the waist</li>
-                <li><strong>Volley Faults:</strong> Hitting a volley while in the non-volley zone, hitting 
-                the ball out of bounds</li>
-                <li><strong>Double Bounce:</strong> Hitting the ball before it bounces on your side (after 
-                the serve and return)</li>
-                <li><strong>Net Faults:</strong> Ball hits the net on a serve and doesn't land in the service 
-                area, ball hits a permanent object before bouncing</li>
-                <li><strong>Contact Faults:</strong> Hitting the ball twice, catching or carrying the ball</li>
-                <li><strong>Non-Volley Zone Faults:</strong> Volleying from the kitchen, momentum carrying 
-                you into the kitchen after a volley</li>
+                <li><strong>Kitchen violation:</strong> Volleying in the NVZ, or momentum carrying you in
+                after a volley near the line.</li>
+                <li><strong>Two-bounce violation:</strong> Volleying before the required bounces have
+                occurred.</li>
+                <li><strong>Out of bounds:</strong> Ball lands outside the court. At Austin park courts with
+                multiple side-by-side courts, be especially careful about calling cross-court shots that are
+                close to the boundary — they&apos;re your call to make.</li>
+                <li><strong>Serve faults:</strong> Wrong service box, foot fault, ball hits the kitchen line
+                on a serve, overhand serve.</li>
+                <li><strong>Double hit:</strong> Hitting the ball twice with your paddle on the same shot
+                (continuous motion with one ball strike is legal; a distinct second contact is a fault).</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Let Serves
+                Line Calls and Sportsmanship at Austin Courts
               </h2>
               <p>
-                A "let" occurs when:
+                Austin&apos;s pickleball community has a strong culture of good sportsmanship. Here&apos;s
+                how line calls work in practice:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>The serve hits the net but lands in the correct service area - the serve is replayed</li>
-                <li>A player is not ready when the serve occurs (must be called immediately)</li>
-                <li>There's interference from an outside source (ball from another court, etc.)</li>
+                <li><strong>If it touches the line, it&apos;s in.</strong> Lines are part of the court — a
+                ball that clips the line is good. Exception: on the serve, a ball that lands on the kitchen
+                line is a fault (the kitchen line counts as the kitchen).</li>
+                <li><strong>Call immediately.</strong> If you see a ball land out, call it right when it
+                happens — not after you fail to return it. Delayed out calls after attempted shots are not
+                accepted.</li>
+                <li><strong>If you&apos;re unsure, it&apos;s in.</strong> Give your opponent the benefit of
+                the doubt. Austin&apos;s regulars will respect this, and you&apos;ll earn a reputation as a
+                fair player worth playing with.</li>
+                <li><strong>No replays for close calls.</strong> Once a ball is called out or in, the point
+                stands. There are no do-overs for disputed line calls in recreational play.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Line Calls
-              </h2>
-              <p>
-                Understanding line calls is important for fair play:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Balls are "in" if they touch any part of the line</strong> - lines are considered 
-                part of the court</li>
-                <li><strong>Players make their own calls</strong> - honesty and sportsmanship are essential</li>
-                <li><strong>If unsure, call it "in"</strong> - give your opponent the benefit of the doubt</li>
-                <li><strong>No replays</strong> - if a ball is called out, the point is over</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Common Situations
+                Common Situations Worth Knowing
               </h2>
               <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ball Hits the Net During Play</h3>
-                <p>If the ball hits the net during a rally and goes over, play continues. Only serves that hit 
-                the net and land in the service area are replayed (let).</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Ball Hits the Net During a Rally</h3>
+                <p>If the ball hits the net and goes over during a rally, play continues — the point
+                is live. Only serves that hit the net get a replay (let). If the ball hits the net and
+                does not go over, it&apos;s a fault.</p>
               </div>
               <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ball Bounces Twice</h3>
-                <p>If the ball bounces twice on one side before being returned, it's a fault. The ball must 
-                be returned before the second bounce.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Ball From Another Court</h3>
+                <p>At busy Austin courts like Onion Creek where multiple games run side by side, a ball
+                rolling onto your court mid-rally is grounds for a &quot;let&quot; — call it immediately,
+                stop play, and replay the point. Don&apos;t wait until after the rally.</p>
               </div>
               <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Player Hits Ball Twice</h3>
-                <p>If a player hits the ball twice with their paddle in one continuous motion, it's legal. 
-                However, if there's a distinct second hit, it's a fault.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Ball Hits a Player or Clothing</h3>
+                <p>If the ball hits any part of a player or their clothing (except the paddle hand below
+                the wrist on a valid swing), it&apos;s a fault for that player regardless of where they
+                were standing.</p>
               </div>
               <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded mb-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ball Hits Player or Clothing</h3>
-                <p>If the ball hits a player or their clothing before bouncing, it's a fault. The ball must 
-                hit the paddle or bounce first.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Singles vs. Doubles</h3>
+                <p>Same court, same rules — with one difference: in singles, each player has only one
+                serve (no server 2). Server serves from the right when their score is even, left when
+                odd. No partner to call the middle ball.</p>
               </div>
 
+              {/* FAQ Section */}
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Singles vs. Doubles Rules
+                Frequently Asked Questions
               </h2>
-              <p>
-                Most rules are the same, but there are key differences:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Singles:</strong> Only one serve per side (no second server). Server serves from 
-                right side when score is even, left side when score is odd.</li>
-                <li><strong>Doubles:</strong> Two serves per side (first and second server). More complex serving 
-                rotation as described above.</li>
-                <li><strong>Court Size:</strong> Same dimensions for both singles and doubles play.</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Official Rules Resources
-              </h2>
-              <p>
-                For the most current and detailed rules, refer to:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>USA Pickleball:</strong> The official rulebook is available at{' '}
-                <a href="https://usapickleball.org" target="_blank" rel="noopener noreferrer" 
-                className="text-primary-600 hover:underline">usapickleball.org</a></li>
-                <li><strong>International Federation of Pickleball (IFP):</strong> For international tournament rules</li>
-                <li><strong>Local Leagues:</strong> Some local leagues may have modified rules - always check 
-                with tournament or league organizers</li>
-              </ul>
+              <div className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <div key={index} className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.question}</h3>
+                    <p className="text-gray-700">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
 
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Play?</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Find a Court?</h3>
                 <p className="mb-4">
-                  Now that you understand the rules, find a court near you! Check out our{' '}
-                  <Link href="/courts" className="text-primary-600 hover:underline font-semibold">court directory</Link> to 
-                  find pickleball facilities in Austin.
+                  Now that you know the rules, find somewhere to play. Our{' '}
+                  <Link href="/courts" className="text-primary-600 hover:underline font-semibold">Austin court directory</Link> covers
+                  all 29 local courts with hours, surfaces, and open play info.
+                </p>
+                <p className="mb-4">
+                  New to the game? Check out our{' '}
+                  <Link href="/guides/best-courts-beginners" className="text-primary-600 hover:underline font-semibold">best courts for beginners</Link> to
+                  find a welcoming spot for your first session.
                 </p>
                 <p>
-                  For more tips on getting started, visit our{' '}
-                  <Link href="/guides/beginner" className="text-primary-600 hover:underline font-semibold">beginner's guide</Link>.
+                  For the complete official rulebook, visit{' '}
+                  <a href="https://usapickleball.org" target="_blank" rel="noopener noreferrer"
+                  className="text-primary-600 hover:underline">USA Pickleball</a> — the governing body
+                  for the sport in the United States.
                 </p>
               </div>
             </div>
