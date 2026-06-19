@@ -1319,6 +1319,46 @@ export const courts: Court[] = [
       'Given that this is a newer location, hours, reservation procedures, and full amenity details may evolve — check the Bouldin Acres website or social channels for the most current information before visiting. Parking is available on-site. The venue adds a second social pickleball option to an area that was previously underserved by both free and paid court facilities.'
     ],
     featured: false
+  },
+  {
+    id: '33',
+    name: 'Balcones Country Club',
+    slug: 'balcones-country-club',
+    address: '8600 Balcones Club Dr',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78750',
+    latitude: 30.3874,
+    longitude: -97.7662,
+    website: 'https://www.balconescountryclub.com',
+    email: 'balconespickleball@gmail.com',
+    mainImage: 'https://images.pexels.com/photos/1103833/pexels-photo-1103833.jpeg?w=800&h=600&fit=crop&crop=center',
+    images: [
+      'https://images.pexels.com/photos/1103833/pexels-photo-1103833.jpeg?w=800&h=600&fit=crop&crop=center'
+    ],
+    description: 'Balcones Country Club features 4 outdoor pickleball courts striped on a tennis court, with weekly open play available for members and guests. Located in Northwest Austin, this private club offers a relaxed setting for recreational pickleball in the Balcones area.',
+    amenities: ['Outdoor Courts', 'Weekly Open Play', 'Country Club Amenities', 'Guest Access'],
+    courtType: 'outdoor',
+    numberOfCourts: 4,
+    isFree: false,
+    pricing: {
+      details: 'Membership required. Members may bring guests to weekly open play sessions.',
+      rates: ['Membership required for access', 'Guest play available with member']
+    },
+    reservationRequired: false,
+    reservationInfo: 'Weekly Open Play sessions open to members and guests — no reservation required for open play',
+    hours: {
+      notes: 'Weekly Open Play for members and guests. Contact the club directly for current open play schedule and membership information.'
+    },
+    features: ['Membership Required', 'Guest Access', 'Weekly Open Play', 'Outdoor Courts', 'NW Austin'],
+    accessibility: ['Contact facility for accessibility information'],
+    parking: 'Club parking available',
+    longDescription: [
+      'Balcones Country Club in Northwest Austin offers 4 pickleball courts striped on an outdoor tennis court, giving members and their guests a solid option for casual play in the 78750 area. The club runs weekly Open Play sessions — one of the few private club settings in NW Austin where guests can access courts without a full membership commitment.',
+      'For players living in the Northwest Austin corridor — Balcones, Spicewood Springs, Four Points — this fills a real gap. The area is underserved by public pickleball courts, and the guest-accessible open play makes this a useful option even for non-members who know a member.',
+      'This is a private country club, so court access requires either membership or a guest invitation. Reach out directly for current open play times, membership information, and any reservation requirements for member court time outside of open play sessions.'
+    ],
+    featured: false
   }
 ]
 
