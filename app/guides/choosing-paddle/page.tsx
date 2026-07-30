@@ -4,15 +4,15 @@ import Script from 'next/script'
 import { FaCheckCircle, FaInfoCircle, FaRocket } from 'react-icons/fa'
 
 export const metadata: Metadata = {
-  title: 'How to Choose a Pickleball Paddle - Complete Guide',
-  description: 'Learn how to choose the perfect pickleball paddle based on your skill level, playing style, and preferences. Comprehensive guide to paddle materials, weight, grip size, and more.',
+  title: 'How to Choose a Pickleball Paddle in Austin, Texas | Pickleball ATX',
+  description: 'Austin-specific guide to choosing a pickleball paddle. Learn how heat, humidity, outdoor courts, and local playing conditions affect your paddle choice — plus where to demo paddles in Austin.',
   keywords: [
-    'pickleball paddle guide',
-    'how to choose pickleball paddle',
-    'best pickleball paddle',
-    'pickleball paddle selection',
+    'pickleball paddle guide austin',
+    'how to choose pickleball paddle austin texas',
+    'best pickleball paddle for outdoor play',
+    'pickleball paddle austin tx',
     'pickleball paddle materials',
-    'pickleball paddle weight'
+    'pickleball paddle weight heat humidity'
   ],
   alternates: {
     canonical: 'https://pickleballatx.org/guides/choosing-paddle',
@@ -30,8 +30,8 @@ export default function ChoosingPaddlePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'How to Choose a Pickleball Paddle - Complete Guide',
-            description: 'Comprehensive guide to selecting the perfect pickleball paddle based on skill level, playing style, and preferences.',
+            headline: 'How to Choose a Pickleball Paddle in Austin, Texas',
+            description: 'Austin-specific guide to selecting the right pickleball paddle — covering how heat, humidity, and outdoor court conditions affect your choice, plus where to demo paddles locally.',
             author: {
               '@type': 'Organization',
               name: 'Pickleball ATX',
@@ -45,7 +45,7 @@ export default function ChoosingPaddlePage() {
               },
             },
             datePublished: '2025-01-01',
-            dateModified: '2025-01-31',
+            dateModified: '2026-07-30',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': 'https://pickleballatx.org/guides/choosing-paddle',
@@ -62,13 +62,13 @@ export default function ChoosingPaddlePage() {
               ← Back to Guides
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              How to Choose a Pickleball Paddle
+              How to Choose a Pickleball Paddle in Austin
             </h1>
             <p className="text-xl text-primary-50">
-              A comprehensive guide to finding the perfect paddle for your game
+              What the generic guides miss — Austin heat, humidity, and outdoor courts change the equation
             </p>
             <p className="text-primary-100/90 text-sm mt-4">
-              By Pickleball ATX · Published January 1, 2025 · Last updated January 31, 2025
+              By Pickleball ATX · Published January 1, 2025 · Last updated July 30, 2026
             </p>
           </div>
         </section>
@@ -78,11 +78,23 @@ export default function ChoosingPaddlePage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
               <p className="lead">
-                Choosing the right pickleball paddle is one of the most important decisions you'll make as a player. 
-                Your paddle directly affects your control, power, spin, and overall enjoyment of the game. With 
-                hundreds of options available, finding the perfect paddle can seem overwhelming. This guide will 
-                help you understand the key factors to consider and make an informed decision.
+                Choosing the right pickleball paddle is one of the most important decisions you'll make as a player.
+                Your paddle directly affects your control, power, spin, and overall enjoyment of the game. With
+                hundreds of options available, finding the perfect paddle can seem overwhelming. This guide will
+                help you understand the key factors to consider — with specific attention to what playing in Austin, Texas actually demands.
               </p>
+
+              <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded mb-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Playing in Austin Changes the Math</h3>
+                <p className="text-gray-700">
+                  Most paddle guides are written for climate-controlled gyms in temperate cities. Austin is different.
+                  From May through September you're likely playing in 95°F+ heat with humidity. Most free public courts
+                  — Dittmar, Beverly Sheffield, Pan American, Dick Nichols — are outdoor with no shade. Your hands sweat
+                  through grips faster, fatigue sets in sooner, and the ball plays differently on sun-baked concrete vs.
+                  the indoor sport court surfaces at places like Austin Pickle Ranch or Pickleland.
+                  All of that affects which paddle is right for you here.
+                </p>
+              </div>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
                 Understanding Paddle Materials
@@ -112,16 +124,22 @@ export default function ChoosingPaddlePage() {
                 Paddle weight significantly impacts your game. Paddles typically range from 6.5 to 9.5 ounces:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Lightweight (6.5-7.5 oz):</strong> Easier to maneuver and generate quick reactions. 
-                Ideal for players who rely on finesse, dinking, and quick volleys. Reduces arm fatigue during 
+                <li><strong>Lightweight (6.5-7.5 oz):</strong> Easier to maneuver and generate quick reactions.
+                Ideal for players who rely on finesse, dinking, and quick volleys. Reduces arm fatigue during
                 long play sessions. Best for players with arm or shoulder issues.</li>
-                <li><strong>Mid-weight (7.5-8.5 oz):</strong> The most popular weight range, offering a balance 
-                of power and control. Suitable for most players and playing styles. Provides good stability 
+                <li><strong>Mid-weight (7.5-8.5 oz):</strong> The most popular weight range, offering a balance
+                of power and control. Suitable for most players and playing styles. Provides good stability
                 without being too heavy.</li>
-                <li><strong>Heavyweight (8.5+ oz):</strong> Generates more power and requires less effort for 
-                deep shots. Better for players who want to drive the ball hard. Can cause more fatigue and may 
+                <li><strong>Heavyweight (8.5+ oz):</strong> Generates more power and requires less effort for
+                deep shots. Better for players who want to drive the ball hard. Can cause more fatigue and may
                 be harder to control for some players.</li>
               </ul>
+              <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded mt-4">
+                <p className="text-gray-700"><strong>Austin note:</strong> If you're primarily playing outdoor courts
+                in Austin summers, lean lighter than you think you need. Heat fatigue is real — what feels like the
+                right weight in a 70°F gym will feel noticeably heavier after an hour at Dittmar or Dick Nichols in July.
+                Many Austin outdoor regulars end up one weight class lighter than their indoor paddle preference.</p>
+              </div>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
                 Grip Size Selection
@@ -211,20 +229,29 @@ export default function ChoosingPaddlePage() {
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
-                Testing and Trying Paddles
+                Where to Try Paddles in Austin
               </h2>
               <p>
-                Before making a purchase, try to test paddles whenever possible:
+                Before committing to a purchase, try to get hands-on time with a paddle first. Austin has a few
+                good options for demoing before you buy:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Demo Programs:</strong> Many retailers and manufacturers offer demo programs where 
-                you can try paddles before buying.</li>
-                <li><strong>Borrow from Friends:</strong> Ask other players if you can try their paddles during 
-                a game to get a feel for different options.</li>
-                <li><strong>Local Pro Shops:</strong> Visit local pickleball facilities that may have demo paddles 
-                available for testing.</li>
-                <li><strong>Read Reviews:</strong> While not a substitute for trying, reviews can provide valuable 
-                insights from other players with similar playing styles.</li>
+                <li><strong>Austin Pickle Ranch (Braker Lane):</strong> The pro shop at Austin Pickle Ranch is
+                the best paddle demo resource in Austin. They carry a range of current models and staff who
+                actually play can help you find a fit. If you're serious about buying, this is the first stop.
+                Located at 11000 Middle Fiskville Road.</li>
+                <li><strong>Austin Tennis and Pickleball Center (ATPC):</strong> The pro shop at ATPC on Berkman
+                Drive also carries paddles and offers lessons — a good way to demo a paddle with some instruction
+                mixed in. Located at 5000 Berkman Drive.</li>
+                <li><strong>Pickleland (Pflugerville):</strong> Pickleland runs a busy facility on 9 indoor courts
+                with a strong community. Showing up for open play is one of the easiest ways to try a few different
+                paddles — other players are generally happy to let you test theirs between rallies.</li>
+                <li><strong>Open Play at Any Austin Court:</strong> Austin's open play culture is friendly to
+                paddle experimenting. Ask around at Dittmar, South Austin Rec, or Pan Am — regulars often have
+                multiple paddles and don't mind letting a new player try one.</li>
+                <li><strong>Read Reviews:</strong> While not a substitute for hitting with a paddle, community
+                reviews can shortlist your options before you demo. Pickleball Central and PaddleTek have good
+                filter tools if you know what weight and material you're targeting.</li>
               </ul>
 
               <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">
@@ -250,10 +277,15 @@ export default function ChoosingPaddlePage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Edge Guard:</strong> Protects the paddle from damage. Most modern paddles include this.</li>
-                <li><strong>Grip Material:</strong> Cushioned grips reduce vibration and improve comfort. Some 
-                paddles have moisture-wicking grips for better control when sweating.</li>
-                <li><strong>Noise Level:</strong> Some facilities have noise restrictions. Quieter paddles may 
-                be required in certain locations.</li>
+                <li><strong>Grip Material:</strong> Cushioned grips reduce vibration and improve comfort.
+                <strong> In Austin, moisture-wicking grips are essential, not optional.</strong> Playing outdoors
+                in summer heat means your grip hand will be soaked within 30 minutes. A paddle with a quality
+                perforated or moisture-wicking grip — or adding an overgrip like Tourna Grip — makes a real
+                difference at Austin's outdoor courts. Many players keep a spare overgrip in their bag.</li>
+                <li><strong>Noise Level:</strong> Some Austin recreation centers and park courts are close to
+                residential areas. Beverly Sheffield in North Austin and some of the neighborhood park courts
+                have had noise complaints in the past. If you play at courts near homes, a softer-core paddle
+                reduces the pop sound — worth considering if you play early mornings or evenings.</li>
                 <li><strong>Warranty:</strong> Check the manufacturer's warranty. Quality paddles typically come 
                 with at least a one-year warranty.</li>
               </ul>
