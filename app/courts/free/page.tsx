@@ -38,19 +38,19 @@ export default function FreeCourtsPage() {
 
       {/* CTAs */}
       <section className="container-custom pb-8 space-y-6">
-        {/* The Pitch CTA */}
+        {/* The Pitch / PopStroke CTA */}
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <p className="text-lg font-semibold text-gray-900">Want courts with food, drinks & a full evening out?</p>
+            <p className="text-lg font-semibold text-gray-900">Want courts with mini golf, food & a full evening out?</p>
             <p className="text-gray-600 text-sm mt-1">
-              <Link href="/courts/the-pitch" className="text-primary-600 hover:underline font-medium">The Pitch on Burnet Road</Link> combines 3 outdoor pickleball courts with restaurants, bars, and a coffee shop — Austin's most social pickleball spot.
+              <Link href="/courts/the-pitch" className="text-primary-600 hover:underline font-medium">PopStroke Austin (formerly The Pitch)</Link> combines 3 outdoor pickleball courts with mini golf, sand volleyball, and a full-service restaurant — Austin's most social pickleball spot.
             </p>
           </div>
           <Link
             href="/courts/the-pitch"
             className="flex-shrink-0 inline-flex items-center px-5 py-3 bg-amber-500 text-white font-semibold rounded-lg hover:bg-amber-600 transition-colors whitespace-nowrap"
           >
-            See The Pitch →
+            See PopStroke →
           </Link>
         </div>
 

@@ -240,8 +240,8 @@ export default function Home() {
               <strong>Premium Facilities:</strong> For players seeking a more upscale experience, Austin
               boasts world-class facilities like Austin Pickle Ranch with 16 indoor courts, The Austin
               Tennis and Pickleball Center with 8 dedicated courts, and social venues like{' '}
-              <Link href="/courts/the-pitch" className="text-primary-600 hover:underline">The Pitch on Burnet Road</Link>
-              {' '}— 3 outdoor courts surrounded by restaurants, bars, and a coffee shop. Exclusive membership
+              <Link href="/courts/the-pitch" className="text-primary-600 hover:underline">PopStroke Austin (formerly The Pitch)</Link>
+              {' '}— 3 outdoor courts alongside mini golf, sand volleyball, and a full-service restaurant. Exclusive membership
               clubs like Castle Court Austin and Other Racquet Social Club round out the premium options.
             </p>
             <p>
