@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect, useRef } from 'react'
-
 interface GoogleMapProps {
   latitude: number
   longitude: number
@@ -10,50 +6,16 @@ interface GoogleMapProps {
 }
 
 export default function GoogleMap({ latitude, longitude, name, address }: GoogleMapProps) {
-  const mapRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    // Load Google Maps script
-    const script = document.createElement('script')
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}`
-    script.async = true
-    script.defer = true
-    
-    script.onload = () => {
-      if (mapRef.current && (window as any).google) {
-        const google = (window as any).google
-        const map = new google.maps.Map(mapRef.current, {
-          center: { lat: latitude, lng: longitude },
-          zoom: 15,
-          mapTypeControl: false,
-          streetViewControl: true,
-          fullscreenControl: true,
-        })
-
-        new google.maps.Marker({
-          position: { lat: latitude, lng: longitude },
-          map,
-          title: name,
-        })
-      }
-    }
-
-    document.head.appendChild(script)
-
-    return () => {
-      // Cleanup script if component unmounts
-      if (script.parentNode) {
-        script.parentNode.removeChild(script)
-      }
-    }
-  }, [latitude, longitude, name])
-
   return (
     <div className="rounded-lg overflow-hidden shadow-md">
-      <div 
-        ref={mapRef} 
-        className="w-full h-96"
-        style={{ minHeight: '384px' }}
+      <iframe
+        title={`Map showing location of ${name}`}
+        src={`https://www.google.com/maps?q=${latitude},${longitude}&z=15&output=embed`}
+        width="100%"
+        height="384"
+        style={{ border: 0, minHeight: '384px' }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
       />
       <div className="bg-white p-4 border-t border-gray-200">
         <p className="text-sm text-gray-600 mb-2">{address}</p>
@@ -69,4 +31,3 @@ export default function GoogleMap({ latitude, longitude, name, address }: Google
     </div>
   )
 }
-
