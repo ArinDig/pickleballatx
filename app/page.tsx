@@ -158,6 +158,21 @@ export default function Home() {
       </section>
 
 
+      {/* Events CTA */}
+      <section className="container-custom py-8">
+        <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-8 md:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">Austin Pickleball Events & Tournaments</h2>
+            <p className="text-primary-50">
+              Tournaments, open play, leagues, and social meetups across Austin — updated weekly.
+            </p>
+          </div>
+          <Link href="/events" className="btn bg-white text-primary-700 hover:bg-primary-50 flex-shrink-0 whitespace-nowrap">
+            See Upcoming Events →
+          </Link>
+        </div>
+      </section>
+
       {/* Email Signup */}
       <div className="container-custom py-4">
         <EmailSignup variant="inline" />

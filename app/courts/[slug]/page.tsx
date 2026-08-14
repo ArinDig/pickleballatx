@@ -535,6 +535,13 @@ export default function CourtPage({ params }: CourtPageProps) {
                   <div className="text-sm text-gray-600">Rules, techniques, and what to expect your first time out.</div>
                 </div>
               </Link>
+              <Link href="/events" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+                <span className="text-2xl mr-3">🏆</span>
+                <div>
+                  <div className="font-semibold text-primary-700">Austin Pickleball Events & Tournaments</div>
+                  <div className="text-sm text-gray-600">Find tournaments, leagues, and open play sessions near you.</div>
+                </div>
+              </Link>
               <Link href="/guides/etiquette" className="flex items-start p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
                 <span className="text-2xl mr-3">🤝</span>
                 <div>
