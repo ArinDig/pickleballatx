@@ -635,10 +635,8 @@ export const courts: Court[] = [
     longitude: -97.7206,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439336/pexels-photo-29439336.jpeg?w=800&h=600&fit=crop&crop=center',
-    images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
-    ],
+    mainImage: '/images/courts/rosewood-park-main.png',
+    images: [],
     description: 'Community park with 4 outdoor pickleball courts - 2 with permanent nets and 2 requiring players to bring their own nets. Great for neighborhood play.',
     amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Picnic Areas'],
     courtType: 'outdoor',
