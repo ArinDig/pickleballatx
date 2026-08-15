@@ -726,9 +726,11 @@ export const courts: Court[] = [
     longitude: -97.7500,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439342/pexels-photo-29439342.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/beverly-sheffield-park-main.png',
     images: [
-      'https://images.pexels.com/photos/29439343/pexels-photo-29439343.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/beverly-sheffield-park-1.png',
+      '/images/courts/beverly-sheffield-park-2.png',
+      '/images/courts/beverly-sheffield-park-3.png'
     ],
     description: 'Northwest Austin district park with 4 outdoor pickleball courts on hard surface. Players need to bring their own nets, but the courts are free and well-maintained.',
     amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
