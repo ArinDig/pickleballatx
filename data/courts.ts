@@ -585,10 +585,12 @@ export const courts: Court[] = [
     longitude: -97.7206,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439326/pexels-photo-29439326.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/pan-american-park-main.png',
     images: [
-      'https://images.pexels.com/photos/29439336/pexels-photo-29439336.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/pan-american-park-1.png',
+      '/images/courts/pan-american-park-2.png',
+      '/images/courts/pan-american-park-3.png',
+      '/images/courts/pan-american-park-4.png'
     ],
     description: 'Neighborhood park featuring 6 outdoor pickleball courts with permanent nets. Perfect for casual play and community gatherings with easy access and no fees.',
     amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Picnic Areas'],
