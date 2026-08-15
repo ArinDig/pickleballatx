@@ -774,9 +774,11 @@ export const courts: Court[] = [
     longitude: -97.7500,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439333/pexels-photo-29439333.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/brentwood-park-main.png',
     images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/brentwood-park-1.png',
+      '/images/courts/brentwood-park-2.png',
+      '/images/courts/brentwood-park-3.png'
     ],
     description: 'Neighborhood park featuring tennis and pickleball courts. Players need to bring their own nets, but the courts are free and perfect for casual play.',
     amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Tennis Courts'],
