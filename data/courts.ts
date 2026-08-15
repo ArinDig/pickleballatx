@@ -394,9 +394,10 @@ export const courts: Court[] = [
     longitude: -97.7713,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439343/pexels-photo-29439343.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/dittmar-rec-main.png',
     images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/dittmar-rec-1.png',
+      '/images/courts/dittmar-rec-2.png'
     ],
     description: 'Community recreation center with 4 indoor pickleball courts. Offers free open play pickleball sessions - sign a waiver on your first visit, then just sign in for subsequent visits. Various programs and open play times available.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Community Programs', 'Fitness Center'],
