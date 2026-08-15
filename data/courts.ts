@@ -679,9 +679,10 @@ export const courts: Court[] = [
     longitude: -97.8200,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/20823431/pexels-photo-20823431.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/dick-nichols-park-main.png',
     images: [
-      'https://images.pexels.com/photos/17299531/pexels-photo-17299531.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/dick-nichols-park-1.png',
+      '/images/courts/dick-nichols-park-2.png'
     ],
     description: 'Large 152-acre district park featuring 4 outdoor pickleball courts. Players need to bring their own nets, but the courts are well-maintained and free to use.',
     amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
