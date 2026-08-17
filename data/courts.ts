@@ -963,9 +963,8 @@ export const courts: Court[] = [
     longitude: -97.8200,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/17299528/pexels-photo-17299528.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/mary-moore-searight-main.png',
     images: [
-      'https://images.pexels.com/photos/6265592/pexels-photo-6265592.jpeg?w=800&h=600&fit=crop&crop=center'
     ],
     description: 'South Austin park featuring 3 outdoor pickleball courts. Players need to bring their own nets, but the courts are free and perfect for community play.',
     amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
