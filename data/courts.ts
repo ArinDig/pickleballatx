@@ -1010,7 +1010,10 @@ export const courts: Court[] = [
     mainImage: '/images/courts/racfit-main.png',
     images: [
       '/images/courts/racfit-1.png',
-      '/images/courts/racfit-2.png'
+      '/images/courts/racfit-2.png',
+      '/images/courts/racfit-3.png',
+      '/images/courts/racfit-4.png',
+      '/images/courts/racfit-5.png'
     ],
     description: 'RacFit is a premier tennis, pickleball, fitness, and social club in Buda, Texas — now open as of May 2026. The facility features 8 regulation pickleball courts with 4 covered by a steel shade structure, a full-service bar (Courtside Cantina), 22,000 sq ft of indoor space, and on-site ActiveCare. Membership required.',
     longDescription: [
