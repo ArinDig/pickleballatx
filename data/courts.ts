@@ -916,9 +916,10 @@ export const courts: Court[] = [
     longitude: -97.7500,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/32975185/pexels-photo-32975185.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/northwest-rec-main.png',
     images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/northwest-rec-1.png',
+      '/images/courts/northwest-rec-2.png'
     ],
     description: 'Northwest Austin recreation center with 3 indoor pickleball courts. Free access with Austin Parks & Recreation membership, featuring multi-purpose court with pickleball striping.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Fitness Center', 'Multi-Purpose Court'],
