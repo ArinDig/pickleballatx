@@ -870,9 +870,9 @@ export const courts: Court[] = [
     longitude: -97.6800,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/gus-garcia-1.png',
+    mainImage: '/images/courts/gus-garcia-main.png',
     images: [
-      'https://images.pexels.com/photos/32975185/pexels-photo-32975185.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/gus-garcia-2.png'
     ],
     description: 'North Austin recreation center with 4 indoor pickleball courts. Free access with Austin Parks & Recreation membership, offering programs and open play.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Fitness Center', 'Programs Available'],
