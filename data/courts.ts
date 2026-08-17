@@ -822,9 +822,11 @@ export const courts: Court[] = [
     longitude: -97.7600,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/17299526/pexels-photo-17299526.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/austin-high-tennis-main.png',
     images: [
-      'https://images.pexels.com/photos/6265592/pexels-photo-6265592.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/austin-high-tennis-1.png',
+      '/images/courts/austin-high-tennis-2.png',
+      '/images/courts/austin-high-tennis-3.png'
     ],
     description: 'Public tennis center with 3 outdoor pickleball courts featuring permanent nets and lines. Available on a first-come, first-served basis with no fees.',
     amenities: ['Restrooms', 'Parking', 'Tennis Courts', 'Lighting'],
