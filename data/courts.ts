@@ -109,10 +109,11 @@ export const courts: Court[] = [
     longitude: -97.6422,
     phone: '(512) 928-8119',
     website: 'https://www.austintennisandpickleballcenter.com',
-    mainImage: 'https://images.pexels.com/photos/29820785/pexels-photo-29820785.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/austin-tennis-pickleball-main.png',
     images: [
-      'https://images.pexels.com/photos/29439326/pexels-photo-29439326.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/austin-tennis-pickleball-1.png',
+      '/images/courts/austin-tennis-pickleball-2.png',
+      '/images/courts/austin-tennis-pickleball-3.png'
     ],
     description: 'Multi-sport facility featuring 8 dedicated outdoor pickleball courts with excellent lighting for night play. Offers both membership and pay-per-play options for flexible access.',
     amenities: ['Restrooms', 'Parking', 'Lighting', 'Pro Shop', 'Lessons Available'],
