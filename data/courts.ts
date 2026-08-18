@@ -158,10 +158,7 @@ export const courts: Court[] = [
     phone: '(512) 382-1849',
     website: 'https://www.bouldinacres.com',
     mainImage: '/images/courts/bouldin-1.jpg',
-    images: [
-      'https://images.pexels.com/photos/17299528/pexels-photo-17299528.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
-    ],
+    images: [],
     description: 'Unique entertainment venue featuring 2 outdoor pickleball courts alongside food trucks, bars, and family-friendly activities. A great spot to play pickleball and enjoy Austin\'s outdoor social scene.',
     amenities: ['Food Trucks', 'Bars', 'Dog Park', 'Playgrounds', 'Lawn Games', 'Live Music'],
     courtType: 'outdoor',
@@ -206,7 +203,6 @@ export const courts: Court[] = [
     website: 'https://www.thepitchaustin.com',
     mainImage: '/images/courts/pitch-1.png',
     images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center',
       '/images/courts/The-Pitch-2.png'
     ],
     description: 'Formerly known as The Pitch, this North Austin entertainment complex was taken over by PopStroke (the Tiger Woods-backed mini golf brand) in September 2025 — and the 3 outdoor pickleball courts are still open and bookable. The venue now centers on two 18-hole mini golf courses, sand volleyball, an ice cream parlor, and a full-service restaurant, with pickleball as one of several ways to spend an evening there.',
@@ -303,9 +299,7 @@ export const courts: Court[] = [
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
     mainImage: '/images/courts/Little_Zilker-1.png',
-    images: [
-      'https://images.pexels.com/photos/17299534/pexels-photo-17299534.jpeg?w=800&h=600&fit=crop&crop=center'
-    ],
+    images: [],
     description: 'Public park with 4 outdoor pickleball courts available on a first-come, first-served basis. Located near Zilker Park with easy access to other recreational facilities.',
     amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Picnic Areas'],
     courtType: 'outdoor',
@@ -734,8 +728,8 @@ export const courts: Court[] = [
       '/images/courts/brentwood-park-2.png',
       '/images/courts/brentwood-park-3.png'
     ],
-    description: 'Neighborhood park featuring tennis and pickleball courts. Players need to bring their own nets, but the courts are free and perfect for casual play.',
-    amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Tennis Courts'],
+    description: 'Central Austin neighborhood park with 2 lighted hard courts set up for pickleball — free, first-come first-served, bring your own net. Part of a well-equipped park that also includes a free public pool, sand volleyball, basketball, a softball field, and an adult workout area.',
+    amenities: ['Restrooms', 'Free Parking', 'Court Lights', 'Free Public Pool', 'Sand Volleyball', 'Basketball Court', 'Softball Field', 'Playscape', 'Adult Workout Area', 'Covered Pavilion', 'Walking Path'],
     courtType: 'outdoor',
     numberOfCourts: 2,
     isFree: true,
@@ -760,7 +754,8 @@ export const courts: Court[] = [
     longDescription: [
       'Brentwood Neighborhood Park sits in one of Austin\'s most walkable central neighborhoods, just north of 45th Street off Arroyo Seco. The park has 2 courts that can be set up for pickleball on the existing hard surface — players need to bring their own nets, which is worth knowing before you make the trip.',
       'The park draws a mix of Brentwood locals and players from surrounding Hyde Park and Allandale who prefer a low-key neighborhood setting over the busier city rec centers. Courts are free, no reservation required, first-come first-served. Because it\'s only 2 courts and nets aren\'t permanent, it\'s best suited for a group that\'s coming together rather than hoping to find a pickup game.',
-      'The surrounding park has restrooms, a playground, walking trails, and tennis courts — making it a good spot for families who want to spread out. Parking is free along Arroyo Seco. Best times are weekday mornings and early afternoons when courts are less crowded.'
+      'What makes Brentwood worth the trip beyond the courts is everything around them. The park includes a free public swimming pool — no admission, with a main pool running roughly 3.5 to 4.7 feet deep plus a shallow kiddie pool with a fountain — along with a sand volleyball court, basketball court, softball field, playscape, adult workout equipment, a covered pavilion, and a walking path. For a family where one person wants court time and everyone else wants something to do, few central Austin parks stack up this well.',
+      'The courts are lighted, which extends play well past sunset in the summer and is not a given at neighborhood parks this size. Parking is free along Arroyo Seco. Best times are weekday mornings and early afternoons when courts are less crowded; expect more competition for space on summer evenings and weekends when the pool draws a crowd.'
     ],
     featured: false
   },
@@ -1200,10 +1195,7 @@ export const courts: Court[] = [
     phone: '(210) 850-6509',
     website: 'https://www.picklehubatx.com',
     mainImage: '/images/courts/Pickle_Hub-1.png',
-    images: [
-      'https://images.pexels.com/photos/17299531/pexels-photo-17299531.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/6265592/pexels-photo-6265592.jpeg?w=800&h=600&fit=crop&crop=center'
-    ],
+    images: [],
     description: 'Pickle Hub features 2 dedicated outdoor pickleball courts in South Austin. This vibrant venue combines pickleball with dining and entertainment, featuring Drifters Social Coffee & Cocktail, Pickle Pub sports bar, food trucks, live music, and a dog park. Equipment available for rent or bring your own. Family-friendly environment until 9pm on weekdays and 5pm on weekends.',
     amenities: ['Outdoor Courts', 'Coffee & Cocktails', 'Sports Bar', 'Food Trucks', 'Live Music', 'Dog Park', 'Equipment Rental', 'Fire Pits', 'Stage'],
     courtType: 'outdoor',
@@ -1297,6 +1289,7 @@ export const courts: Court[] = [
     zipCode: '78750',
     latitude: 30.3874,
     longitude: -97.7662,
+    phone: '(512) 258-1621',
     website: 'https://www.balconescountryclub.com',
     email: 'balconespickleball@gmail.com',
     mainImage: '/images/courts/balcones-country-club-main.png',
@@ -1304,8 +1297,8 @@ export const courts: Court[] = [
       '/images/courts/balcones-country-club-1.png',
       '/images/courts/balcones-country-club-2.png'
     ],
-    description: 'Balcones Country Club features 4 outdoor pickleball courts striped on a tennis court, with weekly open play available for members and guests. Located in Northwest Austin, this private club offers a relaxed setting for recreational pickleball in the Balcones area.',
-    amenities: ['Outdoor Courts', 'Weekly Open Play', 'Country Club Amenities', 'Guest Access'],
+    description: 'Private Northwest Austin club with 4 outdoor concrete pickleball courts, permanent lines, and portable nets. Runs organized play, clinics, and leagues through the week, with seasonal Open Play sessions. Courts are booked via the CourtReserve app; a social membership with pickleball access is required, and members may bring guests.',
+    amenities: ['Outdoor Concrete Courts', 'Permanent Lines', 'Portable Nets', 'Clinics & Leagues', 'Seasonal Open Play', 'CourtReserve Booking', 'Country Club Amenities', 'Guest Access'],
     courtType: 'outdoor',
     numberOfCourts: 4,
     isFree: false,
@@ -1316,15 +1309,15 @@ export const courts: Court[] = [
     reservationRequired: false,
     reservationInfo: 'Weekly Open Play sessions open to members and guests — no reservation required for open play',
     hours: {
-      notes: 'Weekly Open Play for members and guests. Contact the club directly for current open play schedule and membership information.'
+      notes: 'Court reservations generally run 7AM-9PM via the CourtReserve app. Open Play times shift seasonally — typically weekend afternoons in winter and early evenings in summer. Confirm the current schedule with the club at (512) 258-1621 before planning a visit.'
     },
     features: ['Membership Required', 'Guest Access', 'Weekly Open Play', 'Outdoor Courts', 'NW Austin'],
     accessibility: ['Contact facility for accessibility information'],
     parking: 'Club parking available',
     longDescription: [
-      'Balcones Country Club in Northwest Austin offers 4 pickleball courts striped on an outdoor tennis court, giving members and their guests a solid option for casual play in the 78750 area. The club runs weekly Open Play sessions — one of the few private club settings in NW Austin where guests can access courts without a full membership commitment.',
-      'For players living in the Northwest Austin corridor — Balcones, Spicewood Springs, Four Points — this fills a real gap. The area is underserved by public pickleball courts, and the guest-accessible open play makes this a useful option even for non-members who know a member.',
-      'This is a private country club, so court access requires either membership or a guest invitation. Reach out directly for current open play times, membership information, and any reservation requirements for member court time outside of open play sessions.'
+      'Balcones Country Club sits off Balcones Club Drive in Northwest Austin and runs 4 outdoor concrete pickleball courts with permanent lines and portable nets. Unlike most private clubs in the area, pickleball here is not an afterthought bolted onto the tennis program — the courts stay active through the week with organized play, clinics, leagues, and casual matches, so there is usually something on the calendar rather than just open court time.',
+      'Court access runs through the CourtReserve app, with the reservation window generally spanning 7AM to 9PM. Open Play is the entry point for most newer players, and the schedule rotates seasonally: weekend afternoon sessions through the cooler months, shifting to early evening slots in summer to dodge the worst of the heat. Because those times move, it is worth a quick call to the club at (512) 258-1621 before you drive out — a wasted trip across 183 is an annoying way to learn the schedule changed.',
+      'Access requires a country club social membership with the pickleball add-on, and members can bring guests. For players in the 78750 corridor — Balcones, Spicewood Springs, Anderson Mill, Four Points — that private-club requirement is the tradeoff for having reliably maintained courts in a part of town where free public options are genuinely scarce. Reach out through balconescountryclub.com or balconespickleball@gmail.com for membership details and current programming.'
     ],
     featured: false
   }
