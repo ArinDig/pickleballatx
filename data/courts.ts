@@ -348,10 +348,10 @@ export const courts: Court[] = [
     longitude: -97.7713,
     phone: '(512) 974-6700',
     website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/32975182/pexels-photo-32975182.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/south-austin-rec-main.png',
     images: [
-      'https://images.pexels.com/photos/29439337/pexels-photo-29439337.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299533/pexels-photo-17299533.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/south-austin-rec-1.png',
+      '/images/courts/south-austin-rec-2.png'
     ],
     description: 'City recreation center featuring 6 indoor pickleball courts with air conditioning. Offers programs, leagues, and open play sessions for all skill levels.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Fitness Center', 'Programs Available'],
