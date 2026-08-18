@@ -1064,9 +1064,9 @@ export const courts: Court[] = [
     latitude: 30.4500,
     longitude: -97.8000,
     website: 'https://andersonmillna.org/pickleball/',
-    mainImage: 'https://images.pexels.com/photos/29439367/pexels-photo-29439367.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/anderson-mill-amna-main.png',
     images: [
-      'https://images.pexels.com/photos/17299531/pexels-photo-17299531.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/anderson-mill-amna-1.png'
     ],
     description: 'Anderson Mill Neighborhood Association pickleball courts offer weekly open play sessions for AMNA members and Anderson Mill Limited District (AMLD) keyholders. A community-focused venue encouraging neighbors to connect through pickleball with rotating play formats.',
     amenities: ['Restrooms', 'Parking', 'Community Programs', 'Open Play'],
