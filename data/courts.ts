@@ -1110,9 +1110,9 @@ export const courts: Court[] = [
     latitude: 30.5000,
     longitude: -97.8500,
     website: 'https://wtcmud1.org/anderson-mill-west-park-and-pavilion/',
-    mainImage: 'https://images.pexels.com/photos/17299534/pexels-photo-17299534.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/anderson-mill-west-park-main.png',
     images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/anderson-mill-west-park-1.png'
     ],
     description: 'Anderson Mill West Park features lighted tennis courts with pickleball striping. A comprehensive community park offering a variety of recreational facilities, including courts suitable for both tennis and pickleball. Access requires a yearly membership with the District.',
     amenities: ['Lighted Courts', 'Large Covered Pavilion', 'Playground', 'Restrooms', 'Basketball Court', 'Gazebo', 'Walking Trail', 'Picnic Tables', 'Grills'],
