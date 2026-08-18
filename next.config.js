@@ -22,6 +22,11 @@ const nextConfig = {
         destination: '/courts',
         permanent: true, // 301 redirect for SEO
       },
+      {
+        source: '/courts/pan-am-rec',
+        destination: '/courts/pan-american-park',
+        permanent: true, // 301 redirect - duplicate/conflicting listing removed Aug 2026, same address as pan-american-park; revisit if confirmed as a distinct facility
+      },
       // Note: ads.txt is handled by app/ads.txt/route.ts
       // This ensures it takes precedence over the static file in public/
     ]

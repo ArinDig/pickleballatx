@@ -351,11 +351,11 @@ export default function BeginnerGuidePage() {
                   <div className="text-sm text-gray-600">Free indoor open play, no reservation needed. Perfect first stop.</div>
                 </div>
               </Link>
-              <Link href="/courts/pan-am-rec" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+              <Link href="/courts/pan-american-park" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
                 <span className="text-2xl mr-3">🆓</span>
                 <div>
-                  <div className="font-semibold text-gray-900">Pan Am Recreation Center</div>
-                  <div className="text-sm text-gray-600">8 indoor courts plus free outdoor courts next door.</div>
+                  <div className="font-semibold text-gray-900">Pan American Neighborhood Park</div>
+                  <div className="text-sm text-gray-600">Free outdoor courts, first-come first-served. Easy East Austin option.</div>
                 </div>
               </Link>
               <Link href="/courts/south-austin-rec" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">

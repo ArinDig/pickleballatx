@@ -432,53 +432,6 @@ export const courts: Court[] = [
     featured: false
   },
   {
-    id: '10',
-    name: 'Pan Am Recreation Center',
-    slug: 'pan-am-rec',
-    address: '2100 E. 3rd Street',
-    city: 'Austin',
-    state: 'TX',
-    zipCode: '78702',
-    latitude: 30.2644,
-    longitude: -97.7206,
-    phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: 'https://images.pexels.com/photos/29439337/pexels-photo-29439337.jpeg?w=800&h=600&fit=crop&crop=center',
-    images: [
-      'https://images.pexels.com/photos/32975182/pexels-photo-32975182.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299531/pexels-photo-17299531.jpeg?w=800&h=600&fit=crop&crop=center'
-    ],
-    description: 'Historic recreation center featuring 8 outdoor pickleball courts with excellent facilities. Known for its community programs and competitive leagues.',
-    amenities: ['Restrooms', 'Parking', 'Historic Building', 'Competitive Leagues', 'Lighting'],
-    courtType: 'outdoor',
-    numberOfCourts: 8,
-    isFree: false,
-    pricing: {
-      details: 'City recreation center rates apply',
-      rates: ['Daily Pass: $3', 'Monthly Pass: $25', 'Annual Pass: $200']
-    },
-    reservationRequired: true,
-    reservationInfo: 'Reservations required for court time',
-    hours: {
-      monday: '6:00 AM - 9:00 PM',
-      tuesday: '6:00 AM - 9:00 PM',
-      wednesday: '6:00 AM - 9:00 PM',
-      thursday: '6:00 AM - 9:00 PM',
-      friday: '6:00 AM - 9:00 PM',
-      saturday: '8:00 AM - 6:00 PM',
-      sunday: '8:00 AM - 6:00 PM'
-    },
-    features: ['Outdoor Courts', 'Competitive Leagues', 'Historic Facility', 'Lighted Courts'],
-    accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
-    parking: 'Free parking available',
-    longDescription: [
-      'Pan Am Recreation Center is one of Austin\'s most storied public facilities, housed in a historic building near East 3rd Street in the heart of the city. The center\'s 8 outdoor pickleball courts are among the largest court counts of any City of Austin facility, making it a hub for serious players who want structured competition and consistent open play options.',
-      'The courts are set up for competitive play, and Pan Am has earned a reputation as a hub for organized leagues and structured programs. If you\'re looking to improve your game or find regular competition, the league play here draws a consistent crowd of intermediate to advanced players. Drop-in open play is also available — check the City of Austin Parks & Recreation schedule for current times.',
-      'Access requires an Austin Recreation Center membership or day pass. Parking is free on-site. The historic building has full restroom facilities. Located at 2100 E. 3rd Street, it\'s convenient to East Austin and central neighborhoods, with easy access from I-35.'
-    ],
-    featured: false
-  },
-  {
     id: '11',
     name: 'Pickleball Kingdom - Pflugerville',
     slug: 'pickleball-kingdom-pflugerville',
