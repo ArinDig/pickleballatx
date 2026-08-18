@@ -960,7 +960,9 @@ export const courts: Court[] = [
     zipCode: '78610',
     latitude: 30.0817,
     longitude: -97.8400,
+    phone: '(512) 221-1926',
     website: 'https://www.goracfit.com',
+    email: 'info@goracfit.com',
     mainImage: '/images/courts/racfit-main.png',
     images: [
       '/images/courts/racfit-1.png',
@@ -971,9 +973,9 @@ export const courts: Court[] = [
     ],
     description: 'RacFit is a premier tennis, pickleball, fitness, and social club in Buda, Texas — now open as of May 2026. The facility features 8 regulation pickleball courts with 4 covered by a steel shade structure, a full-service bar (Courtside Cantina), 22,000 sq ft of indoor space, and on-site ActiveCare. Membership required.',
     longDescription: [
-      'RacFit opened in May 2026 in Buda, bringing one of the most comprehensive racquet sport and fitness facilities to the South Austin area. The club features 8 regulation pickleball courts — 4 of which are covered by a steel shade structure — making it a comfortable option year-round, even during Austin\'s hottest months.',
-      'Beyond the courts, RacFit is designed as a full social and wellness destination. The Courtside Cantina serves drinks courtside, while 22,000 square feet of indoor space includes fitness rooms, locker rooms, a digital sports room, and on-site ActiveCare. A walking trail and community social spaces round out the experience for members and their families.',
-      'Membership is required to play at RacFit. Visit goracfit.com for current membership pricing, availability, and to schedule a tour. The facility serves the Buda and Kyle communities as well as the broader South Austin area.'
+      'RacFit opened in May 2026 in Buda, and it is the most complete racquet sports facility south of Austin proper. The pickleball setup is 8 regulation courts with a steel shade structure covering 4 of them — a meaningful detail in Central Texas, where covered outdoor play is the difference between a July session being enjoyable or miserable. The club also runs 8 tennis courts (2 of them indoor) and 2 fitness rooms, so court time is not competing with a single shared multipurpose space the way it does at most rec centers.',
+      'Programming is the real differentiator versus a drop-in venue. RacFit runs structured adult and junior pickleball tracks, clinics, and seasonal camps, with full fall registration opening ahead of the season. Courts and clinics are both booked through book.goracfit.com, which shows live availability rather than a static schedule. Beyond racquet sports, the club runs Les Mills fitness programming, a MultiBall interactive digital sports wall, and on-site ActiveCare childcare — that last one matters if you have been putting off league play because of kid logistics.',
+      'The facility spans 22,000 square feet of climate-controlled indoor space with locker rooms, a full bar with indoor and outdoor seating, a walking trail, and large community social areas. Membership is required to play; current tiers run around $179/month for an all-inclusive couples baseline, with ActiveCare and additional family members at $49/month each. Located at 1390 Robert S Light Blvd in Buda, it primarily serves Buda, Kyle, and far South Austin players — worth the drive if you want covered courts and structured programming rather than first-come-first-served park play. Call (512) 221-1926 or email info@goracfit.com for current membership availability and tours.'
     ],
     amenities: ['Steel Shade Structure', 'Full Bar (Courtside Cantina)', 'Indoor/Outdoor Seating', 'Locker Rooms', 'Fitness Rooms', 'Digital Sports Room', 'On-site ActiveCare', 'Walking Trail', 'Community Social Spaces', '22,000 sq ft Indoor Space'],
     courtType: 'outdoor',
@@ -991,14 +993,7 @@ export const courts: Court[] = [
     reservationRequired: true,
     reservationInfo: 'Membership required to play. Visit goracfit.com for membership information and to get started.',
     hours: {
-      monday: 'Check website for current hours',
-      tuesday: 'Check website for current hours',
-      wednesday: 'Check website for current hours',
-      thursday: 'Check website for current hours',
-      friday: 'Check website for current hours',
-      saturday: 'Check website for current hours',
-      sunday: 'Check website for current hours',
-      notes: 'RacFit opened in May 2026. Check goracfit.com for current hours and programming schedule.'
+      notes: 'RacFit does not publish fixed daily hours — court availability is driven by the booking calendar and seasonal programming. Book courts and view live availability at book.goracfit.com, or call (512) 221-1926.'
     },
     features: ['Now Open', 'Covered Courts', 'Full Bar', 'Fitness Center', 'Social Club', 'Programming for All Ages', 'ActiveCare On-site'],
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
