@@ -288,9 +288,9 @@ export default function EtiquetteGuidePage() {
 
             <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">Etiquette at Austin&apos;s Public Courts</h2>
             <p>
-              Austin&apos;s public courts — at facilities like Dittmar Recreation Center, Pan Am Recreation
-              Center, and South Austin Recreation Center — have their own considerations worth keeping
-              in mind.
+              Austin&apos;s public courts — at facilities like Dittmar Recreation Center, Gus Garcia
+              Recreation Center, and South Austin Recreation Center — have their own considerations
+              worth keeping in mind.
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Follow posted rules.</strong> City rec centers often have specific policies

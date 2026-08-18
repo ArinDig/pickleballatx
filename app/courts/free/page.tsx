@@ -98,9 +98,9 @@ export default function FreeCourtsPage() {
                   Austin's free pickleball facilities include both indoor and outdoor options:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Indoor Recreation Centers:</strong> Facilities like South Austin Recreation Center, 
-                  Pan Am Recreation Center, and Dittmar Recreation Center offer climate-controlled indoor courts 
-                  perfect for year-round play. These centers typically have multiple courts, organized open play 
+                  <li><strong>Indoor Recreation Centers:</strong> Facilities like Dittmar Recreation Center,
+                  Gus Garcia Recreation Center, and Northwest Recreation Center offer climate-controlled indoor courts
+                  perfect for year-round play. These centers typically have multiple courts, organized open play
                   sessions, and amenities like restrooms, water fountains, and parking.</li>
                   <li><strong>Outdoor Park Courts:</strong> Many Austin parks feature dedicated pickleball courts 
                   or multi-use courts that can be converted for pickleball. These outdoor courts often have 

@@ -44,7 +44,7 @@ export default function Home() {
                 name: 'Are there free pickleball courts in Austin?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: `Yes, Austin has ${getFreeCourts().length} free pickleball courts operated by the Parks and Recreation Department, including South Austin Recreation Center, Pan Am Recreation Center, and Dittmar Recreation Center.`
+                  text: `Yes, Austin has ${getFreeCourts().length} free pickleball courts operated by the Parks and Recreation Department, including Dittmar Recreation Center, Gus Garcia Recreation Center, and Northwest Recreation Center.`
                 }
               },
               {
@@ -246,9 +246,9 @@ export default function Home() {
               hours, amenities, pricing, and how to book.
             </p>
             <p>
-              <strong>Free Courts:</strong> Austin Parks and Recreation operates several excellent free 
-              facilities including South Austin Recreation Center, Pan Am Recreation Center, and Dittmar 
-              Recreation Center. These city-run venues offer indoor and outdoor courts with organized 
+              <strong>Free Courts:</strong> Austin Parks and Recreation operates several excellent free
+              facilities including Dittmar Recreation Center, Gus Garcia Recreation Center, and Northwest
+              Recreation Center. These city-run venues offer indoor and outdoor courts with organized
               open play sessions throughout the week.
             </p>
             <p>

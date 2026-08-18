@@ -190,24 +190,24 @@ export default function BestCourtsBeginnerPage() {
               <li>Good for: players who want a structured environment to learn</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">3. Pan Am Recreation Center — East Austin</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">3. Pan American Neighborhood Park — East Austin</h3>
             <p>
-              Pan American is one of Austin&apos;s most historic recreation facilities, and its pickleball
-              program reflects the broader community orientation of the center. Eight indoor courts
-              and a strong leagues program mean there&apos;s always something going on — but open play
-              sessions are welcoming to newcomers.
+              Pan American Neighborhood Park on East 3rd Street is one of the easiest places in Austin
+              to start playing. Six outdoor courts with permanent nets means there is no gear to haul
+              and no setup to figure out — you show up, find an open court, and play. It is free, with
+              no reservation, membership, or day pass involved.
             </p>
             <p>
-              Located in East Austin near the Pan American Neighborhood Park, the facility is well-served
-              by public transit and has ample parking. If you want to start with outdoor courts first,
-              the adjacent Pan American Neighborhood Park has six free outdoor courts with permanent
-              nets — a great spot to practice basics before joining an open play session.
+              Six courts is a lot for a neighborhood park, so waits are usually shorter than at smaller
+              parks where two courts serve the whole area. The park also has restrooms, a playground,
+              picnic areas, and walking trails, which makes it workable if you are bringing family along
+              while you play. Parking is free on site.
             </p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Indoor, 8 courts</li>
-              <li>City recreation center rates</li>
-              <li>Adjacent outdoor free courts</li>
-              <li>Good for: East Austin residents, players who want both indoor and outdoor options nearby</li>
+              <li>Outdoor, 6 courts, permanent nets</li>
+              <li>Free — first-come, first-served</li>
+              <li>Restrooms, playground, free parking</li>
+              <li>Good for: East Austin residents, beginners who don&apos;t own a portable net yet</li>
             </ul>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">4. Austin Tennis and Pickleball Center — East Austin</h3>

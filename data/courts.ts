@@ -565,9 +565,9 @@ export const courts: Court[] = [
     accessibility: ['Wheelchair Accessible', 'ADA Compliant'],
     parking: 'Free parking available',
     longDescription: [
-      'Pan American Neighborhood Park sits on East 3rd Street in central East Austin, just a few blocks from the Pan Am Recreation Center indoor facility. The park\'s 6 outdoor pickleball courts are free to use with permanent nets — no reservation, no membership, just show up and play. With 6 courts available, wait times are typically shorter than at smaller neighborhood parks.',
+      'Pan American Neighborhood Park sits on East 3rd Street in central East Austin, alongside the Pan American Recreation Center. The park\'s 6 outdoor pickleball courts are free to use with permanent nets — no reservation, no membership, just show up and play. With 6 courts available, wait times are typically shorter than at smaller neighborhood parks.',
       'The outdoor courts draw a casual to intermediate crowd from East Austin neighborhoods including Govalle, Cherrywood, and the surrounding blocks. The east side pickleball community has grown significantly in recent years, and these courts have become a reliable gathering spot for morning drop-in games. Weekday mornings and late afternoons after 5pm are typically the most active.',
-      'The park has restrooms, a playground, picnic areas, and walking trails. Parking is free. The combination of 6 courts with permanent nets, central East Austin location, and zero cost makes this one of the better free outdoor options on that side of I-35. If courts are full, the Pan Am Recreation Center indoor facility is steps away as a backup.'
+      'The park has restrooms, a playground, picnic areas, and walking trails. Parking is free. The combination of 6 courts with permanent nets, central East Austin location, and zero cost makes this one of the better free outdoor options on that side of I-35. Mornings and early evenings on weekdays are the most reliable windows if you want a court without waiting.'
     ],
     featured: false
   },

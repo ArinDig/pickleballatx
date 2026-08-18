@@ -62,8 +62,8 @@ export default function CourtsPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Free Public Courts:</strong> Operated by Austin Parks and Recreation, these facilities 
-              offer no-cost access to pickleball courts. Popular locations include South Austin Recreation Center, 
-              Pan Am Recreation Center, and Dittmar Recreation Center. These courts typically operate on a 
+              offer no-cost access to pickleball courts. Popular locations include Dittmar Recreation Center,
+              Gus Garcia Recreation Center, and Northwest Recreation Center. These courts typically operate on a
               first-come, first-served basis with scheduled open play sessions.</li>
               <li><strong>Premium Indoor Facilities:</strong> Climate-controlled venues perfect for year-round play, 
               especially during Austin's hot summers. Facilities like Austin Pickle Ranch feature multiple 

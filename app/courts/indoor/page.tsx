@@ -83,10 +83,10 @@ export default function IndoorCourtsPage() {
                   private clubs:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Public Recreation Centers:</strong> City-operated facilities like South 
-                  Austin Recreation Center and Pan Am Recreation Center offer affordable or free access 
-                  to indoor courts. These facilities typically have organized open play sessions and 
-                  welcome players of all skill levels.</li>
+                  <li><strong>Public Recreation Centers:</strong> City-operated facilities like South
+                  Austin Recreation Center, Gus Garcia Recreation Center, and Northwest Recreation Center
+                  offer affordable or free access to indoor courts. These facilities typically have
+                  organized open play sessions and welcome players of all skill levels.</li>
                   <li><strong>Dedicated Pickleball Facilities:</strong> Specialized venues like Austin 
                   Pickle Ranch focus exclusively on pickleball, offering multiple courts, professional 
                   instruction, and organized leagues. These facilities often feature the latest court 
