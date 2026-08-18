@@ -1156,9 +1156,10 @@ export const courts: Court[] = [
     latitude: 30.5000,
     longitude: -97.8500,
     website: 'https://wtcmud1.org/tennis/',
-    mainImage: 'https://images.pexels.com/photos/17299533/pexels-photo-17299533.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/lakeline-oaks-park-main.png',
     images: [
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/lakeline-oaks-park-1.png',
+      '/images/courts/lakeline-oaks-park-2.png'
     ],
     description: 'Lakeline Oaks Park provides tennis courts striped for six pickleball courts. Pickleball nets are available on-site and included with the membership fee. Access requires a yearly membership with the District.',
     amenities: ['Pickleball Nets', 'Online Reservation System', 'Restrooms', 'Parking'],
