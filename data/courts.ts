@@ -1299,9 +1299,10 @@ export const courts: Court[] = [
     longitude: -97.7662,
     website: 'https://www.balconescountryclub.com',
     email: 'balconespickleball@gmail.com',
-    mainImage: 'https://images.pexels.com/photos/1103833/pexels-photo-1103833.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/balcones-country-club-main.png',
     images: [
-      'https://images.pexels.com/photos/1103833/pexels-photo-1103833.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/balcones-country-club-1.png',
+      '/images/courts/balcones-country-club-2.png'
     ],
     description: 'Balcones Country Club features 4 outdoor pickleball courts striped on a tennis court, with weekly open play available for members and guests. Located in Northwest Austin, this private club offers a relaxed setting for recreational pickleball in the Balcones area.',
     amenities: ['Outdoor Courts', 'Weekly Open Play', 'Country Club Amenities', 'Guest Access'],
