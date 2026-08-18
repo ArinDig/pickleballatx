@@ -1017,10 +1017,10 @@ export const courts: Court[] = [
     longitude: -98.1000,
     phone: '(512) 954-2611',
     website: 'https://www.hwy71brewing.com',
-    mainImage: 'https://images.pexels.com/photos/32975184/pexels-photo-32975184.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/highway-71-brewing-main.png',
     images: [
-      'https://images.pexels.com/photos/29439326/pexels-photo-29439326.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299530/pexels-photo-17299530.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/highway-71-brewing-1.png',
+      '/images/courts/highway-71-brewing-2.png'
     ],
     description: 'Highway 71 Brewing is a family-owned Hill Country brewery offering craft beer, pizza, and a temperature-controlled indoor pickleball court. A unique combination of craft beer and pickleball in a comfortable, welcoming environment. Perfect for year-round play regardless of weather conditions.',
     amenities: ['Brewery', 'Pizza', 'Indoor Court', 'Temperature Controlled', 'Golf Simulators', 'Live Music', 'Outdoor Seating'],
