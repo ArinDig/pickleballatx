@@ -1243,7 +1243,7 @@ export const courts: Court[] = [
     id: '32',
     name: 'Bouldin Acres - Menchaca',
     slug: 'bouldin-acres-menchaca',
-    address: 'Menchaca Road',
+    address: '10400 Menchaca Road',
     city: 'Austin',
     state: 'TX',
     zipCode: '78704',
@@ -1251,10 +1251,9 @@ export const courts: Court[] = [
     longitude: -97.7800,
     phone: '(512) 382-1849',
     website: 'https://www.bouldinacres.com',
-    mainImage: 'https://images.pexels.com/photos/35248381/pexels-photo-35248381.jpeg?w=800&h=600&fit=crop&crop=center',
+    mainImage: '/images/courts/bouldin-acres-menchaca-main.png',
     images: [
-      'https://images.pexels.com/photos/29439342/pexels-photo-29439342.jpeg?w=800&h=600&fit=crop&crop=center',
-      'https://images.pexels.com/photos/17299531/pexels-photo-17299531.jpeg?w=800&h=600&fit=crop&crop=center'
+      '/images/courts/bouldin-acres-menchaca-1.png'
     ],
     description: 'New Bouldin Acres location on Menchaca Road featuring outdoor pickleball courts. This is the second location for Bouldin Acres, combining pickleball with dining and entertainment. More information coming soon.',
     amenities: ['Food & Drinks', 'Outdoor Courts', 'Entertainment'],
