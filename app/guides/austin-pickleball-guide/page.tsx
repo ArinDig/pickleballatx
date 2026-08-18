@@ -302,14 +302,14 @@ export default function AustinPickleballGuidePage() {
             </p>
             <ul className="list-disc pl-6 space-y-3">
               <li>
-                <strong><Link href="/courts/dittmar-recreation-center" className="text-primary-600 hover:underline">Dittmar Recreation Center</Link>:</strong>{' '}
+                <strong><Link href="/courts/dittmar-rec" className="text-primary-600 hover:underline">Dittmar Recreation Center</Link>:</strong>{' '}
                 Consistently one of the most recommended venues for beginners. Free (after the one-time
                 waiver), indoor, climate-controlled, four courts, welcoming crowd. The weekday morning
                 sessions draw a mix of retired players and working-from-home folks — a relaxed vibe
                 that&apos;s hard to find at evening sessions elsewhere.
               </li>
               <li>
-                <strong><Link href="/courts/pickleland" className="text-primary-600 hover:underline">Pickleland (Pflugerville)</Link>:</strong>{' '}
+                <strong><Link href="/courts/pickleland-pflugerville" className="text-primary-600 hover:underline">Pickleland (Pflugerville)</Link>:</strong>{' '}
                 Worth the 20-minute drive from central Austin. Nine courts, equipment rental, consistent
                 open play schedule, and one of the few facilities in the area that takes new-player
                 development seriously. If you&apos;re going to pay for one club, this is the one most
