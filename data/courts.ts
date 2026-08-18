@@ -1250,40 +1250,45 @@ export const courts: Court[] = [
     zipCode: '78748',
     latitude: 30.1672,
     longitude: -97.8276,
-    phone: '(512) 382-1849',
-    website: 'https://www.bouldinacres.com',
+    phone: '(737) 284-3472',
+    website: 'https://menchaca.bouldinacres.com',
     mainImage: '/images/courts/bouldin-acres-menchaca-main.png',
     images: [
       '/images/courts/bouldin-acres-menchaca-1.png'
     ],
-    description: 'New Bouldin Acres location on Menchaca Road featuring outdoor pickleball courts. This is the second location for Bouldin Acres, combining pickleball with dining and entertainment. More information coming soon.',
-    amenities: ['Food & Drinks', 'Outdoor Courts', 'Entertainment'],
+    description: 'South Austin location of Bouldin Acres on Menchaca Road, with 2 reservable outdoor pickleball courts alongside a full bar, CM Smokehouse BBQ, a playground, and yard games. Courts are for customers only and must be booked online in advance. Rates run $10-$20 per half hour depending on day and time.',
+    amenities: ['Food & Drinks', 'Outdoor Courts', 'CM Smokehouse BBQ', 'Playground', 'Yard Games', 'TVs', 'Paddle Rental', 'Dog Friendly'],
     courtType: 'outdoor',
     numberOfCourts: 2,
     isFree: false,
     pricing: {
-      details: 'More information coming soon',
-      rates: ['Contact facility for current rates']
+      details: 'Court rental by the half hour; paddle rental available',
+      rates: [
+        'Mon-Thu 11AM-6PM: $10 per half hour',
+        'Mon-Thu 6PM-close: $20 per half hour',
+        'Fri-Sun 11AM-close: $20 per half hour',
+        'Paddle rental: $2.50 per paddle'
+      ]
     },
     reservationRequired: true,
-    reservationInfo: 'More information coming soon',
+    reservationInfo: 'Courts must be reserved online in advance — bookings open one week ahead. Check in with a Bouldin Acres Game Host on arrival, even if bringing your own paddle. Cancel at least one hour before your slot for a possible refund; no refunds for no-shows.',
     hours: {
-      monday: 'More information coming soon',
-      tuesday: 'More information coming soon',
-      wednesday: 'More information coming soon',
-      thursday: 'More information coming soon',
-      friday: 'More information coming soon',
-      saturday: 'More information coming soon',
-      sunday: 'More information coming soon',
-      notes: 'More information coming soon. Please contact the facility directly for current hours, pricing, and reservation requirements.'
+      monday: '11:00 AM - 12:00 AM',
+      tuesday: '11:00 AM - 12:00 AM',
+      wednesday: '11:00 AM - 12:00 AM',
+      thursday: '11:00 AM - 12:00 AM',
+      friday: '11:00 AM - 12:00 AM',
+      saturday: '11:00 AM - 12:00 AM',
+      sunday: '11:00 AM - 12:00 AM',
+      notes: 'Venue hours. Pickleball courts are unavailable Monday-Wednesday 6-10PM due to Austin Sports & Social Club league nights (some holidays and select dates excluded). Kid-friendly until 8PM.'
     },
-    features: ['New Location', 'Food & Drinks', 'Entertainment', 'Outdoor Courts'],
+    features: ['Reservable Courts', 'Food & Drinks', 'Family Friendly', 'ASSC League Play', 'Paddle Rental'],
     accessibility: ['Wheelchair Accessible'],
-    parking: 'Parking available',
+    parking: 'Free on-site parking',
     longDescription: [
-      'Bouldin Acres expanded to a second location on Menchaca Road, bringing its signature mix of outdoor pickleball, food, drinks, and Austin entertainment culture to the Slaughter Lane corridor. Like the original South Lamar location, the Menchaca spot positions pickleball as part of a broader social experience rather than a standalone athletic venue.',
-      'The 2 outdoor courts operate on a reservation basis, and the setup is designed for casual play alongside food and beverage options on-site. It\'s a good fit for groups that want to play a few games, grab some food, and hang out — not for players who want 3 hours of uninterrupted drill time. The Menchaca location gives South and Southwest Austin players an option closer to home than the original Bouldin Acres on South Lamar.',
-      'Given that this is a newer location, hours, reservation procedures, and full amenity details may evolve — check the Bouldin Acres website or social channels for the most current information before visiting. Parking is available on-site. The venue adds a second social pickleball option to an area that was previously underserved by both free and paid court facilities.'
+      'Bouldin Acres on Menchaca Road brings the same formula as the original South Lamar location to far South Austin: 2 outdoor pickleball courts attached to a full bar, a CM Smokehouse food truck, and a big open yard. Pickleball here is part of a night out rather than a training session — you book a half hour, play a few games, and then eat. The Menchaca location fills a real gap, since the 78748 corridor south of Slaughter had almost no paid court options before it opened.',
+      'Courts are customer-only and must be reserved online in advance, with bookings opening a week out. Pricing is time-of-day based: $10 per half hour on weekday afternoons (Mon-Thu, 11AM-6PM), and $20 per half hour evenings and all weekend. Paddle rental runs $2.50 if you show up empty-handed. Everyone checks in with a Game Host before stepping on court, athletic shoes are required, and players under 12 need a parent present. Worth knowing before you drive out: the courts are blocked Monday through Wednesday from 6-10PM for Austin Sports & Social Club leagues, which is prime evening time.',
+      'The venue itself runs 11AM to midnight every day and is genuinely family-friendly until 8PM, with a full playground on site — a real differentiator versus most bar-and-court venues in Austin. Dogs are welcome in the general area, though not on the courts. Between the shorter 30-minute booking blocks, the food truck, and the yard games, this works best for casual groups and mixed-skill crews rather than players hunting for extended competitive play.'
     ],
     featured: false
   },
