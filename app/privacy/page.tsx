@@ -84,9 +84,9 @@ export default function PrivacyPolicyPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Third-Party Services</h2>
           
-          <h3 className="text-xl font-medium text-gray-800 mb-3">Google AdSense</h3>
+          <h3 className="text-xl font-medium text-gray-800 mb-3">Advertising</h3>
           <p className="text-gray-700 mb-4">
-            We work with Google AdSense to display advertisements. Google may use cookies to serve ads based on your visits to our site and other sites on the Internet. You can opt out of personalized advertising by visiting{' '}
+            We may work with third-party advertising partners to display advertisements on this site. These partners may use cookies to serve ads based on your visits to this site and other sites on the Internet. You can opt out of Google&apos;s personalized advertising by visiting{' '}
             <a href="https://www.google.com/settings/ads" className="text-green-600 hover:underline" target="_blank" rel="noopener noreferrer">
               Google Ad Settings
             </a>.
