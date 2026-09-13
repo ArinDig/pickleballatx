@@ -109,6 +109,48 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <head>
+        {/*
+          Ezoic standalone (JS) integration — added 13 Sep 2026.
+
+          Ezoic only reviews sites it can detect as integrated; without these scripts the
+          Platform Quality review stalls rather than completing, which is why
+          pickleballatx.org sat in "Processing Re-review" with 0 recorded visits.
+          Ezoic support confirmed on 13 Sep that ADDING integration does not reset or
+          restart a review — only removing it pauses one.
+
+          Order matters. The two gatekeeperconsent scripts are the CMP (consent
+          management) and must load BEFORE the ad script so the consent gate is in place
+          first; data-cfasync="false" stops optimisers from deferring or rewriting them.
+          All four use beforeInteractive so Next injects them into <head> in this order.
+
+          No showAds() placement calls yet, and no placeholder IDs invented here on
+          purpose: placement IDs have to be created in the Ezoic dashboard first, and
+          detection is all the review needs. Add placements after approval.
+        */}
+        <Script
+          id="ezoic-cmp-min"
+          src="https://cmp.gatekeeperconsent.com/min.js"
+          data-cfasync="false"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="ezoic-cmp"
+          src="https://the.gatekeeperconsent.com/cmp.min.js"
+          data-cfasync="false"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="ezoic-sa"
+          src="https://www.ezojs.com/ezoic/sa.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="ezoic-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd = ezstandalone.cmd || [];`,
+          }}
+        />
         <Script
           id="schema-org"
           type="application/ld+json"
