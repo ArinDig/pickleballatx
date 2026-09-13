@@ -92,6 +92,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/disclaimer" className="hover:text-primary-400 transition-colors">
+                  Disclaimer
+                </Link>
+              </li>
+              <li>
                 <Link href="/sitemap.xml" className="hover:text-primary-400 transition-colors">
                   Sitemap
                 </Link>
