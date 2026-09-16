@@ -156,7 +156,7 @@ export default function TournamentsEventsPage() {
             </p>
             <p>
               Social pickleball events — sometimes called &quot;mixers&quot; — combine play with food, drinks,
-              or other activities. Venues like Bouldin Acres, The Pitch, and Pickle Hub regularly host
+              or other activities. Venues like Bouldin Acres, PopStroke Austin, and Pickle Hub regularly host
               these, combining Austin&apos;s food and drink scene with pickleball. Great for players who
               want the social side of the sport as much as the competition.
             </p>

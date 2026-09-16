@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-const AMAZON_TAG = 'adiaustin-20'
+const AMAZON_TAG = 'adiaustin-pb-20'
 
 function amazonUrl(asin: string) {
   return `https://www.amazon.com/dp/${asin}/?tag=${AMAZON_TAG}`

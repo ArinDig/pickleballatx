@@ -192,7 +192,7 @@ export const courts: Court[] = [
   {
     id: '5',
     name: 'PopStroke Austin (formerly The Pitch)',
-    slug: 'the-pitch',
+    slug: 'popstroke-austin',
     address: '13000 Harris Ridge Blvd',
     city: 'Austin',
     state: 'TX',
@@ -200,7 +200,7 @@ export const courts: Court[] = [
     latitude: 30.4194,
     longitude: -97.6897,
     phone: '(737) 370-9280',
-    website: 'https://www.thepitchaustin.com',
+    website: 'https://popstroke.com/venues/austin/',
     mainImage: '/images/courts/pitch-1.png',
     images: [
       '/images/courts/The-Pitch-2.png'

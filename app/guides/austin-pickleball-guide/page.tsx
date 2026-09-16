@@ -179,8 +179,8 @@ export default function AustinPickleballGuidePage() {
               future visits. There&apos;s no booking required; just show up during open play hours.
             </p>
             <p>
-              At dedicated clubs — Pickleball Kingdom, Pickleland, The Pitch on Burnet Rd — it&apos;s
-              more structured. The Pitch operates as a reservation-based venue ($25/hour per court)
+              At dedicated clubs — Pickleball Kingdom, Pickleland, PopStroke Austin on Harris Ridge Blvd — it&apos;s
+              more structured. PopStroke Austin operates as a reservation-based venue ($25/hour per court)
               with an attached bar and restaurant, which makes it as much a social destination as
               a playing one. It&apos;s great for a planned session with friends but not the place to just
               show up alone looking for a game.
@@ -316,7 +316,7 @@ export default function AustinPickleballGuidePage() {
                 experienced players in Austin would point you toward.
               </li>
               <li>
-                <strong><Link href="/courts/the-pitch" className="text-primary-600 hover:underline">The Pitch (Burnet Rd)</Link>:</strong>{' '}
+                <strong><Link href="/courts/popstroke-austin" className="text-primary-600 hover:underline">PopStroke Austin (formerly The Pitch)</Link>:</strong>{' '}
                 Not the place for drop-in open play, but the right choice for a planned evening out
                 that happens to include pickleball. Reserve a court ($25/hour), bring some people,
                 and use the bar and restaurant between sets. It&apos;s a different experience than a

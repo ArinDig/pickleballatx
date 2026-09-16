@@ -162,7 +162,7 @@ export default function BestTimesToPlayPage() {
             <p>
               Spring is Austin&apos;s other golden window for outdoor pickleball. Temperatures are comfortable,
               the city is green, and the courts are active. Spring is also when Austin hosts outdoor
-              events, tournaments, and social mixers at venues like Bouldin Acres, The Pitch, and
+              events, tournaments, and social mixers at venues like Bouldin Acres, PopStroke Austin, and
               Pickle Hub — the social pickleball scene peaks alongside the weather.
             </p>
             <p>
@@ -241,7 +241,7 @@ export default function BestTimesToPlayPage() {
             <p>
               The second peak period for Austin pickleball. Courts at rec centers fill up from about
               4:30pm onward as the working crowd arrives. Weekend evenings are particularly busy at
-              venues like Bouldin Acres, Pickle Hub, and The Pitch, where the social scene overlaps
+              venues like Bouldin Acres, Pickle Hub, and PopStroke Austin, where the social scene overlaps
               with the pickleball.
             </p>
             <p>
@@ -393,10 +393,10 @@ export default function BestTimesToPlayPage() {
                   <div className="text-sm text-gray-600">4 free outdoor courts near Barton Springs. Perfect October mornings.</div>
                 </div>
               </Link>
-              <Link href="/courts/the-pitch" className="flex items-start p-4 bg-green-50 border border-green-200 rounded-lg hover:border-green-400 hover:shadow-sm transition-all">
+              <Link href="/courts/popstroke-austin" className="flex items-start p-4 bg-green-50 border border-green-200 rounded-lg hover:border-green-400 hover:shadow-sm transition-all">
                 <span className="text-2xl mr-3">🍂</span>
                 <div>
-                  <div className="font-semibold text-gray-900">The Pitch <span className="text-xs text-green-600 font-normal ml-1">Fall/Spring pick</span></div>
+                  <div className="font-semibold text-gray-900">PopStroke Austin <span className="text-xs text-green-600 font-normal ml-1">Fall/Spring pick</span></div>
                   <div className="text-sm text-gray-600">3 outdoor courts with bars and restaurants. Best when weather is right.</div>
                 </div>
               </Link>

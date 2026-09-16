@@ -84,7 +84,7 @@ export default function AboutPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-primary-600 font-bold mr-2 mt-1">→</span>
-                <span><strong>Social venues</strong> — Bouldin Acres, Pickle Hub, The Pitch, Highway 71 Brewing, and Lake Travis Biergarten, where pickleball is part of a larger night out.</span>
+                <span><strong>Social venues</strong> — Bouldin Acres, Pickle Hub, PopStroke Austin, Highway 71 Brewing, and Lake Travis Biergarten, where pickleball is part of a larger night out.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-primary-600 font-bold mr-2 mt-1">→</span>

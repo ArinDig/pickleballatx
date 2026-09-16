@@ -149,7 +149,7 @@ const products: Product[] = [
   
 ]
 
-const AMAZON_AFFILIATE_TAG = 'adiaustin-20'
+const AMAZON_AFFILIATE_TAG = 'adiaustin-pb-20'
 
 function getAmazonUrl(asin: string): string {
   return `https://www.amazon.com/dp/${asin}/?tag=${AMAZON_AFFILIATE_TAG}`

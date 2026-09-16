@@ -402,10 +402,10 @@ export default function IndoorVsOutdoorPage() {
 
             <h2 className="text-3xl font-bold text-gray-900 mt-4 mb-6">Top Outdoor Courts in Austin</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/courts/the-pitch" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
+              <Link href="/courts/popstroke-austin" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
                 <span className="text-2xl mr-3">🍺</span>
                 <div>
-                  <div className="font-semibold text-gray-900">The Pitch</div>
+                  <div className="font-semibold text-gray-900">PopStroke Austin</div>
                   <div className="text-sm text-gray-600">3 outdoor courts + restaurants and bars — the ultimate social outdoor experience.</div>
                 </div>
               </Link>
