@@ -110,47 +110,19 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <head>
         {/*
-          Ezoic standalone (JS) integration — added 13 Sep 2026.
+          Ezoic integration REMOVED 15 Sep 2026.
 
-          Ezoic only reviews sites it can detect as integrated; without these scripts the
-          Platform Quality review stalls rather than completing, which is why
-          pickleballatx.org sat in "Processing Re-review" with 0 recorded visits.
-          Ezoic support confirmed on 13 Sep that ADDING integration does not reset or
-          restart a review — only removing it pauses one.
+          Ezoic declined pickleballatx.org for monetization ("not eligible for re-review"),
+          so the four scripts that were here on 13-15 Sep — the two gatekeeperconsent CMP
+          scripts, ezojs.com/ezoic/sa.min.js, and the ezstandalone init — could never serve
+          an ad. Keeping them was pure cost: extra third-party requests on every page load,
+          a Core Web Vitals penalty, and a CMP-injected "Privacy Preferences" consent
+          section for advertising that does not exist.
 
-          Order matters. The two gatekeeperconsent scripts are the CMP (consent
-          management) and must load BEFORE the ad script so the consent gate is in place
-          first; data-cfasync="false" stops optimisers from deferring or rewriting them.
-          All four use beforeInteractive so Next injects them into <head> in this order.
-
-          No showAds() placement calls yet, and no placeholder IDs invented here on
-          purpose: placement IDs have to be created in the Ezoic dashboard first, and
-          detection is all the review needs. Add placements after approval.
+          If a display network is ever added here, note what we learned: the CMP must load
+          BEFORE the ad script, and Next's <Script strategy="beforeInteractive"> silently
+          drops data-cfasync (irrelevant on Vercel, matters behind Cloudflare).
         */}
-        <Script
-          id="ezoic-cmp-min"
-          src="https://cmp.gatekeeperconsent.com/min.js"
-          data-cfasync="false"
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="ezoic-cmp"
-          src="https://the.gatekeeperconsent.com/cmp.min.js"
-          data-cfasync="false"
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="ezoic-sa"
-          src="https://www.ezojs.com/ezoic/sa.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          id="ezoic-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd = ezstandalone.cmd || [];`,
-          }}
-        />
         <Script
           id="schema-org"
           type="application/ld+json"
