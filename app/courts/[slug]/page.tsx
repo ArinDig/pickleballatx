@@ -16,6 +16,7 @@ import {
   FaParking
 } from 'react-icons/fa'
 import ImageGallery from '@/components/ImageGallery'
+import CourtBallPick from '@/components/CourtBallPick'
 import GoogleMap from '@/components/GoogleMap'
 import Script from 'next/script'
 
@@ -457,6 +458,9 @@ export default function CourtPage({ params }: CourtPageProps) {
             </div>
           </div>
         </section>
+
+        {/* Court-type-aware ball recommendation (affiliate) */}
+        <CourtBallPick courtType={court.courtType} courtName={court.name} />
 
         {/* Map Section */}
         <section className="bg-gray-50 py-12">

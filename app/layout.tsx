@@ -25,6 +25,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pickleballatx.org'),
+  // Google's recommended AdSense site-verification method; server-rendered into <head>.
+  other: {
+    'google-adsense-account': 'ca-pub-1749871118217579',
+  },
   title: {
     default: 'Pickleball ATX - Complete Guide to Austin Pickleball Courts',
     template: '%s | Pickleball ATX'
@@ -123,6 +127,23 @@ export default function RootLayout({
           BEFORE the ad script, and Next's <Script strategy="beforeInteractive"> silently
           drops data-cfasync (irrelevant on Vercel, matters behind Cloudflare).
         */}
+        {/*
+          Google AdSense — restored Oct 2026 to reapply (removed 17 Aug for the Ezoic attempt;
+          Ezoic then declined PB permanently on 15 Sep).
+
+          A plain <script> rather than next/script on purpose: the old version used
+          <Script strategy="afterInteractive">, which in the App Router is injected client-side
+          and is NOT in the server HTML — a common cause of AdSense site-verification failing.
+          This renders in the initial HTML. The google-adsense-account meta tag in `metadata`
+          above is a second verification path.
+
+          No ad units placed yet: reapply first; units come after approval.
+        */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1749871118217579"
+          crossOrigin="anonymous"
+        />
         <Script
           id="schema-org"
           type="application/ld+json"
