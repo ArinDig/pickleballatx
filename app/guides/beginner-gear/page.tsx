@@ -32,10 +32,10 @@ const picks = [
   {
     label: 'Best Overall Beginner Paddle',
     name: 'ONIX Graphite Z5 Pickleball Paddle',
-    asin: 'B005BSW2UW',
+    asin: 'B07WWJBWVP', // Mod Black; the Blue B005BSW2UW was down to "Only 1 left" (Oct 2026)
     price: '~$60–80',
-    rating: 4.6,
-    image: 'https://m.media-amazon.com/images/I/91MGvMxCbFL._AC_SX679_.jpg',
+    rating: 4.5,
+    image: 'https://m.media-amazon.com/images/I/81-pzJV3bYS._AC_SX679_.jpg',
     why: 'The Z5 has been a top-selling beginner paddle for years for good reason. The graphite face gives you a solid pop without being overwhelming, and the price makes it easy to commit before you know exactly what you like. Plenty of Austin open-play regulars started on this paddle.',
     proscons: {
       pros: ['Affordable', 'Durable graphite face', 'Good pop for beginners', 'Widely available'],
@@ -44,15 +44,16 @@ const picks = [
   },
   {
     label: 'Best Budget Upgrade',
-    name: 'Paddletek Tempest Wave Pro Pickleball Paddle',
-    asin: 'B0D1YMMN2P',
-    price: '~$80–100',
-    rating: 4.7,
-    image: 'https://m.media-amazon.com/images/I/61Z-xW2GYGL._AC_SX679_.jpg',
-    why: 'If you\'ve played a few times and want a step up without spending $150+, the Tempest Wave Pro is excellent. Polymer core and fiberglass face give you a softer touch and better control — important when you\'re learning to dink.',
+    // Replaced the Tempest Wave Pro (Oct 2026): ASIN B0D1YMMN2P now resolves to the $150 TKO-C.
+    name: 'Selkirk SLK Evo Control Pickleball Paddle',
+    asin: 'B0CXBL9CZF',
+    price: '~$75–90',
+    rating: 4.5,
+    image: 'https://m.media-amazon.com/images/I/71QRGGYuJAL._AC_SX679_.jpg',
+    why: 'If you\'ve played a few times and want a step up without spending $150+, the SLK Evo Control is a strong next paddle from one of the sport\'s best-known brands. The thick 16mm polymer core and carbon fiber face give you a soft, controlled feel and help with spin, which matters most when you\'re learning to dink and reset at the kitchen.',
     proscons: {
-      pros: ['Excellent control', 'Soft touch', 'Great for learning the kitchen game', 'Lightweight'],
-      cons: ['Less power than graphite paddles', 'Takes time to appreciate the feel'],
+      pros: ['Excellent control', 'Soft touch', 'Carbon fiber face helps spin', 'Great for learning the kitchen game'],
+      cons: ['Less pop than power paddles', 'Takes time to appreciate the feel'],
     },
   },
   {
@@ -83,15 +84,16 @@ const picks = [
   },
   {
     label: 'Best Beginner Bag',
-    name: 'Onix Pickleball Paddle Bag',
-    asin: 'B0778VJXRX',
-    price: '~$25–40',
-    rating: 4.4,
-    image: 'https://m.media-amazon.com/images/I/91+OshSKaUL._AC_SX679_.jpg',
-    why: 'You don\'t need a $100 bag when you\'re starting out. The Onix bag holds 2–4 paddles and has pockets for balls and accessories. Simple, affordable, and does the job. Upgrade when you know you\'re committed to the sport.',
+    // Replaced the Onix bag B0778VJXRX (Oct 2026): down to "Only 1 left".
+    name: 'Selkirk Pickleball Backpack',
+    asin: 'B0CGYXLSX7',
+    price: '~$45–55',
+    rating: 4.3,
+    image: 'https://m.media-amazon.com/images/I/815c4u3XyGL._AC_SX679_.jpg',
+    why: 'You don\'t need a $100 bag when you\'re starting out. Selkirk\'s compact backpack holds up to six paddles, with a padded front pocket for balls and keys and a laptop sleeve if you\'re coming straight from work. It does the job without the bulk of a full tournament bag.',
     proscons: {
-      pros: ['Very affordable', 'Fits 2–4 paddles', 'Multiple pockets', 'Lightweight'],
-      cons: ['No shoe compartment', 'Basic construction'],
+      pros: ['Reasonably priced', 'Holds up to 6 paddles', 'Padded front pocket', 'Laptop sleeve'],
+      cons: ['No dedicated shoe compartment', 'Smaller than a full tournament bag'],
     },
   },
 ]
@@ -299,8 +301,8 @@ export default function BeginnerGearPage() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-200 px-4 py-2">Casual player (1–3 months in)</td>
-                    <td className="border border-gray-200 px-4 py-2">Paddletek Tempest Wave Pro</td>
-                    <td className="border border-gray-200 px-4 py-2">$80–100</td>
+                    <td className="border border-gray-200 px-4 py-2">Selkirk SLK Evo Control</td>
+                    <td className="border border-gray-200 px-4 py-2">$75–90</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-200 px-4 py-2">Getting serious (3–6 months)</td>
@@ -317,7 +319,7 @@ export default function BeginnerGearPage() {
               <li><strong>A pickleball machine.</strong> Great for drilling, completely unnecessary when learning.</li>
               <li><strong>Pickleball-specific gloves.</strong> Useful for some players in cold weather or with grip issues — definitely not day one gear.</li>
               <li><strong>Multiple paddles.</strong> One good beginner paddle is all you need.</li>
-              <li><strong>An expensive bag.</strong> A simple tote or the Onix bag above is fine until you know how much gear you actually accumulate.</li>
+              <li><strong>An expensive bag.</strong> A simple tote or the Selkirk backpack above is fine until you know how much gear you actually accumulate.</li>
             </ul>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-4">Ready to Play? Find a Court in Austin</h2>

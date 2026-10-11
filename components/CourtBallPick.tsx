@@ -15,9 +15,9 @@ import Link from 'next/link'
     B07PVPZTPH  Franklin X-26 Indoor   — 4.4 stars, 1,664 reviews
   Re-check before relying on them; out-of-stock links earn nothing and look neglected.
 
-  Deliberately no paddle here: the beginner paddle on /gear (ONIX Z5, B005BSW2UW) showed
-  "Only 1 left in stock" on the same date, and pinning a near-sold-out product to 27 pages
-  is worse than linking to /gear.
+  Deliberately no paddle here: paddle stock churns (the ONIX Z5 Blue, B005BSW2UW, hit
+  "Only 1 left" on 10 Oct and /gear moved to the Mod Black variant on 11 Oct). Keeping
+  paddles on /gear means one place to fix instead of 27 pages.
 
   rel="sponsored" is required by Google for affiliate links — it matters for AdSense review.
 */

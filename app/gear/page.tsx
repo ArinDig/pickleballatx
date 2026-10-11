@@ -58,22 +58,25 @@ const products: Product[] = [
     imageUrl: 'https://m.media-amazon.com/images/I/41+oBnQbohL._AC_SX679_.jpg',
   },
   {
+    // Mod Black variant (Oct 2026): the Blue B005BSW2UW was down to "Only 1 left".
     name: 'ONIX Graphite Z5 Pickleball Paddle',
-    asin: 'B005BSW2UW',
+    asin: 'B07WWJBWVP',
     category: 'Paddles',
-    rating: 4.6,
-    reviewCount: '5,200+',
-    description: 'Best-selling graphite paddle. Great balance of power and control. Perfect for intermediate players.',
-    imageUrl: 'https://m.media-amazon.com/images/I/91MGvMxCbFL._AC_SX679_.jpg',
+    rating: 4.5,
+    reviewCount: '240+',
+    description: 'Long-time best-selling graphite paddle with a forgiving wide body. A good balance of power and control for beginners through intermediate players.',
+    imageUrl: 'https://m.media-amazon.com/images/I/81-pzJV3bYS._AC_SX679_.jpg',
   },
   {
-    name: 'Paddletek Tempest Wave Pro Pickleball Paddle',
-    asin: 'B0D1YMMN2P',
+    // Replaced the Paddletek Tempest Wave Pro (Oct 2026): its ASIN B0D1YMMN2P now resolves to
+    // the $150 Tempest TKO-C, and the Wave Pro is no longer on Amazon.
+    name: 'Selkirk SLK Evo Control Pickleball Paddle',
+    asin: 'B0CXBL9CZF',
     category: 'Paddles',
-    rating: 4.7,
-    reviewCount: '1,200+',
-    description: 'Polymer core with fiberglass face. Excellent for players who want more control and less power.',
-    imageUrl: 'https://m.media-amazon.com/images/I/61Z-xW2GYGL._AC_SX679_.jpg',
+    rating: 4.5,
+    reviewCount: '110+',
+    description: 'Thick 16mm polymer core with a carbon fiber face. Soft and controlled, built for players who want touch over raw power.',
+    imageUrl: 'https://m.media-amazon.com/images/I/71QRGGYuJAL._AC_SX679_.jpg',
   },
   
   // Balls
@@ -121,20 +124,12 @@ const products: Product[] = [
     name: 'Selkirk Pickleball Paddle Backpack',
     asin: 'B0CGYXLSX7',
     category: 'Bags',
-    rating: 4.7,
-    reviewCount: '650+',
-    description: 'Dedicated paddle compartment, ball pockets, and shoe storage. Perfect for carrying all your gear.',
+    rating: 4.3,
+    reviewCount: '75+',
+    description: 'Compact backpack that holds up to 6 paddles, with a padded front pocket and a 15-inch laptop sleeve.',
     imageUrl: 'https://m.media-amazon.com/images/I/815c4u3XyGL._AC_SX679_.jpg',
   },
-  {
-    name: 'Onix Pickleball Paddle Bag',
-    asin: 'B0778VJXRX',
-    category: 'Bags',
-    rating: 4.4,
-    reviewCount: '1,200+',
-    description: 'Affordable paddle bag with multiple pockets. Holds 2-4 paddles plus balls and accessories.',
-    imageUrl: 'https://m.media-amazon.com/images/I/91+OshSKaUL._AC_SX679_.jpg',
-  },
+  // Onix bag (B0778VJXRX) removed Oct 2026: down to "Only 1 left"; the Selkirk backpack covers this slot.
   
   // Accessories
   {
