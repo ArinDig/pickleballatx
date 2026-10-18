@@ -1,7 +1,7 @@
 # Amazon Affiliate Setup Guide
 
 ## Overview
-Your pickleball gear page is now live at `/gear` with 10 curated products using your Amazon Associates ID: `adiaustin-20`
+Your pickleball gear page is now live at `/gear` with 10 curated products using your Amazon Associates ID: `adiaustin-pb-20`
 
 ## Current Products
 
@@ -70,9 +70,9 @@ Products are automatically grouped by category on the page.
 
 ## Affiliate Link Format
 
-All links automatically use your affiliate tag: `adiaustin-20`
+All links automatically use your affiliate tag: `adiaustin-pb-20`
 
-The format is: `https://www.amazon.com/dp/{ASIN}/?tag=adiaustin-20`
+The format is: `https://www.amazon.com/dp/{ASIN}/?tag=adiaustin-pb-20`
 
 ## Important Notes
 
@@ -85,7 +85,7 @@ The format is: `https://www.amazon.com/dp/{ASIN}/?tag=adiaustin-20`
 
 1. Visit `https://pickleballatx.org/gear` (or localhost in development)
 2. Click any "View on Amazon" button
-3. Check the URL includes `?tag=adiaustin-20`
+3. Check the URL includes `?tag=adiaustin-pb-20`
 4. Make a test purchase to verify commissions are tracking
 
 ## Best Practices

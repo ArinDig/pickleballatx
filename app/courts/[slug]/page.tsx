@@ -20,6 +20,20 @@ import CourtBallPick from '@/components/CourtBallPick'
 import GoogleMap from '@/components/GoogleMap'
 import Script from 'next/script'
 
+// Great-circle distance between two courts, used to pick "Courts Near" links.
+function distanceKm(
+  a: { latitude: number; longitude: number },
+  b: { latitude: number; longitude: number }
+): number {
+  const toRad = (x: number) => (x * Math.PI) / 180
+  const dLat = toRad(b.latitude - a.latitude)
+  const dLon = toRad(b.longitude - a.longitude)
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(a.latitude)) * Math.cos(toRad(b.latitude)) * Math.sin(dLon / 2) ** 2
+  return 2 * 6371 * Math.asin(Math.sqrt(h))
+}
+
 interface CourtPageProps {
   params: {
     slug: string
@@ -573,14 +587,18 @@ export default function CourtPage({ params }: CourtPageProps) {
         {/* Related Courts Section */}
         <section className="bg-gray-50 py-12">
           <div className="container-custom">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Other Courts You Might Like</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Courts Near {court.name}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/*
+                Nearest three courts by distance (Oct 2026). The old rule took the first three
+                courts in data order that shared a type, price or city, so 26 of 27 pages linked
+                to the same three courts and 23 courts got no links from other court pages at all.
+                GSC listed most of those as "Discovered/Crawled - currently not indexed".
+                Nearest-neighbor spreads internal links across every court and is more useful.
+              */}
               {courts
-                .filter(c => c.id !== court.id && (
-                  c.courtType === court.courtType || 
-                  c.isFree === court.isFree ||
-                  c.city === court.city
-                ))
+                .filter(c => c.id !== court.id)
+                .sort((a, b) => distanceKm(court, a) - distanceKm(court, b))
                 .slice(0, 3)
                 .map((relatedCourt) => (
                   <CourtCard key={relatedCourt.id} court={relatedCourt} />
