@@ -4,7 +4,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Austin Pickleball Events, Tournaments & Meetups 2026 | Pickleball ATX',
-  description: 'Find Austin pickleball tournaments, open play sessions, leagues, and social events. Updated weekly. Submit your event to be listed on Pickleball ATX.',
+  description: 'Austin pickleball tournaments for November and December 2026, with dates, venues and entry fees, plus recurring leagues, mixers and open play. Submit your event to be listed.',
   keywords: [
     'austin pickleball events 2026',
     'austin pickleball tournaments',
@@ -29,7 +29,7 @@ export default function EventsPage() {
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
             name: 'Austin Pickleball Events, Tournaments & Meetups 2026',
-            description: 'Austin pickleball tournaments, open play sessions, leagues, and social events — updated weekly.',
+            description: 'Dated Austin pickleball tournaments plus recurring leagues, mixers and open play, updated monthly.',
             url: 'https://pickleballatx.org/events',
             publisher: {
               '@type': 'Organization',
@@ -51,10 +51,10 @@ export default function EventsPage() {
               Austin Pickleball Events & Tournaments
             </h1>
             <p className="text-xl text-primary-50">
-              Tournaments, open play sessions, social leagues, and community meetups — updated weekly
+              Dated tournaments for the next two months, plus leagues, mixers and open play — updated monthly
             </p>
             <p className="text-primary-100/90 text-sm mt-4">
-              Last updated: July 30, 2026 · <a href="#submit" className="underline hover:text-white">Submit your event ↓</a>
+              Last updated: October 23, 2026 · <a href="#submit" className="underline hover:text-white">Submit your event ↓</a>
             </p>
           </div>
         </section>
@@ -62,117 +62,115 @@ export default function EventsPage() {
         <section className="container-custom py-12">
           <div className="max-w-4xl mx-auto space-y-12">
 
-            {/* Upcoming Tournaments */}
+            {/* Upcoming Tournaments — dated, from organizer registration pages (checked Oct 23, 2026). Refresh monthly. */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Upcoming Tournaments</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Upcoming Tournaments: November–December 2026</h2>
+              <p className="text-gray-600 mb-6">Dates, venues and fees come from each event&apos;s registration page. Organizers change details, so confirm before you register.</p>
 
               <div className="space-y-4">
 
                 <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
-                  <div className="flex items-start justify-between flex-wrap gap-2">
-                    <div>
-                      <span className="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded mb-2">APA Tournament</span>
-                      <h3 className="text-xl font-bold text-gray-900">The Austin Gold Cup @ Austin Pickle Ranch</h3>
-                      <p className="text-gray-600 mt-1">Austin Pickle Ranch · 11000 Middle Fiskville Road, Austin TX</p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded mb-2">Nov 14–15</span>
+                  <h3 className="text-xl font-bold text-gray-900">Fall Flannel Fest 2026</h3>
+                  <p className="text-gray-600 mt-1"><strong>Saturday–Sunday, November 14–15, 2026</strong> · Austin Pickle Ranch, Austin</p>
                   <p className="text-gray-700 mt-3">
-                    One of Austin's signature amateur tournaments hosted by the Amateur Pickleball Association —
-                    the largest amateur player tour in the country. Multiple skill levels and formats. Austin Pickle
-                    Ranch's 16 indoor courts make this a high-quality playing environment regardless of summer weather.
+                    Austin Pickle Ranch's second annual flannel-themed indoor tournament: round-robin pool play with a playoff, about two to two and a half hours of play, and medals for the top three in each division. Entry is $50–$60. Flannel encouraged, not required.
                   </p>
                   <p className="mt-3">
-                    <a href="https://apatournaments.com/product/the-austin-gold-cup-austin-pickle-ranch/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Register at APA Tournaments →</a>
+                    <a href="https://app.fluidpb.com/tournaments/fall-flannel-fest-2026" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Register on Fluid PB →</a>
                   </p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
-                  <div className="flex items-start justify-between flex-wrap gap-2">
-                    <div>
-                      <span className="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded mb-2">APA Tournament</span>
-                      <h3 className="text-xl font-bold text-gray-900">The Austin Open @ Austin Pickle Ranch</h3>
-                      <p className="text-gray-600 mt-1">Austin Pickle Ranch · 11000 Middle Fiskville Road, Austin TX</p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2 py-1 rounded mb-2">Nov 20–21</span>
+                  <h3 className="text-xl font-bold text-gray-900">Turkey Bowl — Violet Crown Pickleball</h3>
+                  <p className="text-gray-600 mt-1"><strong>Friday–Saturday, November 20–21, 2026</strong> · RacFit, 1390 Robert S. Light Blvd, Buda</p>
                   <p className="text-gray-700 mt-3">
-                    Another APA-sanctioned event at Austin Pickle Ranch. The Austin Open draws players from
-                    across Texas and the broader Southwest. Check the APA site for current dates, divisions,
-                    and registration windows — these fill up.
+                    Violet Crown Pickleball hosts its Turkey Bowl at <Link href="/courts/racfit-buda" className="text-primary-600 hover:underline">RacFit Buda</Link>, with a significant share of proceeds going to the St. Ignatius Food Pantry. Divisions are gated by DUPR rating and skill, with a beginner division that needs no rating (or a DUPR under 2.75). Cash or sponsored prizes; not DUPR-recorded. Entry is $35–$45.
                   </p>
                   <p className="mt-3">
-                    <a href="https://apatournaments.com/product/the-austin-open-austin-pickle-ranch/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Register at APA Tournaments →</a>
+                    <a href="https://app.fluidpb.com/tournaments/turkey-bowl-violet-crown-pickleball" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Register on Fluid PB →</a>
                   </p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
-                  <div className="flex items-start justify-between flex-wrap gap-2">
-                    <div>
-                      <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mb-2">ERA Tour</span>
-                      <h3 className="text-xl font-bold text-gray-900">ERA Pickleball Tour: Austin Open</h3>
-                      <p className="text-gray-600 mt-1">Austin Pickle Ranch · Austin, TX</p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded mb-2">Nov 22</span>
+                  <h3 className="text-xl font-bold text-gray-900">Everything Pickleball Come &amp; Eat It Tournament</h3>
+                  <p className="text-gray-600 mt-1"><strong>Sunday, November 22, 2026</strong> · Tejas PB Club, 4701 FM 3405 Bldg 7, Georgetown</p>
                   <p className="text-gray-700 mt-3">
-                    The ERA Pickleball Tour brings a multi-day competitive event to Austin Pickle Ranch. The ERA
-                    Tour runs sanctioned events across Texas with cash payouts at higher skill brackets. Check
-                    their site for the next Austin stop and registration details.
+                    A one-day tournament with divisions from novice up through higher DUPR levels, plus swag bags, snacks and a paddle giveaway drawing. Entry is free for the novice to lower-intermediate division; registration closes November 20.
                   </p>
                   <p className="mt-3">
-                    <a href="https://pickleballtournaments.com/tournaments/era-pickleball-tour-austin-open" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View on Pickleball Tournaments →</a>
+                    <a href="https://app.fluidpb.com/tournaments/everything-pickleball-come-eat-it-tournament-sunday-nov-22nd-2027-tejas-pb-club-georgetown-tx" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Register on Fluid PB →</a>
                   </p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
-                  <div className="flex items-start justify-between flex-wrap gap-2">
-                    <div>
-                      <span className="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded mb-2">Apex Clubs</span>
-                      <h3 className="text-xl font-bold text-gray-900">Apex Pickleball Club Tournaments</h3>
-                      <p className="text-gray-600 mt-1">Cedar Park, TX (Greater Austin Area)</p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mb-2">Dec 11–13</span>
+                  <h3 className="text-xl font-bold text-gray-900">Liveball Austin Winter Classic</h3>
+                  <p className="text-gray-600 mt-1"><strong>Friday–Sunday, December 11–13, 2026</strong> · Austin (venue to be announced)</p>
                   <p className="text-gray-700 mt-3">
-                    Apex Pickleball Clubs runs monthly tournaments on indoor courts in Cedar Park for all skill levels —
-                    from members-only club events to Amateur Opens to sanctioned Pro events. If you're in North Austin
-                    or Cedar Park, Apex is one of the most active local tournament series.
+                    A three-day winter event from Liveball. The organizer has listed the dates but not the venue yet. Registration opens October 26 and is listed as free.
                   </p>
                   <p className="mt-3">
-                    <a href="https://apexpbclubs.com/tournaments" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View Apex Tournament Schedule →</a>
+                    <a href="https://app.fluidpb.com/tournaments/liveball-austin-winter-classic" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View on Fluid PB →</a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Tournament series */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Tournament Series to Watch</h2>
+
+              <div className="space-y-4">
+
+                <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
+                  <span className="inline-block bg-primary-100 text-primary-800 text-xs font-semibold px-2 py-1 rounded mb-2">APA Tour</span>
+                  <h3 className="text-xl font-bold text-gray-900">APA Tournaments at Austin Pickle Ranch</h3>
+                  <p className="text-gray-600 mt-1"><strong>2026 dates: Austin Gold Cup May 2–3 · Austin Open September 19–20</strong> · Austin Pickle Ranch</p>
+                  <p className="text-gray-700 mt-3">
+                    The Amateur Pickleball Association, the largest amateur tour in the country, held two events at Austin Pickle Ranch this year. Both are done; watch the APA site for 2027 dates.
+                  </p>
+                  <p className="mt-3">
+                    <a href="https://apatournaments.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">APA Tournaments →</a>
                   </p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
-                  <div className="flex items-start justify-between flex-wrap gap-2">
-                    <div>
-                      <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mb-2">Pickleland</span>
-                      <h3 className="text-xl font-bold text-gray-900">Pickleland Weekly Tournaments & Brackets</h3>
-                      <p className="text-gray-600 mt-1">Pickleland · 21427 Martin Lane, Pflugerville TX</p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mb-2">ERA Tour</span>
+                  <h3 className="text-xl font-bold text-gray-900">ERA Pickleball Tour: Austin Open</h3>
+                  <p className="text-gray-600 mt-1"><strong>2026 dates: May 14–17</strong> · Austin Pickle Ranch</p>
                   <p className="text-gray-700 mt-3">
-                    Pickleland hosts 16+ tournaments per year ranging from beginner-friendly round-robins to
-                    DUPR-rated competitive brackets. They also run free mini-tournaments every week during
-                    regular open play — the lowest-barrier way to get competitive reps in the Austin area.
+                    A multi-day sanctioned event with cash payouts in the higher skill brackets. The 2026 stop has passed; check the tour listing for next year.
                   </p>
                   <p className="mt-3">
-                    <a href="https://pickleland.com/tournaments" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View Pickleland Tournament Schedule →</a>
+                    <a href="https://pickleballtournaments.com/tournaments/era-pickleball-tour-austin-open" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View on PickleballTournaments.com →</a>
                   </p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
-                  <div className="flex items-start justify-between flex-wrap gap-2">
-                    <div>
-                      <span className="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded mb-2">002 Pickleball</span>
-                      <h3 className="text-xl font-bold text-gray-900">002 Pickleball Summer Series</h3>
-                      <p className="text-gray-600 mt-1">Austin, TX</p>
-                    </div>
-                  </div>
+                  <span className="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded mb-2">Apex Clubs</span>
+                  <h3 className="text-xl font-bold text-gray-900">Apex Pickleball Club Tournaments</h3>
+                  <p className="text-gray-600 mt-1"><strong>Monthly</strong> · Cedar Park</p>
                   <p className="text-gray-700 mt-3">
-                    002 Pickleball runs a summer series from May through September with Men's Doubles, Mixed
-                    Doubles, and Women's Doubles formats. Prize pools range from $800–$1,500 per event. A solid
-                    option for intermediate and advanced players looking for cash-prize competition in Austin.
+                    Apex runs tournaments on its indoor courts most months, from members-only club events to amateur opens. Its 002 Dink and Slam Pickleball Jam drew 268 players on October 24.
                   </p>
                   <p className="mt-3">
-                    <a href="https://www.002pickleball.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Visit 002 Pickleball →</a>
+                    <a href="https://apexpbclubs.com/tournaments" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Apex Tournament Schedule →</a>
+                  </p>
+                </div>
+
+                <div className="border border-gray-200 rounded-lg p-6 hover:border-primary-300 transition-colors">
+                  <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mb-2">Pickleland</span>
+                  <h3 className="text-xl font-bold text-gray-900">Pickleland Weekly Mini Tournaments</h3>
+                  <p className="text-gray-600 mt-1"><strong>Weekly</strong> · Pickleland, 21427 Martin Lane, Pflugerville</p>
+                  <p className="text-gray-700 mt-3">
+                    Free mini tournaments during regular open play, plus rotating bracket formats through the year. The lowest-barrier way to get competitive games in the Austin area.
+                  </p>
+                  <p className="mt-3">
+                    <a href="https://pickleland.com/tournaments" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">Pickleland Tournament Schedule →</a>
                   </p>
                 </div>
 
@@ -203,11 +201,11 @@ export default function EventsPage() {
                   <p className="text-gray-600 text-sm mb-3">East Austin</p>
                   <p className="text-gray-700">
                     Eastside Paddle Club offers a mix of competitive leagues, social mixers, and lessons in East
-                    Austin. Ranges from beginner-friendly mixers to more competitive formats. Download their app
-                    for the current schedule and court reservation availability.
+                    Austin. Ranges from beginner-friendly mixers to more competitive formats. Their leagues page has
+                    the current schedule.
                   </p>
                   <p className="mt-3">
-                    <a href="https://eastsidepaddleclub.com/events" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View Eastside Paddle Club Events →</a>
+                    <a href="https://eastsidepaddleclub.com/leagues" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View Eastside Paddle Club Leagues →</a>
                   </p>
                 </div>
 
@@ -218,7 +216,7 @@ export default function EventsPage() {
                     Pickleland runs the busiest weekly indoor schedule in the Austin area: DUPR-rated scrambles,
                     themed social nights, a Singles Mixer, an LGBTQIA+ Mixer, and daily open play on 9 climate-controlled
                     courts. If you want structured events without committing to a full league, Pickleland's drop-in
-                    event calendar is worth checking weekly.
+                    event calendar changes every week.
                   </p>
                   <p className="mt-3">
                     <a href="https://pickleland.com/events-tournaments" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline font-semibold">View Pickleland Events Calendar →</a>
@@ -247,7 +245,7 @@ export default function EventsPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Submit Your Event</h2>
               <p className="text-gray-700 mb-4">
                 Running a tournament, league, open play session, or social meetup in Austin? We review
-                submissions weekly and list approved events on this page at no charge.
+                submissions monthly and list approved events on this page at no charge.
               </p>
               <p className="text-gray-700 mb-6">
                 Include the event name, date, location, skill level, cost (if any), and a registration or
@@ -260,7 +258,7 @@ export default function EventsPage() {
                 Submit an Event →
               </a>
               <p className="text-gray-500 text-sm mt-4">
-                This page is updated weekly. Submissions received by Friday will be reviewed for the following week's update.
+                This page is updated monthly. Send an event at least two weeks before its date to make the next update.
               </p>
             </div>
 
@@ -274,8 +272,9 @@ export default function EventsPage() {
               <ul className="space-y-2 text-gray-700">
                 <li>→ <a href="https://pickleballtournaments.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">PickleballTournaments.com</a> — national tournament search, filter by Texas/Austin</li>
                 <li>→ <a href="https://apatournaments.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">APA Tournaments</a> — the largest amateur tour, strong Texas presence</li>
+                <li>→ <a href="https://app.fluidpb.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Fluid PB</a> — registration for many Central Texas tournaments, filterable by city</li>
                 <li>→ <a href="https://www.meetup.com/austinssc/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Austin Sports & Social Club on Meetup</a> — social leagues and mixers</li>
-                <li>→ <Link href="/courts" className="text-primary-600 hover:underline">Austin Pickleball Courts Directory</Link> — all 28 Austin-area courts with hours and contact info</li>
+                <li>→ <Link href="/courts" className="text-primary-600 hover:underline">Austin Pickleball Courts Directory</Link> — all 27 Austin-area courts with hours and contact info</li>
               </ul>
             </div>
 
