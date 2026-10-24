@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/courts/free`,
-      lastModified: new Date('2026-09-15'),
+      lastModified: new Date('2026-10-24'),
       changeFrequency: 'daily' as const,
       priority: 0.8,
     },
@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/events`,
-      lastModified: new Date('2026-10-23'),
+      lastModified: new Date('2026-10-24'),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
+import GearPicks, { GearPick } from '@/components/GearPicks'
 
 export const metadata: Metadata = {
   title: 'Austin Pickleball Events, Tournaments & Meetups 2026 | Pickleball ATX',
@@ -17,6 +18,38 @@ export const metadata: Metadata = {
     canonical: 'https://pickleballatx.org/events',
   },
 }
+
+// Tournament-day kit. ASINs checked 24 Oct 2026 (see components/GearPicks.tsx).
+const TOURNAMENT_PICKS: GearPick[] = [
+  {
+    asin: 'B074P8MZW9',
+    name: 'Franklin X-40 Outdoor Pickleballs',
+    image: 'https://m.media-amazon.com/images/I/71ttt0pVlCL._AC_SX679_.jpg',
+    label: 'Outdoor events',
+    why: 'USA Pickleball approved and the official ball of the US Open. Warming up with the ball you will play with makes the first game less of an adjustment.',
+  },
+  {
+    asin: 'B07PVPZTPH',
+    name: 'Franklin X-26 Indoor Pickleballs',
+    image: 'https://m.media-amazon.com/images/I/61nac98gL2L._AC_SX679_.jpg',
+    label: 'Indoor events',
+    why: 'Several upcoming events, including Fall Flannel Fest at Austin Pickle Ranch, are indoors. Indoor balls play slower and softer, so practice with one beforehand.',
+  },
+  {
+    asin: 'B000HEKHBQ',
+    name: 'Gamma Supreme Overgrip (3-Pack)',
+    image: 'https://m.media-amazon.com/images/I/51HvY8NvzvL._AC_SX679_.jpg',
+    label: 'Fresh grip',
+    why: 'Wrap a new overgrip the night before. A worn grip gets slicker as a long day of matches goes on, and a fresh one takes a couple of minutes to put on.',
+  },
+  {
+    asin: 'B0CGYXLSX7',
+    name: 'Selkirk Pickleball Backpack',
+    image: 'https://m.media-amazon.com/images/I/815c4u3XyGL._AC_SX679_.jpg',
+    label: 'Carry it all',
+    why: 'Holds up to six paddles plus balls, water and a change of shirt, with a padded front pocket for keys and phone. Small enough to keep courtside.',
+  },
+]
 
 export default function EventsPage() {
   return (
@@ -54,7 +87,7 @@ export default function EventsPage() {
               Dated tournaments for the next two months, plus leagues, mixers and open play — updated monthly
             </p>
             <p className="text-primary-100/90 text-sm mt-4">
-              Last updated: October 23, 2026 · <a href="#submit" className="underline hover:text-white">Submit your event ↓</a>
+              Last updated: October 24, 2026 · <a href="#submit" className="underline hover:text-white">Submit your event ↓</a>
             </p>
           </div>
         </section>
@@ -119,6 +152,13 @@ export default function EventsPage() {
 
               </div>
             </div>
+
+            <GearPicks
+              embedded
+              title="Tournament-Day Kit"
+              intro="Signed up for one of these? A few small things make a long day of matches easier."
+              picks={TOURNAMENT_PICKS}
+            />
 
             {/* Tournament series */}
             <div>

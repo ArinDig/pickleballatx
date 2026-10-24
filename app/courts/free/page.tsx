@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { courts } from '@/data/courts'
 import CourtsFilter from '@/components/CourtsFilter'
+import GearPicks, { GearPick } from '@/components/GearPicks'
 
 export const metadata: Metadata = {
   title: 'Free Pickleball Courts in Austin, TX',
@@ -16,6 +17,38 @@ export const metadata: Metadata = {
     canonical: 'https://pickleballatx.org/courts/free',
   },
 }
+
+// What to bring to a free court. ASINs checked 24 Oct 2026 (see components/GearPicks.tsx).
+const FREE_COURT_PICKS: GearPick[] = [
+  {
+    asin: 'B0BYV7P9X7',
+    name: 'MTEN Pickleball Paddle Set of 2',
+    image: 'https://m.media-amazon.com/images/I/817bcNLqMLL._AC_SX679_.jpg',
+    label: 'Cheapest way to start',
+    why: 'Two fiberglass paddles, four outdoor balls, two grip tapes and a carry bag. Plenty for finding out whether you like the game, and rated 4.7 stars across more than 9,500 reviews.',
+  },
+  {
+    asin: 'B01F7VC6MQ',
+    name: 'Selkirk SLK Neo Paddle Set of 2',
+    image: 'https://m.media-amazon.com/images/I/71YJpULdrjL._AC_SX679_.jpg',
+    label: 'Step up for two players',
+    why: 'Two graphite paddles from one of the best-known paddle brands, plus three outdoor balls and a sling bag. A good buy for a couple or two friends who already know they will keep playing.',
+  },
+  {
+    asin: 'B074P8MZW9',
+    name: 'Franklin X-40 Outdoor Pickleballs',
+    image: 'https://m.media-amazon.com/images/I/71ttt0pVlCL._AC_SX679_.jpg',
+    label: 'For park courts',
+    why: 'Most free courts in Austin are outdoor park courts, and an outdoor ball is harder and more wind-resistant. Bring a few of your own; balls crack and go missing.',
+  },
+  {
+    asin: 'B07PVPZTPH',
+    name: 'Franklin X-26 Indoor Pickleballs',
+    image: 'https://m.media-amazon.com/images/I/61nac98gL2L._AC_SX679_.jpg',
+    label: 'For rec centers',
+    why: 'Dittmar, Gus Garcia and Northwest are indoor. Indoor balls are softer and lighter for gym floors; an outdoor ball bounces too fast and loud inside.',
+  },
+]
 
 export default function FreeCourtsPage() {
   const freeCourts = courts.filter(c => c.isFree)
@@ -54,23 +87,13 @@ export default function FreeCourtsPage() {
           </Link>
         </div>
 
-        {/* Gear CTA */}
-        <div className="bg-primary-50 border border-primary-200 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div>
-            <p className="text-lg font-semibold text-gray-900">New to pickleball?</p>
-            <p className="text-gray-600 text-sm mt-1">
-              All you need is a paddle and some balls. We picked the best beginner gear so you don't have to guess.
-            </p>
-          </div>
-          <Link
-            href="/guides/beginner-gear"
-            className="flex-shrink-0 inline-flex items-center px-5 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap"
-          >
-            Best Gear for Beginners →
-          </Link>
-        </div>
-
       </section>
+
+      <GearPicks
+        title="What to Bring to a Free Court"
+        intro="Most free courts don't provide equipment, so plan on bringing a paddle and your own balls. These are the picks we'd start with, depending on budget and whether you're playing outdoors or at a rec center."
+        picks={FREE_COURT_PICKS}
+      />
 
       {/* Comprehensive Content */}
       <section className="container-custom py-12">
