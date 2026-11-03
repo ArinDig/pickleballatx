@@ -1320,6 +1320,93 @@ export const courts: Court[] = [
       'Access requires a country club social membership with the pickleball add-on, and members can bring guests. For players in the 78750 corridor — Balcones, Spicewood Springs, Anderson Mill, Four Points — that private-club requirement is the tradeoff for having reliably maintained courts in a part of town where free public options are genuinely scarce. Reach out through balconescountryclub.com or balconespickleball@gmail.com for membership details and current programming.'
     ],
     featured: false
+  },
+  // Added 3 Nov 2026 after a reader (contact form, 24 Oct) pointed out these clubs were missing.
+  // Facts checked against each club's own website on 3 Nov 2026. Main images are placeholder
+  // cards made for this site ("photos coming soon"), not stock photos; replace with real photos.
+  {
+    id: '34',
+    name: 'Apex Pickleball Clubs',
+    slug: 'apex-pickleball-clubs-cedar-park',
+    address: '501 Cypress Creek Rd',
+    city: 'Cedar Park',
+    state: 'TX',
+    zipCode: '78613',
+    latitude: 30.4972,
+    longitude: -97.8222,
+    phone: '(737) 394-6801',
+    website: 'https://apexpbclubs.com',
+    email: 'info@apexpbclubs.com',
+    mainImage: '/images/courts/apex-pickleball-clubs-cedar-park-main.jpg',
+    images: [],
+    description: 'Indoor club in Cedar Park with 16 climate-controlled courts, including 2 championship courts, plus coaching, leagues, tournaments and the PickleDilly\'s restaurant on site. You don\'t need a membership: guests can book courts or drop in to open play.',
+    amenities: ['16 Indoor Courts', 'Climate Controlled', 'Championship Courts', 'Restaurant & Bar', 'Pro Shop', 'Coaching', 'Party Room'],
+    courtType: 'indoor',
+    numberOfCourts: 16,
+    isFree: false,
+    pricing: {
+      details: 'Guests welcome without a membership. Members get priority booking, daily open play and discounts.',
+      rates: ['Guest drop-in open play: $17.50 for 2 hours', 'Single membership: $149.95/month', 'Couples membership: $249.95/month'],
+    },
+    reservationRequired: true,
+    reservationInfo: 'Create a free account on the Apex site to reserve a court or sign up for open play at your level. Members can book up to 14 days ahead.',
+    hours: {
+      notes: 'Open 7 days a week. Open play and court times vary by day; check the club calendar on apexpbclubs.com.',
+    },
+    features: ['Indoor', 'Open Play', 'Leagues', 'Tournaments', 'Clinics & Lessons', 'Youth Programs', 'Food & Drinks'],
+    parking: 'On-site parking',
+    customDescription: 'Apex Pickleball Clubs in Cedar Park: 16 indoor climate-controlled courts, guest drop-in open play ($17.50 for 2 hours), memberships, leagues, monthly tournaments and an on-site restaurant.',
+    longDescription: [
+      'Apex Pickleball Clubs is a dedicated indoor club on Cypress Creek Road in Cedar Park, with 16 climate-controlled courts. Two are championship courts, and the playing surface is cushioned outdoor-style surfacing rather than a gym floor. At 16 courts it is one of the larger indoor facilities in the Austin area.',
+      'You don\'t have to be a member. Guests create a free account on the Apex website, then either reserve a court or sign up for an open play session at their level; drop-in open play for guests is $17.50 for two hours. Apex\'s own math is that membership ($149.95 a month for one person) pays off if you play more than about once a week, since members get two hours of open play a day included, priority booking up to 14 days out and discounts on clinics and leagues.',
+      'Beyond open play, Apex runs leagues, lessons with PPR-certified coaches, a youth program, a free intro-to-pickleball class and a monthly tournament series that draws players from across Central Texas; its October 2026 Dink and Slam Jam had 268 players. PickleDilly\'s, the restaurant and bar on site, makes it an easy place to stay after a session. Our events page lists upcoming Apex tournaments.',
+    ],
+    featured: false
+  },
+  {
+    id: '35',
+    name: 'The Picklr Austin West',
+    slug: 'picklr-austin-west',
+    address: '8201 N FM 620, Suite 130',
+    city: 'Austin',
+    state: 'TX',
+    zipCode: '78726',
+    latitude: 30.4169,
+    longitude: -97.8435,
+    phone: '(737) 257-6035',
+    website: 'https://thepicklr.com/location/austin-west/',
+    email: 'austinwest.tx@thepicklrfranchise.com',
+    mainImage: '/images/courts/picklr-austin-west-main.jpg',
+    images: [],
+    description: 'Indoor pickleball club on FM 620 in northwest Austin with 11 dedicated courts, sound baffling to cut the noise, and memberships that work at Picklr clubs nationwide. Open daily 6 AM to 11 PM; book through the Picklr app.',
+    amenities: ['11 Indoor Courts', 'Sound Baffling', 'Pro Shop', 'Leagues', 'Clinics'],
+    courtType: 'indoor',
+    numberOfCourts: 11,
+    isFree: false,
+    pricing: {
+      details: 'Memberships or single-session court bookings through The Picklr app.',
+      rates: ['Memberships starting at $99/month', 'Unlimited membership works at Picklr clubs nationwide', 'Single court bookings available in the app'],
+    },
+    reservationRequired: true,
+    reservationInfo: 'Book courts, open play, leagues and clinics through The Picklr app. Walk-in open play is also offered.',
+    hours: {
+      monday: '6:00 AM - 11:00 PM',
+      tuesday: '6:00 AM - 11:00 PM',
+      wednesday: '6:00 AM - 11:00 PM',
+      thursday: '6:00 AM - 11:00 PM',
+      friday: '6:00 AM - 11:00 PM',
+      saturday: '6:00 AM - 11:00 PM',
+      sunday: '6:00 AM - 11:00 PM',
+    },
+    features: ['Indoor', 'Open Play', 'Leagues', 'Clinics', 'Nationwide Membership'],
+    parking: 'On-site parking',
+    customDescription: 'The Picklr Austin West on FM 620: 11 dedicated indoor pickleball courts with sound baffling, open daily 6 AM to 11 PM. Memberships from $99/month, or book a single session in the app.',
+    longDescription: [
+      'The Picklr Austin West is part of a national chain of indoor pickleball clubs, in a retail center on North FM 620 in northwest Austin. It has 11 dedicated courts built for pickleball, with an outdoor-style court surface and custom sound baffling, so it is noticeably quieter than playing in a gym or warehouse.',
+      'Access runs through The Picklr app, where you book courts, open play, leagues and clinics. Memberships start at $99 a month, and the Unlimited tier works at every Picklr location in the country, which matters if you travel. If you don\'t want a membership, you can book a single court session instead.',
+      'The club is open every day from 6 AM to 11 PM, so early-morning and late-evening play are both realistic. A second Austin location, The Picklr Oak Hill on Highway 71, has been announced; we\'ll add it once it is open.',
+    ],
+    featured: false
   }
 ]
 

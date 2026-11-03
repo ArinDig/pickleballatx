@@ -7,7 +7,7 @@ import { courts } from '@/data/courts'
   always moves. When you edit a page, update its date here. COURT_PAGES_UPDATED covers
   data/courts.ts and the court page template; bump it when either changes.
 */
-const COURT_PAGES_UPDATED = new Date('2026-10-18')
+const COURT_PAGES_UPDATED = new Date('2026-11-03')
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://pickleballatx.org'

@@ -314,7 +314,7 @@ export default function EventsPage() {
                 <li>→ <a href="https://apatournaments.com" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">APA Tournaments</a> — the largest amateur tour, strong Texas presence</li>
                 <li>→ <a href="https://app.fluidpb.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Fluid PB</a> — registration for many Central Texas tournaments, filterable by city</li>
                 <li>→ <a href="https://www.meetup.com/austinssc/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Austin Sports & Social Club on Meetup</a> — social leagues and mixers</li>
-                <li>→ <Link href="/courts" className="text-primary-600 hover:underline">Austin Pickleball Courts Directory</Link> — all 27 Austin-area courts with hours and contact info</li>
+                <li>→ <Link href="/courts" className="text-primary-600 hover:underline">Austin Pickleball Courts Directory</Link> — all 29 Austin-area courts with hours and contact info</li>
               </ul>
             </div>
 
