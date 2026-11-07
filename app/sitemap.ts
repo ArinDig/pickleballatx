@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/courts/indoor`,
-      lastModified: new Date('2026-09-15'),
+      lastModified: new Date('2026-11-06'),
       changeFrequency: 'daily' as const,
       priority: 0.8,
     },

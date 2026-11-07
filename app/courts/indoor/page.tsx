@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
 import { courts } from '@/data/courts'
+import Link from 'next/link'
 import CourtsFilter from '@/components/CourtsFilter'
+import GearPicks, { GearPick } from '@/components/GearPicks'
 
 export const metadata: Metadata = {
   title: 'Indoor Pickleball Courts in Austin, TX',
-  description: 'Find indoor pickleball courts in Austin, Texas. Climate-controlled facilities perfect for year-round play, rain or shine.',
+  description: 'Indoor pickleball courts in Austin for winter play: every indoor club and rec center compared by courts, cost and how to play without a membership, plus lit outdoor courts for evenings.',
   keywords: ['indoor pickleball austin', 'indoor pickleball courts austin', 'austin indoor pickleball', 'climate controlled pickleball austin'],
   openGraph: {
     title: 'Indoor Pickleball Courts in Austin, TX | Pickleball ATX',
@@ -16,10 +18,33 @@ export const metadata: Metadata = {
   },
 }
 
+// Outdoor courts with lights, checked against each court's listing in data/courts.ts (Nov 2026).
+const LIT_OUTDOOR = ['brentwood-park', 'austin-high-tennis', 'anderson-mill-west-park']
+
+// ASINs checked 6 Nov 2026 (see components/GearPicks.tsx).
+const WINTER_PICKS: GearPick[] = [
+  {
+    asin: 'B07PVPZTPH',
+    name: 'Franklin X-26 Indoor Pickleballs',
+    image: 'https://m.media-amazon.com/images/I/61nac98gL2L._AC_SX679_.jpg',
+    label: 'Indoor ball',
+    why: 'Softer and lighter than an outdoor ball, with bigger holes, made for gym floors and indoor club surfaces. Many open-play sessions use indoor balls, so it helps to practice with one.',
+  },
+  {
+    asin: 'B08VS7473J',
+    name: 'ASICS Gel-Rocket 10 Indoor Court Shoes',
+    image: 'https://m.media-amazon.com/images/I/51On8-rbGBL._AC_SX679_.jpg',
+    label: 'Non-marking shoes',
+    why: 'Indoor courts usually require non-marking court shoes, and running shoes grip badly on lateral moves. A gum-rubber court shoe like this one covers both. Listed in men\'s sizing.',
+  },
+]
+
 export default function IndoorCourtsPage() {
   const indoorCourts = courts.filter(court => 
     court.courtType === 'indoor' || court.courtType === 'both'
   )
+  const byCourts = [...indoorCourts].sort((a, b) => b.numberOfCourts - a.numberOfCourts)
+  const litOutdoor = courts.filter(c => LIT_OUTDOOR.includes(c.slug))
 
   return (
     <div>
@@ -36,6 +61,88 @@ export default function IndoorCourtsPage() {
       </section>
 
       <CourtsFilter courts={courts} defaultType="indoor" />
+
+      {/* Winter play — added Nov 2026. Table is built from data/courts.ts so it stays in sync. */}
+      <section className="container-custom py-10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">Playing Through the Winter</h2>
+          <p className="text-gray-700 mb-3">
+            Austin winters are mild, but they still change the game. The sun sets around 5:30 in
+            December, cold snaps and wind make outdoor play miserable, and the harder plastic in
+            outdoor balls is more likely to crack in the cold. That&apos;s when indoor courts earn their
+            keep. Here is every indoor option in our directory, largest first, with the simplest way to
+            play there without signing up for anything long-term.
+          </p>
+
+          <div className="overflow-x-auto mt-6">
+            <table className="w-full text-sm border border-gray-200">
+              <thead className="bg-gray-50 text-left">
+                <tr>
+                  <th className="p-3 border-b">Facility</th>
+                  <th className="p-3 border-b">Area</th>
+                  <th className="p-3 border-b">Courts</th>
+                  <th className="p-3 border-b">Cost to start</th>
+                </tr>
+              </thead>
+              <tbody>
+                {byCourts.map((c) => (
+                  <tr key={c.slug} className="border-b last:border-0">
+                    <td className="p-3">
+                      <Link href={`/courts/${c.slug}`} className="text-primary-600 hover:underline font-semibold">
+                        {c.name}
+                      </Link>
+                    </td>
+                    <td className="p-3 text-gray-700">{c.city}</td>
+                    <td className="p-3 text-gray-700">
+                      {c.numberOfCourts}
+                      {c.courtType === 'both' ? ' (indoor + outdoor)' : ''}
+                    </td>
+                    <td className="p-3 text-gray-700">{c.pricing?.rates?.[0] ?? c.pricing?.details ?? 'Contact facility'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 mt-2">
+            Court counts and prices come from each facility&apos;s own information and change; check the
+            facility page before you go.
+          </p>
+
+          <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">Cheapest Indoor Options</h3>
+          <p className="text-gray-700">
+            The city recreation centers are the budget route. Dittmar runs free open play after a
+            one-time waiver, and South Austin Rec charges a few dollars a day; check each page for
+            membership rules. Among the private clubs, Apex in Cedar Park lets guests drop into open play
+            without a membership, and Pickleland and Pickleball Kingdom both sell daily passes.
+          </p>
+
+          <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">Prefer Outdoors? Courts With Lights</h3>
+          <p className="text-gray-700 mb-3">
+            On mild winter evenings, these outdoor courts have lights, so you can keep playing after the
+            early sunset:
+          </p>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            {litOutdoor.map((c) => (
+              <li key={c.slug}>
+                <Link href={`/courts/${c.slug}`} className="text-primary-600 hover:underline">
+                  {c.name}
+                </Link>{' '}
+                — {c.city}, {c.numberOfCourts} courts{c.isFree ? ', free' : ''}
+              </li>
+            ))}
+          </ul>
+          <p className="text-gray-700 mt-3">
+            Check each park&apos;s listed hours; city parks close at set times even when the lights work.
+          </p>
+        </div>
+      </section>
+
+      <GearPicks
+        title="Gear for Indoor Play"
+        intro="Two things that make the move indoors easier."
+        picks={WINTER_PICKS}
+        checked="November 6, 2026"
+      />
 
       {/* Comprehensive Content */}
       <section className="container-custom py-12">
