@@ -394,8 +394,10 @@ export default function CourtPage({ params }: CourtPageProps) {
                   ) : (
                     <p>{court.name} offers both indoor and outdoor court options, giving players flexibility regardless of weather conditions.</p>
                   )}
-                  {court.isFree ? (
+                  {court.isFree && court.courtType === 'outdoor' ? (
                     <p>Courts are completely free to use — no membership or reservation required. First-come, first-served. Arrive early during peak weekend hours.</p>
+                  ) : court.isFree ? (
+                    <p>{court.pricing?.details}. {court.reservationInfo}</p>
                   ) : (
                     <p>{court.name} operates as a {court.pricing?.details.toLowerCase() || 'paid facility'}. {court.reservationRequired ? `Reservations are required — ${court.reservationInfo || 'book online or by phone.'}` : 'Walk-ins are welcome.'}</p>
                   )}

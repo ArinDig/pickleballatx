@@ -237,8 +237,8 @@ export default function IndoorVsOutdoorPage() {
             </p>
             <p>
               During peak summer months, most serious Austin players shift primarily to indoor courts.
-              The city&apos;s indoor options — Dittmar Recreation Center, South Austin Rec, Pan Am,
-              Austin Pickle Ranch, and Pickleland in Pflugerville — all offer climate-controlled
+              Indoor options — city rec center open play at Dittmar, South Austin Rec and Gus Garcia, plus
+              Austin Pickle Ranch and Pickleland in Pflugerville — all offer climate-controlled
               environments that make year-round consistent play possible.
             </p>
             <p>
@@ -290,8 +290,8 @@ export default function IndoorVsOutdoorPage() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 p-3">City rec center (indoor)</td>
-                    <td className="border border-gray-300 p-3">$3 day pass / $25 month</td>
-                    <td className="border border-gray-300 p-3">Dittmar (free!), South Austin Rec, Pan Am Rec</td>
+                    <td className="border border-gray-300 p-3">Call the center</td>
+                    <td className="border border-gray-300 p-3">Dittmar (free open play with waiver), South Austin Rec, Gus Garcia</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 p-3">Dedicated club membership</td>
@@ -420,14 +420,14 @@ export default function IndoorVsOutdoorPage() {
                 <span className="text-2xl mr-3">🆓</span>
                 <div>
                   <div className="font-semibold text-gray-900">Little Zilker Park</div>
-                  <div className="text-sm text-gray-600">4 free outdoor courts near Barton Springs. First-come, first-served.</div>
+                  <div className="text-sm text-gray-600">Lighted court striped for 4, free, on Bluebonnet Lane. First-come, first-served.</div>
                 </div>
               </Link>
               <Link href="/courts/pan-american-park" className="flex items-start p-4 bg-gray-50 border border-gray-200 rounded-lg hover:border-primary-400 hover:shadow-sm transition-all">
                 <span className="text-2xl mr-3">🆓</span>
                 <div>
                   <div className="font-semibold text-gray-900">Pan American Neighborhood Park</div>
-                  <div className="text-sm text-gray-600">6 free outdoor courts with permanent nets in East Austin.</div>
+                  <div className="text-sm text-gray-600">3 dedicated free courts plus a multi-purpose court in East Austin, lighted.</div>
                 </div>
               </Link>
             </div>

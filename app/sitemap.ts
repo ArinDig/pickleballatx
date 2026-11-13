@@ -9,6 +9,16 @@ import { courts } from '@/data/courts'
 */
 const COURT_PAGES_UPDATED = new Date('2026-11-03')
 
+// Court pages edited after COURT_PAGES_UPDATED. Nov 13, 2026: corrected against the City of Austin
+// pickleball list (addresses, hours, court counts, nets, lights).
+const COURT_UPDATED: Record<string, string> = Object.fromEntries(
+  [
+    'austin-tennis-pickleball', 'little-zilker', 'south-austin-rec', 'dittmar-rec', 'pan-american-park',
+    'rosewood-park', 'dick-nichols-park', 'beverly-sheffield-park', 'brentwood-park', 'austin-high-tennis',
+    'gus-garcia-rec', 'northwest-rec', 'mary-moore-searight',
+  ].map((slug) => [slug, '2026-11-13'])
+)
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://pickleballatx.org'
   
@@ -34,13 +44,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/courts/free`,
-      lastModified: new Date('2026-10-24'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'daily' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/courts/indoor`,
-      lastModified: new Date('2026-11-06'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'daily' as const,
       priority: 0.8,
     },
@@ -76,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/guides/austin-pickleball-guide`,
-      lastModified: new Date('2026-09-15'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
@@ -88,19 +98,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/guides/best-courts-beginners`,
-      lastModified: new Date('2026-08-17'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/guides/best-times-to-play`,
-      lastModified: new Date('2026-09-15'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/guides/indoor-vs-outdoor`,
-      lastModified: new Date('2026-09-15'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
@@ -118,13 +128,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/guides/beginner-gear`,
-      lastModified: new Date('2026-10-11'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/guides/choosing-paddle`,
-      lastModified: new Date('2026-07-30'),
+      lastModified: new Date('2026-11-13'),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
@@ -175,7 +185,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Dynamic court pages
   const courtPages = courts.map((court) => ({
     url: `${baseUrl}/courts/${court.slug}`,
-    lastModified: COURT_PAGES_UPDATED,
+    lastModified: COURT_UPDATED[court.slug] ? new Date(COURT_UPDATED[court.slug]) : COURT_PAGES_UPDATED,
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }))

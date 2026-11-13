@@ -3,14 +3,21 @@ import Link from 'next/link'
 import { courts } from '@/data/courts'
 import CourtsFilter from '@/components/CourtsFilter'
 import GearPicks, { GearPick } from '@/components/GearPicks'
+import {
+  CITY_PARK_COURTS,
+  CITY_REC_OPEN_PLAY,
+  CITY_RESERVABLE,
+  CITY_COURTS_CHECKED,
+  CITY_COURTS_SOURCE,
+} from '@/data/cityCourts'
 
 export const metadata: Metadata = {
-  title: 'Free Pickleball Courts in Austin, TX',
-  description: 'Find free pickleball courts in Austin, Texas. No membership or fees required. Discover public parks and recreation centers with free pickleball access.',
+  title: 'Free Pickleball Courts in Austin, TX (All City Parks)',
+  description: 'Every free City of Austin park with pickleball courts: 21 parks with addresses, open-play hours, lights and net details, plus rec-center open play times.',
   keywords: ['free pickleball austin', 'free pickleball courts austin', 'austin free pickleball', 'public pickleball courts austin'],
   openGraph: {
     title: 'Free Pickleball Courts in Austin, TX | Pickleball ATX',
-    description: 'Find free pickleball courts in Austin, Texas. No membership or fees required.',
+    description: 'Every free City of Austin park with pickleball courts, with hours, lights and nets.',
     url: 'https://pickleballatx.org/courts/free',
   },
   alternates: {
@@ -51,7 +58,6 @@ const FREE_COURT_PICKS: GearPick[] = [
 ]
 
 export default function FreeCourtsPage() {
-  const freeCourts = courts.filter(c => c.isFree)
 
   return (
     <div>
@@ -62,7 +68,8 @@ export default function FreeCourtsPage() {
             Free Pickleball Courts in Austin
           </h1>
           <p className="text-xl text-green-50">
-            Play pickleball without breaking the bank - {freeCourts.length} free locations
+            All {CITY_PARK_COURTS.length} free City of Austin park locations, plus rec-center open play.{' '}
+            <a href="#city-courts" className="underline font-semibold">Jump to the full city list</a>
           </p>
         </div>
       </section>
@@ -89,6 +96,127 @@ export default function FreeCourtsPage() {
 
       </section>
 
+      {/* Every City of Austin court, from the city's official list */}
+      <section id="city-courts" className="container-custom py-10 scroll-mt-20">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            Every City of Austin Pickleball Court
+          </h2>
+          <p className="text-gray-700 mb-2">
+            These are the {CITY_PARK_COURTS.length} park locations on Austin Parks and Recreation&apos;s official
+            pickleball list. All are free and first-come, first-served. &quot;Net system&quot; means a
+            multi-sport net you set up on site; &quot;bring your own&quot; means pack a portable net.
+          </p>
+          <p className="text-sm text-gray-600 mb-6">
+            Source:{' '}
+            <a href={CITY_COURTS_SOURCE} target="_blank" rel="noopener" className="text-primary-600 hover:underline">
+              City of Austin pickleball page
+            </a>
+            , checked {CITY_COURTS_CHECKED}. Hours change, so check the city page before a long drive.
+          </p>
+
+          <div className="overflow-x-auto border border-gray-200 rounded-lg">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50 text-left text-gray-900">
+                <tr>
+                  <th className="p-3 font-semibold">Park</th>
+                  <th className="p-3 font-semibold">Courts</th>
+                  <th className="p-3 font-semibold">Nets</th>
+                  <th className="p-3 font-semibold">Open play</th>
+                  <th className="p-3 font-semibold">Lights</th>
+                </tr>
+              </thead>
+              <tbody>
+                {CITY_PARK_COURTS.map((c) => (
+                  <tr key={c.name} className="border-t border-gray-200 align-top">
+                    <td className="p-3">
+                      {c.slug ? (
+                        <Link href={`/courts/${c.slug}`} className="font-semibold text-primary-600 hover:underline">
+                          {c.name}
+                        </Link>
+                      ) : (
+                        <span className="font-semibold text-gray-900">{c.name}</span>
+                      )}
+                      <div className="text-gray-600">{c.address}, {c.zip}</div>
+                    </td>
+                    <td className="p-3 text-gray-700">{c.courts}</td>
+                    <td className="p-3 text-gray-700 whitespace-nowrap">{c.nets}</td>
+                    <td className="p-3 text-gray-700">
+                      {c.openPlay}
+                      {c.note && <div className="text-amber-700 mt-1">{c.note}</div>}
+                    </td>
+                    <td className="p-3 text-gray-700">{c.lighted ? 'Yes' : 'No'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-sm text-gray-700 mt-4">
+            The city also runs one reservable facility:{' '}
+            <Link href={`/courts/${CITY_RESERVABLE.slug}`} className="text-primary-600 hover:underline font-medium">
+              {CITY_RESERVABLE.name}
+            </Link>{' '}
+            ({CITY_RESERVABLE.address}). {CITY_RESERVABLE.detail} Court fees apply.
+          </p>
+
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mt-10 mb-2">Rec Center Open Play</h3>
+          <p className="text-gray-700 mb-4">
+            These city rec centers run scheduled pickleball sessions, mostly on gym courts. The city&apos;s list
+            doesn&apos;t mention fees, so call the center to confirm the schedule and any drop-in cost.
+          </p>
+          <div className="overflow-x-auto border border-gray-200 rounded-lg">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50 text-left text-gray-900">
+                <tr>
+                  <th className="p-3 font-semibold">Rec center</th>
+                  <th className="p-3 font-semibold">Courts</th>
+                  <th className="p-3 font-semibold">Open play</th>
+                </tr>
+              </thead>
+              <tbody>
+                {CITY_REC_OPEN_PLAY.map((r) => (
+                  <tr key={r.name} className="border-t border-gray-200 align-top">
+                    <td className="p-3">
+                      {r.slug ? (
+                        <Link href={`/courts/${r.slug}`} className="font-semibold text-primary-600 hover:underline">
+                          {r.name}
+                        </Link>
+                      ) : (
+                        <span className="font-semibold text-gray-900">{r.name}</span>
+                      )}
+                      <div className="text-gray-600">
+                        {r.address} &middot;{' '}
+                        <a href={`tel:${r.phone.replace(/[^0-9]/g, '')}`} className="hover:underline">{r.phone}</a>
+                      </div>
+                    </td>
+                    <td className="p-3 text-gray-700">{r.courts}</td>
+                    <td className="p-3 text-gray-700">
+                      {r.openPlay}
+                      {r.note && <div className="text-gray-600 mt-1">{r.note}</div>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5 mt-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-2">City court rules, in short</h3>
+            <ul className="list-disc pl-6 space-y-1 text-gray-700">
+              <li>First-come, first-served unless the listing says otherwise.</li>
+              <li>If others are waiting, keep your game to 60 minutes. One group, one court.</li>
+              <li>No taping or painting lines, and don&apos;t alter or add nets.</li>
+              <li>Tennis courts without pickleball lines are for tennis only.</li>
+            </ul>
+            <p className="text-sm text-gray-600 mt-3">
+              Questions or a court problem? The city&apos;s pickleball contact is{' '}
+              <a href="mailto:pickleball@austintexas.gov" className="text-primary-600 hover:underline">pickleball@austintexas.gov</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <GearPicks
         title="What to Bring to a Free Court"
         intro="Most free courts don't provide equipment, so plan on bringing a paddle and your own balls. These are the picks we'd start with, depending on budget and whether you're playing outdoors or at a rec center."
@@ -102,11 +230,9 @@ export default function FreeCourtsPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">About Free Pickleball Courts in Austin</h2>
               <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                 <p>
-                  Austin is fortunate to have an excellent selection of free pickleball facilities, primarily 
-                  operated by the Austin Parks and Recreation Department. These public courts provide accessible 
-                  opportunities for residents and visitors to enjoy pickleball without any membership fees or 
-                  court rental costs. With {freeCourts.length} free locations across the city, players have 
-                  numerous options for affordable play.
+                  Austin&apos;s free pickleball courts are almost all run by the Austin Parks and Recreation
+                  Department. The {CITY_PARK_COURTS.length} park locations on the city&apos;s list cost nothing to
+                  use and need no reservation, and several rec centers add scheduled indoor sessions.
                 </p>
                 <p>
                   Free pickleball courts in Austin serve as community hubs where players of all skill levels 
@@ -121,13 +247,12 @@ export default function FreeCourtsPage() {
                   Austin's free pickleball facilities include both indoor and outdoor options:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Indoor Recreation Centers:</strong> Facilities like Dittmar Recreation Center,
-                  Gus Garcia Recreation Center, and Northwest Recreation Center offer climate-controlled indoor courts
-                  perfect for year-round play. These centers typically have multiple courts, organized open play
-                  sessions, and amenities like restrooms, water fountains, and parking.</li>
-                  <li><strong>Outdoor Park Courts:</strong> Many Austin parks feature dedicated pickleball courts 
-                  or multi-use courts that can be converted for pickleball. These outdoor courts often have 
-                  excellent lighting for evening play and take advantage of Austin's beautiful weather.</li>
+                  <li><strong>Indoor Recreation Centers:</strong> Rec centers like Dittmar, Gus Garcia and
+                  Northwest run scheduled open play on air-conditioned gym courts. Sessions are a few hours a week,
+                  so check the times in the table above and call ahead.</li>
+                  <li><strong>Outdoor Park Courts:</strong> Most free courts are in city parks, either dedicated
+                  pickleball courts or multi-purpose courts striped for pickleball. About half are lighted
+                  for evening play; the table above shows which.</li>
                 </ul>
                 <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">
                   How Free Courts Work

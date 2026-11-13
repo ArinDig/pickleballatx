@@ -18,8 +18,12 @@ export const metadata: Metadata = {
   },
 }
 
-// Outdoor courts with lights, checked against each court's listing in data/courts.ts (Nov 2026).
-const LIT_OUTDOOR = ['brentwood-park', 'austin-high-tennis', 'anderson-mill-west-park']
+// Outdoor courts with lights. City courts checked against the City of Austin pickleball list (13 Nov 2026).
+const LIT_OUTDOOR = [
+  'little-zilker', 'austin-high-tennis', 'pan-american-park', 'rosewood-park', 'south-austin-rec',
+  'dick-nichols-park', 'beverly-sheffield-park', 'brentwood-park', 'austin-tennis-pickleball',
+  'anderson-mill-west-park',
+]
 
 // ASINs checked 6 Nov 2026 (see components/GearPicks.tsx).
 const WINTER_PICKS: GearPick[] = [
@@ -110,9 +114,10 @@ export default function IndoorCourtsPage() {
 
           <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-3">Cheapest Indoor Options</h3>
           <p className="text-gray-700">
-            The city recreation centers are the budget route. Dittmar runs free open play after a
-            one-time waiver, and South Austin Rec charges a few dollars a day; check each page for
-            membership rules. Among the private clubs, Apex in Cedar Park lets guests drop into open play
+            The city recreation centers are the budget route, with scheduled open play a few hours a
+            week (times for every center are on our{' '}
+            <Link href="/courts/free#city-courts" className="text-primary-600 hover:underline">free courts page</Link>).
+            Dittmar runs open play after a one-time waiver; call the other centers about any drop-in fee. Among the private clubs, Apex in Cedar Park lets guests drop into open play
             without a membership, and Pickleland and Pickleball Kingdom both sell daily passes.
           </p>
 

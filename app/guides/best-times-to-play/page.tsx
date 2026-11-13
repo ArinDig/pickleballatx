@@ -272,8 +272,8 @@ export default function BestTimesToPlayPage() {
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Best for fewer crowds:</strong> Tuesday and Wednesday mornings are typically
               the quietest days at most Austin courts</li>
-              <li><strong>Best for social play:</strong> Saturday mornings at busy courts like Pan Am
-              Park or open play sessions at Pickleland</li>
+              <li><strong>Best for social play:</strong> Saturday mornings at busy courts like Little Zilker
+              or open play sessions at Pickleland</li>
               <li><strong>Best for consistent games:</strong> Weekday open play sessions at rec centers,
               where a regular crowd shows up reliably</li>
               <li><strong>Worst for availability:</strong> Saturday afternoons at free outdoor courts
@@ -390,7 +390,7 @@ export default function BestTimesToPlayPage() {
                 <span className="text-2xl mr-3">🍂</span>
                 <div>
                   <div className="font-semibold text-gray-900">Little Zilker Park <span className="text-xs text-green-600 font-normal ml-1">Fall/Spring pick</span></div>
-                  <div className="text-sm text-gray-600">4 free outdoor courts near Barton Springs. Perfect October mornings.</div>
+                  <div className="text-sm text-gray-600">Lighted court striped for 4, free. Perfect October mornings.</div>
                 </div>
               </Link>
               <Link href="/courts/popstroke-austin" className="flex items-start p-4 bg-green-50 border border-green-200 rounded-lg hover:border-green-400 hover:shadow-sm transition-all">

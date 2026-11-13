@@ -148,9 +148,9 @@ export default function AustinPickleballGuidePage() {
               The practical solution: go indoors. Austin has several excellent climate-controlled options.
               Dittmar Recreation Center in South Austin is free and one of the best deals in the city —
               four indoor courts, open play sessions throughout the week, and the kind of casual welcoming
-              atmosphere that&apos;s hard to find at private clubs. South Austin Rec Center has six indoor
-              courts and structured programming. Pan Am has eight indoor courts plus the adjacent outdoor
-              courts for when the weather cooperates.
+              atmosphere that&apos;s hard to find at private clubs. South Austin Rec runs indoor open play on
+              Tuesday evenings, with 2 free lighted outdoor courts next door. Several other rec centers run
+              weekday sessions; the full schedule is on our free courts page.
             </p>
             <p>
               If you&apos;re in North Austin or Pflugerville, Pickleland is the standout. Nine courts with

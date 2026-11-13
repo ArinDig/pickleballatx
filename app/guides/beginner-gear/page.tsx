@@ -194,7 +194,7 @@ export default function BeginnerGearPage() {
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Outdoor courts dominate.</strong> Most of Austin's free public courts are outdoor, so buy outdoor balls (Franklin X-40 or similar), not indoor ones. Indoor balls are softer and wear faster on rough outdoor surfaces.</li>
               <li><strong>It gets hot.</strong> From May through October, playing outdoors means sweating a lot. A grip overgrip ($8–$15) on your paddle helps with control. Consider a light moisture-wicking shirt over athletic gear.</li>
-              <li><strong>Start at a free court.</strong> You can play at Dittmar Recreation Center, South Austin Rec Center, or Pan Am for free. No need to pay for court time to learn. See our <Link href="/courts/free" className="text-primary-600 hover:underline">free courts in Austin</Link> list.</li>
+              <li><strong>Start at a free court.</strong> You can play at Pan American, Little Zilker or Rosewood park courts for free, or join open play at a city rec center like Dittmar. No need to pay for court time to learn. See our <Link href="/courts/free" className="text-primary-600 hover:underline">free courts in Austin</Link> list.</li>
               <li><strong>Borrow before you buy.</strong> Many open-play sessions have loaner paddles or friendly players who'll let you try theirs. Go once before spending money if you can.</li>
             </ul>
 

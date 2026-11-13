@@ -89,7 +89,7 @@ export default function ChoosingPaddlePage() {
                 <p className="text-gray-700">
                   Most paddle guides are written for climate-controlled gyms in temperate cities. Austin is different.
                   From May through September you're likely playing in 95°F+ heat with humidity. Most free public courts
-                  — Dittmar, Beverly Sheffield, Pan American, Dick Nichols — are outdoor with no shade. Your hands sweat
+                  — Beverly Sheffield, Pan American, Dick Nichols, Little Zilker — are outdoor with little or no shade. Your hands sweat
                   through grips faster, fatigue sets in sooner, and the ball plays differently on sun-baked concrete vs.
                   the indoor sport court surfaces at places like Austin Pickle Ranch or Pickleland.
                   All of that affects which paddle is right for you here.
@@ -240,9 +240,9 @@ export default function ChoosingPaddlePage() {
                 the best paddle demo resource in Austin. They carry a range of current models and staff who
                 actually play can help you find a fit. If you're serious about buying, this is the first stop.
                 Located at 11000 Middle Fiskville Road.</li>
-                <li><strong>Austin Tennis and Pickleball Center (ATPC):</strong> The pro shop at ATPC on Berkman
-                Drive also carries paddles and offers lessons — a good way to demo a paddle with some instruction
-                mixed in. Located at 5000 Berkman Drive.</li>
+                <li><strong>Austin Tennis and Pickleball Center (ATPC):</strong> The City of Austin&apos;s reservable
+                court facility at Walnut Creek Sports Park, 7800 Johnny Morris Road. Book a court and bring a
+                friend&apos;s paddle or two to compare.</li>
                 <li><strong>Pickleland (Pflugerville):</strong> Pickleland runs a busy facility on 9 indoor courts
                 with a strong community. Showing up for open play is one of the easiest ways to try a few different
                 paddles — other players are generally happy to let you test theirs between rallies.</li>

@@ -172,41 +172,39 @@ export default function BestCourtsBeginnerPage() {
 
             <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">2. South Austin Recreation Center — South Austin</h3>
             <p>
-              South Austin Rec is another city-operated facility with indoor pickleball and a
-              straightforward fee structure. Day passes are affordable, and the center offers organized
-              open play sessions alongside its regular programming.
+              South Austin Rec and the neighborhood park next to it give beginners two ways in. Outside,
+              2 dedicated pickleball courts are free, lighted and open 8 a.m. to 10 p.m. daily. Inside, the
+              gym is striped for 4 courts, with all-ages open play on Tuesday evenings, 7 to 9 p.m.
             </p>
             <p>
-              Six indoor courts with air conditioning make it one of the larger indoor options in South
-              Austin. The recreation center atmosphere keeps things casual and beginner-friendly — you&apos;re
+              The recreation center atmosphere keeps things casual and beginner-friendly — you&apos;re
               unlikely to encounter the intense competitive energy you might find at dedicated pickleball
-              clubs. Programs and leagues are available for when you&apos;re ready to step up.
+              clubs. Call the center at (512) 978-2440 to confirm the indoor schedule and any drop-in fee.
             </p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Indoor, air-conditioned</li>
-              <li>6 courts</li>
-              <li>Daily pass option</li>
-              <li>Programs and open play available</li>
+              <li>2 free outdoor courts with lights, plus indoor open play</li>
+              <li>Indoor: 1 gym court striped for 4</li>
+              <li>Outdoor: daily 8 a.m.–10 p.m.</li>
+              <li>Indoor all-ages open play: Tuesday 7–9 p.m.</li>
               <li>Good for: players who want a structured environment to learn</li>
             </ul>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-6 mb-3">3. Pan American Neighborhood Park — East Austin</h3>
             <p>
-              Pan American Neighborhood Park on East 3rd Street is one of the easiest places in Austin
-              to start playing. Six outdoor courts with permanent nets means there is no gear to haul
-              and no setup to figure out — you show up, find an open court, and play. It is free, with
-              no reservation, membership, or day pass involved.
+              Pan American Neighborhood Park at 307 Chicon Street is one of the easiest places in Austin
+              to start playing. It has 3 dedicated pickleball courts plus a multi-purpose court striped for
+              one more, so there is little setup to figure out — you show up, find an open court, and play.
+              It is free, with no reservation, membership, or day pass involved.
             </p>
             <p>
-              Six courts is a lot for a neighborhood park, so waits are usually shorter than at smaller
-              parks where two courts serve the whole area. The park also has restrooms, a playground,
-              picnic areas, and walking trails, which makes it workable if you are bringing family along
-              while you play. Parking is free on site.
+              Check the schedule first. Roller derby practice uses the courts Tuesday and Thursday evenings
+              and weekend mornings, so weekend open play is only 7 to 9 a.m. Weekdays are the easy window:
+              7 a.m. to 10 p.m. Monday, Wednesday and Friday, and 7 a.m. to 7 p.m. Tuesday and Thursday.
             </p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Outdoor, 6 courts, permanent nets</li>
+              <li>Outdoor, 3 dedicated courts + 1 multi-purpose, lighted</li>
               <li>Free — first-come, first-served</li>
-              <li>Restrooms, playground, free parking</li>
+              <li>Weekend play limited to 7–9 a.m.</li>
               <li>Good for: East Austin residents, beginners who don&apos;t own a portable net yet</li>
             </ul>
 
@@ -257,14 +255,15 @@ export default function BestCourtsBeginnerPage() {
               available courts and a casual atmosphere:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Pan American Neighborhood Park (East Austin):</strong> Six outdoor courts with
-              permanent nets. First-come, first-served, free to use. A good spot for practice and
+              <li><strong>Pan American Neighborhood Park (East Austin):</strong> Three dedicated courts plus
+              a multi-purpose court, lighted. First-come, first-served, free to use; weekend play is 7–9 a.m. only. A good spot for practice and
               casual games.</li>
-              <li><strong>Little Zilker Park (Central Austin):</strong> Four outdoor courts near Zilker
-              Park. Free, first-come basis. Convenient location close to Barton Springs and other
-              Austin attractions.</li>
-              <li><strong>Austin High Tennis Center (West Austin):</strong> Three outdoor courts with
-              permanent nets and lighting. Free, public access. Good evening play option in West Austin.</li>
+              <li><strong>Little Zilker Neighborhood Park (South Central):</strong> One lighted
+              multi-purpose court striped for 4, with a net system. Free, first-come basis, 7 a.m. to 10 p.m.
+              It&apos;s on Bluebonnet Lane, separate from Zilker Park itself.</li>
+              <li><strong>Austin High Tennis Center (Central):</strong> Three dedicated, lighted courts
+              shared with Austin ISD. Free when the school isn&apos;t using them: weekday evenings 5:30–10 p.m.
+              during the school year, all day in summer.</li>
             </ul>
             <p>
               For a full list of free courts across Austin, see our <Link href="/courts/free" className="text-primary-600 hover:underline">free courts directory</Link>.
