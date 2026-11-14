@@ -55,7 +55,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="https://www.atxdogparks.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">
+                <a href="https://atxdogparks.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">
                   Austin Dog Parks
                 </a>
               </li>

@@ -58,11 +58,11 @@ export const courts: Court[] = [
     longitude: -97.6850,
     phone: '(737) 242-5898',
     website: 'https://www.austinpickleranch.com',
-    mainImage: '/images/courts/pickle-ranch-braker-main.png',
+    mainImage: '/images/courts/pickle-ranch-braker-main.jpg',
     images: [
-      '/images/courts/pickle-ranch-braker-1.png',
-      '/images/courts/pickle-ranch-braker-2.png',
-      '/images/courts/pickle-ranch-braker-3.png'
+      '/images/courts/pickle-ranch-braker-1.jpg',
+      '/images/courts/pickle-ranch-braker-2.jpg',
+      '/images/courts/pickle-ranch-braker-3.jpg'
     ],
     description: 'State-of-the-art pickleball facility featuring 16 indoor dedicated courts with climate control and 2 outdoor courts. Austin Pickle Ranch offers a premium playing experience with both indoor and outdoor lounge areas, making it perfect for year-round play. Open to both members and non-members with reservation or session payment options.',
     amenities: ['Locker Rooms', 'Pro Shop', 'Food & Beverage', 'Lounge Areas', 'Climate Controlled', 'Indoor Courts', 'Outdoor Courts'],
@@ -109,11 +109,11 @@ export const courts: Court[] = [
     longitude: -97.63869,
     phone: '(512) 928-8119',
     website: 'https://www.playatctennis.com/pages/index.cfm?siteid=21588',
-    mainImage: '/images/courts/austin-tennis-pickleball-main.png',
+    mainImage: '/images/courts/austin-tennis-pickleball-main.jpg',
     images: [
-      '/images/courts/austin-tennis-pickleball-1.png',
-      '/images/courts/austin-tennis-pickleball-2.png',
-      '/images/courts/austin-tennis-pickleball-3.png'
+      '/images/courts/austin-tennis-pickleball-1.jpg',
+      '/images/courts/austin-tennis-pickleball-2.jpg',
+      '/images/courts/austin-tennis-pickleball-3.jpg'
     ],
     description: 'City of Austin tennis and pickleball center at Walnut Creek Sports Park with 8 lighted outdoor pickleball courts. Reservations are required.',
     amenities: ['Restrooms', 'Parking', 'Lighting', 'Pro Shop', 'Lessons Available'],
@@ -202,9 +202,9 @@ export const courts: Court[] = [
     longitude: -97.6897,
     phone: '(737) 370-9280',
     website: 'https://popstroke.com/venues/austin/',
-    mainImage: '/images/courts/pitch-1.png',
+    mainImage: '/images/courts/pitch-1.jpg',
     images: [
-      '/images/courts/The-Pitch-2.png'
+      '/images/courts/The-Pitch-2.jpg'
     ],
     description: 'Formerly known as The Pitch, this North Austin entertainment complex was taken over by PopStroke (the Tiger Woods-backed mini golf brand) in September 2025 — and the 3 outdoor pickleball courts are still open and bookable. The venue now centers on two 18-hole mini golf courses, sand volleyball, an ice cream parlor, and a full-service restaurant, with pickleball as one of several ways to spend an evening there.',
     amenities: ['Restaurant', 'Bar', 'Mini Golf', 'Sand Volleyball', 'Ice Cream Parlor', 'Multiple Sports Courts', 'Outdoor Seating'],
@@ -252,10 +252,10 @@ export const courts: Court[] = [
     longitude: -97.9889,
     phone: '(512) 266-8399',
     website: 'https://ltbatx.com/',
-    mainImage: '/images/courts/Lake Travis Biergarten-1.png',
+    mainImage: '/images/courts/Lake Travis Biergarten-1.jpg',
     images: [
-      '/images/courts/Lake Travis Biergarten-2.png',
-      '/images/courts/Lake Travis Biergarten-3.png'
+      '/images/courts/Lake Travis Biergarten-2.jpg',
+      '/images/courts/Lake Travis Biergarten-3.jpg'
     ],
     description: 'Scenic outdoor venue with 2 pickleball courts overlooking Lake Travis. Perfect for combining pickleball with dining and drinks in a beautiful lakeside setting.',
     amenities: ['Restaurant', 'Bar', 'Lake Views', 'Outdoor Seating', 'Live Music'],
@@ -298,8 +298,8 @@ export const courts: Court[] = [
     latitude: 30.2515,
     longitude: -97.77429,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/Little_Zilker-1.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/Little_Zilker-1.jpg',
     images: [],
     description: 'Small neighborhood park in the Zilker neighborhood with 1 lighted multi-purpose court striped for 4 pickleball courts and a multi-sport net system. Free, first-come, first-served, 7 a.m. to 10 p.m.',
     amenities: ['Court Lights', 'Multi-Sport Net System'],
@@ -343,11 +343,11 @@ export const courts: Court[] = [
     latitude: 30.24094,
     longitude: -97.76858,
     phone: '(512) 978-2440',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/south-austin-rec-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/south-austin-rec-main.jpg',
     images: [
-      '/images/courts/south-austin-rec-1.png',
-      '/images/courts/south-austin-rec-2.png'
+      '/images/courts/south-austin-rec-1.jpg',
+      '/images/courts/south-austin-rec-2.jpg'
     ],
     description: 'South Austin rec center and neighborhood park on Cumberland Road. Outdoors, 2 dedicated lighted pickleball courts, free 8 a.m. to 10 p.m. Indoors, 1 multi-purpose court striped for 4 with scheduled open play.',
     amenities: ['Court Lights (outdoor)', 'Air Conditioning (indoor)', 'Dedicated Outdoor Courts', 'Indoor Open Play'],
@@ -391,11 +391,11 @@ export const courts: Court[] = [
     latitude: 30.18572,
     longitude: -97.80155,
     phone: '(512) 974-6090',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/dittmar-rec-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/dittmar-rec-main.jpg',
     images: [
-      '/images/courts/dittmar-rec-1.png',
-      '/images/courts/dittmar-rec-2.png'
+      '/images/courts/dittmar-rec-1.jpg',
+      '/images/courts/dittmar-rec-2.jpg'
     ],
     description: 'Community recreation center with 4 indoor pickleball courts. Offers free open play pickleball sessions - sign a waiver on your first visit, then just sign in for subsequent visits. Various programs and open play times available.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Community Programs', 'Fitness Center'],
@@ -436,11 +436,11 @@ export const courts: Court[] = [
     longitude: -97.6200,
     phone: '(512) 555-0123',
     website: 'https://pickleballkingdom.com/pflugerville-tx',
-    mainImage: '/images/courts/pickleball-kingdom-main.png',
+    mainImage: '/images/courts/pickleball-kingdom-main.jpg',
     images: [
-      '/images/courts/pickleball-kingdom-1.png',
-      '/images/courts/pickleball-kingdom-2.png',
-      '/images/courts/pickleball-kingdom-3.png'
+      '/images/courts/pickleball-kingdom-1.jpg',
+      '/images/courts/pickleball-kingdom-2.jpg',
+      '/images/courts/pickleball-kingdom-3.jpg'
     ],
     description: 'Major indoor pickleball center featuring 11 climate-controlled courts with professional surfaces. Offers membership tiers, public play, lessons, and tournaments in a welcoming community atmosphere.',
     amenities: ['Climate Control', 'Pro Shop', 'Event Space', 'Lessons', 'Tournaments', 'Equipment Rental'],
@@ -532,13 +532,13 @@ export const courts: Court[] = [
     latitude: 30.25901,
     longitude: -97.72367,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/pan-american-park-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/pan-american-park-main.jpg',
     images: [
-      '/images/courts/pan-american-park-1.png',
-      '/images/courts/pan-american-park-2.png',
-      '/images/courts/pan-american-park-3.png',
-      '/images/courts/pan-american-park-4.png'
+      '/images/courts/pan-american-park-1.jpg',
+      '/images/courts/pan-american-park-2.jpg',
+      '/images/courts/pan-american-park-3.jpg',
+      '/images/courts/pan-american-park-4.jpg'
     ],
     description: 'East Austin park with 3 dedicated outdoor pickleball courts plus 1 multi-purpose court striped for pickleball, lighted during park hours. Free, but roller derby practice takes the courts on Tuesday and Thursday evenings and weekend mornings.',
     amenities: ['Court Lights', 'Dedicated Pickleball Courts', 'Multi-Sport Net System'],
@@ -582,8 +582,8 @@ export const courts: Court[] = [
     latitude: 30.27041,
     longitude: -97.715,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/rosewood-park-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/rosewood-park-main.jpg',
     images: [],
     description: 'East Austin park with 2 dedicated outdoor pickleball courts and 1 multi-purpose court striped for 2 more, lighted during park hours. The city notes nets are not included, so bring a portable net.',
     amenities: ['Restrooms', 'Parking', 'Playground', 'Walking Trails', 'Picnic Areas'],
@@ -627,11 +627,11 @@ export const courts: Court[] = [
     latitude: 30.21513,
     longitude: -97.86319,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/dick-nichols-park-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/dick-nichols-park-main.jpg',
     images: [
-      '/images/courts/dick-nichols-park-1.png',
-      '/images/courts/dick-nichols-park-2.png'
+      '/images/courts/dick-nichols-park-1.jpg',
+      '/images/courts/dick-nichols-park-2.jpg'
     ],
     description: 'Southwest Austin district park with 2 lighted multi-purpose courts striped for 5 pickleball courts and a multi-sport net system. Free, first-come, first-served, 7 a.m. to 10 p.m.',
     amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
@@ -675,12 +675,12 @@ export const courts: Court[] = [
     latitude: 30.34827,
     longitude: -97.73994,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/beverly-sheffield-park-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/beverly-sheffield-park-main.jpg',
     images: [
-      '/images/courts/beverly-sheffield-park-1.png',
-      '/images/courts/beverly-sheffield-park-2.png',
-      '/images/courts/beverly-sheffield-park-3.png'
+      '/images/courts/beverly-sheffield-park-1.jpg',
+      '/images/courts/beverly-sheffield-park-2.jpg',
+      '/images/courts/beverly-sheffield-park-3.jpg'
     ],
     description: 'North-central Austin district park with 2 lighted multi-purpose courts striped for 4 pickleball courts and a multi-sport net system. Free, first-come, first-served, 7 a.m. to 10 p.m.',
     amenities: ['Restrooms', 'Parking', 'Walking Trails', 'Picnic Areas', 'Sports Fields'],
@@ -724,12 +724,12 @@ export const courts: Court[] = [
     latitude: 30.33994,
     longitude: -97.73078,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/brentwood-park-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/brentwood-park-main.jpg',
     images: [
-      '/images/courts/brentwood-park-1.png',
-      '/images/courts/brentwood-park-2.png',
-      '/images/courts/brentwood-park-3.png'
+      '/images/courts/brentwood-park-1.jpg',
+      '/images/courts/brentwood-park-2.jpg',
+      '/images/courts/brentwood-park-3.jpg'
     ],
     description: 'Central Austin neighborhood park with 2 lighted hard courts set up for pickleball — free, first-come first-served, bring your own net. Part of a well-equipped park that also includes a free public pool, sand volleyball, basketball, a softball field, and an adult workout area.',
     amenities: ['Restrooms', 'Free Parking', 'Court Lights', 'Free Public Pool', 'Sand Volleyball', 'Basketball Court', 'Softball Field', 'Playscape', 'Adult Workout Area', 'Covered Pavilion', 'Walking Path'],
@@ -774,12 +774,12 @@ export const courts: Court[] = [
     latitude: 30.27324,
     longitude: -97.76537,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/austin-high-tennis-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/austin-high-tennis-main.jpg',
     images: [
-      '/images/courts/austin-high-tennis-1.png',
-      '/images/courts/austin-high-tennis-2.png',
-      '/images/courts/austin-high-tennis-3.png'
+      '/images/courts/austin-high-tennis-1.jpg',
+      '/images/courts/austin-high-tennis-2.jpg',
+      '/images/courts/austin-high-tennis-3.jpg'
     ],
     description: 'Austin ISD tennis center with 3 dedicated, lighted outdoor pickleball courts shared with the City of Austin. Free when not reserved for school use: weekday evenings during the school year, all day in summer.',
     amenities: ['Restrooms', 'Parking', 'Tennis Courts', 'Lighting'],
@@ -822,9 +822,9 @@ export const courts: Court[] = [
     longitude: -97.68222,
     phone: '(512) 978-2525',
     website: 'https://www.austintexas.gov/parks/locations/gustavo-gus-l-garcia-recreation-center',
-    mainImage: '/images/courts/gus-garcia-main.png',
+    mainImage: '/images/courts/gus-garcia-main.jpg',
     images: [
-      '/images/courts/gus-garcia-2.png'
+      '/images/courts/gus-garcia-2.jpg'
     ],
     description: 'North Austin rec center and district park on Rundberg Lane. Indoors, 1 multi-purpose court striped for 3 pickleball courts with scheduled open play. Outdoors in the district park, 1 multi-purpose court striped for 2, open 7 a.m. to 10 p.m.',
     amenities: ['Indoor Open Play', 'Outdoor Multi-Purpose Court', 'Air Conditioning (indoor)'],
@@ -868,11 +868,11 @@ export const courts: Court[] = [
     latitude: 30.33458,
     longitude: -97.75173,
     phone: '(512) 974-6972',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/northwest-rec-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/northwest-rec-main.jpg',
     images: [
-      '/images/courts/northwest-rec-1.png',
-      '/images/courts/northwest-rec-2.png'
+      '/images/courts/northwest-rec-1.jpg',
+      '/images/courts/northwest-rec-2.jpg'
     ],
     description: 'Northwest Austin rec center with 1 multi-purpose indoor court striped for 3 pickleball courts. Open play Monday and Wednesday, 10:30 a.m. to 1:30 p.m.',
     amenities: ['Air Conditioning', 'Restrooms', 'Parking', 'Multi-Purpose Court'],
@@ -911,8 +911,8 @@ export const courts: Court[] = [
     latitude: 30.17386,
     longitude: -97.80655,
     phone: '(512) 974-6700',
-    website: 'https://www.austintexas.gov/department/parks-and-recreation',
-    mainImage: '/images/courts/mary-moore-searight-main.png',
+    website: 'https://www.austintexas.gov/parks',
+    mainImage: '/images/courts/mary-moore-searight-main.jpg',
     images: [
     ],
     description: 'Large South Austin metro park with 1 multi-purpose court striped for 4 pickleball courts and a multi-sport net system. Free, first-come, first-served, 7 a.m. to 10 p.m.',
@@ -959,13 +959,13 @@ export const courts: Court[] = [
     phone: '(512) 221-1926',
     website: 'https://www.goracfit.com',
     email: 'info@goracfit.com',
-    mainImage: '/images/courts/racfit-main.png',
+    mainImage: '/images/courts/racfit-main.jpg',
     images: [
-      '/images/courts/racfit-1.png',
-      '/images/courts/racfit-2.png',
-      '/images/courts/racfit-3.png',
-      '/images/courts/racfit-4.png',
-      '/images/courts/racfit-5.png'
+      '/images/courts/racfit-1.jpg',
+      '/images/courts/racfit-2.jpg',
+      '/images/courts/racfit-3.jpg',
+      '/images/courts/racfit-4.jpg',
+      '/images/courts/racfit-5.jpg'
     ],
     description: 'RacFit is a premier tennis, pickleball, fitness, and social club in Buda, Texas — now open as of May 2026. The facility features 8 regulation pickleball courts with 4 covered by a steel shade structure, a full-service bar (Courtside Cantina), 22,000 sq ft of indoor space, and on-site ActiveCare. Membership required.',
     longDescription: [
@@ -1008,10 +1008,10 @@ export const courts: Court[] = [
     longitude: -98.1000,
     phone: '(512) 954-2611',
     website: 'https://www.hwy71brewing.com',
-    mainImage: '/images/courts/highway-71-brewing-main.png',
+    mainImage: '/images/courts/highway-71-brewing-main.jpg',
     images: [
-      '/images/courts/highway-71-brewing-1.png',
-      '/images/courts/highway-71-brewing-2.png'
+      '/images/courts/highway-71-brewing-1.jpg',
+      '/images/courts/highway-71-brewing-2.jpg'
     ],
     description: 'Highway 71 Brewing is a family-owned Hill Country brewery offering craft beer, pizza, and a temperature-controlled indoor pickleball court. A unique combination of craft beer and pickleball in a comfortable, welcoming environment. Perfect for year-round play regardless of weather conditions.',
     amenities: ['Brewery', 'Pizza', 'Indoor Court', 'Temperature Controlled', 'Golf Simulators', 'Live Music', 'Outdoor Seating'],
@@ -1055,9 +1055,9 @@ export const courts: Court[] = [
     latitude: 30.4500,
     longitude: -97.8000,
     website: 'https://andersonmillna.org/pickleball/',
-    mainImage: '/images/courts/anderson-mill-amna-main.png',
+    mainImage: '/images/courts/anderson-mill-amna-main.jpg',
     images: [
-      '/images/courts/anderson-mill-amna-1.png'
+      '/images/courts/anderson-mill-amna-1.jpg'
     ],
     description: 'Anderson Mill Neighborhood Association pickleball courts offer weekly open play sessions for AMNA members and Anderson Mill Limited District (AMLD) keyholders. A community-focused venue encouraging neighbors to connect through pickleball with rotating play formats.',
     amenities: ['Restrooms', 'Parking', 'Community Programs', 'Open Play'],
@@ -1101,9 +1101,9 @@ export const courts: Court[] = [
     latitude: 30.5000,
     longitude: -97.8500,
     website: 'https://wtcmud1.org/anderson-mill-west-park-and-pavilion/',
-    mainImage: '/images/courts/anderson-mill-west-park-main.png',
+    mainImage: '/images/courts/anderson-mill-west-park-main.jpg',
     images: [
-      '/images/courts/anderson-mill-west-park-1.png'
+      '/images/courts/anderson-mill-west-park-1.jpg'
     ],
     description: 'Anderson Mill West Park features lighted tennis courts with pickleball striping. A comprehensive community park offering a variety of recreational facilities, including courts suitable for both tennis and pickleball. Access requires a yearly membership with the District.',
     amenities: ['Lighted Courts', 'Large Covered Pavilion', 'Playground', 'Restrooms', 'Basketball Court', 'Gazebo', 'Walking Trail', 'Picnic Tables', 'Grills'],
@@ -1147,10 +1147,10 @@ export const courts: Court[] = [
     latitude: 30.5000,
     longitude: -97.8500,
     website: 'https://wtcmud1.org/tennis/',
-    mainImage: '/images/courts/lakeline-oaks-park-2.png',
+    mainImage: '/images/courts/lakeline-oaks-park-2.jpg',
     images: [
-      '/images/courts/lakeline-oaks-park-1.png',
-      '/images/courts/lakeline-oaks-park-main.png'
+      '/images/courts/lakeline-oaks-park-1.jpg',
+      '/images/courts/lakeline-oaks-park-main.jpg'
     ],
     description: 'Lakeline Oaks Park provides tennis courts striped for six pickleball courts. Pickleball nets are available on-site and included with the membership fee. Access requires a yearly membership with the District.',
     amenities: ['Pickleball Nets', 'Online Reservation System', 'Restrooms', 'Parking'],
@@ -1195,7 +1195,7 @@ export const courts: Court[] = [
     longitude: -97.8312,
     phone: '(210) 850-6509',
     website: 'https://www.picklehubatx.com',
-    mainImage: '/images/courts/Pickle_Hub-1.png',
+    mainImage: '/images/courts/Pickle_Hub-1.jpg',
     images: [],
     description: 'Pickle Hub features 2 dedicated outdoor pickleball courts in South Austin. This vibrant venue combines pickleball with dining and entertainment, featuring Drifters Social Coffee & Cocktail, Pickle Pub sports bar, food trucks, live music, and a dog park. Equipment available for rent or bring your own. Family-friendly environment until 9pm on weekdays and 5pm on weekends.',
     amenities: ['Outdoor Courts', 'Coffee & Cocktails', 'Sports Bar', 'Food Trucks', 'Live Music', 'Dog Park', 'Equipment Rental', 'Fire Pits', 'Stage'],
@@ -1240,9 +1240,9 @@ export const courts: Court[] = [
     longitude: -97.8276,
     phone: '(737) 284-3472',
     website: 'https://menchaca.bouldinacres.com',
-    mainImage: '/images/courts/bouldin-acres-menchaca-main.png',
+    mainImage: '/images/courts/bouldin-acres-menchaca-main.jpg',
     images: [
-      '/images/courts/bouldin-acres-menchaca-1.png'
+      '/images/courts/bouldin-acres-menchaca-1.jpg'
     ],
     description: 'South Austin location of Bouldin Acres on Menchaca Road, with 2 reservable outdoor pickleball courts alongside a full bar, CM Smokehouse BBQ, a playground, and yard games. Courts are for customers only and must be booked online in advance. Rates run $10-$20 per half hour depending on day and time.',
     amenities: ['Food & Drinks', 'Outdoor Courts', 'CM Smokehouse BBQ', 'Playground', 'Yard Games', 'TVs', 'Paddle Rental', 'Dog Friendly'],
@@ -1293,10 +1293,10 @@ export const courts: Court[] = [
     phone: '(512) 258-1621',
     website: 'https://www.balconescountryclub.com',
     email: 'balconespickleball@gmail.com',
-    mainImage: '/images/courts/balcones-country-club-main.png',
+    mainImage: '/images/courts/balcones-country-club-main.jpg',
     images: [
-      '/images/courts/balcones-country-club-1.png',
-      '/images/courts/balcones-country-club-2.png'
+      '/images/courts/balcones-country-club-1.jpg',
+      '/images/courts/balcones-country-club-2.jpg'
     ],
     description: 'Private Northwest Austin club with 4 outdoor concrete pickleball courts, permanent lines, and portable nets. Runs organized play, clinics, and leagues through the week, with seasonal Open Play sessions. Courts are booked via the CourtReserve app; a social membership with pickleball access is required, and members may bring guests.',
     amenities: ['Outdoor Concrete Courts', 'Permanent Lines', 'Portable Nets', 'Clinics & Leagues', 'Seasonal Open Play', 'CourtReserve Booking', 'Country Club Amenities', 'Guest Access'],
