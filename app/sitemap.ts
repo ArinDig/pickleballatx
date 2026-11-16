@@ -68,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/gear`,
-      lastModified: new Date('2026-10-11'),
+      lastModified: new Date('2026-11-16'),
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },

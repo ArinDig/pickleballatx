@@ -40,21 +40,12 @@ interface Product {
 const products: Product[] = [
   // Paddles
   {
-    name: 'Selkirk Vanguard Hybrid Invikta Pickleball Paddle',
-    asin: 'B0DTVTYF3M',
-    category: 'Paddles',
-    rating: 4.7,
-    reviewCount: '2,500+',
-    description: 'Premium carbon fiber paddle with polymer core. Great for power and control. Used by professional players.',
-    imageUrl: 'https://m.media-amazon.com/images/I/71Bbm+ZlV9L._AC_SX679_.jpg',
-  },
-  {
     name: 'JOOLA Ben Johns Hyperion CFS 16mm Pickleball Paddle',
     asin: 'B09VCS7578',
     category: 'Paddles',
-    rating: 4.8,
-    reviewCount: '1,800+',
-    description: 'Signature paddle of Ben Johns. Carbon fiber surface with foam core for exceptional control and touch.',
+    rating: 4.3,
+    reviewCount: '950+',
+    description: 'Part of JOOLA\'s Ben Johns signature line. A carbon surface built for control and spin, and a well-reviewed step up from beginner paddles.',
     imageUrl: 'https://m.media-amazon.com/images/I/41+oBnQbohL._AC_SX679_.jpg',
   },
   {
@@ -63,7 +54,7 @@ const products: Product[] = [
     asin: 'B07WWJBWVP',
     category: 'Paddles',
     rating: 4.5,
-    reviewCount: '240+',
+    reviewCount: '250+',
     description: 'Long-time best-selling graphite paddle with a forgiving wide body. A good balance of power and control for beginners through intermediate players.',
     imageUrl: 'https://m.media-amazon.com/images/I/81-pzJV3bYS._AC_SX679_.jpg',
   },
@@ -81,31 +72,31 @@ const products: Product[] = [
   
   // Balls
   {
-    name: 'Onix Pure 2 Outdoor Pickleball Balls (12-Pack)',
+    name: 'Onix Pure 2 Outdoor Pickleball Balls',
     asin: 'B07L445FC2',
     category: 'Balls',
-    rating: 4.6,
-    reviewCount: '3,500+',
-    description: 'Official tournament ball. Durable construction with consistent bounce. Perfect for outdoor play.',
+    rating: 4.7,
+    reviewCount: '150+',
+    description: 'Outdoor ball with a consistent bounce and a durable shell. A good second option if X-40s are sold out.',
     imageUrl: 'https://m.media-amazon.com/images/I/51WxL8efeiS._AC_SX679_.jpg',
   },
   {
-    name: 'Franklin X-40 Performance Pickleball Balls (12-Pack)',
+    name: 'Franklin X-40 Outdoor Pickleballs',
     asin: 'B074P8MZW9',
     category: 'Balls',
-    rating: 4.5,
-    reviewCount: '4,800+',
-    description: 'Most popular pickleball ball. USAPA approved. Great for both indoor and outdoor play.',
+    rating: 4.7,
+    reviewCount: '26,000+',
+    description: 'USA Pickleball approved and the most-reviewed outdoor ball on Amazon. Built for outdoor courts; use an indoor ball in gyms.',
     imageUrl: 'https://m.media-amazon.com/images/I/71ttt0pVlCL._AC_SX679_.jpg',
   },
   
   // Shoes
   {
-    name: 'ASICS Gel-Rocket 10 Volleyball Shoes',
+    name: 'ASICS Gel-Rocket 10 Indoor Court Shoes (Men\'s)',
     asin: 'B08VS7473J',
     category: 'Shoes',
-    rating: 4.6,
-    reviewCount: '2,100+',
+    rating: 4.5,
+    reviewCount: '1,600+',
     description: 'Lightweight court shoes with excellent grip. Popular choice for pickleball players. Great lateral support.',
     imageUrl: 'https://m.media-amazon.com/images/I/51On8-rbGBL._AC_SY695_.jpg',
   },
@@ -113,9 +104,9 @@ const products: Product[] = [
     name: 'K-Swiss Express Light Pickleball Shoes',
     asin: 'B07V2647ZZ',
     category: 'Shoes',
-    rating: 4.5,
-    reviewCount: '850+',
-    description: 'Designed specifically for pickleball. Non-marking sole with superior court grip and comfort.',
+    rating: 4.2,
+    reviewCount: '2,300+',
+    description: 'A pickleball-specific court shoe with a non-marking sole, sold in men\'s sizing.',
     imageUrl: 'https://m.media-amazon.com/images/I/61ZAi6+CNgL._AC_SY695_.jpg',
   },
   
@@ -124,8 +115,8 @@ const products: Product[] = [
     name: 'Selkirk Pickleball Paddle Backpack',
     asin: 'B0CGYXLSX7',
     category: 'Bags',
-    rating: 4.3,
-    reviewCount: '75+',
+    rating: 4.4,
+    reviewCount: '85+',
     description: 'Compact backpack that holds up to 6 paddles, with a padded front pocket and a 15-inch laptop sleeve.',
     imageUrl: 'https://m.media-amazon.com/images/I/815c4u3XyGL._AC_SX679_.jpg',
   },
@@ -133,11 +124,11 @@ const products: Product[] = [
   
   // Accessories
   {
-    name: 'Pickleball Paddle Grip Tape (3-Pack)',
+    name: 'Gamma Supreme Overgrip',
     asin: 'B000HEKHBQ',
     category: 'Accessories',
-    rating: 4.5,
-    reviewCount: '2,800+',
+    rating: 4.6,
+    reviewCount: '10,000+',
     description: 'Overgrip tape for better control and comfort. Absorbs sweat and reduces slippage.',
     imageUrl: 'https://m.media-amazon.com/images/I/714yeZ6ao9L._AC_SX679_.jpg',
   },
@@ -402,8 +393,8 @@ export default function GearPage() {
                 </p>
                 <p>
                   All products featured on this page are carefully selected based on customer reviews, 
-                  ratings, popularity within the pickleball community, and value. We regularly update 
-                  our recommendations to reflect current market offerings and player feedback. Click 
+                  ratings, popularity within the pickleball community, and value. Star ratings and review
+                  counts were checked on Amazon on November 16, 2026, and we re-check the links twice a month. Click 
                   through to Amazon to see current prices, availability, and detailed product 
                   specifications, as these change frequently.
                 </p>
